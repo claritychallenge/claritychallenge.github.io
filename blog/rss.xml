@@ -4,9 +4,16 @@
         <title>The 1st Clarity Enhancement Challenge Blog</title>
         <link>https://claritychallenge.org/blog</link>
         <description>The 1st Clarity Enhancement Challenge Blog</description>
-        <lastBuildDate>Thu, 30 May 2019 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 02 Jun 2019 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
+        <item>
+            <title><![CDATA[CEC1 eval data released]]></title>
+            <link>https://claritychallenge.org/clarity_CEC1_doc/blog/CEC1 eval data released</link>
+            <guid>CEC1 eval data released</guid>
+            <pubDate>Sun, 02 Jun 2019 00:00:00 GMT</pubDate>
+            <description><![CDATA[The evaluation dataset is now available to download from the myairbridge download site. The evaluation data filename is clarityCEC1data.sceneseval.v11.tgz.]]></description>
+        </item>
         <item>
             <title><![CDATA[Welcome]]></title>
             <link>https://claritychallenge.org/clarity_CEC1_doc/blog/welcome</link>
