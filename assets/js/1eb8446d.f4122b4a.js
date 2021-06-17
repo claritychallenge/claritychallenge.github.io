@@ -1,1 +1,0 @@
-(self.webpackChunkclarity_cec_1=self.webpackChunkclarity_cec_1||[]).push([[333],{6353:function(e){"use strict";e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"CEC1 eval data released","permalink":"/clarity_CEC1_doc/blog/CEC1 eval data released"},{"title":"Welcome","permalink":"/clarity_CEC1_doc/blog/welcome"}]}')}}]);

@@ -1,0 +1,1 @@
+(self.webpackChunkclarity_cec_1=self.webpackChunkclarity_cec_1||[]).push([[934],{43:function(s){"use strict";s.exports=JSON.parse('{"allTagsPath":"/clarity_CEC1_doc/blog/tags","slug":"submission","name":"submission","count":1,"permalink":"/clarity_CEC1_doc/blog/tags/submission"}')}}]);
