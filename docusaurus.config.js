@@ -5,12 +5,12 @@ module.exports = {
     title: 'The 2nd Clarity Enhancement Challenge',
     tagline: 'A machine learning challenge for hearing aid processing',
     url: 'https://claritychallenge.org',
-    baseUrl: '/clarity_CEC2_doc/',
+    baseUrl: '/clarity_CC_doc/',
     onBrokenLinks: 'error',
     onBrokenMarkdownLinks: 'error',
     favicon: 'img/favicon.ico',
     organizationName: 'claritychallenge', // Usually your GitHub org/user name.
-    projectName: 'clarity_CEC1_doc', // Usually your repo name.
+    projectName: 'clarity_CC_doc', // Usually your repo name.
     stylesheets: [{
         href: 'https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css',
         type: 'text/css',
@@ -74,7 +74,7 @@ module.exports = {
                     title: 'Docs',
                     items: [{
                         label: 'CEC1 Documentation',
-                        to: '/docs/intro',
+                        to: '/docs/cec1/intro',
                     }, ],
                 },
                 {
