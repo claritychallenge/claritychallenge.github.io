@@ -1,0 +1,28 @@
+---
+id: cec1_baseline
+title: Baseline System
+sidebar_label: Baseline System
+sidebar_position: 4
+---
+
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
+
+Figure 1 shows a simplified schematic of the baseline system. For simplicity, not all signal paths are shown. A scene generator (blue box) creates the speech in noise (SPIN) that the hearing aid model then enhances (yellow box). This enhancement is individualised for each listener, hence there is also a system to select a random listener (white ellipse) with a particular set of pure tone air-conduction thresholds or audiograms.
+
+The speech in noise that has been improved by the hearing aid is then passed to the prediction stage (orange box). This includes: (i) a simulation of hearing loss and (ii) a binaural model of intelligibility that estimates the speech intelligibility.
+
+<img src={useBaseUrl('/img/tutorial/the_baseline-11-1536x561.png')} />
+
+*Figure 1 Simplified overview of the baseline*
+
+As stated in the rules of the first Enhancement Challenge, you are free to choose which parts of the baseline are useful to your approach, and reconfigure the system as you feel fit.
+
+More details of the different parts of the baseline appear on the [software page](./cec1_software), see,
+
+- [Scene Generator](./cec1_software#a-scene-generator)
+- [Hearing aid model](./cec1_software#b-baseeline-hearing-aid-processor)
+- [Hearing loss model](./cec1_software#d-hearing-loss-model)
+- [Speech intelligibility model](./cec1_software#e-speech-intelligibility-model)
+
+[Download](./cec1_download) baseline software and data.
