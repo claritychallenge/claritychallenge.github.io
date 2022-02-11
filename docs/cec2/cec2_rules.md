@@ -1,5 +1,5 @@
 ---
-id: cec1_rules
+id: cec2_rules
 title: Rules
 sidebar_label: Rules
 sidebar_position: 7

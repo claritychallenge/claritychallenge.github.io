@@ -1,5 +1,5 @@
 ---
-id: cec1_prizes
+id: cec2_prizes
 title: Prizes
 sidebar_label: Prizes
 sidebar_position: 10

@@ -29,7 +29,7 @@ module.exports = {
                     type: 'doc',
                     docId: 'cec2/intro',
                     position: 'left',
-                    label: 'CEC1 Documentation',
+                    label: 'CEC2 Documentation',
                 },
                 {
                     type: 'dropdown',
@@ -123,12 +123,12 @@ module.exports = {
                         }]
                     ],
                     // Please change this to your repo.
-                    editUrl: 'https://github.com/claritychallenge/clarity_CEC1_doc/edit/master/',
+                    editUrl: 'https://github.com/claritychallenge/clarity_CC_doc/edit/master/',
                 },
                 blog: {
                     showReadingTime: true,
                     // Please change this to your repo.
-                    editUrl: 'https://github.com/claritychallenge/clarity_CEC1_doc/edit/master/',
+                    editUrl: 'https://github.com/claritychallenge/clarity_CC_doc/edit/master/',
                 },
                 theme: {
                     customCss: require.resolve('./src/css/custom.css'),
