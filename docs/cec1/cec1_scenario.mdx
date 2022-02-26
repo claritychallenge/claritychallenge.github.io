@@ -19,13 +19,13 @@ A listener – or receiver – is sitting or standing in a small room that has l
   ]}
 >
   <TabItem value="overview">
-  <img width="500" src="../img/tutorial/room2_update-1.png" /> 
+  <img width="500" src="../../img/tutorial/room2_update-1.png" /> 
 
   *Figure 1. Example overview*
   </TabItem>
 
   <TabItem value="definition">
-  <img width="500" src="../img/tutorial/Room_references.png" />
+  <img width="500" src="../../img/tutorial/Room_references.png" />
 
   *Figure 2. Geometry definition*
   </TabItem>
@@ -37,7 +37,7 @@ Figure 3, below, shows the basic scene generator. The sound at the receiver is g
 
 There are additional signal paths and outputs generated that have been omitted from Figure 3 for clarity. In addition to the reverberated signals associated with the hearing aid microphones, the signal close to the eardrum is also generated. You can also access the reverberated speech and noise signals before they are mixed.
 
-<img src="../img/tutorial/scene_generator-1536x784.png" />
+<img src="../../img/tutorial/scene_generator-1536x784.png" />
 
 *Figure 3. Simplified diagram of the scene generator. RIR refers to Room Impulse Response, HRTFs refers to Head Related Transfer Functions, SNRs are signal-to-noise ratios, and gain calc. indicates gain calculation. Dry here means anechoic. The outputs are noisy speech signals.*
 
@@ -124,7 +124,7 @@ The speech-weighting filter is an FIR designed using the host window method \[[2
 - Frequency (Hz) = `[0,     150,    250,    350,    450,    4000,   4800,   5800,   7000,   8500,   9500,    22050]`;
 - Magnitude of transfer function at each frequency = `[0.0001, 0.0103, 0.0261, 0.0419, 0.0577, 0.0577, 0.046,  0.0343, 0.0226, 0.0110, 0.0001, 0.0001]`;
 
-<img src="../img/tutorial/speech_weighting_filter.png" />
+<img src="../../img/tutorial/speech_weighting_filter.png" />
 
 <a name="refs"></a>
 

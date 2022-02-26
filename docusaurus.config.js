@@ -30,6 +30,22 @@ module.exports = {
                     docId: 'cec2/intro',
                     position: 'left',
                     label: 'CEC2 Documentation',
+                }, {
+                    type: 'doc',
+                    docId: 'cec2/cec2_dates',
+                    position: 'left',
+                    label: 'Dates',
+                },
+                {
+                    to: '/blog',
+                    label: 'Blog',
+                    position: 'left'
+                },
+
+                {
+                    href: 'https://claritychallenge.github.io/clarity2021-workshop/',
+                    label: 'Workshop',
+                    position: 'left'
                 },
                 {
                     type: 'dropdown',
@@ -45,17 +61,7 @@ module.exports = {
                         label: 'CPC1',
                     }, ]
                 },
-                {
-                    to: '/blog',
-                    label: 'Blog',
-                    position: 'left'
-                },
 
-                {
-                    href: 'https://claritychallenge.github.io/clarity2021-workshop/',
-                    label: 'Workshop',
-                    position: 'left'
-                },
                 {
                     to: '/twitter',
                     label: 'Twitter',

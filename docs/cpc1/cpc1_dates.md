@@ -1,5 +1,5 @@
 ---
-id: dates
+id: cpc1_dates
 title: Important dates
 sidebar_label: Important dates
 sidebar_position: 8.5

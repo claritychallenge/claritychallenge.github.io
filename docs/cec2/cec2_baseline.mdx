@@ -10,19 +10,19 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 Figure 1 shows a simplified schematic of the baseline system. For simplicity, not all signal paths are shown. A scene generator (blue box) creates the speech in noise (SPIN) that the hearing aid model then enhances (yellow box). This enhancement is individualised for each listener, hence there is also a system to select a random listener (white ellipse) with a particular set of pure tone air-conduction thresholds or audiograms.
 
-The speech in noise that has been improved by the hearing aid is then passed to the prediction stage (orange box). This includes: (i) a simulation of hearing loss and (ii) a binaural model of intelligibility that estimates the speech intelligibility.
+The speech in noise that has been improved by the hearing aid is then passed to the prediction stage (orange box). In the previous enhancement challenge, CEC1, this was composed of a hearing loss model followed by a speech intelligibility model. For CEC2, we are using an implementation of HASPI [Ref] which incorporates the effects of hearing loss directly into the prediction.
+
 
 <img src={useBaseUrl('/img/tutorial/the_baseline-11-1536x561.png')} />
 
 *Figure 1 Simplified overview of the baseline*
 
-As stated in the rules of the first Enhancement Challenge, you are free to choose which parts of the baseline are useful to your approach, and reconfigure the system as you feel fit.
+As stated in the rules of the challenge, you are free to choose which parts of the baseline are useful to your approach, and reconfigure the system as you feel fit. Ie. all teams will want to adapt or replace the hearing aid model; you may also want to replace the prediction model if you have a predictor that you believe will allow you to better optimise your system for the listening tests.
 
 More details of the different parts of the baseline appear on the [software page](./cec2_software), see,
 
 - [Scene Generator](./cec2_software#a-scene-generator)
 - [Hearing aid model](./cec2_software#b-baseeline-hearing-aid-processor)
-- [Hearing loss model](./cec2_software#d-hearing-loss-model)
 - [Speech intelligibility model](./cec2_software#e-speech-intelligibility-model)
 
 [Download](./cec2_download) baseline software and data.
