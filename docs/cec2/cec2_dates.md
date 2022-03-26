@@ -5,12 +5,17 @@ sidebar_label: Important dates
 sidebar_position: 1.5
 ---
 
-The CEC2 challenge schedule is summarised below.
+Key dates are as follows
 
-- **30th March 2022**: Launch of challenge, release of data and mixing tools 
-- **end April 2022**: Release of full toolset and baseline system.
+- **30th March 2022**: Challenge website launch  
+- **13th April 2022**: Release of training and development data
+- **30th April 2022**: Release of full toolset and baseline system.
 - **25th July 2022**: Evaluation data released
-- **18 Aug 2022**: Submission deadline - HASPI evaluation
-- **1st Sept 2022**: Submission deadline - listening evaluation
+- **1st Sept 2022**: 1st round submission deadline for evaluation by objective measure
+
+- **15th Sept 2022**: 2nd round submission deadline for listening tests
+
 - **Sept-Nov 2022**: Listening test evaluation period.
-- **mid Nov 2022**: Clarity Challenge Workshop and results announced.
+- **2nd Dec 2022**:  Results announced at a Clarity Challenge Workshop; prizes awarded.
+  - Workshop likely to be a one-day virtual event
+
