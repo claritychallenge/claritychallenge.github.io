@@ -2,22 +2,24 @@
 id: cec2_baseline
 title: Baseline System
 sidebar_label: Baseline System
-sidebar_position: 4
+sidebar_position: 3
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
+Challenge entrants will be supplied with a fully functioning baseline system. Figure 1 shows a simplified schematic:
 
-Figure 1 shows a simplified schematic of the baseline system. For simplicity, not all signal paths are shown. A scene generator (blue box) creates the speech in noise (SPIN) that the hearing aid model then enhances (yellow box). This enhancement is individualised for each listener, hence there is also a system to select a random listener (white ellipse) with a particular set of pure tone air-conduction thresholds or audiograms.
+- A scene generator (blue box) creates speech in noise.
+- The hearing aid model then enhances this (yellow box).
+- The enhancement is individualised for each listener with quantified hearing characteristics, hence there is also a system to select a random listener (white ellipse).
+- The Improved SPIN (speech in noise) that is outputted from your hearing aid, is then passed to the prediction stage (orange box). We are using the Hearing-Aid Speech Perception Index (HASPI) as the objective metric to estimate speech intelligibility [1].
 
-The speech in noise that has been improved by the hearing aid is then passed to the prediction stage (orange box). In the previous enhancement challenge, CEC1, this was composed of a hearing loss model followed by a speech intelligibility model. For CEC2, we are using an implementation of HASPI [Ref] which incorporates the effects of hearing loss directly into the prediction.
+<img width="800" src={useBaseUrl('/img/CEC2/baseline.png')} />
 
+*FIGURE 1 The baseline, for simplicity, not all signal paths are shown.*
 
-<img src={useBaseUrl('/img/tutorial/the_baseline-11-1536x561.png')} />
+Your challenge is to improve what happens in the yellow enhancement box. You are free to use any parts of the baseline that are useful to you, and reconfigure the system as you feel fit.
 
-*Figure 1 Simplified overview of the baseline*
-
-As stated in the rules of the challenge, you are free to choose which parts of the baseline are useful to your approach, and reconfigure the system as you feel fit. Ie. all teams will want to adapt or replace the hearing aid model; you may also want to replace the prediction model if you have a predictor that you believe will allow you to better optimise your system for the listening tests.
 
 More details of the different parts of the baseline appear on the [software page](./cec2_software), see,
 
@@ -25,4 +27,6 @@ More details of the different parts of the baseline appear on the [software page
 - [Hearing aid model](./cec2_software#b-baseeline-hearing-aid-processor)
 - [Speech intelligibility model](./cec2_software#e-speech-intelligibility-model)
 
-[Download](./cec2_download) baseline software and data.
+## References
+
+[1] Kates, J.M. and Arehart, K.H., 2021. The hearing-aid speech perception index (haspi) version 2. Speech Communication, 131, pp.35-46.
