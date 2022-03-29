@@ -2,7 +2,7 @@
 const math = require('remark-math');
 const katex = require('rehype-katex');
 module.exports = {
-    title: 'The 1st Clarity Enhancement Challenge',
+    title: 'The 2nd Clarity Enhancement Challenge',
     tagline: 'A machine learning challenge for hearing aid processing',
     url: 'https://claritychallenge.org',
     baseUrl: '/',
@@ -17,7 +17,7 @@ module.exports = {
         integrity: 'sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X',
         crossorigin: 'anonymous',
     }, "https://fonts.googleapis.com/icon?family=Material+Icons", ],
-    plugins: ['./sitePlugin'],
+    plugins: [require.resolve('docusaurus-lunr-search'), './sitePlugin'],
     themeConfig: {
         navbar: {
             title: 'Clarity',
@@ -27,14 +27,57 @@ module.exports = {
             },
             items: [{
                     type: 'doc',
-                    docId: 'intro',
+                    docId: 'cec2/intro',
                     position: 'left',
-                    label: 'Documentation',
+                    label: 'CEC2 Intro',
+                }, {
+                    type: 'doc',
+                    docId: 'cec2/cec2_dates',
+                    position: 'left',
+                    label: 'Dates',
+                },
+                {
+                    type: 'doc',
+                    docId: 'cec2/cec2_download',
+                    position: 'left',
+                    label: 'Download',
+                },
+                {
+                    type: 'doc',
+                    docId: 'cec2/cec2_submission',
+                    position: 'left',
+                    label: 'Submission',
                 },
                 {
                     to: '/blog',
                     label: 'Blog',
                     position: 'left'
+                },
+
+                {
+                    href: 'https://claritychallenge.github.io/clarity2021-workshop/',
+                    label: 'Workshop',
+                    position: 'left'
+                },
+                {
+                    type: 'dropdown',
+                    label: 'Previous Challenges',
+                    position: 'right',
+                    items: [{
+                        type: 'doc',
+                        docId: 'cec1/intro',
+                        label: 'CEC1',
+                    }, {
+                        type: 'doc',
+                        docId: 'cpc1/intro',
+                        label: 'CPC1',
+                    }, ]
+                },
+
+                {
+                    to: '/twitter',
+                    label: 'Twitter',
+                    position: 'right',
                 },
                 {
                     href: 'https://github.com/claritychallenge/clarity_CEC1',
@@ -84,6 +127,11 @@ module.exports = {
         [
             '@docusaurus/preset-classic',
             {
+                googleAnalytics: {
+                    trackingID: 'UA-198878187-1',
+                    // Optional fields.
+                    anonymizeIP: true, // Should IPs be anonymized?
+                },
                 docs: {
                     sidebarPath: require.resolve('./sidebars.js'),
                     remarkPlugins: [math],
@@ -93,12 +141,12 @@ module.exports = {
                         }]
                     ],
                     // Please change this to your repo.
-                    editUrl: 'https://github.com/claritychallenge/clarity_CEC1_doc/edit/master/',
+                    editUrl: 'https://github.com/claritychallenge/clarity_CC_doc/edit/master/',
                 },
                 blog: {
                     showReadingTime: true,
                     // Please change this to your repo.
-                    editUrl: 'https://github.com/claritychallenge/clarity_CEC1_doc/edit/master/',
+                    editUrl: 'https://github.com/claritychallenge/clarity_CC_doc/edit/master/',
                 },
                 theme: {
                     customCss: require.resolve('./src/css/custom.css'),
