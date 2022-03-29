@@ -16,9 +16,9 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="http://claritychallenge.org/sign-up-to-the-challenges"
+            to="./docs/cec2/intro"
           >
-            Contact Us
+            Get Started
           </Link>
         </div>
       </div>
