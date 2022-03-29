@@ -7,7 +7,7 @@ sidebar_position: 12
 
 import Icon from '@material-ui/core/Icon';
 
-We will be awarding prizes for the best performing teams and the best student contributions.
+We will be awarding prizes for the best performing teams.
 
 ## The Team Prize
 
@@ -49,6 +49,9 @@ We will be awarding prizes for the best performing teams and the best student co
 - The award will be judged by a panel formed from members of the Clarity-2021 workshop scientific committee. 
 - There will be a lightweight nomination process. Details to be announced.
 -->
+
+<br/>
+<p/>
 
 :::info
   Anonymous entries and those with direct links to the Clarity project team are ineligible for cash prizes, sorry.

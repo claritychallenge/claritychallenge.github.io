@@ -29,12 +29,24 @@ module.exports = {
                     type: 'doc',
                     docId: 'cec2/intro',
                     position: 'left',
-                    label: 'CEC2 Documentation',
+                    label: 'CEC2 Intro',
                 }, {
                     type: 'doc',
                     docId: 'cec2/cec2_dates',
                     position: 'left',
                     label: 'Dates',
+                },
+                {
+                    type: 'doc',
+                    docId: 'cec2/cec2_download',
+                    position: 'left',
+                    label: 'Download',
+                },
+                {
+                    type: 'doc',
+                    docId: 'cec2/cec2_submission',
+                    position: 'left',
+                    label: 'Submission',
                 },
                 {
                     to: '/blog',
