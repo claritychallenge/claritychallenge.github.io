@@ -2,7 +2,7 @@
 id: cec2_dates
 title: CEC2 Schedule
 sidebar_label: Important dates
-sidebar_position: 1.5
+sidebar_position: 2
 ---
 
 Key dates are as follows

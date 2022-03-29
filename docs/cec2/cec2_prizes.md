@@ -2,7 +2,7 @@
 id: cec2_prizes
 title: Prizes
 sidebar_label: Prizes
-sidebar_position: 10
+sidebar_position: 12
 ---
 
 import Icon from '@material-ui/core/Icon';
