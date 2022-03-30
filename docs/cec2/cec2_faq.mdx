@@ -1,6 +1,6 @@
 ---
 id: cec2_faq
-title: FAQ
+title: CEC2 FAQ
 sidebar_label: FAQ
 sidebar_position: 15
 ---
@@ -61,36 +61,3 @@ Hearing loss leads to several unwanted effects. Loss of audibility for soft soun
   </div>
 </details>
 
-## Prediction model
-
-### Do I have to use a separate hearing loss model?
-
-No is the short answer! In the baseline, we've used the Cambridge hearing loss model and a separate binaural speech intelligibility model. Another approach would be to create a single model that encapsulates the combined effects of hearing loss and speech perception.
-
-### What should the output of my prediction model be?
-
-The output should include a predicted speech intelligibility score per input signal, specifically, an estimate of the number of words correct as a percentage of the total number of words in the signal.
-
-## Data
-
-### Do you have suggestions for expanding the training data?
-
-The prediction challenge data is limited by having to get the ground truth from listening tests on people with a hearing loss. We look forward to seeing what approaches teams use to help overcome this limitation, such as using unsurpervised models, data augmentation or generating additional ground truth data using a pre-existing model. The baseline model includes a hearing loss and speech intelligibility model that could be used for creating additional pre-training data. There are other models that you might consider where code is available. None have been checked by the Clarity team.
-
-- [Katerina Zmolikova](https://www.fit.vut.cz/person/izmolikova/functions/.en#nav) has made [her Pytorch version of the baseline hearing impairment and speech intelligibility model available](https://github.com/BUTSpeechFIT/torch_msbg_mbstoi). Both model fit a neural network framework, are faster but more approximate (see graphs on github).
-- [HASQI and HASPI](https://pubmed.ncbi.nlm.nih.gov/29554034/) are quality and speech intelligibility metrics designed to work for people with a hearing impairment. [James Kates explains more about these above](cpc1_faq/#speech-intelligibility). [MATLAB code HASPI v2 and HASQI v2](http://claritychallenge.org/wp-content/uploads/2021/10/HASPIv2_HASQIv2_HAAQIv1.zip) are available, along with the [user guide](http://claritychallenge.org/wp-content/uploads/2021/10/Users_Guide_ver3.zip).
-- [STOI-Net: A Deep Learning based Non-Intrusive Speech Intelligibility Assessment Model](https://github.com/dhimasryan/STOI-Net) by Ryandhimas Zezario et al. is monaural and non-intrusive using Python, Keras and TensorFlow. It doesn't model the effect of hearing loss. An alternative is [Asger Heidemann Andersen's MATLAB code](http://ah-andersen.net/code/).
-
-### Missing data
-
-We have audiograms for all our listening panel. But for other characterisations of hearing, only some of the panel have provided data. Therefore there is missing data that has to be dealt with.
-
-1) One approach to the missing data is to just ignore it and just use the audiograms. The problem with this approach is that audiograms only quantifies the hearing threshold, and our speech in noise audio samples were not played that quietly. Nevertheless, audiograms are the most common way of characterising hearing loss.
-
-2) Alternatively, a method to use the partial data could be developed, and we expect this would help with speech intelligibility prediction. You will find plenty of data science blog posts [e.g. towards data science](https://towardsdatascience.com/all-about-missing-data-handling-b94b8b5d2184) discussing different approaches.
-
-A key question is whether the missing data is 'missing at random' i.e. is the distribution of the missing data expected to be the same as that of the present data? For the prediction challenge, this would mean the missing triple-digit-test values are coming from some random sample of the listeners, who'd be no different from the listeners who did complete the triple-digital-test. Unfortunately, this might not be true, because the failure to complete the triple-digit-tests could well correlate with hearing loss (e.g. maybe older people with more hearing loss were less likely to do the test). The Clarity data is probably 'missing not at random'.
-
-One simple solution is to delete examples with missing data, but the loss of so much data probably makes this undesirable.
-
-A more sophisticated approach is to fill gaps in data via *imputation* i.e. first estimate values for the missing data and then treat the dataset as complete. A couple of simple approaches for imputation are: (i) use the mean value from the dataset for missing values, and (ii) create a model to estimate the missing data from the audiograms. There are other approaches in data science that could be exploited such as coding the missing values into a 'N/A' category within the input data.

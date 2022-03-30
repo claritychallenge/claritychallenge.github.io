@@ -14,7 +14,7 @@ This is an open-source python implementation of a hearing loss model developed b
 
 ## Differentiable source separation and hearing aid amplification modules
 
-The modules are from the Sheffield E009 system in CEC1. The source separation module is a multi-channel Conv-TasNet optimised with a SNR objective. The hearing aid amplification module is an FIR filter optimised with an objective, which is the combination of a differentiable approximation to the hearing loss model and a STOI loss.
+The modules are from the [Sheffield E009 system](https://github.com/TuZehai/Sheffield_Clarity_CEC1_Entry) in CEC1. The source separation module is a multi-channel Conv-TasNet optimised with a SNR objective. The hearing aid amplification module is an FIR filter optimised with an objective, which is the combination of a differentiable approximation to the hearing loss model and a STOI loss.
 
 - **Inputs**: six channels of mixed signals, i.e., `mixed_CH1.wav`, `mixed_CH2.wav`, and `mixed_CH3.wav`
 - **Outputs**: a single channel enhanced signal, therefore two source separation and amplification modules for left and right ears need to be optimised for the enhanced binaural signal.
