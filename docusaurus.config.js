@@ -34,30 +34,29 @@ module.exports = {
                     type: 'doc',
                     docId: 'cec2/cec2_dates',
                     position: 'left',
-                    label: 'Dates',
+                    label: 'CEC2 Dates',
                 },
                 {
                     type: 'doc',
                     docId: 'cec2/cec2_download',
                     position: 'left',
-                    label: 'Download',
+                    label: 'CEC2 Download',
                 },
                 {
                     type: 'doc',
                     docId: 'cec2/cec2_submission',
                     position: 'left',
-                    label: 'Submission',
-                },
-                {
-                    to: '/blog',
-                    label: 'Blog',
-                    position: 'left'
+                    label: 'CEC2 Submission',
                 },
 
                 {
-                    href: 'https://claritychallenge.github.io/clarity2021-workshop/',
-                    label: 'Workshop',
-                    position: 'left'
+                    type: 'dropdown',
+                    label: 'Previous Workshops',
+                    position: 'right',
+                    items: [{
+                        href: 'https://claritychallenge.github.io/clarity2021-workshop/',
+                        label: 'Clarity 2021',
+                    }]
                 },
                 {
                     type: 'dropdown',
@@ -75,9 +74,9 @@ module.exports = {
                 },
 
                 {
-                    to: '/twitter',
-                    label: 'Twitter',
-                    position: 'right',
+                    to: '/blog',
+                    label: 'Blog',
+                    position: 'right'
                 },
                 {
                     href: 'https://github.com/claritychallenge/clarity_CEC1',
