@@ -1,5 +1,5 @@
 ---
-id: intro
+id: cec2_intro
 title: CEC2 Introduction
 sidebar_label: CEC2
 sidebar_position: 1
@@ -11,7 +11,7 @@ This second Clarity Enhancement Challenge is about improving the performance of 
 
 ## Overview of challenge
 
-We want you to improve speech in the presence of background noise - see figure 1. On the left there is a person with a quantified hearing loss. They are listening to speech from the target talker on the right. They are both in a living room. There is interfering noise from a number of sources (TV and washing machine in this case). The speech and noise is sensed by microphones on the hearing aids of the listener. Your task is to take these microphone feeds and the listener’s hearing characteristics, to produce signals where the speech is more intelligibile. We will evaluate the success of your processing using an objective speech intelligibility metric. Some entrants will also be evaluated by a panel of listeners with a hearing impairment.
+We want you to improve speech in the presence of background noise - see figure 1. On the left there is a person with a quantified hearing loss. They are listening to speech from the target talker on the right. They are both in a living room. There is interfering noise from a number of sources (TV and washing machine in this case). The speech and noise is sensed by microphones on the hearing aids of the listener. Your task is to take these microphone feeds and the listener’s hearing characteristics, to produce signals where the speech is more intelligible. We will evaluate the success of your processing using an objective speech intelligibility metric. Some entrants will also be evaluated by a panel of listeners with a hearing impairment.
 
 <img src={useBaseUrl('/img/CEC2/scenario.png')} />
 
@@ -24,6 +24,4 @@ The scenario has been made more difficult than the first [Clarity Enhancement Ch
   - The listener turns their head during the talking.
   - Less predictable target onset timing.
 
-For more details see:
-  - The baseline software system
-  - etc [Add links]
+For more details use the contents pane on the left to navigate the CEC2 site.

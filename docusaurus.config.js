@@ -27,7 +27,7 @@ module.exports = {
             },
             items: [{
                     type: 'doc',
-                    docId: 'cec2/intro',
+                    docId: 'cec2/cec2_intro',
                     position: 'left',
                     label: 'CEC2 Intro',
                 }, {
