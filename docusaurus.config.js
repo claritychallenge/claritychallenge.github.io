@@ -34,19 +34,19 @@ module.exports = {
                     type: 'doc',
                     docId: 'cec2/cec2_dates',
                     position: 'left',
-                    label: 'CEC2 Dates',
+                    label: 'Dates',
                 },
                 {
                     type: 'doc',
                     docId: 'cec2/cec2_download',
                     position: 'left',
-                    label: 'CEC2 Download',
+                    label: 'Download',
                 },
                 {
                     type: 'doc',
                     docId: 'cec2/cec2_submission',
                     position: 'left',
-                    label: 'CEC2 Submission',
+                    label: 'Submission',
                 },
 
                 {
@@ -74,6 +74,11 @@ module.exports = {
                 },
 
                 {
+                    type: 'doc',
+                    docId: 'contact',
+                    label: 'Contact',
+                    position: 'right'
+                }, {
                     to: '/blog',
                     label: 'Blog',
                     position: 'right'
