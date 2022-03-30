@@ -35,22 +35,23 @@ The scenarios are for:
 - The target speech source will onset about one second into the scene.
 - The listener starts not looking at the target talker, but around the time the target speech starts, the listener rotates their head to approximately face towards the target.
 
-An example scenario is shown in Figure 1. It also defines the coordinate system and origin for the room generation.
+An example scenario is shown in [Figure 1](#fig1). It also defines the coordinate system and origin for the room generation.
 
+<figure id="fig1">
 <img width="500" src={useBaseUrl('/img/CEC2/room.png')} />
-
-*FIGURE 1 An example scenario with two noise interferers.*
+<figcaption>Figure 1, An example scenario with two noise interferers.</figcaption>
+</figure>
 
 ## Room geometry
 
-- Cuboid rooms with dimensions length, $L$, by width, $W$, by height, $H$.
+- Cuboid rooms with dimensions length $L$ by width $W$ by height $H$.
 - Length $L$ set using a uniform probability distribution random number generator with 3 $<$ $L$ (m) $≤$ 8.
 - Height $H$ set using a Gaussian distribution random number generator with a mean of 2.7 m and standard deviation of 0.8 m.
 - Area $L×W$ set using a Gaussian distribution random number generator with mean 17.7 m$^2$  and standard deviation of 5.5 m$^2$
 
 ## Room materials
 
-One of the walls of the room is randomly selected for the location of the door. The door can be at any position with the constraint of being at least at 20 cm from the corner of the wall.
+One of the walls of the room is randomly selected for the location of the door. The door can be at any position with the constraint of being at least 20 cm from the corner of the wall.
 
 A window is placed on one of the other three walls. The window could be at any position of the wall but at 1.9 m height and at 0.4 m from any corner. The curtains are simulated to the side of the window. For larger rooms, a second window and curtains are simulated following a similar methodology.
 
@@ -122,15 +123,16 @@ Then per channel,
 - Finally, i is scaled as follows:
    - $i = i \times 10^{((-SNR_D)/20)}$
 
-The speech-weighting filter is an FIR designed using the host window method \[[2](#refs), [3](#refs)\]. The frequency response is shown in Figure 2. The specification is:
+The speech-weighting filter is an FIR designed using the host window method \[[2](#refs), [3](#refs)\]. The frequency response is shown in [Figure 2](#fig2). The specification is:
 
 - Frequency (Hz) = `[0, 150, 250, 350, 450, 4000, 4800, 5800, 7000, 8500, 9500, 22050]`
 - Magnitude of transfer function at each frequency = `[0.0001, 0.0103, 0.0261, 0.0419, 0.0577, 0.0577, 0.046, 0.0343, 0.0226, 0.0110, 0.0001, 0.0001]`
 
-
+<figure id="fig2">
 <img src="../../img/tutorial/speech_weighting_filter.png" />
-
-*Figure 2, Speech weighting filter transfer function graph.*
+<a name="fig2"></a>
+<figcaption>Figure 2, Speech weighting filter transfer function graph.</figcaption>
+</figure>
 
 ## References
 

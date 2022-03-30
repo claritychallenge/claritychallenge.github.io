@@ -7,26 +7,30 @@ sidebar_position: 3
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-Challenge entrants will be supplied with a fully functioning baseline system. Figure 1 shows a simplified schematic:
+Challenge entrants will be supplied with a fully functioning baseline system. [Figure 1](#fig1) shows a simplified schematic:
 
 - A scene generator (blue box) creates speech in noise.
 - The hearing aid model then enhances this (yellow box).
 - The enhancement is individualised for each listener with quantified hearing characteristics, hence there is also a system to select a random listener (white ellipse).
-- The Improved SPIN (speech in noise) that is outputted from your hearing aid, is then passed to the prediction stage (orange box). We are using the Hearing-Aid Speech Perception Index (HASPI) as the objective metric to estimate speech intelligibility [1].
+- The Improved SPIN (speech in noise) that is outputted from your hearing aid, is then passed to the prediction stage (orange box). We are using the Hearing-Aid Speech Perception Index (HASPI) as the objective metric to estimate speech intelligibility \[[1](#refs)].
 
+
+<figure id="fig1">
 <img width="800" src={useBaseUrl('/img/CEC2/baseline.png')} />
-
-*FIGURE 1 The baseline, for simplicity, not all signal paths are shown.*
+<figcaption>Figure 1, The baseline, for simplicity, not all signal paths are shown.</figcaption>
+</figure>
 
 Your challenge is to improve what happens in the yellow enhancement box. You are free to use any parts of the baseline that are useful to you, and reconfigure the system as you feel fit.
 
 
-More details of the different parts of the baseline appear on the [software page](./cec2_software), see,
+More details of the different parts of the baseline appear on the [core software page](./cec2_core_software), see,
 
-- [Scene Generator](./cec2_software#a-scene-generator)
-- [Hearing aid model](./cec2_software#b-baseeline-hearing-aid-processor)
-- [Speech intelligibility model](./cec2_software#e-speech-intelligibility-model)
+- [Scene Generator](./cec2_core_software#a-scene-generator)
+- [Hearing aid model](./cec2_core_software#b-baseeline-hearing-aid-processor)
+- [Speech intelligibility model](./cec2_core_software#e-speech-intelligibility-model)
 
 ## References
+
+<a name="refs"></a>
 
 1. Kates, J.M. and Arehart, K.H., 2021. The hearing-aid speech perception index (haspi) version 2. Speech Communication, 131, pp.35-46.

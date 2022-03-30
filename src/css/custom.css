@@ -35,3 +35,21 @@
 .material-icons {
     vertical-align: middle;
   }
+
+figure {
+    display: inline-block;
+    border: 1px dotted gray;
+    margin: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    /* adjust as needed */
+}
+
+
+
+  figcaption {
+border: 1px dotted blue;
+font: italic smaller sans-serif;
+      padding: 3px;
+      text-align: center;
+}
