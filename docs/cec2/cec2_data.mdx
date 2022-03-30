@@ -119,19 +119,19 @@ In the datafile, an average of the SNR for the last 30 trials is provided (label
 
 The following abbreviations are used consistently throughout the filenames and references in the metadata.
 
-- R – “room”: e.g., “R02678” # Room ID linking to RAVEN rpf file
-- S – “scene”: e.g., S00121 # Scene ID for a particular setup in a room I.e., room + choice of target and interferer signals
-- BNC – BNC sentence identifier e.g. BNC_A06_01702
-- CH –
-   - CH0 – eardrum signal
-   - CH1 – front signal, hearing aid channel
-   - CH2 – middle signal, hearing aid channel
-   - CH3 – rear signal, hearing aid channel
-- I/i1 – Interferer, i.e., noise or sentence ID for the interferer/masker
-- T – talker who produced the target speech sentences
-- L – listener
-- E – entrant (identifying a team participating in the challenge)
-- t – target (used in BRIRs and RAVEN project ‘rpf’ files)
+- `R` – “room”: e.g., “R02678” # Room ID linking to RAVEN rpf file
+- `S` – “scene”: e.g., S00121 # Scene ID for a particular setup in a room I.e., room + choice of target and interferer signals
+- `BNC` – BNC sentence identifier e.g. `BNC_A06_01702`
+- `CH` –
+   - `CH0` – eardrum signal
+   - `CH1` – front signal, hearing aid channel
+   - `CH2` – middle signal, hearing aid channel
+   - `CH3` – rear signal, hearing aid channel
+- `I`/`i1` – Interferer, i.e., noise or sentence ID for the interferer/masker
+- `T` – talker who produced the target speech sentences
+- `L` – listener
+- `E` – entrant (identifying a team participating in the challenge)
+- `t` – target (used in BRIRs and RAVEN project ‘rpf’ files)
 
 ### D.2 General
 
@@ -196,21 +196,21 @@ JSON file containing the description of a room. This is the data from which the 
     "dimensions": "6.9933x3x3" # Room dimensions in metres,
     "target": { # target positions (x,y,z) and view vectors (look directions, x,y,z)
       "position": [-0.3, 2.4, 1.2],
-      "view_vector": [0.071,0.997,0.0],
+      "view_vector": [0.071, 0.997, 0.0],
     },
     "listener": {
-      "position": [ -0.1,5.2,1.2 ],
-      "view_vector": [0.071,0.997,0.0],
+      "position": [-0.1, 5.2, 1.2],
+      "view_vector": [0.071, 0.997, 0.0],
     },
     "interferers": [
       {
-        "position": [0.4,4.0,1.2 ],
+        "position": [0.4, 4.0, 1.2],
       },
       { # etc, up to three interferers
       }
     ],
   },
-  { etc }
+  ...
 ]
 ```
 
@@ -222,7 +222,6 @@ JSON file containing a description of the scene. It is a list of dictionaries wi
 [
   {
     "scene": "S00001",  # the unique scene ID
-
     "room":: "R00001", # ID of room linking to rooms.json
     "target": { 
       "name": "T005_JYD_04274", # target speaker code and BNCid
@@ -243,7 +242,7 @@ JSON file containing a description of the scene. It is a list of dictionaries wi
       "hrir_filename":  ["VP_N4-ED",
         "VP_N4-BTE_fr",
         "VP_N4-BTE_mid",
-        "VP_N4-BTE_rear”] # HRIR filename for each channel to generate
+        "VP_N4-BTE_rear"] # HRIR filename for each channel to generate
     },
     "interferers": [
       {
@@ -261,7 +260,7 @@ JSON file containing a description of the scene. It is a list of dictionaries wi
     "duration": 261119,  # total duration of scene in samples
     "SNR": 6.89  # targe SNR for the scene
   },
-  { etc }
+  ...
 ]
 ```
 
@@ -269,22 +268,30 @@ There are JSON files containing the scene specifications per dataset, e.g., scen
 
 The listener ID is not stored in the scene metadata; this information is stored separately in a scenes_listeners.json file which maps scenes to listeners, ie. telling you which listener (or listeners) will be listening to which scenes in the evaluation (see Section [D.9](#d9-listener-metadata)).
 
-Noise  interferers are labelled `CIN_<noise type>_XXX`; ADD DETAIL music interferers ... ; while speech interferers are labelled `<three letter code including dialect and talker gender>_XXXXX` .
+Noise interferers are labelled with a type “music”, “noise” or “speech” and then have a unique name identifying the file.
+
+- For **speech**: `<ACCENT_CODE>_<SPEAKER_ID>` where `ACCENT_CODE` is a three letter code identify the accent region and gender of the speaker and `SPEAKER_ID` is a 5-digit ID specific to an individual speaker. E.g. "mif_02484" is a UK **mi**dlands accented **f**emale, speaker 02484. The speech comes from Demirshan et al. \[[1](#references)\] which provides more details.
+- For **noise**: `CIN_<NOISE_TYPE>_<NOISE_ID>` where `NOISE_TYPE` is one of `dishwasher`, `fan`, `hairdryer`, `kettle`, `microwave`, `vacuum` (vacuum cleaner) or `washing` (washing machine) and `NOISE_ID` is  a unique 3-digit code for the sample.
+- For **music**: `track_<TRACK_ID>` where `TRACK_ID` is unique 7-digit track identifier taken from the MTG Jamendo database. \[[2](#references)\]
+
+Given the type and name, further interferer metadata can be found in the files `masker_speech_list.json`, `masker_noise_list.json` and `masker_music_list.json` which are distributed with the challenge.
 
 ### D.9 Listener metadata
 
 Audiogram data is stored in a single JSON file with the following format.
 
 ```json
-{“L0001”: {
-    “name”: “L0001”,
-"audiogram_cfs": [250, 500, 1000, 2000, 3000, 4000, 6000, 8000],
-    “audiogram_levels_l”: [10, 10, 20, 30, 40, 55, 55, 60],
-    “audiogram_levels_r”: [ … ],
-          },
-“L0002”: {
+{
+    "L0001": {
+        "name": "L0001",
+        "audiogram_cfs": [250, 500, 1000, 2000, 3000, 4000, 6000, 8000],
+        "audiogram_levels_l": [10, 10, 20, 30, 40, 55, 55, 60],
+        "audiogram_levels_r": [ … ],
     },
-...
+    "L0002": {
+        ...
+    },
+    ...
 }
 ```
 
@@ -295,8 +302,14 @@ Additional metadata (e.g. digit triple test results) are stored in a csv file. D
 JSON file named scenes_listeners.json dictates which scenes are to be processed by which listeners.
 
 ```json
-{“S00001”: [“L0001”, “L0002”, “L0003”],
-“S00002”: [“L0003”. “L0005”, “L0007”],
-etc
+{
+    "S00001": ["L0001", "L0002", "L0003"],
+    "S00002": ["L0003", "L0005", "L0007"],
+    ... 
 }
 ```
+ 
+## References
+
+1. Demirsahin, Isin and Kjartansson, Oddur and Gutkin, Alexander and Rivera, Clara, "Open-source Multi-speaker Corpora of the English Accents in the British Isles", Proceedings of The 12th Language Resources and Evaluation Conference (LREC), 6532--6541, 2020, [Avialable Online](https://openslr.org/83/)
+2. Bogdanov, Dmitry and Won, Minz and Tovstogan, Philip and Porter, Alastair and Serra, Xavier, "The MTG-Jamendo Dataset for Automatic Music Tagging", In Proc. Machine Learning for Music Discovery Workshop, International Conference on Machine Learning (ICML 2019), 2019, Long Beach, CA, United States", [Available Online](https://mtg.github.io/mtg-jamendo-dataset/)
