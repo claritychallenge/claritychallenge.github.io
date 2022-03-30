@@ -22,7 +22,7 @@ Uses of the data:
 - You should not use the development or evaluation data set for training.
 - The system submitted should be chosen on the evidence provided by the development set.
 - The final listening and ranking will be performed with the (held-out) evaluation set.
-- For more information on augmenting and supplementing the training data, please see the rules.
+- For more information on augmenting and supplementing the training data, please see the [rules](cec2_rules.md).
 - The evaluation dataset will be made available one month before the challenge submission deadline.
 
 ## B. The scene dataset
@@ -39,13 +39,15 @@ High-Order Ambisonic Impulse Responses (HOA-IRs) and Head-Related Impulse Respon
 
 Time-domain acoustic signals are generated for:
 
-- A hearing aid with 3 microphone inputs (front, mid, rear). The hearing aid has a Behind-The-Ear (BTE) form factor; see Figure 1. The distance between microphones is approx. 7.6 mm. The properties of the tube and ear mould are not considered.
+- A hearing aid with 3 microphone inputs (front, mid, rear). The hearing aid has a Behind-The-Ear (BTE) form factor; see [Figure 1](#fig1). The distance between microphones is approx. 7.6 mm. The properties of the tube and ear mould are not considered.
 - Close to the eardrum.
 - The anechoic target reference (front microphone).
 
+<figure id="fig1">
 <img width="300" src={useBaseUrl('/img/CEC2/bte_device.png')} />
+<figcaption>Figure 1. Front (Fr), Middle (Mid) and Rear microphones on a BTE hearing aid form.</figcaption>
+</figure>
 
-*Figure 1. Front (Fr), Middle (Mid) and Rear microphones on a BTE hearing aid form.*
 
 Head Related Impulse Responses (HRIRs) are used to model how sound is altered as it propagates in a free-field and interacts with the head (i.e., no room is included). These are taken from the OlHeadHRTF database with permission. These include HRIRs for human heads and for three types of head-and-torso simulator/mannekin. The eardrum HRIRs (labelled ED) are for a position close to the eardrum of the open ear.
 
@@ -68,7 +70,7 @@ Software for generating more training data is also available.
 
 ### B.2 Development data
 
-This is made available to allow you to fully examine the performance of your system. Note, that the data available for the evaluation will be much more limited (see B.3).
+This is made available to allow you to fully examine the performance of your system. Note, that the data available for the evaluation will be much more limited (see Section [B.3](#b3-evaluation-data)).
 
 When using the development data, your hearing aid enhancement model must only use the data available in the evaluation data set (see below).
 
@@ -176,7 +178,7 @@ Channel ID
 - CH2 – Hearing aid middle microphone
 - CH3 – Hearing aid rear microphone
 
-## D.6 Enhanced signals
+### D.6 Enhanced signals
 
 The signals that are output by the baseline enhancement (hearing aid) model.
 
@@ -184,7 +186,7 @@ The signals that are output by the baseline enhancement (hearing aid) model.
 
 Listener ID – ID of the listener panel member, e.g., L001 to L100 for initial ‘pseudo-listeners’, etc. We are no longer providing the script for post-processing signals in preparation for the listener panel.
 
-## D.7 Room metadata
+### D.7 Room metadata
 JSON file containing the description of a room. This is the data from which the ambisonic room impulse response are generated. It stores the fixed room, listener, target and interferer geometry but does not specify the dynamic factors (e.g. signals, SNRs, head movements etc) that are needed to fully define a scene.
 
  ```json
@@ -212,9 +214,9 @@ JSON file containing the description of a room. This is the data from which the 
 ]
 ```
 
-## D.8 Scene metadata
+### D.8 Scene metadata
 
-JSON file containing a description of the scene. It is a list of dictionaries with each entry representing a unique scene. A scene can be considered to be a room (see D.7)  plus the full set of listener, target and interferer details. Note, many scenes can be generated from a single room, i.e. each using different listener, target and interferer settings. 
+JSON file containing a description of the scene. It is a list of dictionaries with each entry representing a unique scene. A scene can be considered to be a room (see Section [D.7](#d7-room-metadata))  plus the full set of listener, target and interferer details. Note, many scenes can be generated from a single room, i.e. each using different listener, target and interferer settings. 
 
 ```json
 [
@@ -265,11 +267,11 @@ JSON file containing a description of the scene. It is a list of dictionaries wi
 
 There are JSON files containing the scene specifications per dataset, e.g., scenes.train.json.- Note, that the scene ID and room ID might have a one-to-one mapping in the challenge, but are not necessarily the same. Multiple scenes can be made by changing the target and masker choices for a given room. E.g., participants wanting to expand the training data could remix multiple scenes from the same room.
 
-The listener ID is not stored in the scene metadata; this information is stored separately in a scenes_listeners.json file which maps scenes to listeners, ie. telling you which listener (or listeners) will be listening to which scenes in the evaluation. (See Section D9)
+The listener ID is not stored in the scene metadata; this information is stored separately in a scenes_listeners.json file which maps scenes to listeners, ie. telling you which listener (or listeners) will be listening to which scenes in the evaluation (see Section [D.9](#d9-listener-metadata)).
 
 Noise  interferers are labelled `CIN_<noise type>_XXX`; ADD DETAIL music interferers ... ; while speech interferers are labelled `<three letter code including dialect and talker gender>_XXXXX` .
 
-## D.9 Listener metadata
+### D.9 Listener metadata
 
 Audiogram data is stored in a single JSON file with the following format.
 
@@ -288,7 +290,7 @@ Audiogram data is stored in a single JSON file with the following format.
 
 Additional metadata (e.g. digit triple test results) are stored in a csv file. DETAILS
 
-## D.10 Scene-Listener map
+### D.10 Scene-Listener map
 
 JSON file named scenes_listeners.json dictates which scenes are to be processed by which listeners.
 

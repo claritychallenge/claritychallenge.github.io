@@ -1,6 +1,6 @@
 ---
 id: cec2_rules
-title: Rules
+title: CEC2 Rules
 sidebar_label: Rules
 sidebar_position: 9
 ---

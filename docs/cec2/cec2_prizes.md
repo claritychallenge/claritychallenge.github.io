@@ -1,6 +1,6 @@
 ---
 id: cec2_prizes
-title: Prizes
+title: CEC2 Prizes
 sidebar_label: Prizes
 sidebar_position: 12
 ---
