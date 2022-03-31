@@ -6,6 +6,7 @@ sidebar_position: 2
 ---
 import Tabs from "@theme/Tabs";
 import TabItem from "@theme/TabItem";
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
 # Overview
 This page details the scenario that we have simulated to create the speech-in-noise samples, which were processed by the (simulated) hearing aids. The processed signals were played to listeners in listening tests to obtain the measured [speech intelligibility](./cpc1_faq#speech-intelligibility) scores.
@@ -16,37 +17,43 @@ You could just work with the processed signals from the hearing aids and the lis
 
 ## Simulating the audio signals that were processed by the hearing aids
 
-A listener (or receiver) is in a small room that has low to moderate reverberation. They are listening to a target talker, who is selected from our set of 40 speakers. The target talker is producing one of our unique 7-10 word Clarity sentences. Simultaneously, an interferer sound is playing. This is either a competing talker or a continuous noise source (e.g., a washing machine). The target and interferer are at the same height as the listener. The room dimensions, boundary materials, and the locations of the listener, target and interferer are randomised (discussed below). An example scenario is shown in Figure 1. The room geometry showing origin location is defined in Figure 2.
+A listener (or receiver) is in a small room that has low to moderate reverberation. They are listening to a target talker, who is selected from our set of 40 speakers. The target talker is producing one of our unique 7-10 word Clarity sentences. Simultaneously, an interferer sound is playing. This is either a competing talker or a continuous noise source (e.g., a washing machine). The target and interferer are at the same height as the listener. The room dimensions, boundary materials, and the locations of the listener, target and interferer are randomised (discussed below). An example scenario is shown in [Figure 1](#fig1). The room geometry showing origin location is defined in [Figure 2](#fig2).
 
 <Tabs
   defaultValue="overview"
   values={[
-    { label: "Example Overview", value: "overview" },
-    { label: "Geometry Definition", value: "definition" },
+    { label: "Figure 1. Example Overview", value: "overview" },
+    { label: "Figure 2. Geometry Definition", value: "definition" },
   ]}
 >
   <TabItem value="overview">
-  <img width="500" src="../img/tutorial/room2_update-1.png" /> 
 
-  *Figure 1. Example overview*
+  <figure id="fig1">
+  <img width="500" src={useBaseUrl('/img/tutorial/room2_update-1.png')} />
+  <figcaption>Figure 1. Example overview.</figcaption>
+  </figure>
+
   </TabItem>
 
   <TabItem value="definition">
-  <img width="500" src="../img/tutorial/Room_references.png" />
 
-  *Figure 2. Geometry definition*
+  <figure id="fig2">
+  <img width="500" src={useBaseUrl('/img/tutorial/Room_references.png')} />
+  <figcaption>Figure 2. Geometry definition.</figcaption>
+  </figure>
   </TabItem>
 
 </Tabs>
 
 
-Figure 3, below, shows the basic scene generator. The sound at the receiver is generated first by convolving the source signals with [Binaural](https://en.wikipedia.org/wiki/Binaural) Room [Impulse Responses](https://en.wikipedia.org/wiki/Impulse_response) (BRIRs). This generates reverberated speech and noise that includes the effects of the room and reflections from the listener's head. The reverberated speech and noise signals are then summed after appropriate gains are applied. The gains are set to achieve a Signal-to-Noise Ratio (SNR), which is chosen randomly between limits. The BRIRs are generated using the RAVEN Geometric Room Acoustic Model \[[1](#refs)\].
+[Figure 3](#fig3), below, shows the basic scene generator. The sound at the receiver is generated first by convolving the source signals with [Binaural](https://en.wikipedia.org/wiki/Binaural) Room [Impulse Responses](https://en.wikipedia.org/wiki/Impulse_response) (BRIRs). This generates reverberated speech and noise that includes the effects of the room and reflections from the listener's head. The reverberated speech and noise signals are then summed after appropriate gains are applied. The gains are set to achieve a Signal-to-Noise Ratio (SNR), which is chosen randomly between limits. The BRIRs are generated using the RAVEN Geometric Room Acoustic Model \[[1](#references)\].
 
-There are additional signal paths and outputs generated that have been omitted from Figure 3 for clarity. In addition to the reverberated signals associated with the hearing aid microphones, the signal close to the eardrum is also generated. You can also access the reverberated speech and noise signals before they are mixed.
+There are additional signal paths and outputs generated that have been omitted from [Figure 3](#fig3) for clarity. In addition to the reverberated signals associated with the hearing aid microphones, the signal close to the eardrum is also generated. You can also access the reverberated speech and noise signals before they are mixed.
 
-<img src="../img/tutorial/scene_generator-1536x784.png" />
-
-*Figure 3. Simplified diagram of the scene generator. RIR refers to Room Impulse Response, HRTFs refers to Head Related Transfer Functions, SNRs are signal-to-noise ratios, and gain calc. indicates gain calculation. Dry here means anechoic. The outputs are noisy speech signals.*
+<figure id="fig3">
+<img width="800" src={useBaseUrl('/img/tutorial/scene_generator-1536x784.png')} />
+<figcaption>Figure 3. Simplified diagram of the scene generator. RIR refers to Room Impulse Response, HRTFs refers to Head Related Transfer Functions, SNRs are signal-to-noise ratios, and gain calc. indicates gain calculation. Dry here means anechoic. The outputs are noisy speech signals.</figcaption>
+</figure>
 
 ## Room Geometry
 
@@ -67,7 +74,7 @@ A sofa is simulated at a random position as a layer on the wall and the floor. F
 
 The receiver has position, $\vec{r} = (x_r,y_r,z_r)$
 
-This is positioned within the room using uniform probability distribution random number generators for the x and y coordinates (see Figure 2 for origin location). The reciver can have one of two heights (seated or standing height). There are constraints to ensure that the receiver is not too close to the wall:
+This is positioned within the room using uniform probability distribution random number generators for the x and y coordinates (see [Figure 2](#fig2) for origin location). The reciver can have one of two heights (seated or standing height). There are constraints to ensure that the receiver is not too close to the wall:
 
 - $-W/2+1 \le x_r \le W/2-1$
 - $1 \le y_r \le L-1$
@@ -126,16 +133,18 @@ Then per channel,
 - Finally, i is scaled as follows:
    - $i = i*10^{((-SNR_D)/20)}$
   
-The speech-weighting filter is an FIR designed using the host window method \[[2](#refs), [3](#refs)\]. The specification is:
+The speech-weighting filter is an FIR designed using the host window method \[[2](#references), [3](#references)\]. The specification is:
 
 - Frequency (Hz) = `[0,     150,    250,    350,    450,    4000,   4800,   5800,   7000,   8500,   9500,    22050]`;
 - Magnitude of transfer function at each frequency = `[0.0001, 0.0103, 0.0261, 0.0419, 0.0577, 0.0577, 0.046,  0.0343, 0.0226, 0.0110, 0.0001, 0.0001]`;
 
-<img src="../img/tutorial/speech_weighting_filter.png" />
 
-<a name="refs"></a>
+<figure id="fig4">
+<img  src={useBaseUrl('/img/tutorial/speech_weighting_filter.png')} />
+<figcaption>Figure 4, Speech weighting filter transfer function graph.</figcaption>
+</figure>
 
-*Figure 4, Speech weighting filter transfer function graph.*
+
 ## References
 
 1. Schröder, D. and Vorländer, M., 2011, January. RAVEN: A real-time framework for the auralization of interactive virtual environments. In Proceedings of Forum Acusticum 2011 (pp. 1541-1546). Denmark: Aalborg.

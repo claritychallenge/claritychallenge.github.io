@@ -1,7 +1,7 @@
 ---
 id: intro
-title: Introduction
-sidebar_label: Introduction
+title: CPC1 Introduction
+sidebar_label: CPC1 Introduction
 sidebar_position: 1
 ---
 

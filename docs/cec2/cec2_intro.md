@@ -1,7 +1,7 @@
 ---
 id: cec2_intro
 title: CEC2 Introduction
-sidebar_label: CEC2
+sidebar_label: CEC2 Introduction
 sidebar_position: 1
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';

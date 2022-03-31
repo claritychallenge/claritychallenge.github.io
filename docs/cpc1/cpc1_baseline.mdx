@@ -5,6 +5,8 @@ sidebar_label: Baseline System
 sidebar_position: 3
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 Figure 1 is a simplified schematic of the baseline system, where not all signal paths are shown. A scene generator (blue box) creates the speech in noise (SPIN) that the hearing aid model then enhances (yellow box). This enhancement is individualised for each listener; hence, there is also a system to select a random listener (white ellipse) with a particular set of characteristics (e.g., [audiograms](https://www.hear-it.org/Audiogram-)).
 
 The SPIN that has been improved by the hearing aid is then passed to the prediction stage (orange box). This comprises two models:
@@ -13,9 +15,11 @@ The SPIN that has been improved by the hearing aid is then passed to the predict
 
 **This prediction stage (orange box) is what we want you to improve on in this challenge.**
 
-<img src="../img/tutorial/the_baseline-11-1536x561.png" />
+<figure id="fig1">
+<img  src={useBaseUrl('/img/tutorial/the_baseline-11-1536x561.png')} />
+<figcaption>Figure 1 Simplified overview of the baseline.</figcaption>
+</figure>
 
-*Figure 1 Simplified overview of the baseline*
 
 You are free to choose which parts of the baseline you use and reconfigure the system as you see fit. You can use our hearing loss model as part of your entry, or produce a single model that combines the hearing loss and speech intelligibility models.
 

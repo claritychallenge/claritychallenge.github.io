@@ -5,6 +5,8 @@ sidebar_label: Data
 sidebar_position: 4
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 To obtain the data and baseline code, please visit the [download](./cpc1_download) page.
 
 ## A. Training, development, evaluation data
@@ -54,9 +56,12 @@ The BRIRs are generated for:
 - Close to the eardrum.
 - The anechoic target reference (front microphone; the premixed target signal convolved with the BRIR with the reflections “turned off”).
 
-<img src="../img/tutorial/BTE-e1606144768702.png" width="200" />
 
-*Figure 1. Front (Fr), Middle (Mid) and Rear microphones on a BTE hearing aid form.*
+<figure id="fig1">
+<img width="200" src={useBaseUrl('/img/tutorial/BTE-e1606144768702.png')} />
+<figcaption>Figure 1. Front (Fr), Middle (Mid) and Rear microphones on a BTE hearing aid form.</figcaption>
+</figure>
+
 
 (HRIRs) are used to model how sound is altered as it propagates in a free-field and interacts with the head (i.e., no room is included). These are taken from the OlHeadHRTF database with permission. These include HRIRs for human heads and for three types of head-and-torso simulator/mannekin. The eardrum HRIRs (labelled ED) are for a position close to the eardrum of the open ear.
 
@@ -95,7 +100,11 @@ For each scenario, the participant is asked a primary question about if a situat
 - Yes, then a list of six secondary questions are asked (see figure below)
 	- If one of the secondary questions is not relatable to the participant, they're asked to respond "N/A" for not applicable.
 
-<img width="500" src="../img/GHAPB.png" / >
+
+<figure id="fig2">
+<img width="300" src={useBaseUrl('/img/GHAPB.png')} />
+<figcaption>Figure 2. The GHAPB questionnaire.</figcaption>
+</figure>
 
 There are four scenarios:
 1. listening to the television when the volume is adjusted for others.
@@ -330,10 +339,14 @@ JSON files `CPC1.train.json` (for Track 1) and `CPC1.train_indep.json` (for Trac
 
 The graph gives the SPL from one of our headsets based on the volume level of the tablet. The input signal was ICRA speech-shaped noise [1], unmodulated in time, and scaled to an RMS of 0.3. 
 
-<img width="500" src="../img/volume_vs_dB.jpg" / >
+
+<figure id="fig3">
+<img width="500" src={useBaseUrl('/img/volume_vs_dB.jpg')} />
+<figcaption>Figure 3. Headset SPL by tablet volume level.</figcaption>
+</figure>
 
 
-
+## References
 
 [1] ICRA standard noises, https://icra-audiology.org/Repository/icra-noise. We used track #1.
 
