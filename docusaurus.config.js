@@ -30,11 +30,6 @@ module.exports = {
                     docId: 'cec2/cec2_intro',
                     position: 'left',
                     label: 'CEC2 Intro',
-                }, {
-                    type: 'doc',
-                    docId: 'cec2/cec2_dates',
-                    position: 'left',
-                    label: 'Dates',
                 },
                 {
                     type: 'doc',
@@ -51,7 +46,7 @@ module.exports = {
 
                 {
                     type: 'dropdown',
-                    label: 'Previous Workshops',
+                    label: 'Workshops',
                     position: 'right',
                     items: [{
                         href: 'https://claritychallenge.github.io/clarity2021-workshop/',
