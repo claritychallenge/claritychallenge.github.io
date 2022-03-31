@@ -1,5 +1,5 @@
 ---
-id: intro
+id: cpc1_intro
 title: CPC1 Introduction
 sidebar_label: CPC1 Introduction
 sidebar_position: 1

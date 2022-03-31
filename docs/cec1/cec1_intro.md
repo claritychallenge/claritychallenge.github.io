@@ -1,9 +1,10 @@
 ---
+title: CEC1 Overview
+id: cec1_intro
+sidebar_label: CEC1 Introduction
 sidebar_position: 1
 ---
 import { TwitterTimelineEmbed } from "react-twitter-embed";
-
-# CEC1 Overview
 
 - [Scenario](./cec1_scenario) - a description of the listening scenario and how it has been simulated.
   

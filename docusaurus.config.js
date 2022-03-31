@@ -44,7 +44,7 @@ module.exports = {
                 },
                 {
                     type: 'doc',
-                    docId: 'cec2/cec2_submission',
+                    docId: 'cec2/taking_part/cec2_submission',
                     position: 'left',
                     label: 'Submission',
                 },
@@ -64,11 +64,11 @@ module.exports = {
                     position: 'right',
                     items: [{
                         type: 'doc',
-                        docId: 'cec1/intro',
+                        docId: 'cec1/cec1_intro',
                         label: 'CEC1',
                     }, {
                         type: 'doc',
-                        docId: 'cpc1/intro',
+                        docId: 'cpc1/cpc1_intro',
                         label: 'CPC1',
                     }, ]
                 },
