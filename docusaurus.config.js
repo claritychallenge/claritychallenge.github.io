@@ -49,9 +49,14 @@ module.exports = {
                     label: 'Workshops',
                     position: 'right',
                     items: [{
-                        href: 'https://claritychallenge.github.io/clarity2021-workshop/',
-                        label: 'Clarity 2021',
-                    }]
+                            href: 'https://claritychallenge.github.io/clarity2021-workshop/',
+                            label: 'Clarity 2021',
+                        },
+                        {
+                            href: 'https://claritychallenge.github.io/clarity2022-workshop/',
+                            label: 'Clarity 2022',
+                        }
+                    ]
                 },
                 {
                     type: 'dropdown',
