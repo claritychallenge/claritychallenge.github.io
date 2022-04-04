@@ -35,7 +35,7 @@ We have an [extensive FAQ](./cpc1_faq) to answer key questions competitors might
 - **21st March 2022**: Submission deadline. All entrants submit their predictions plus a draft of their technical report (details below). Scores will be returned with 24 hours of submission.
 - **28th March 2022**: Deadline for Interspeech paper submission.
 - **25th April 2022**: Deadline by which all entrants must submit two page technical reports to Clarity Prediction Challenge 2022 workshop.
-- **June 2022**: Clarity Prediction Challenge 2022 workshop.
+- **29th June 2022**: Clarity Prediction Challenge 2022 workshop.
 - **Sept 18-22, 2022**: Interspeech 2022 Special Session.
 
 ## More details
