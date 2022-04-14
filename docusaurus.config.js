@@ -84,7 +84,7 @@ module.exports = {
                     position: 'right'
                 },
                 {
-                    href: 'https://github.com/claritychallenge/clarity_CEC1',
+                    href: 'https://github.com/claritychallenge/clarity',
                     label: 'GitHub',
                     position: 'right',
                 },
@@ -119,7 +119,7 @@ module.exports = {
                         },
                         {
                             label: 'GitHub',
-                            href: 'https://github.com/claritychallenge/clarity_CEC1',
+                            href: 'https://github.com/claritychallenge/clarity',
                         },
                     ],
                 },
