@@ -8,7 +8,7 @@ sidebar_position: 2
 Key dates are as follows
 
 - **30th March 2022**: Challenge website launch  
-- **13th April 2022**: [Release](./cec2_download) of training and development data.
+- **14th April 2022**: [Release](./cec2_download) of training and development data, plus core software.
 - **30th April 2022**: [Release](./cec2_download) of full toolset and baseline system.
 - **1st May 2022**: [Registration](./cec2_registration) for challenge entrants opens.
 - **25th July 2022**: Evaluation data released

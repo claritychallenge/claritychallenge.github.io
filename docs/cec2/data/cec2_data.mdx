@@ -49,9 +49,9 @@ Time-domain acoustic signals are generated for:
 </figure>
 
 
-Head Related Impulse Responses (HRIRs) are used to model how sound is altered as it propagates in a free-field and interacts with the head (i.e., no room is included). These are taken from the OlHeadHRTF database with permission. These include HRIRs for human heads and for three types of head-and-torso simulator/mannekin. The eardrum HRIRs (labelled ED) are for a position close to the eardrum of the open ear.
+Head Related Impulse Responses (HRIRs) are used to model how sound is altered as it propagates in a free-field and interacts with the head (i.e., no room is included). These are taken from the [OlHeadHRTF database](https://uol.de/mediphysik/downloads/hearingdevicehrtfs) with permission. These include HRIRs for human heads and for three types of head-and-torso simulator/mannekin. The eardrum HRIRs (labelled `ED`) are for a position close to the eardrum of the open ear.
 
-rpf files and ac files are specification files for the geometric room acoustic model that include a complete description of the room, both in terms of geometry and room materials.
+`rpf` files and `ac` files are specification files for the geometric room acoustic model that include a complete description of the room, both in terms of geometry and room materials.
 
 ### B.1 Training data
 
@@ -69,7 +69,11 @@ For each scene in the training data the following signals and metadata are avail
 
 ### B.2 Development data
 
-This is made available to allow you to fully examine the performance of your system. Note, that the data available for the evaluation will be much more limited (see Section [B.3](#b3-evaluation-data)).
+This is made available to allow you to fully examine the performance of your system. Ground truth data (i.e., the premixed target and interferers are available in the development set)
+
+Development data also contains target speaker adaptation sentences, i.e., four utterances from each of the target speakers. These will also be available in the evaluation data. i.e., systems can use these utterances in conjunction with the known target ID to inform their system of the which speaker in the scene should be attended. 
+
+Note, that the data available for the evaluation will be much more limited, e.g. it will not contain premixed ground truth signals or scene metadata, (see Section [B.3](#b3-evaluation-data)).
 
 When using the development data for evaluation, your hearing aid enhancement model should only be using the types of data available in the evaluation data set (see below).
 
@@ -82,6 +86,7 @@ The following data will only be available:
 - The listener characterisation data for these listeners.
 - ID of target talker and a few examples of clean audio that are not the same as the target utterance.
 - The head rotation signal, i.e. as might be recovered from hearing aid motion sensors. (Systems can use this signal but should also be evaluated without using it.)
+- Speaker adaptation sentence - 4 clean utterances for each target speaker.
 
 One challenge will be identifying the target talker from the hearing aid microphone signals. There are two possibilities:
 
@@ -165,7 +170,8 @@ Audio files storing the signals picked up by the hearing aid microphone that are
 - `<Scene ID>_target_<Channel ID>.wav`
 - `<Scene ID>_interferer_<Channel ID>.wav`
 - `<Scene ID>_mixed_<Channel ID>.wav`
-- `<Scene ID>_target_anechoic.wav`
+- `<Scene ID>_target_anechoic.wav` - at hearing device front microphone
+- `<Scene ID>_hr.wav` - head rotation signal
 
 Scene ID – S00001 to S10000
 
@@ -178,6 +184,9 @@ Channel ID
 - CH2 – Hearing aid middle microphone
 - CH3 – Hearing aid rear microphone
 
+The **anechoic signal** is the signal that will be used as the referernce in the HASPI evaluation.
+
+The **head rotation** signal indicates the precise azimuthal angle of the head at each sample. It is stored as a floating point wav file with values between -1 and +1 where the range maps linearly from -180 degrees to +180 degrees. Teams are free to use this signal in their hearing aid algorithms, but if you do so we will ask you to also submit a version of your system that does not use it, so that the benefit of known head motion can be measured.
 ### D.6 Enhanced signals
 
 The signals that are output by the baseline enhancement (hearing aid) model.

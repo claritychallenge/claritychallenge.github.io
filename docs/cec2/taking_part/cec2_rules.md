@@ -31,8 +31,8 @@ The only data that can be used by the Enhancement Processor during evaluation ar
 
 - The audio input signals (the sum of the target and interferers for each hearing aid microphone).
 - The listener characterisation (pure tone air-conduction audiograms and/or digit triple test results).
-- Some clean audio examples for the target talker, that are not the same as the target utterance.
-
+- The provided clean audio examples for the target talker (these will not be the same as any of the target utterances.)
+- The head-rotation signal (but if used, a version of the system that does not use it should also be prepared for comparison.)
 ## Computational restrictions
 
 - Teams may choose to use all, some or none of the parts of the baseline model.
@@ -49,6 +49,7 @@ You can submit two entries, where one is optimised for HASPI and the other for l
 - Both systems must be submitted for HASPI evaluation.
 - You must register two teams, submitting each entry as a different team.
 - In your documentation, you must make it clear which has been optimised for listening tests and the relationship between the two entries.
+- **head-rotation**: if the head-rotation signal is used then a second entry must be submitted that does not use it and allows the benefit to be measured.
 
 We will assume that if only one of these systems is to go forward to listening tests, your preference is to use the one optimised for listening tests.
 
@@ -58,7 +59,7 @@ We will assume that if only one of these systems is to go forward to listening t
 
 - Entries will be ranked according to average HASPI score across all signals in the evaluation dataset. We will use the HASPI implementation in the baseline system.
 
-### Stage 2: Listening test evaluation#
+### Stage 2: Listening test evaluation
 
 - There is a limit on how many systems can be evaluated by the listener panel.
 - A maximum of two entries can go through to the listener panel from any individual entrant. Furthermore, a second will only be allowed if it is judged by us to use significantly different signal processing approaches.
