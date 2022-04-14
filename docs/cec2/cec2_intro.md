@@ -19,7 +19,7 @@ We want you to improve speech in the presence of background noise - see [Figure 
 </figure>
 
 
-The scenario has been made more difficult than the first [Clarity Enhancement Challenge](../cec1/intro.md) by having:
+The scenario has been made more difficult than the first [Clarity Enhancement Challenge](../cec1/cec1_intro.md) by having:
 
   - More noise sources
   - More varied noise sources (speech, music, appliances)
