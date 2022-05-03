@@ -96,7 +96,7 @@ module.exports = {
                     title: 'Docs',
                     items: [{
                         label: 'CEC1 Documentation',
-                        to: '/docs/cec1/intro',
+                        to: '/docs/cec1/cec1_intro/',
                     }, ],
                 },
                 {
@@ -115,7 +115,7 @@ module.exports = {
                     title: 'More',
                     items: [{
                             label: 'Challenge Updates',
-                            to: '/blog',
+                            to: '/blog/',
                         },
                         {
                             label: 'GitHub',
