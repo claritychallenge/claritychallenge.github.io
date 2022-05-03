@@ -79,7 +79,7 @@ module.exports = {
                     label: 'Contact',
                     position: 'right'
                 }, {
-                    to: '/blog',
+                    to: '/blog/',
                     label: 'Blog',
                     position: 'right'
                 },
