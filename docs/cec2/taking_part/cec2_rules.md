@@ -2,7 +2,7 @@
 id: cec2_rules
 title: CEC2 Rules
 sidebar_label: Rules
-sidebar_position: 9
+sidebar_position: 6
 ---
 
 ## Teams
@@ -37,7 +37,6 @@ The only data that can be used by the Enhancement Processor during evaluation ar
 
 - Teams may choose to use all, some or none of the parts of the baseline model.
 - Systems must be causal; the output from the hearing aid at time t must not use any information from input samples more than 5 ms into the future (i.e., no information from input samples >t+5 ms).
-- When you supply audio samples, you are allowed to time shift the samples from the hearing aid model to allow the calculation of HASPI. **The maximum time shift will be 5 ms.** The amount of time shift needed for time realignment can be calculated using a cross-correlation between the signals before and after the hearing aid processing.
 - There is no limit on computational cost.
 
 Please see [this blog post](http://claritychallenge.org/latency-computation-time-and-real-time-operation) for further explanation of these last two rules about latency and computation time.
