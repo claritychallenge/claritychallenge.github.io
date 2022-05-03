@@ -95,6 +95,12 @@ module.exports = {
             links: [{
                     title: 'Docs',
                     items: [{
+                        label: 'CEC2 Documentation',
+                        to: '/docs/cec2/cec2_intro/',
+                    }, {
+                        label: 'CPC1 Documentation',
+                        to: '/docs/cpc1/cpc1_intro/',
+                    }, {
                         label: 'CEC1 Documentation',
                         to: '/docs/cec1/cec1_intro/',
                     }, ],
