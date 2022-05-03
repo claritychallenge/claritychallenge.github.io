@@ -7,7 +7,7 @@ sidebar_position: 3
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-Challenge entrants will be supplied with a fully functioning baseline system. [Figure 1](#fig1) shows a simplified schematic:
+Challenge entrants are supplied with a fully functioning baseline system. [Figure 1](#fig1) shows a simplified schematic:
 
 - A scene generator (blue box) creates speech in noise.
 - The hearing aid model then enhances this (yellow box).
@@ -28,6 +28,16 @@ More details of the different parts of the baseline appear on the [core software
 - [Scene Generator](./cec2_core_software#a-scene-generator)
 - [Hearing aid model](./cec2_core_software#b-baseeline-hearing-aid-processor)
 - [Speech intelligibility model](./cec2_core_software#e-speech-intelligibility-model)
+
+The code for the baseline system, and all supporting Clarity code, is available on [GitHub](https://github.com/claritychallenge/clarity).
+## Baseline performance 
+
+The average speech intelligibility (HASPI) score for the unprocessed development test set is 0.1615. When processed with the simple baseline hearing aid (i.e., NALR amplification followed by a simple automatic gain compressor) the average HASPI score increases to 0.2493. These results are summarised in the table below. Your task is to improve on the 0.2493 baseline HASPI score. 
+
+| System | HASPI |
+| --- | ---- |
+| Unprocessed | 0.1615 |
+| NAL-R baseline | 0.2493 |
 
 ## References
 

@@ -12,7 +12,9 @@ import { TwitterTimelineEmbed } from "react-twitter-embed";
 :::
 -->
 :::info
-**3rd May 2022: CEC2 Registration now open! [Register Now](taking_part/cec2_registration.mdx)**.
+
+- CEC2 Registration now open! [Register Now](taking_part/cec2_registration.mdx). 
+- The Clarity [GitHub repository](https://github.com/claritychallenge/clarity) now includes the [CEC2 baseline system](software/cec2_baseline.mdx).
 :::
 
 This second Clarity Enhancement Challenge is about improving the performance of hearing aids for speech-in-noise. According to the World Health Organization, 430 million people worldwide require rehabilitation to address hearing loss. By 2050, this will increase to one in ten people having disabling hearing loss. Yet even in developed countries, only 40% of people who could benefit from hearing aids have them. A major reason for low uptake and use is the perception that hearing aids perform poorly.
