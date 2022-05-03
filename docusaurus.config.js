@@ -4,7 +4,7 @@ const katex = require('rehype-katex');
 module.exports = {
     title: 'The 2nd Clarity Enhancement Challenge',
     tagline: 'A machine learning challenge for hearing aid processing',
-    url: 'https://claritychallenge.org',
+    url: 'https://claritychallenge.org/',
     baseUrl: '/clarity_CC_doc/',
     onBrokenLinks: 'error',
     onBrokenMarkdownLinks: 'error',
