@@ -7,8 +7,12 @@ sidebar_position: 1
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import { TwitterTimelineEmbed } from "react-twitter-embed";
 
-:::info
+<!--:::info
 **14th April 2022: Software tools and data are now available for [download](cec2_download.mdx)**.
+:::
+-->
+:::info
+**3rd May 2022: CEC2 Registration now open! [Register Now](taking_part/cec2_registration.mdx)**.
 :::
 
 This second Clarity Enhancement Challenge is about improving the performance of hearing aids for speech-in-noise. According to the World Health Organization, 430 million people worldwide require rehabilitation to address hearing loss. By 2050, this will increase to one in ten people having disabling hearing loss. Yet even in developed countries, only 40% of people who could benefit from hearing aids have them. A major reason for low uptake and use is the perception that hearing aids perform poorly.
