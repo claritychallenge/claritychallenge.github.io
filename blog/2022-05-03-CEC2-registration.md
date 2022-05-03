@@ -1,0 +1,27 @@
+---
+slug: CEC2 registration open
+title: CEC2 registration open
+author: Jon Barker
+author_title: Clarity Team Member
+author_url: http://staffwww.dcs.shef.ac.uk/people/J.Barker/
+author_image_url: https://avatars.githubusercontent.com/jonbarker68
+tags: [clarity, registration, CEC2]
+---
+
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
+We are pleased to announce that registration for the **2nd Clarity Enhancement Challenge (CEC2)** is now open.
+
+To register please complete the simple Google form found on the [registration page](../docs/cec2/taking_part/cec2_registration).
+
+The remaining important dates for the challenge are as follows:
+
+- **25th July 2022**: Evaluation data released
+- **1st Sept 2022**: 1st round [submission](../docs/cec2/taking_part/cec2_submission) deadline for evaluation by objective measure
+- **15th Sept 2022**: 2nd round [submission](../docs/cec2/taking_part/cec2_submission) deadline for listening tests
+- **Sept-Nov 2022**: Listening test evaluation period.
+- **2nd Dec 2022**:  Results announced at a Clarity Challenge Workshop; prizes awarded.
+
+The challenge training, dev data and initial tools are now fully from the [Github repository](https://github.com/claritychallenge/clarity).
+
+If you have any questions please do not hesitate to contact us at [claritychallengecontact@gmail.com](mailto:claritychallengecontact@gmail.com).
