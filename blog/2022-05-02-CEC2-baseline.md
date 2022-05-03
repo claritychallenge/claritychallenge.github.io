@@ -21,6 +21,6 @@ HASPI scores for the dev set have been measured. The scores are as follows.
 | Unprocessed | 0.1615 |
 | NAL-R baseline | 0.2493 |
 
-For [see here](../docs/cec2/software/cec2_baseline) for further details.
+See [here](../docs/cec2/software/cec2_baseline) for further details.
 
 If you have any problems using the baseline code please do not hesitate to contact us at [claritychallengecontact@gmail.com](mailto:claritychallengecontact@gmail.com), or post questions on the [Google group](https://groups.google.com/g/clarity-challenge).

@@ -147,7 +147,7 @@ module.exports = {
                     remarkPlugins: [math],
                     rehypePlugins: [
                         [katex, {
-                            stict: false
+                            strict: false
                         }]
                     ],
                     // Please change this to your repo.
