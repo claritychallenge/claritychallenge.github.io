@@ -1,6 +1,7 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 const math = require('remark-math');
 const katex = require('rehype-katex');
+
 module.exports = {
     title: 'The 2nd Clarity Enhancement Challenge',
     tagline: 'A machine learning challenge for hearing aid processing',
@@ -21,6 +22,7 @@ module.exports = {
     themeConfig: {
         navbar: {
             title: 'Clarity',
+            hideOnScroll: true,
             logo: {
                 alt: 'Clarity Logo',
                 src: 'img/logo.png',
@@ -49,27 +51,31 @@ module.exports = {
                     label: 'Workshops',
                     position: 'right',
                     items: [{
-                            href: 'https://claritychallenge.github.io/clarity2021-workshop/',
-                            label: 'Clarity 2021',
-                        },
-                        {
                             href: 'https://claritychallenge.github.io/clarity2022-workshop/',
                             label: 'Clarity 2022',
+                        }, {
+                            href: 'https://claritychallenge.github.io/clarity2021-workshop/',
+                            label: 'Clarity 2021',
                         }
+
                     ]
                 },
                 {
                     type: 'dropdown',
-                    label: 'Previous Challenges',
+                    label: 'Challenges',
                     position: 'right',
                     items: [{
                         type: 'doc',
-                        docId: 'cec1/cec1_intro',
-                        label: 'CEC1',
+                        docId: 'cec2/cec2_intro',
+                        label: 'CEC2 (current)',
                     }, {
                         type: 'doc',
                         docId: 'cpc1/cpc1_intro',
                         label: 'CPC1',
+                    }, {
+                        type: 'doc',
+                        docId: 'cec1/cec1_intro',
+                        label: 'CEC1',
                     }, ]
                 },
 
