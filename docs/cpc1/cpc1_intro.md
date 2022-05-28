@@ -56,7 +56,7 @@ We have an [extensive FAQ](./cpc1_faq) to answer key questions competitors might
 
 - [Download](./cpc1_download) - where to go to download the software and challenge data.
 
-- [Find a team](./cpc1_joinateam) - if you'd like to find collaborators to help you compete.
+- [Find a team](../cec2/cec2_find_a_team) - if you'd like to find collaborators to help you compete.
 
 - [FAQ](./cpc1_faq) - an extensive FAQ answering key questions and providing background knowledge to help you compete.
 

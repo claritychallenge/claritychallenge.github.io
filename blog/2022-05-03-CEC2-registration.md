@@ -12,13 +12,13 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 We are pleased to announce that registration for the **2nd Clarity Enhancement Challenge (CEC2)** is now open.
 
-To register please complete the simple Google form found on the [registration page](../docs/cec2/taking_part/cec2_registration).
+To register please complete the simple Google form found on the [registration page](/docs/cec2/taking_part/cec2_registration).
 
 The remaining important dates for the challenge are as follows:
 
 - **25th July 2022**: Evaluation data released
-- **1st Sept 2022**: 1st round [submission](../docs/cec2/taking_part/cec2_submission) deadline for evaluation by objective measure
-- **15th Sept 2022**: 2nd round [submission](../docs/cec2/taking_part/cec2_submission) deadline for listening tests
+- **1st Sept 2022**: 1st round [submission](/docs/cec2/taking_part/cec2_submission) deadline for evaluation by objective measure
+- **15th Sept 2022**: 2nd round [submission](/docs/cec2/taking_part/cec2_submission) deadline for listening tests
 - **Sept-Nov 2022**: Listening test evaluation period.
 - **2nd Dec 2022**:  Results announced at a Clarity Challenge Workshop; prizes awarded.
 
