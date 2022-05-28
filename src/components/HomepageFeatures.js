@@ -8,8 +8,9 @@ const FeatureList = [
     Svg: require("../../static/img/undraw_My_documents_re_13dc.svg").default,
     description: (
       <>
-        This site provides <a href="./docs/cec2/intro"> full documentation </a>{" "}
-        of the challenge datasets, baseline systems and rules for participation.{" "}
+        This site provides{" "}
+        <a href="docs/cec2/cec2_intro"> full documentation </a> of the challenge
+        datasets, baseline systems and rules for participation.{" "}
       </>
     ),
   },
