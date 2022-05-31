@@ -13,134 +13,62 @@ import TimeIcon from "@mui/icons-material/HourglassBottomOutlined";
 
 const TutorialList = [
   {
-    author: "Joe Bloggs",
+    author: "Will Bailey",
     section: "Getting Started",
-    title: "Introduction to Clarity",
+    title: "Loading Demo Datasets",
     date: "May 2022",
     difficulty: "Easy",
     time: "10",
-    link: "https://www.google.com/search?q=cat+pictures&oq=cat+pictures&aqs=chrome..69i57j0i512l9.4292j0j7&sourceid=chrome&ie=UTF-8",
+    link: "https://colab.research.google.com/drive/15RaweKjmnduS1y0v9Dw-LAUgLAB_csa9?usp=sharing",
     description: (
       <>
-        This site provides <a href="./docs/cec2/intro"> full documentation </a>{" "}
-        of the challenge datasets, baseline systems and rules for participation.{" "}
+        A colab notebook demonstrating how to access the smaller demo Clarity dataset for exploring the clarity challenge toolset.
       </>
     ),
   },
   {
-    author: "Joe Bloggs",
+    author: "Will Bailey",
     section: "Getting Started",
-    title: "Introduction to Clarity",
+    title: "Installing Clarity Enhancement Challenge Tools and Interacting with Metadata",
     date: "May 2022",
     difficulty: "Easy",
-    time: "10",
-    link: "https://www.google.com/search?q=cat+pictures&oq=cat+pictures&aqs=chrome..69i57j0i512l9.4292j0j7&sourceid=chrome&ie=UTF-8",
+    time: "15",
+    link: "https://colab.research.google.com/drive/1lhoFof6SKxbVqMMty_BIms_LYDehlWdf?usp=sharing",
     description: (
       <>
-        Integer non mi volutpat libero tempor ornare. Vivamus quis turpis sit
-        amet mauris lacinia lobortis. In vitae purus purus. Nam consectetur,
-        elit vitae dignissim imperdiet, massa velit finibus elit, in malesuada
-        dui quam sit amet velit. Suspendisse mattis velit quis nulla
-        condimentum, nec fringilla felis lacinia. Donec sed urna ligula. Aenean
-        sed nisl mollis, hendrerit quam a, pulvinar magna.
+        Basic installation of Clarity Challenge tools and using the scene, listener and scene_listeners metadata to access information about individual scenes.
       </>
     ),
   },
   {
-    author: "Joe Bloggs",
+    author: "Will Bailey",
     section: "Getting Started",
-    title: "Introduction to Clarity",
+    title: "Generating Audio from Scenes Metadata",
     date: "May 2022",
     difficulty: "Easy",
     time: "10",
-    link: "https://www.google.com/search?q=cat+pictures&oq=cat+pictures&aqs=chrome..69i57j0i512l9.4292j0j7&sourceid=chrome&ie=UTF-8",
+    link: "https://colab.research.google.com/drive/11Bj23MFzcZYhKw7VKVBs8WawV3LN6TMS?usp=sharing",
     description: (
       <>
-        Integer non mi volutpat libero tempor ornare. Vivamus quis turpis sit
-        amet mauris lacinia lobortis. In vitae purus purus. Nam consectetur,
-        elit vitae dignissim imperdiet, massa velit finibus elit, in malesuada
-        dui quam sit amet velit. Suspendisse mattis velit quis nulla
-        condimentum, nec fringilla felis lacinia. Donec sed urna ligula. Aenean
-        sed nisl mollis, hendrerit quam a, pulvinar magna.
+        An overview of the process of rendering new audio using the scenes metadata using the high level SceneRenderer object.
       </>
     ),
   },
   {
-    author: "Joe Bloggs",
+    author: "Will Bailey",
     section: "Getting Started",
-    title: "Introduction to Clarity",
+    title: "Generating Baseline HASPI Scores",
     date: "May 2022",
     difficulty: "Easy",
     time: "10",
-    link: "https://www.google.com/search?q=cat+pictures&oq=cat+pictures&aqs=chrome..69i57j0i512l9.4292j0j7&sourceid=chrome&ie=UTF-8",
+    link: "https://colab.research.google.com/drive/14xc6WgN83R4aC3nNGimGTEi0ROQzrCs5?usp=sharing",
     description: (
       <>
-        Integer non mi volutpat libero tempor ornare. Vivamus quis turpis sit
-        amet mauris lacinia lobortis. In vitae purus purus. Nam consectetur,
-        elit vitae dignissim imperdiet, massa velit finibus elit, in malesuada
-        dui quam sit amet velit. Suspendisse mattis velit quis nulla
-        condimentum, nec fringilla felis lacinia. Donec sed urna ligula. Aenean
-        sed nisl mollis, hendrerit quam a, pulvinar magna.
+        An explanation of the process used inside the evaluate function in the recipes folder. Covers loading audio, basic enhancement using NAL-R amplification and generating HASPI scores.
       </>
     ),
   },
-  {
-    author: "Joe Bloggs",
-    section: "Getting Started",
-    title: "Introduction to Clarity",
-    date: "May 2022",
-    difficulty: "Easy",
-    time: "10",
-    link: "https://www.google.com/search?q=cat+pictures&oq=cat+pictures&aqs=chrome..69i57j0i512l9.4292j0j7&sourceid=chrome&ie=UTF-8",
-    description: (
-      <>
-        Integer non mi volutpat libero tempor ornare. Vivamus quis turpis sit
-        amet mauris lacinia lobortis. In vitae purus purus. Nam consectetur,
-        elit vitae dignissim imperdiet, massa velit finibus elit, in malesuada
-        dui quam sit amet velit. Suspendisse mattis velit quis nulla
-        condimentum, nec fringilla felis lacinia. Donec sed urna ligula. Aenean
-        sed nisl mollis, hendrerit quam a, pulvinar magna.
-      </>
-    ),
-  },
-  {
-    author: "Joe Bloggs",
-    section: "Getting Started",
-    title: "Introduction to Clarity",
-    date: "May 2022",
-    difficulty: "Easy",
-    time: "10",
-    link: "https://www.google.com/search?q=cat+pictures&oq=cat+pictures&aqs=chrome..69i57j0i512l9.4292j0j7&sourceid=chrome&ie=UTF-8",
-    description: (
-      <>
-        Integer non mi volutpat libero tempor ornare. Vivamus quis turpis sit
-        amet mauris lacinia lobortis. In vitae purus purus. Nam consectetur,
-        elit vitae dignissim imperdiet, massa velit finibus elit, in malesuada
-        dui quam sit amet velit. Suspendisse mattis velit quis nulla
-        condimentum, nec fringilla felis lacinia. Donec sed urna ligula. Aenean
-        sed nisl mollis, hendrerit quam a, pulvinar magna.
-      </>
-    ),
-  },
-  {
-    author: "Joe Bloggs",
-    section: "Getting Started",
-    title: "Introduction to Clarity",
-    date: "May 2022",
-    difficulty: "Easy",
-    time: "10",
-    link: "https://www.google.com/search?q=cat+pictures&oq=cat+pictures&aqs=chrome..69i57j0i512l9.4292j0j7&sourceid=chrome&ie=UTF-8",
-    description: (
-      <>
-        Integer non mi volutpat libero tempor ornare. Vivamus quis turpis sit
-        amet mauris lacinia lobortis. In vitae purus purus. Nam consectetur,
-        elit vitae dignissim imperdiet, massa velit finibus elit, in malesuada
-        dui quam sit amet velit. Suspendisse mattis velit quis nulla
-        condimentum, nec fringilla felis lacinia. Donec sed urna ligula. Aenean
-        sed nisl mollis, hendrerit quam a, pulvinar magna.
-      </>
-    ),
-  },
+  
 ];
 
 function Tutorial({
