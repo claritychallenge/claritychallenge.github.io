@@ -12,20 +12,20 @@ import DifficultyIcon from "@mui/icons-material/PsychologyOutlined";
 import TimeIcon from "@mui/icons-material/HourglassBottomOutlined";
 
 const TutorialList = [
-  {
-    author: "Will Bailey",
-    section: "Getting Started",
-    title: "Loading Demo Datasets",
-    date: "May 2022",
-    difficulty: "Easy",
-    time: "10",
-    link: "https://colab.research.google.com/drive/15RaweKjmnduS1y0v9Dw-LAUgLAB_csa9?usp=sharing",
-    description: (
-      <>
-        A colab notebook demonstrating how to access the smaller demo Clarity dataset for exploring the clarity challenge toolset.
-      </>
-    ),
-  },
+  //{
+  //  author: "Will Bailey",
+  //  section: "Getting Started",
+  //  title: "Loading Demo Datasets",
+  //  date: "May 2022",
+  //  difficulty: "Easy",
+  //  time: "10",
+  //  link: "https://colab.research.google.com/drive/15RaweKjmnduS1y0v9Dw-LAUgLAB_csa9?usp=sharing",
+  //  description: (
+  //    <>
+  //      A colab notebook demonstrating how to access the smaller demo Clarity dataset for exploring the clarity challenge toolset.
+  //    </>
+  //  ),
+  // },
   {
     author: "Will Bailey",
     section: "Getting Started",
