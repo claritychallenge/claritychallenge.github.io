@@ -13,7 +13,7 @@ function TutorialHeader() {
       <div className="container">
         <h1 className="hero__title"> Clarity Tutorials </h1>{" "}
         <p className="hero__subtitle"> Clarity Basics </p>{" "}
-        <div className={styles.buttons}></div>{" "}
+        <div className={styles.buttons}> </div>{" "}
       </div>{" "}
     </header>
   );
@@ -28,7 +28,18 @@ export default function Home() {
     >
       <main>
         <TutorialHeader />
-        <TutorialLayout />
+        <div className="container">
+          <TutorialLayout />
+          <p>
+            {" "}
+            <br />
+            We are providing these tutorials to help you get started with our
+            software. We will be publishing new ones regularly over the coming
+            months. If you have any feedback, questions or suggestions for
+            improvements, please do not hesitate to get in{" "}
+            <a href="/clarity_CC_doc/docs/contact">contact</a> .
+          </p>{" "}
+        </div>
       </main>{" "}
     </Layout>
   );

@@ -13,6 +13,7 @@ const FeatureList = [
         datasets, baseline systems and rules for participation.{" "}
       </>
     ),
+    link: "docs/cec2/cec2_intro",
   },
   {
     title: "Code on Github",
@@ -20,12 +21,13 @@ const FeatureList = [
     description: (
       <>
         All the code for the Clarity Challenge is open source and{" "}
-        <a href="https://github.com/claritychallenge/clarity_CEC1/">
+        <a href="https://github.com/claritychallenge/clarity/">
           available on Github{" "}
         </a>
         .{" "}
       </>
     ),
+    link: "https://github.com/claritychallenge/clarity/",
   },
   {
     title: "Tutorials",
@@ -36,14 +38,17 @@ const FeatureList = [
         understand the tools and data.{" "}
       </>
     ),
+    link: "tutorials",
   },
 ];
 
-function Feature({ Svg, title, description }) {
+function Feature({ Svg, title, description, link }) {
   return (
     <div className={clsx("col col--4")}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} alt={title} />{" "}
+        <a href={link}>
+          <Svg className={styles.featureSvg} alt={title} />
+        </a>{" "}
       </div>{" "}
       <div className="text--center padding-horiz--md">
         <h3> {title} </h3> <p> {description} </p>{" "}
