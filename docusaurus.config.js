@@ -45,6 +45,11 @@ module.exports = {
                     position: 'left',
                     label: 'Submission',
                 },
+                {
+                    to: 'tutorials',
+                    position: 'left',
+                    label: 'Tutorials',
+                },
 
                 {
                     type: 'dropdown',
