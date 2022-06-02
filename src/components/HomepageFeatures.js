@@ -49,6 +49,7 @@ function Feature({ Svg, title, description, link }) {
         <a href={link}>
           <Svg className={styles.featureSvg} alt={title} />
         </a>{" "}
+
       </div>{" "}
       <div className="text--center padding-horiz--md">
         <h3> {title} </h3> <p> {description} </p>{" "}
