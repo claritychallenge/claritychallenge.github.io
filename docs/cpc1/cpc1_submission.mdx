@@ -8,50 +8,71 @@ import Icon from "@material-ui/core/Icon";
 
 ## Registration
 
-Teams are required to [register](./cpc1_registration) to help us organise the challenge.
+Teams are required to [register](./cpc1_registration) to help us organise the challenge. Registered teams will be assigned a unique team ID.
 
 ## What evaluation data is provided?
 
-The evaluation data consists of audio signals processed by hearing aid systems, clean reference signals, listener metadata, and a mapping of which listeners listened to which scenes/hearing aid systems. 
- 
+The evaluation data consists of audio signals processed by hearing aid systems, clean reference signals, listener metadata, and a mapping of which listeners listened to which scenes/hearing aid systems.
+
+The evaluation data is available for download here [clarity_CPC1_data.test.v1.tgz](https://mab.to/R6H84YNf74p5U). See the [download](cpc1_download) page for more details.
+
+Note, the evaluation data does not contain the listener responses. We will score your submission for you and return your score (we aim to do this within 24 hours for of submission). We will then release the true listener responses the day after the submission deadline to allow teams to perform analysis of their results.
+
 ## What do I need to submit?
+
+All teams must submit
+- Their predicted intelligibility scores
+- An Interspeech paper describing their work (encouraged)
+- A two page technical report (mandatory)
+### The predicted intellgibility scores
 
 You must submit your predicted intelligibility scores for the signals provided.
 
+The predictions should be sent in CSV format files with two columns:
+
+```csv
+signal_ID, intelligibility_score
+```
+
+Where the `signal_ID` is the unique signal identifier used for the wav file name (e.g., `S08510_L0239_E001`) and `intelligibility_score` is the predicted intelligibilty given in terms of the percentage words recognised correctly for the signal (i.e., for 0 to 100).
+
+Your CSV files should be named as follows  `CPC1_<TEAM_ID>.test.csv` and `CPC1_<TEAM_ID>.test_indep.csv` for closed set and open set evaluations respectively, where `<TEAM_ID>` is your individual team ID, e.g. 'E001'.
+
+The files should be sent as email attachments to the email address: [claritychallengecontact@gmail.com](mailto:claritychallengecontact@gmail.com)
+
+Please use "CPC1 Submission <TEAM_ID>" as the subject line.
+
 We also encourage you to submit your prediction model(s) code.
 
-## Naming and packaging data
+:::info
+All registered teams will be emailed with their unique team ID shortly before the submission deadline. If you plan to submit please register before the submission deadline.
+:::
 
-Your data should be named according to your entry number, which will take the format CPC1_EXXX. These should be placed in a directory whose name is the unique team ID that you will be sent, e.g., `E001` and  then packaged using `zip` or `tar` or any standard packaging tool.
+### Interspeech paper submission
 
+All teams are *strongly* encouraged to submit a paper describing their work to the Interspeech 2022 Special Session "[Speech Intelligibility Prediction for Hearing-Impaired Listeners](https://claritychallenge.github.io/interspeech2022_siphil)".
 
-## Technical report
+Interspeech submission instructions are here [https://interspeech2022.org/forauthor/submissions.php](https://interspeech2022.org/forauthor/submissions.php)
+
+The Interspeech papers need to be initially submitted by March 21st (title and abstract), with the full paper due on March 28th.
+### The technical report
 
 **The two page technical report must be submitted as a paper to the Clarity-CPC1-2022 Workshop. Deadline 25th April 2022**. An author kit and submission instructions will be made available.
 
-**A draft of the report needs to be uploaded to the Google Drive along  with your prediction model outputs for the evaluation dataset by 21st March**. The draft needs to be sufficiently complete for us to judge whether your system(s)/model(s) is compliant with the challenge rules. You can find a list of key challenge dates [here.](./cpc1_dates)
+**A draft of the report needs to be submitted along with your predictions by 21st March**. The draft needs to be sufficiently complete for us to judge whether your system(s)/model(s) is compliant with the challenge rules. You can find a list of key challenge dates [here.](./dates)
+
 
 Your report should include an abstract and introduction and sections on experimental setup/methodology including system/model information and model/network architecture, evaluation/results, discussion, conclusion and references. Please provide an estimation of the computational resources needed. You must describe any external data and pre-existing tools, software and models used. Please make it clear how your system(s)/model(s) meet the challenge rules.
 
 Your report should cite the following document, which provides an overview of the challenge and the baseline system:
 
-_S. Graetzer, J. Barker, T. J. Cox, M. Akeroyd, J. F. Culling, G. Naylor, E. Porter, and R. Viveros Muñoz, “Clarity-2021 challenges: Machine learning challenges for advancing hearing aid processing,” in Proceedings of the Annual Conference of the International Speech Communication Association, INTERSPEECH 2021, Brno, Czech Republic, 2021._
+Jon Barker and Michael Akeroyd and Trevor J. Cox and John F. Culling and Jennifer Firth and Simone Graetzer and Holly Griffiths and Lara Harris and Graham Naylor and Zuzanna Podwinska and Eszter Porter and Rhoddy Viveros Munoz, “The 1st Clarity Prediction Challenge: A machine learning challenge for hearing aid intelligibility prediction,” in Proceedings of the Annual Conference of the International Speech Communication Association, INTERSPEECH 2022, Incheon, South Korea, 2022._
 
-The document can be accessed [here.](https://drive.google.com/file/d/14q0iAq5LupCFl7uynqMKJPyms5stNp4K/view?usp=sharing)
+The document can be accessed [here.](https://drive.google.com/drive/folders/1pfGTqYAivACAgtliLwM58opCNfHcMwBG?usp=sharing)
 
 
 ## How will intellectual property be handled?
 
 See [here](./cpc1_rules#intellectual-property) under Intellectual Property.
 
-## Where do I submit the data and code?
 
-When you have registered you will receive a link to a Google Drive to which you will be able to securely upload your data. We also encourage you to submit your prediction model(s) code via this link.
-
-Materials uploaded will be visible to the Clarity Team but not to other entrants.
-
-:::warning
-
-Note, in order to use the Google Drive you will need to have a Google account. If you anticipate problems using Google then please make arrangements to send us the materials by other means, e.g., via a service such as WeTransfer or similar. 
-
-:::
