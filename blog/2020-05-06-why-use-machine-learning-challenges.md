@@ -1,5 +1,5 @@
 ---
-slug: Why use machine learning challenges for hearing aids?
+slug: Why use machine learning challenges for hearing aids
 title: Why use machine learning challenges for hearing aids?
 authors: 
 - name: Trevor Cox
