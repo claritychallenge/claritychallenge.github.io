@@ -156,7 +156,11 @@ module.exports = {
                 docs: {
                     sidebarPath: require.resolve('./sidebars.js'),
                     remarkPlugins: [math],
-                    rehypePlugins: [katex],
+                    rehypePlugins: [
+                        [katex, {
+                            strict: false
+                        }]
+                    ],
                     // Please change this to your repo.
                     editUrl: 'https://github.com/claritychallenge/clarity_CC_doc/edit/master/',
                 },
