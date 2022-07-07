@@ -16,7 +16,7 @@ An overview of the current state of the baseline we’re developing for the mach
 
 We’re currently developing the baseline processing that challenge entrants will need. This takes a random listener and a random audio sample of speech in noise (SPIN) and passes that through a simulated hearing aid (the Enhancement Model). This improves the speech in noise. We then have an algorithm (the Prediction Model) to estimate the Speech Intelligibility that the listener would perceive (SI score). This score can then be used to drive machine learning to improve the hearing aid.
 
-<iframe width="560" height="315" src="http://claritychallenge.org/wp-content/uploads/2020/04/baseline_april-1.mp4" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/I1v8_TmXkeA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 *A talk through the baseline model we’re developing.*
 
