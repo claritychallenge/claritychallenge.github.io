@@ -30,6 +30,8 @@ The aspects of hearing loss we’ve decided to simulate are
 2. How as an audible sound increases in level, the perceived increase in loudness is greater than normal (loudness recruitment) (Moore et al. 1996).
 3. How the ear has a poorer ability to discriminate the frequency of sounds (impaired frequency selectivity).
 
+<!--truncate-->
+
 ## Audio examples of hearing loss
 
 Here are two samples of speech in noise processed through the simulator. In each audio example there are three versions of the same sentence:

@@ -23,6 +23,8 @@ Our focus was on the living room because that is the scenario for round one of t
 
 Photo by Gustavo Fring from Pexels
 
+<!--truncate-->
+
 ## Everyday background noises that interfere with understanding of speech
 
 A long and varied list of sounds cause problems. These lists are in no particular order.

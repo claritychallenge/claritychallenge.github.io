@@ -168,6 +168,11 @@ module.exports = {
                     showReadingTime: true,
                     // Please change this to your repo.
                     editUrl: 'https://github.com/claritychallenge/clarity_CC_doc/edit/master/',
+                    blogTitle: 'Clarity Blog',
+                    blogDescription: 'News and updates about our Challenges and Workshops',
+                    postsPerPage: 'ALL',
+                    blogSidebarTitle: 'Recent posts',
+                    blogSidebarCount: 10,
                 },
                 theme: {
                     customCss: require.resolve('./src/css/custom.css'),

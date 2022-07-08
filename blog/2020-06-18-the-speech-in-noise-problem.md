@@ -32,6 +32,8 @@ Difficulty in picking out speech in noise is really common if you have a hearing
 
 Hearing aids are the the most common form of treatment for hearing loss. However, surveys indicate that at least 40% of hearing aids are never or rarely used (Knudsen et al., 2010). A major reason for this is dissatisfaction with performance. Even the best hearing aids perform poorly for speech in noise. This is particularly the case when there are many people talking at the same time, and when the amount of noise is relatively high (i.e., the signal-to-noise ratio (SNR) is low). As hearing ability worsen with age, the ability to understand speech in background noise also reduces (e.g., Akeroyd, 2008).
 
+<!--truncate-->
+
 When an audiologist assesses hearing loss, one thing they measure is the pure tone audiogram. This assesses the quietest sound someone can hear over a range of frequencies. However, an audiogram only partly explains your experience with speech in background noise (Heinrich et al. 2015), because it only measures the quietest sound you can hear. For example, picking out speech from noise is a complex task for the brain to perform, and this cognitive ability isn’t assessed by an audiogram. In addition, there are other factors that are important such as personality, motivation, attitude toward hearing aids and prior hearing aid experience.
 
 ![Audiogram](/img/audiogram.jpg)

@@ -32,6 +32,8 @@ Crucial to how our brains locate sound and pick out speech in noise are timing a
 
 Binaural hearing aids communicate wirelessly and use noise reduction strategies that preserve these interaural time and level difference cues (e.g., Van den Bogaert et al., 2009). This allows the listener’s brain to better locate the speech and boost this compared to the noise.
 
+<!--truncate-->
+
 ## Machine learning
 
 In recent years, there has been increasing interest in what [machine learning](https://en.wikipedia.org/wiki/Machine_learning) methods can do for hearing aids. Machine learning is a branch of artificial intelligence where computers learn directly from example data. One machine learning method is the neural network. This is an algorithm formed from layers of simple computational units connected to each other in a way that is inspired by connections between neurons in the brain. Deep (3+ layer) neural networks are able to learn complex, non-linear mapping functions, which makes them ideal candidates for noise reduction tasks.

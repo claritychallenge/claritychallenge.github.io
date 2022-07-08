@@ -22,6 +22,8 @@ The rules state the following:
 - Systems must be causal; the output at time t must not use any information from input samples more than 5 ms into the future (i.e., no information from input samples >t+5ms).
 - There is no limit on computational cost.
 
+<!--truncate-->
+
 Mathematically this is:
 
 yn=f(xm , xm+1 ... xn+N–1 , xn+N , L )

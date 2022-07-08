@@ -16,6 +16,8 @@ The series of challenges will consider increasingly complex listening scenarios.
 
 ![Person using tablet](/img/UoN_HS-08207-1536x1024.jpeg)
 
+<!--truncate-->
+
 ## The Task
 
 You will be provided with simulated scenes, each including a target speaker and interfering noise. For each scene, there will be signals that simulate those captured by a behind-the-ear hearing aid with three channels at each ear and those captured at the eardrum without a hearing aid present.  The target speech will be a short sentence and the interfering noise will be either speech or domestic appliance noise.

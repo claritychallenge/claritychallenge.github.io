@@ -22,6 +22,8 @@ Figure 1
 
 Next the improved speech in noise is passed to the Prediction Model in the lime green box, and this gives an estimation of the Speech Intelligibility (SI). Our baseline system will include algorithms for this. We’ve already blogged about the Hearing Loss Simulation. Our current thinking is that the intelligibility model will be using a binaural form of the Short-Time Objective Intelligibility Index (STOI) [1]. The dashed line going back to the enhancement model shows that the DNN will be updated based on the reciprocal of the Speech Intelligibility (SI) score. By minimising (1/SI), the enhancement model will be maximising intelligibility.
 
+<!--truncate-->
+
 The difficulty here is that updating the Enhancement Model DNN during training requires the error to be known at the DNN’s output (the point labelled “improved SPIN”). But we don’t know this, we only know the error on the output of the prediction model at the far right of the diagram. This wouldn’t be a problem if the prediction model could be inverted, because we could then run the 1/SI error backwards through the inverse model.
 
 As the inverse of the prediction model isn’t available, one solution is to train another DNN to mimic its behaviour (Figure 2). As this new Prediction Model is a DNN, the 1/SI error can be passed backwards through it using standard neural network training formulations.

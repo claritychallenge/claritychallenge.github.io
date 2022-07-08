@@ -16,6 +16,7 @@ Our baseline binaural speech intelligibility measure in round one is the Modifie
 
 In stage one, entries will be ranked according to the average MBSTOI score across all samples in the evaluation test set. In the second stage, entries will be evaluated by the listening panel. There will be prizes for both stages. See this [page](https://claritychallenge.github.io/clarity_CEC1_doc/docs/cec1_rules) for more information.
 
+<!--truncate-->
 ## Signal alignment in time and frequency
 
 If the signal processed by the hearing aid introduces a significant delay, you should correct for this delay before submitting your entry. This is necessary because MBSTOI requires alignment of the clean speech “reference” with the processed signal in time and frequency. This needs to be done for both ear signals.
@@ -25,6 +26,8 @@ MBSTOI downsamples signals to 10 kHz, uses a Discrete Fourier Transform to decom
 Our baseline corrects for broadband delay per ear due to the hearing loss model. (The delay is measured by running a kronnecker delta function through the model for each ear.) However, the baseline software will not correct for delays created by your hearing aid processing.
 
 Consequently, when submitting your hearing aid output signals, you are responsible for correcting for any delays introduced by your hearing aid. Note that this must be done blindly; the clean reference signals will not be supplied for the test/evaluation set.
+
+<!--truncate-->
 
 ## Level insensitivity
 
