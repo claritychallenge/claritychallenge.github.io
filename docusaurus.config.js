@@ -85,9 +85,8 @@ module.exports = {
                 },
 
                 {
-                    type: 'doc',
-                    docId: 'contact',
-                    label: 'Contact',
+                    to: '/about/',
+                    label: 'About Us',
                     position: 'right'
                 }, {
                     to: '/blog/',
