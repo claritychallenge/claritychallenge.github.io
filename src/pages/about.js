@@ -31,7 +31,7 @@ function AboutHeader() {
 
 function PersonCard({ name, affiliation, avatar, url }) {
   return [
-    <Card sx={{ maxWidth: 345 }}>
+    <Card>
       <CardHeader
         avatar={
           <Avatar
@@ -39,12 +39,12 @@ function PersonCard({ name, affiliation, avatar, url }) {
             sx={{ bgcolor: red[500] }}
             aria-label="recipe"
             src={useBaseUrl(avatar)}
-            sx={{ width: 64, height: 64 }}
+            sx={{ width: 104, height: 104 }}
           />
         }
         title={name}
         subheader={affiliation}
-        titleTypographyProps={{ variant: "h6" }}
+        titleTypographyProps={{ variant: "h5" }}
         subheaderTypographyProps={{ variant: "h7" }}
       />
       <CardActions>
@@ -56,6 +56,50 @@ function PersonCard({ name, affiliation, avatar, url }) {
   ];
 }
 
+function SteeringPersonCard({ name, affiliation, avatar, url }) {
+  return [
+    <Card>
+      <CardHeader
+        avatar={
+          <Avatar
+            alt={name}
+            sx={{ bgcolor: red[500] }}
+            aria-label="recipe"
+            src={useBaseUrl(avatar)}
+            sx={{ width: 104, height: 104 }}
+          />
+        }
+        title={name}
+        subheader={affiliation}
+        titleTypographyProps={{ variant: "h5" }}
+        subheaderTypographyProps={{ variant: "h7" }}
+      />
+    </Card>,
+  ];
+}
+
+const SteeringPersonList = [
+  {
+    name: "Daniel Korzekwa",
+    affiliation: "Amazon TTS Research",
+    avatar: "/img/avatar/korzekwa.jpeg",
+  },
+  {
+    name: "Peter Derleth",
+    affiliation: "Sonova AG",
+    avatar: "/img/avatar/derleth.jpeg",
+  },
+  {
+    name: "Ralph Holme",
+    affiliation: "Royal National Institute for the Deaf",
+    avatar: "/img/avatar/holme.jpeg",
+  },
+  {
+    name: "Christine Evers",
+    affiliation: "University of Southampton",
+    avatar: "/img/avatar/evers.png",
+  },
+];
 const PersonList = [
   {
     name: "Jon Barker",
@@ -118,17 +162,78 @@ export default function Home() {
       <main>
         <AboutHeader />
 
-        <Box sx={{ p: 6, border: "1px dashed grey" }}>
+        <Box sx={{ p: 6 }}>
           <h2>About Us</h2>
           <p> Clarity is a 5-year project funded by the UKRI.</p>
 
-          <Grid container spacing={4}>
+          <h2> The Clarity Team</h2>
+          <Grid container px={10} spacing={5}>
             {PersonList.map((props, idx) => (
               <GridItem item xs={6}>
                 <PersonCard key={idx} {...props} />
               </GridItem>
             ))}
           </Grid>
+
+          <Box py={5}>
+            <h2> The Clarity Steering Committee</h2>
+
+            <Grid container px={10} spacing={5}>
+              {SteeringPersonList.map((props, idx) => (
+                <GridItem item xs={6}>
+                  <SteeringPersonCard key={idx} {...props} />
+                </GridItem>
+              ))}
+            </Grid>
+          </Box>
+
+          <Box>
+            <h2> Our Clarity Partners</h2>
+
+            <Box style={{ textAlign: "center" }}>
+              <Box
+                component="img"
+                sx={{
+                  height: 100,
+                }}
+                alt="RNID logo."
+                src={useBaseUrl("img/logos/Amazon-logo.png")}
+              />
+              <Box
+                component="img"
+                sx={{
+                  height: 100,
+                }}
+                alt="RNID logo."
+                src={useBaseUrl("img/logos/irc-logo.png")}
+              />
+              <Box
+                component="img"
+                sx={{
+                  height: 100,
+                }}
+                alt="RNID logo."
+                src={useBaseUrl("img/logos/RNID-logo.jpeg")}
+              />
+            </Box>
+          </Box>
+
+          <Box py={5}>
+            <h2> Thanks to our funders</h2>
+            <Box style={{ textAlign: "center" }}>
+              <Box
+                style={{ textAlign: "center" }}
+                component="img"
+                sx={{
+                  height: 100,
+                }}
+                alt="EPSRC logo."
+                src={useBaseUrl(
+                  "img/logos/UKRI_EPSR_Council-Logo_Horiz-RGB.png"
+                )}
+              />
+            </Box>
+          </Box>
         </Box>
       </main>{" "}
     </Layout>
