@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkclarity_cec_1=self.webpackChunkclarity_cec_1||[]).push([[4288],{3087:function(e){e.exports=JSON.parse('{"permalink":"/blog/tags/evaluation","page":1,"postsPerPage":2,"totalPages":1,"totalCount":2,"blogDescription":"News and updates about our Challenges and Workshops","blogTitle":"Clarity Blog"}')}}]);
