@@ -231,10 +231,11 @@ export default function Home() {
             running listening tests with hearing impaired listeners.
           </p>
 
+          <a id="team" />
           <h2> The Clarity Team</h2>
           <Grid container px={10} spacing={5}>
             {PersonList.map((props, idx) => (
-              <GridItem item xs={6}>
+              <GridItem style={{ minWidth: "300px" }} item xs={6}>
                 <PersonCard key={idx} {...props} />
               </GridItem>
             ))}
@@ -245,7 +246,7 @@ export default function Home() {
 
             <Grid container px={10} spacing={5}>
               {SteeringPersonList.map((props, idx) => (
-                <GridItem item xs={6}>
+                <GridItem style={{ minWidth: "300px" }} item xs={6}>
                   <SteeringPersonCard key={idx} {...props} />
                 </GridItem>
               ))}
@@ -253,6 +254,7 @@ export default function Home() {
           </Box>
 
           <Box>
+            <a id="partners" />
             <h2> Our Clarity Partners</h2>
 
             <Box style={{ textAlign: "center" }}>
