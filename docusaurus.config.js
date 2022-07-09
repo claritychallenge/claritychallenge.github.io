@@ -7,7 +7,6 @@ module.exports = {
     tagline: 'Organising machine learning challenges for hearing aid processing',
     url: 'https://claritychallenge.github.io/',
     baseUrl: '/',
-    trailingSlash: true,
     onBrokenLinks: 'throw',
     onBrokenMarkdownLinks: 'throw',
     favicon: 'img/favicon.ico',
