@@ -6,12 +6,12 @@ module.exports = {
     title: 'The Clarity Project',
     tagline: 'Organising machine learning challenges for hearing aid processing',
     url: 'https://claritychallenge.org/',
-    baseUrl: '/clarity_CC_doc/',
+    baseUrl: '/',
     onBrokenLinks: 'throw',
     onBrokenMarkdownLinks: 'throw',
     favicon: 'img/favicon.ico',
     organizationName: 'claritychallenge', // Usually your GitHub org/user name.
-    projectName: 'clarity_CC_doc', // Usually your repo name.
+    projectName: 'claritychallenge.org', // Usually your repo name.
     stylesheets: [{
         href: 'https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css',
         type: 'text/css',
@@ -183,12 +183,10 @@ module.exports = {
                         }]
                     ],
                     // Please change this to your repo.
-                    editUrl: 'https://github.com/claritychallenge/clarity_CC_doc/edit/master/',
                 },
                 blog: {
                     showReadingTime: true,
                     // Please change this to your repo.
-                    editUrl: 'https://github.com/claritychallenge/clarity_CC_doc/edit/master/',
                     blogTitle: 'Clarity Blog',
                     blogDescription: 'News and updates about our Challenges and Workshops',
                     postsPerPage: 'ALL',

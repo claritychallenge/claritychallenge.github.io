@@ -37,7 +37,7 @@ export default function Home() {
             software. We will be publishing new ones regularly over the coming
             months. If you have any feedback, questions or suggestions for
             improvements, please do not hesitate to get in{" "}
-            <a href="/clarity_CC_doc/docs/contact">contact</a> .
+            <a href="/docs/contact">contact</a> .
           </p>{" "}
         </div>
       </main>{" "}
