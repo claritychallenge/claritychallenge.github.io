@@ -3,12 +3,12 @@ const math = require('remark-math');
 const katex = require('rehype-katex');
 
 module.exports = {
-    title: 'The 2nd Clarity Enhancement Challenge',
-    tagline: 'A machine learning challenge for hearing aid processing',
+    title: 'The Clarity Project',
+    tagline: 'Organising machine learning challenges for hearing aid processing',
     url: 'https://claritychallenge.org/',
     baseUrl: '/clarity_CC_doc/',
-    onBrokenLinks: 'error',
-    onBrokenMarkdownLinks: 'error',
+    onBrokenLinks: 'throw',
+    onBrokenMarkdownLinks: 'throw',
     favicon: 'img/favicon.ico',
     organizationName: 'claritychallenge', // Usually your GitHub org/user name.
     projectName: 'clarity_CC_doc', // Usually your repo name.
@@ -27,29 +27,42 @@ module.exports = {
                 alt: 'Clarity Logo',
                 src: 'img/logo.png',
             },
-            items: [{
-                    type: 'doc',
-                    docId: 'cec2/cec2_intro',
-                    position: 'left',
-                    label: 'CEC2 Intro',
-                },
+            items: [
+
                 {
-                    type: 'doc',
-                    docId: 'cec2/cec2_download',
+                    type: 'dropdown',
+                    label: 'CEC2 Challenge Shortcuts',
                     position: 'left',
-                    label: 'Download',
+                    items: [{
+                            type: 'doc',
+                            docId: 'cec2/cec2_intro',
+                            label: 'I want to learn more...',
+                        },
+                        {
+                            type: 'doc',
+                            docId: 'cec2/cec2_download',
+                            label: 'I want to download the data...',
+                        },
+                        {
+                            href: 'https://github.com/claritychallenge/clarity',
+                            label: 'I want to see the code on GitHub...',
+                        },
+                        {
+                            type: 'doc',
+                            docId: 'cec2/taking_part/cec2_registration',
+                            label: 'I want to register...',
+                        },
+                        {
+                            type: 'doc',
+                            docId: 'cec2/taking_part/cec2_submission',
+                            label: 'I want to submit results...',
+                        },
+
+                    ]
                 },
-                {
-                    type: 'doc',
-                    docId: 'cec2/taking_part/cec2_submission',
-                    position: 'left',
-                    label: 'Submission',
-                },
-                {
-                    to: 'tutorials',
-                    position: 'left',
-                    label: 'Tutorials',
-                },
+
+
+
 
                 {
                     type: 'dropdown',
@@ -85,6 +98,19 @@ module.exports = {
                 },
 
                 {
+                    type: 'dropdown',
+                    label: 'Software',
+                    position: 'right',
+                    items: [{
+                        to: 'tutorials',
+                        label: 'Tutorials',
+                    }, {
+                        href: 'https://github.com/claritychallenge/clarity',
+                        label: 'GitHub',
+                    }, ]
+                },
+
+                {
                     to: '/about/',
                     label: 'About Us',
                     position: 'right'
@@ -93,11 +119,7 @@ module.exports = {
                     label: 'Blog',
                     position: 'right'
                 },
-                {
-                    href: 'https://github.com/claritychallenge/clarity',
-                    label: 'GitHub',
-                    position: 'right',
-                },
+
             ],
         },
         footer: {

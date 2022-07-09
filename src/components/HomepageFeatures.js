@@ -4,13 +4,13 @@ import styles from "./HomepageFeatures.module.css";
 
 const FeatureList = [
   {
-    title: "Getting Started",
+    title: "Take Part",
     Svg: require("../../static/img/undraw_My_documents_re_13dc.svg").default,
     description: (
       <>
         This site provides{" "}
-        <a href="docs/cec2/cec2_intro"> full documentation </a> of the challenge
-        datasets, baseline systems and rules for participation.{" "}
+        <a href="docs/cec2/cec2_intro"> full documentation </a> for all our
+        challenges. Enter the 2nd Enhancement Challenge, running now.{" "}
       </>
     ),
     link: "docs/cec2/cec2_intro",
@@ -49,7 +49,6 @@ function Feature({ Svg, title, description, link }) {
         <a href={link}>
           <Svg className={styles.featureSvg} alt={title} />
         </a>{" "}
-
       </div>{" "}
       <div className="text--center padding-horiz--md">
         <h3> {title} </h3> <p> {description} </p>{" "}
