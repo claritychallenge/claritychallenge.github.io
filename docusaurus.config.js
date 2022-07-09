@@ -16,7 +16,7 @@ module.exports = {
     organizationName: 'claritychallenge', // Usually your GitHub org/user name.
     projectName: 'claritychallenge.github.io', // Usually your repo name.
     trailingSlash: false,
-    deploymentBranch: "main",
+    deploymentBranch: "gh-pages",
     stylesheets: [{
         href: 'https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css',
         type: 'text/css',
