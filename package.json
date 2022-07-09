@@ -16,6 +16,7 @@
     },
     "dependencies": {
         "@docusaurus/core": "^2.0.0-beta.22",
+        "@docusaurus/plugin-client-redirects": "^2.0.0-beta.22",
         "@docusaurus/preset-classic": "^2.0.0-beta.22",
         "@emotion/react": "^11.9.0",
         "@emotion/styled": "^11.8.1",
