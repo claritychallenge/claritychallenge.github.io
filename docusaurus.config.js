@@ -23,7 +23,18 @@ module.exports = {
         integrity: 'sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X',
         crossorigin: 'anonymous',
     }, "https://fonts.googleapis.com/icon?family=Material+Icons", ],
-    plugins: [require.resolve('docusaurus-lunr-search'), './sitePlugin'],
+    plugins: [
+        [
+            '@docusaurus/plugin-client-redirects',
+            {
+                redirects: [{
+                    to: '/',
+                    from: '/clarity_CC_doc',
+                }, ],
+            },
+        ],
+    ],
+    plugins: [require.resolve('docusaurus-lunr-search'), './sitePlugin', ],
     themeConfig: {
         navbar: {
             title: 'Clarity',
