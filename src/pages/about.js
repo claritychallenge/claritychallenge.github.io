@@ -80,14 +80,14 @@ function SteeringPersonCard({ name, affiliation, avatar, url }) {
 
 const SteeringPersonList = [
   {
-    name: "Daniel Korzekwa",
-    affiliation: "Amazon TTS Research",
-    avatar: "/img/avatar/korzekwa.jpeg",
-  },
-  {
     name: "Peter Derleth",
     affiliation: "Sonova AG",
     avatar: "/img/avatar/derleth.jpeg",
+  },
+  {
+    name: "Christine Evers",
+    affiliation: "University of Southampton",
+    avatar: "/img/avatar/evers.png",
   },
   {
     name: "Ralph Holme",
@@ -95,18 +95,17 @@ const SteeringPersonList = [
     avatar: "/img/avatar/holme.jpeg",
   },
   {
-    name: "Christine Evers",
-    affiliation: "University of Southampton",
-    avatar: "/img/avatar/evers.png",
+    name: "Daniel Korzekwa",
+    affiliation: "Amazon TTS Research",
+    avatar: "/img/avatar/korzekwa.jpeg",
   },
 ];
 const PersonList = [
   {
-    name: "Jon Barker",
-    department: "Department of Computer Science",
-    affiliation: "University of Sheffield",
-    url: "https://www.sheffield.ac.uk/dcs/people/academic/jon-barker",
-    avatar: "/img/avatar/barker.png",
+    name: "Michael Akeroyd",
+    affiliation: "University of Nottingham",
+    url: "https://www.nottingham.ac.uk/medicine/people/michael.akeroyd",
+    avatar: "/img/avatar/akeroyd.jpeg",
   },
   {
     name: "Will Bailey",
@@ -115,16 +114,25 @@ const PersonList = [
     avatar: "/img/avatar/bailey.png",
   },
   {
-    name: "Zehai Tu",
+    name: "Jon Barker",
+    department: "Department of Computer Science",
     affiliation: "University of Sheffield",
-    url: "https://www.linkedin.com/in/zehai-tu-5b169721a/?trk=public_profile_browsemap&originalSubdomain=uk",
-    avatar: "/img/avatar/tu.jpeg",
+    url: "https://www.sheffield.ac.uk/dcs/people/academic/jon-barker",
+    avatar: "/img/avatar/barker.png",
   },
+
   {
     name: "Trevor Cox",
     affiliation: "University of Salford",
     url: "https://www.salford.ac.uk/our-staff/trevor-cox",
     avatar: "/img/avatar/cox.jpeg",
+  },
+
+  {
+    name: "John Culling",
+    affiliation: "University of Cardiff",
+    url: "https://www.cardiff.ac.uk/people/view/839729-culling-john",
+    avatar: "/img/avatar/culling.avif",
   },
   {
     name: "Simone Graetzer",
@@ -133,22 +141,16 @@ const PersonList = [
     avatar: "/img/avatar/graetzer.jpeg",
   },
   {
-    name: "John Culling",
-    affiliation: "University of Cardiff",
-    url: "https://www.cardiff.ac.uk/people/view/839729-culling-john",
-    avatar: "/img/avatar/culling.avif",
-  },
-  {
-    name: "Michael Akeroyd",
-    affiliation: "University of Nottingham",
-    url: "https://www.nottingham.ac.uk/medicine/people/michael.akeroyd",
-    avatar: "/img/avatar/akeroyd.jpeg",
-  },
-  {
     name: "Graham Naylor",
     affiliation: "University of Nottingham",
     url: "https://www.nottingham.ac.uk/medicine/people/graham.naylor",
     avatar: "/img/avatar/naylor.jpeg",
+  },
+  {
+    name: "Zehai Tu",
+    affiliation: "University of Sheffield",
+    url: "https://www.linkedin.com/in/zehai-tu-5b169721a/?trk=public_profile_browsemap&originalSubdomain=uk",
+    avatar: "/img/avatar/tu.jpeg",
   },
 ];
 
@@ -164,7 +166,70 @@ export default function Home() {
 
         <Box sx={{ p: 6 }}>
           <h2>About Us</h2>
-          <p> Clarity is a 5-year project funded by the UKRI.</p>
+
+          <p>
+            <Typography variant="h6">
+              The Clarity Project is a{" "}
+              <b>
+                <a href="https://www.ukri.org/councils/epsrc/">
+                  5-year UKRI-funded research project
+                </a>
+              </b>{" "}
+              involving{" "}
+              <b>
+                <a href="#team">four UK Universities</a>
+              </b>{" "}
+              and{" "}
+              <b>
+                <a href="#partners">associated industrial partners</a>
+              </b>
+              . Our aim is to organise open evaluations for hearing aid
+              algorithms and to champion novel machine learning approaches to
+              hearing aid speech-in-noise processing.{" "}
+            </Typography>
+          </p>
+
+          <p>
+            Currently more than{" "}
+            <b>
+              <a href="https://www.who.int/health-topics/hearing-loss#tab=tab_1">
+                1.5 billion people live with hearing loss
+              </a>
+            </b>
+            , and this number is set to increase as the global population ages.
+            Yet only a small fraction of people who could benefit from hearing
+            aids have them, and most people who have the devices don't use them
+            often enough. A major reason for this low uptake is the perception
+            that{" "}
+            <b>
+              <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3665209/">
+                hearing aids do not perform well enough
+              </a>
+            </b>
+            .
+          </p>
+
+          <p>
+            We aim to stimulate progress in hearing aid signal processing by{" "}
+            <b>
+              <a href="../docs/cec2/cec2_intro">
+                organising open machine learning challenges
+              </a>
+            </b>
+            . These challenges will focus on speech-in-noise listening, a
+            situation in which hearing aid users report the most
+            dissatisfaction. For each challenge, we will be providing simulation
+            tools, datasets and baseline systems.{" "}
+            <b>
+              <a href="https://github.com/claritychallenge/clarity">
+                Our data and code will all be open-sourced
+              </a>
+            </b>
+            , with the aim of lowering barriers that currently prevent speech
+            and audio researchers from considering hearing impairment. Our
+            funding is also allowing us to evaluate challenge submissions by
+            running listening tests with hearing impaired listeners.
+          </p>
 
           <h2> The Clarity Team</h2>
           <Grid container px={10} spacing={5}>
