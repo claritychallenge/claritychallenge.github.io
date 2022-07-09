@@ -1,6 +1,9 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 const math = require('remark-math');
 const katex = require('rehype-katex');
+const {
+    MailRounded
+} = require('@mui/icons-material');
 
 module.exports = {
     title: 'The Clarity Project',
@@ -13,6 +16,7 @@ module.exports = {
     organizationName: 'claritychallenge', // Usually your GitHub org/user name.
     projectName: 'claritychallenge.github.io', // Usually your repo name.
     trailingSlash: false,
+    deploymentBranch: "main",
     stylesheets: [{
         href: 'https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css',
         type: 'text/css',
