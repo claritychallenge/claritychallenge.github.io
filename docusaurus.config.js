@@ -31,12 +31,12 @@ module.exports = {
 
                 {
                     type: 'dropdown',
-                    label: 'CEC2 Challenge Shortcuts',
+                    label: 'CEC2 Shortcuts',
                     position: 'left',
                     items: [{
                             type: 'doc',
                             docId: 'cec2/cec2_intro',
-                            label: 'I want to learn more...',
+                            label: 'I want to learn more sbout CEC2...',
                         },
                         {
                             type: 'doc',
@@ -50,7 +50,7 @@ module.exports = {
                         {
                             type: 'doc',
                             docId: 'cec2/taking_part/cec2_registration',
-                            label: 'I want to register...',
+                            label: 'I want to register a team...',
                         },
                         {
                             type: 'doc',
