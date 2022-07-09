@@ -5,8 +5,9 @@ const katex = require('rehype-katex');
 module.exports = {
     title: 'The Clarity Project',
     tagline: 'Organising machine learning challenges for hearing aid processing',
-    url: 'https://claritychallenge.org/',
+    url: 'https://claritychallenge.github.io/',
     baseUrl: '/',
+    trailingSlash: true,
     onBrokenLinks: 'throw',
     onBrokenMarkdownLinks: 'throw',
     favicon: 'img/favicon.ico',
