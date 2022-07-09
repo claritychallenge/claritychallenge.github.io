@@ -11,7 +11,8 @@ module.exports = {
     onBrokenMarkdownLinks: 'throw',
     favicon: 'img/favicon.ico',
     organizationName: 'claritychallenge', // Usually your GitHub org/user name.
-    projectName: '', // Usually your repo name.
+    projectName: 'claritychallenge.github.io', // Usually your repo name.
+    trailingSlash: false,
     stylesheets: [{
         href: 'https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css',
         type: 'text/css',
