@@ -122,11 +122,18 @@ module.exports = {
                         label: 'GitHub',
                     }, ]
                 },
-
                 {
-                    to: '/about/',
+                    type: 'dropdown',
                     label: 'About Us',
-                    position: 'right'
+                    position: 'right',
+                    items: [{
+                        to: '/about/',
+                        label: 'About Us',
+                    }, {
+                        to: '/contact/',
+                        label: 'Contact Us',
+
+                    }]
                 }, {
                     to: '/blog/',
                     label: 'Blog',
@@ -160,6 +167,10 @@ module.exports = {
                             label: 'Clarity Google Group',
                             href: 'https://groups.google.com/g/clarity-challenge',
                         },
+                        {
+                            label: 'Email Us',
+                            href: 'mailto:claritychallengecontact@gmail.com'
+                        }
                     ],
                 },
                 {
@@ -171,7 +182,7 @@ module.exports = {
                         {
                             label: 'GitHub',
                             href: 'https://github.com/claritychallenge/clarity',
-                        },
+                        }
                     ],
                 },
             ],
