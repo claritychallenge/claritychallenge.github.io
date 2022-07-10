@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkclarity_cec_1=self.webpackChunkclarity_cec_1||[]).push([[2739],{3760:s=>{s.exports=JSON.parse('{"label":"submission","permalink":"/blog/tags/submission","allTagsPath":"/blog/tags","count":1}')}}]);
