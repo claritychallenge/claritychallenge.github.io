@@ -2,11 +2,26 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://claritychallenge.github.io/blog</id>
     <title>The Clarity Project Blog</title>
-    <updated>2022-05-03T00:00:00.000Z</updated>
+    <updated>2022-07-10T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://claritychallenge.github.io/blog"/>
     <subtitle>The Clarity Project Blog</subtitle>
     <icon>https://claritychallenge.github.io/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[CPC1 results and prizes]]></title>
+        <id>CPC1 results and prizes</id>
+        <link href="https://claritychallenge.github.io/blog/CPC1 results and prizes"/>
+        <updated>2022-07-10T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[The 1st Clarity Prediction Challenge is now complete. Thank you to all who took part!]]></summary>
+        <content type="html"><![CDATA[<p>The 1st Clarity Prediction Challenge is now complete. Thank you to all who took part!</p><p>The full results can be found on the <a href="https://claritychallenge.org/clarity2022-workshop/" target="_blank" rel="noopener noreferrer">Clarity-2022 workshop website</a> where you will also find links to system papers and the overview presentation.</p><p>Many of the systems have led to successful Interspeech 2022 papers and will be contributing to the Interspeech 2022 special session on <a href="https://claritychallenge.org/interspeech2022_siphil/" target="_blank" rel="noopener noreferrer">Speech Intelligibility Prediction for Hearing-Impaired Listeners</a>. We hope to see many of you in Korea!</p><p>In the meantime, please be sure to check out the onging <a href="https://claritychallenge.org/docs/cec2/cec2_intro" target="_blank" rel="noopener noreferrer">2nd Clarity Enhancement Challenge</a>. The deadline for submitting enhanced signals is 1st September 2022, so there is still time to participate. To register a team please use the form <a href="https://claritychallenge.org/docs/cec2/taking_part/cec2_registration" target="_blank" rel="noopener noreferrer">here</a>.</p>]]></content>
+        <author>
+            <name>Jon Barker</name>
+            <uri>http://staffwww.dcs.shef.ac.uk/people/J.Barker/</uri>
+        </author>
+        <category label="clarity" term="clarity"/>
+        <category label="registration" term="registration"/>
+        <category label="CEC2" term="CEC2"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[CEC2 registration open]]></title>
         <id>CEC2 registration open</id>
