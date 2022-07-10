@@ -7,6 +7,10 @@ sidebar_position: 1
 
 <!-- import { TwitterTimelineEmbed } from "react-twitter-embed"; -->
 
+:::info
+The 1st Clarity Prediction Challenge has now finished. For the details of the systems that were submitted and to see the table of results, please visit the <b><a href="https://claritychallenge.org/clarity2022-workshop/">Clarity-2022 Workshsop website</a></b>.
+:::
+
 To allow the development of better hearing aids, we need ways to evaluate the speech intelligibility of audio signals automatically. We need a prediction model that takes the audio produced by a hearing aid and the listener's characteristics (e.g. [audiogram](https://www.hear-it.org/Audiogram-)) and estimates the speech intelligibility score that the listener would achieve in a listening test. Here is a brief introduction to the challenge:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/9DY2VOeRU0s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

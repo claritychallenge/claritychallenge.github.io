@@ -1,0 +1,20 @@
+---
+slug: CPC1 results and prizes
+title: CPC1 results and prizes
+author: Jon Barker
+author_title: Clarity Team Member
+author_url: http://staffwww.dcs.shef.ac.uk/people/J.Barker/
+author_image_url: https://avatars.githubusercontent.com/jonbarker68
+tags: [clarity, registration, CEC2]
+---
+
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
+The 1st Clarity Prediction Challenge is now complete. Thank you to all who took part!
+
+The full results can be found on the <a href="https://claritychallenge.org/clarity2022-workshop/">Clarity-2022 workshop website</a> where you will also find links to system papers and the overview presentation.
+
+Many of the systems have led to successful Interspeech 2022 papers and will be contributing to the Interspeech 2022 special session on <a href="https://claritychallenge.org/interspeech2022_siphil/">Speech Intelligibility Prediction for Hearing-Impaired Listeners</a>. We hope to see many of you in Korea!
+
+In the meantime, please be sure to check out the onging <a href="https://claritychallenge.org/docs/cec2/cec2_intro">2nd Clarity Enhancement Challenge</a>. The deadline for submitting enhanced signals is 1st September 2022, so there is still time to participate. To register a team please use the form <a href="https://claritychallenge.org/docs/cec2/taking_part/cec2_registration">here</a>.
+

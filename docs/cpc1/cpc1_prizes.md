@@ -32,3 +32,9 @@ We will be awarding prizes for the best performing teams and the best student co
       </div>
      </div>
 </div>
+
+<p/>
+
+:::info
+The 1st Clarity Prediction Challenge has now finished. For the details of the systems submitted, results and prize winners, please visit the <b><a href="https://claritychallenge.org/clarity2022-workshop/">Clarity-2022 Workshsop website</a></b>.
+:::
