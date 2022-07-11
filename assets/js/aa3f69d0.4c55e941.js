@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkclarity_cec_1=self.webpackChunkclarity_cec_1||[]).push([[9382],{4226:e=>{e.exports=JSON.parse('{"permalink":"/blog/tags/cec-1","page":1,"postsPerPage":6,"totalPages":1,"totalCount":6,"blogDescription":"News and updates about our Challenges and Workshops","blogTitle":"Clarity Blog"}')}}]);
