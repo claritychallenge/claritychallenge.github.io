@@ -3,18 +3,10 @@ import clsx from "clsx";
 import Layout from "@theme/Layout";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import styles from "./index.module.css";
-import Container from "@mui/material/Container";
 import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
-import CardActions from "@mui/material/CardActions";
-import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
-import Avatar from "@mui/material/Avatar";
-import CardHeader from "@mui/material/CardHeader";
-import { red } from "@mui/material/colors";
-import GridItem from "@mui/material/Grid";
-import Grid from "@mui/material/Grid";
-import useBaseUrl from "@docusaurus/useBaseUrl";
+import { Mermaid } from "mdx-mermaid/Mermaid";
 
 function ContactHeader() {
   const { siteConfig } = useDocusaurusContext();
@@ -80,6 +72,14 @@ export default function Home() {
             individual contact details via the links on our{" "}
             <a href="../about">'About Us'</a> page
           </Paper>
+          <Mermaid
+            chart={`graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+`}
+          />
         </Box>
       </main>{" "}
     </Layout>
