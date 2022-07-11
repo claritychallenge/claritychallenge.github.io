@@ -111,6 +111,9 @@ module.exports = {
                         type: 'doc',
                         docId: 'cec1/cec1_intro',
                         label: 'CEC1',
+                    }, {
+                        to: '/timeline',
+                        label: 'Future Challenges',
                     }, ]
                 },
 
@@ -137,7 +140,10 @@ module.exports = {
                         to: '/contact/',
                         label: 'Contact Us',
 
-                    }]
+                    }, {
+                        to: '/timeline',
+                        label: 'Project timeline',
+                    }, ]
                 }, {
                     to: '/blog/',
                     label: 'Blog',
@@ -204,7 +210,7 @@ module.exports = {
                 },
                 docs: {
                     sidebarPath: require.resolve('./sidebars.js'),
-                    remarkPlugins: [math],
+                    remarkPlugins: [require('mdx-mermaid'), math],
                     rehypePlugins: [
                         [katex, {
                             strict: false
