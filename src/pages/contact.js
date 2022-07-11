@@ -72,14 +72,6 @@ export default function Home() {
             individual contact details via the links on our{" "}
             <a href="../about">'About Us'</a> page
           </Paper>
-          <Mermaid
-            chart={`graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
-`}
-          />
         </Box>
       </main>{" "}
     </Layout>
