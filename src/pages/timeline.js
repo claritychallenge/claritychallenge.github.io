@@ -3,7 +3,6 @@ import clsx from "clsx";
 import Layout from "@theme/Layout";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import styles from "./index.module.css";
-import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
 import Typography from "@mui/material/Typography";
 import { Mermaid } from "mdx-mermaid/Mermaid";
@@ -89,6 +88,34 @@ export default function Home() {
             Participation Phase               :         2024-04-01, 2024-09-01
             Evaluation Phase               :         2024-09-01,2024-11-01`}
             />
+            <h4>Key Dates</h4>
+            <ul>
+              <li>
+                {" "}
+                <b>CEC1 Launch</b> 1st Feb 2021, <b>Submission</b> 15th Jun 2021
+              </li>
+              <li>
+                {" "}
+                <b>CPC1 Launch</b> 16th Nov 2021, <b>Submission</b> 21st Mar
+                2022
+              </li>
+              <li>
+                {" "}
+                <b>CEC2 Launch</b> 30th Mar 2022, <b>Submission</b> 1st Sep 2022
+              </li>
+              <li>
+                {" "}
+                <b>CPC2 Launch</b> 1st Feb 2023, <b>Submission</b> 1st Aug 2023
+              </li>
+              <li>
+                {" "}
+                <b>CEC3 Launch</b> 1st June 2023, <b>Submission</b> 1st Jan 2024
+              </li>
+              <li>
+                {" "}
+                <b>CPC3 Launch</b> 1st Apr 2024, <b>Submission</b> 1st Sep 2024
+              </li>
+            </ul>{" "}
           </Paper>
         </Zoom>
 
