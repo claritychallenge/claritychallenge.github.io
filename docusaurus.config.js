@@ -34,7 +34,7 @@ module.exports = {
                     from: '/clarity_CC_doc',
                 }, ],
             },
-        ]
+        ], require.resolve("docusaurus-plugin-image-zoom")
     ],
     themeConfig: {
         navbar: {
@@ -77,10 +77,6 @@ module.exports = {
 
                     ]
                 },
-
-
-
-
                 {
                     type: 'dropdown',
                     label: 'Workshops',
@@ -198,6 +194,16 @@ module.exports = {
             ],
             copyright: `Copyright © ${new Date().getFullYear()} The Clarity Team. Built with Docusaurus.`,
         },
+        zoom: {
+            selector: '.markdown img',
+            config: {
+                // options you can specify via https://github.com/francoischalifour/medium-zoom#usage
+                background: {
+                    light: 'rgb(255, 255, 255)',
+                    dark: 'rgb(50, 50, 50)'
+                }
+            }
+        }
     },
     presets: [
         [

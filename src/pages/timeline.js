@@ -7,6 +7,8 @@ import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
 import Typography from "@mui/material/Typography";
 import { Mermaid } from "mdx-mermaid/Mermaid";
+import Zoom from "react-medium-image-zoom";
+import "react-medium-image-zoom/dist/styles.css";
 
 function ContactHeader() {
   const { siteConfig } = useDocusaurusContext();
@@ -58,11 +60,12 @@ export default function Home() {
           </Typography>
         </Paper>
 
-        <Paper sx={{ p: 4, m: 6 }}>
-          <h2>The Overal Schedule</h2>
-          The tentative schedule for future challenges is shown below.
-          <Mermaid
-            chart={`gantt
+        <Zoom>
+          <Paper sx={{ p: 4, m: 6 }}>
+            <h2>The Overal Schedule</h2>
+            The tentative schedule for future challenges is shown below.
+            <Mermaid
+              chart={`gantt
             dateFormat  YYYY-MM-DD
             title Clarity Challenge Overview Schedule
             excludes weekdays 2014-01-10
@@ -85,13 +88,15 @@ export default function Home() {
             section CPC3
             Participation Phase               :         2024-04-01, 2024-09-01
             Evaluation Phase               :         2024-09-01,2024-11-01`}
-          />
-        </Paper>
+            />
+          </Paper>
+        </Zoom>
 
-        <Paper sx={{ p: 4, m: 6 }}>
-          <h2>The 2nd Clarity Enhancement Challenge (CEC2)</h2>
-          <Mermaid
-            chart={`gantt
+        <Zoom>
+          <Paper sx={{ p: 4, m: 6 }}>
+            <h2>The 2nd Clarity Enhancement Challenge (CEC2)</h2>
+            <Mermaid
+              chart={`gantt
             dateFormat  YYYY-MM-DD
             title CEC2 Schedule
 
@@ -108,12 +113,15 @@ export default function Home() {
 
 
          `}
-          />
-        </Paper>
-        <Paper sx={{ p: 4, m: 6 }}>
-          <h2>The 1st Clarity Prediction Challenge (CPC1)</h2>
-          <Mermaid
-            chart={`gantt
+            />
+          </Paper>
+        </Zoom>
+
+        <Zoom>
+          <Paper sx={{ p: 4, m: 6 }}>
+            <h2>The 1st Clarity Prediction Challenge (CPC1)</h2>
+            <Mermaid
+              chart={`gantt
             dateFormat  YYYY-MM-DD
             title CPC1 Schedule
             
@@ -133,12 +141,15 @@ export default function Home() {
 
 
          `}
-          />
-        </Paper>
-        <Paper sx={{ p: 4, m: 6 }}>
-          <h2>The 1st Clarity Enhancement Challenge (CEC1)</h2>
-          <Mermaid
-            chart={`gantt
+            />
+          </Paper>
+        </Zoom>
+
+        <Zoom>
+          <Paper sx={{ p: 4, m: 6 }}>
+            <h2>The 1st Clarity Enhancement Challenge (CEC1)</h2>
+            <Mermaid
+              chart={`gantt
             dateFormat  YYYY-MM-DD
             title CEC1 Schedule
             
@@ -155,8 +166,9 @@ export default function Home() {
 
 
          `}
-          />
-        </Paper>
+            />
+          </Paper>
+        </Zoom>
       </main>{" "}
     </Layout>
   );

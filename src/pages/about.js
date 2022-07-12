@@ -15,6 +15,8 @@ import { red } from "@mui/material/colors";
 import GridItem from "@mui/material/Grid";
 import Grid from "@mui/material/Grid";
 import useBaseUrl from "@docusaurus/useBaseUrl";
+import Zoom from "react-medium-image-zoom";
+import "react-medium-image-zoom/dist/styles.css";
 
 function AboutHeader() {
   const { siteConfig } = useDocusaurusContext();
@@ -58,23 +60,25 @@ function PersonCard({ name, affiliation, avatar, url }) {
 
 function SteeringPersonCard({ name, affiliation, avatar, url }) {
   return [
-    <Card>
-      <CardHeader
-        avatar={
-          <Avatar
-            alt={name}
-            sx={{ bgcolor: red[500] }}
-            aria-label="recipe"
-            src={useBaseUrl(avatar)}
-            sx={{ width: 104, height: 104 }}
-          />
-        }
-        title={name}
-        subheader={affiliation}
-        titleTypographyProps={{ variant: "h5" }}
-        subheaderTypographyProps={{ variant: "h7" }}
-      />
-    </Card>,
+    <Zoom>
+      <Card>
+        <CardHeader
+          avatar={
+            <Avatar
+              alt={name}
+              sx={{ bgcolor: red[500] }}
+              aria-label="recipe"
+              src={useBaseUrl(avatar)}
+              sx={{ width: 104, height: 104 }}
+            />
+          }
+          title={name}
+          subheader={affiliation}
+          titleTypographyProps={{ variant: "h5" }}
+          subheaderTypographyProps={{ variant: "h7" }}
+        />
+      </Card>
+    </Zoom>,
   ];
 }
 
