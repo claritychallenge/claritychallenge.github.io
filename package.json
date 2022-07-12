@@ -31,7 +31,7 @@
         "@mui/material": "^5.8.1",
         "@svgr/webpack": "^5.5.0",
         "clsx": "^1.1.1",
-        "docusaurus-lunr-search": "^2.1.15",
+        "docusaurus-lunr-search": "https://github.com/praveenn77/docusaurus-lunr-search.git#0f83df127f671c478da90d0b993deb2253b38ae3",
         "file-loader": "^6.2.0",
         "glob-promise": "^4.2.0",
         "linearicons": "^1.0.0",
