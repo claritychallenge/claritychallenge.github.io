@@ -25,8 +25,7 @@ module.exports = {
     }, "https://fonts.googleapis.com/icon?family=Material+Icons", ],
     plugins: [
         [require.resolve('docusaurus-lunr-search'), {
-            indexBaseUrl: false,
-            languages: ['en'] // language codes
+            indexBaseUrl: true
         }], './sitePlugin', [
             '@docusaurus/plugin-client-redirects',
             {
