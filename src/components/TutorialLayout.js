@@ -30,11 +30,11 @@ const TutorialList = [
     author: "Will Bailey",
     section: "Getting Started",
     title:
-      "Installing Clarity Enhancement Challenge Tools and Interacting with Metadata",
+      "01 Installing Clarity Enhancement Challenge Tools and Interacting with Metadata",
     date: "May 2022",
     difficulty: "Easy",
     time: "15",
-    link: "https://colab.research.google.com/drive/1lhoFof6SKxbVqMMty_BIms_LYDehlWdf?usp=sharing",
+    link: "http://colab.research.google.com/github/claritychallenge/clarity/blob/master/notebooks/01_Installing_clarity_tools_and_using_metadata.ipynb",
     description: (
       <>
         Basic installation of Clarity Challenge tools and using the scene,
@@ -46,11 +46,26 @@ const TutorialList = [
   {
     author: "Will Bailey",
     section: "Getting Started",
-    title: "Generating Baseline HASPI Scores",
+    title: "02 Running the CEC2 baseline from the commandline",
+    date: "July 2022",
+    difficulty: "Easy",
+    time: "15",
+    link: "http://colab.research.google.com/github/claritychallenge/clarity/blob/master/notebooks/02_Running_the_CEC2_baseline_from_commandline.ipynb",
+    description: (
+      <>
+        An explanation of how to run the CEC2 baseline using the Python
+        enhance.py and evaluate.py scripts from the commandline interface.{" "}
+      </>
+    ),
+  },
+  {
+    author: "Will Bailey",
+    section: "Getting Started",
+    title: "03 Running the CEC2 baseline from Python",
     date: "May 2022",
     difficulty: "Easy",
     time: "15",
-    link: "https://colab.research.google.com/drive/14xc6WgN83R4aC3nNGimGTEi0ROQzrCs5?usp=sharing",
+    link: "http://colab.research.google.com/github/claritychallenge/clarity/blob/master/notebooks/03_Running_the_CEC2_baseline_from_python.ipynb",
     description: (
       <>
         An explanation of the process used inside the evaluate function in the
@@ -122,8 +137,15 @@ function Tutorial({
       xs={9}
     >
       <h2> {title} </h2> <p> {description} </p>{" "}
-      <Link className="button button--primary" to={link}>
-        Open in Google Colab{" "}
+      <Link
+        to={link}
+        style={{ padding: 0, width: "auto", height: "auto", borderWidth: "0" }}
+      >
+        <img
+          style={{ width: "200px" }}
+          src="https://colab.research.google.com/assets/colab-badge.svg"
+          alt="SVG as an image"
+        />
       </Link>{" "}
     </GridItem>,
   ];
