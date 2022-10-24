@@ -17,6 +17,6 @@ Key dates are as follows
 - **15th Sept 2022**: 2nd round [submission](./taking_part/cec2_submission) deadline for listening tests
 
 - **Sept-Nov 2022**: Listening test evaluation period.
-- **2nd Dec 2022**:  Results announced at a Clarity Challenge Workshop; prizes awarded.
+- **12th Dec 2022**:  Results announced at a Clarity Challenge Workshop; prizes awarded.
   - Workshop likely to be a one-day virtual event
 
