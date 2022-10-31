@@ -110,7 +110,11 @@ module.exports = {
                     }, {
                         to: '/timeline',
                         label: 'Future Challenges',
-                    }, ]
+                    }, {
+                        type: 'doc',
+                        docId: 'cpc2/cpc2_intro',
+                        label: 'CPC2 (coming soon)',
+                    },]
                 },
 
                 {
