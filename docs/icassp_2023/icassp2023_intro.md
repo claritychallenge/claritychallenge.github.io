@@ -7,13 +7,10 @@ sidebar_position: 1
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import { TwitterTimelineEmbed } from "react-twitter-embed";
 
-<!--:::info
-**14th April 2022: Software tools and data are now available for [download](cec2_download.mdx)**.
-:::
--->
+
 :::info
 
-- Registration is now open! [Register Now](taking_part/icassp2023_registration.mdx). 
+- Registration is now open! [Register Now](taking_part/icassp2023_registration.mdx).
 - The Clarity [GitHub repository](https://github.com/claritychallenge/clarity) now includes the [ICASSP 2023 baseline systems](software/icassp2023_baseline.mdx).
 :::
 
@@ -23,8 +20,8 @@ This ICASSP SP Clarity Challenge (Speech Enhancement for Hearing Aids) is about 
 
 430 million people worldwide require rehabilitation to address hearing loss (World Health Organization). Yet even in developed countries, only 40% of people who could benefit from hearing aids have them and use them often enough. People believe that hearing aids perform poorly, with the difficulties of hearing speech-in-noise being a key issue.
 Speech enhancement is a major research area with thousands of papers each year, yet only a tiny percentage of these explicitly consider improvements for lisClarity is funded by the Engineering and Physical Sciences Research Council (EPSRC), UK. Project partners are Royal National Institute for the Deaf, Hearing Industry Research Consortium, and Amazon TTS Research.
-teners who have a hearing loss. Consequently, this signal processing challenge is designed to get the latest advancements in speech enhancement applied to hearing aids. 
-Entrants will be tasked to enhance speech-in-noise for input into our baseline hearing aid processor. The hearing aid will be tuned to the hearing characteristics of particular people. Thus you can enter without in-depth knowledge of hearing aids, and just concentrate on the task of de-noising. 
+teners who have a hearing loss. Consequently, this signal processing challenge is designed to get the latest advancements in speech enhancement applied to hearing aids.
+Entrants will be tasked to enhance speech-in-noise for input into our baseline hearing aid processor. The hearing aid will be tuned to the hearing characteristics of particular people. Thus you can enter without in-depth knowledge of hearing aids, and just concentrate on the task of de-noising.
 The scenario is listening to speech in the presence of typical domestic noise. We will provide the signals captured by the microphones on a pair of behind-the-ear hearing aids and those captured at the eardrum. The target speech will be a short sentence. The interfering noises will be a mix of speech, domestic appliance noise and music. The audio includes the simulation of the acoustic of typical small living rooms.
 The challenge is to improve the speech intelligibility without excessive loss of quality. To this end, entries will be evaluated using an objective metric that is an average of the Hearing Aid Speech Perception Index (HASPI) and Hearing Aid Speech Quality Index (HASQI).
 ## What will be provided:
@@ -37,8 +34,8 @@ A leader board.
 
 The scenario is similar to the second [Clarity Enhancement Challenge](../cec2/cec2_intro.md). However there are key differences:
 
-  - Participants are asked to focus on speech enhancement only. Hearing aid processing/simulation is not part of the challenge 
-  - Speech quality (HASPI) will be assessed in conjunction with speech intelligibility (HASPI)
+  - Participants are asked to focus on speech enhancement only. Hearing aid processing/simulation is not part of the challenge
+  - Speech quality (HASQI) will be assessed in conjunction with speech intelligibility (HASPI)
 
 For more details use the contents pane on the left to navigate the ICASSP SP Clarity Challenge: Speech Enhancement for Hearing Aids site.
 

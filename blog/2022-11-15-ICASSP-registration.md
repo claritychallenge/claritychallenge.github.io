@@ -4,7 +4,6 @@ title: Announcement of ICASSP 2023
 author: Will Bailey
 author_title: Clarity Team Member
 author_url: https://www.sheffield.ac.uk/dcs/people/research-staff/will-bailey
-author_image_url: ""
 tags: [clarity, announcement, CPC2]
 ---
 
