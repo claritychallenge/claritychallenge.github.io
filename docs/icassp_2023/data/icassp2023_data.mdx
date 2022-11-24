@@ -1,0 +1,29 @@
+---
+id: icassp2023_data
+title: ICASSP 2023 Data
+sidebar_label: Data Specification
+sidebar_position: 6
+---
+
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
+To obtain the data and baseline code, please see the download page.
+
+## Training, development and evaluation data
+The dataset of 10,000 simulated scenes is split into three sets:
+- 6000 training scenes, released 22nd Nov. 2022.
+- 2500 development scenes, released 22nd Nov. 2022.
+- 1500 evaluation scenes, released 1st Feb. 2023.
+
+In addition there will be:
+- A secondary test set for evaluation that will be based on real ecologically-valid recordings and so can highlight the generalizability of the entrants’ approaches beyond the simulations. (released 1st February 2023).
+Each scene corresponds to a unique target utterance and unique segment(s) of noise from the interferers. The training, development and evaluation sets are disjoint with respect to the target speakers. Sets are balanced for the gender of the target talker. Entrants must not use the development or evaluation data sets for training. The system submitted should be chosen on the evidence provided by the development set. The final ranking will be performed with the (held-out) evaluation sets. Both evaluation datasets have not been used in previous Clarity challenges.
+The secondary test set for evaluation will be made using live human talkers in a listening room and real interfering noises (e.g. TVs, washing machines). These sounds will be separately recorded so the reference speech can be extracted as needed by the objective metrics.
+For the training and development set, entrants have access to a diverse range of signals and metadata, with the most important being:
+- The hearing aid microphone signals
+- The hearing characteristics of the listener (e.g. audiogram)
+- The anechoic target reference and interferer signals.
+For training, teams can use their own data or expand the data through simple automated modifications. However, teams that do this must make a second submission using only the official audio files.
+For evaluation, the data available is more limited, e.g.:
+- The hearing aid microphone signals
+- The hearing characteristics of the listener (e.g. audiogram)

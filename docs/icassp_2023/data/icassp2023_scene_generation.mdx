@@ -1,0 +1,29 @@
+---
+id: icassp2023_scene_generation
+title: Scene Generation
+sidebar_label: Scene Generation
+sidebar_position: 5
+---
+
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
+## The scenario
+The scenario is someone listening to a target speaker in a room with two or three interfering sound sources (Figure 1). The scenes are described by a large number of randomised parameters:
+- The room size and materials (which create moderate reverberation typical of a living room).
+- The identity of the target talker (one of 40 possible speakers).
+- The 7-10 word sentence being uttered by the target talker.
+- The listener, target talker and noise interferer locations.
+- The head orientation of the listener. Initially, the listener is not facing the target talker, but around the time the target speech starts, the listener rotates their head to face the target approximately.
+- The interferer sound samples, which can be a: stream of competing speech; continuous domestic noise source (e.g., a washing machine); or music source.
+- The speech onset and offset times.
+- While scene generating software is provided, we anticipate most entrants would use our database of pre-mixed signals. The website will provide a full description of the scene generation.
+- The main audio signals provided are for 3 microphones on two Behind-The-Ear (BTE) hearing aids (left and right ear).
+
+While scene generating software is provided, we anticipate most entrants would use our database of pre-mixed signals. The website will provide a full description of the scene generation.
+The main audio signals provided are for 3 microphones on two Behind-The-Ear (BTE) hearing aids (left and right ear).
+
+<figure id="fig1">
+<img width="500" src={useBaseUrl('/img/ICASSP2023/room.png')} />
+<figcaption>Figure 1.  An example scenario with two noise interferers.
+</figcaption>
+</figure>
