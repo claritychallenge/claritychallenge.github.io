@@ -1,6 +1,6 @@
 ---
-id: cec2_rules
-title: CEC2 Rules
+id: icassp2023_rules
+title: ICASSP 2023 Grand Challenge Rules
 sidebar_label: Rules
 sidebar_position: 6
 ---
