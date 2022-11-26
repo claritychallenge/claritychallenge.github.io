@@ -112,7 +112,7 @@ module.exports = {
                         label: 'CEC1',
                     }, {
                         type: 'doc',
-                        docId: 'icassp_2023/icassp2023_intro',
+                        docId: 'icassp2023/icassp2023_intro',
                         label: 'ICASSP 2023 Grand Challenge',
                     }, {
                         to: '/timeline',
@@ -170,7 +170,7 @@ module.exports = {
                         to: '/docs/cec1/cec1_intro/',
                     }, {
                         label: 'CASSP 2023 Documentation',
-                        to: '/docs/icassp_2023/icassp2023_intro/',
+                        to: '/docs/icassp2023/icassp2023_intro/',
                     }, ],
                 },
                 {

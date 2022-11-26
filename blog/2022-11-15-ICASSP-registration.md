@@ -11,7 +11,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 We are pleased to announce that registration for the **ICASSP 2023 Clarity Grand Challenge** is now open.
 
-To register please complete the simple Google form found on the [registration page](/docs/icassp_2023/taking_part/icassp2023_registration).
+To register please complete the simple Google form found on the [registration page](/docs/icassp2023/taking_part/icassp2023_registration).
 
 The remaining important dates for the challenge are as follows:
 - TBA
