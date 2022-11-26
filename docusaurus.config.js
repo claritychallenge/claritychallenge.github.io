@@ -99,25 +99,27 @@ module.exports = {
                     label: 'Challenges',
                     position: 'right',
                     items: [{
-                        type: 'doc',
-                        docId: 'cec2/cec2_intro',
-                        label: 'CEC2 (current)',
-                    }, {
-                        type: 'doc',
-                        docId: 'cpc1/cpc1_intro',
-                        label: 'CPC1',
-                    }, {
-                        type: 'doc',
-                        docId: 'cec1/cec1_intro',
-                        label: 'CEC1',
-                    }, {
-                        type: 'doc',
-                        docId: 'icassp2023/icassp2023_intro',
-                        label: 'ICASSP 2023 Grand Challenge',
-                    }, {
-                        to: '/timeline',
-                        label: 'Future Challenges',
-                    }, ]
+                            type: 'doc',
+                            docId: 'icassp2023/icassp2023_intro',
+                            label: 'ICASSP 2023 Grand Challenge (current)',
+                        },
+                        {
+                            type: 'doc',
+                            docId: 'cec2/cec2_intro',
+                            label: 'CEC2 (workshop in December)',
+                        }, {
+                            type: 'doc',
+                            docId: 'cpc1/cpc1_intro',
+                            label: 'CPC1',
+                        }, {
+                            type: 'doc',
+                            docId: 'cec1/cec1_intro',
+                            label: 'CEC1',
+                        }, {
+                            to: '/timeline',
+                            label: 'Future Challenges',
+                        },
+                    ]
                 },
 
                 {

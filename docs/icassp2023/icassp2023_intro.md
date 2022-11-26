@@ -7,7 +7,6 @@ sidebar_position: 1
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import { TwitterTimelineEmbed } from "react-twitter-embed";
 
-
 :::info
 
 - Registration is now open! [Register Now](taking_part/icassp2023_registration.mdx).
@@ -39,3 +38,4 @@ The scenario is similar to the second [Clarity Enhancement Challenge](../cec2/ce
   - Participants are asked to focus on speech enhancement only. Hearing aid processing/simulation is not part of the challenge
   - Speech quality (HASQI) will be assessed in conjunction with speech intelligibility (HASPI)
 
+This site provides access to all the software, data and information that you need to get started.
