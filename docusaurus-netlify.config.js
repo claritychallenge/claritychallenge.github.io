@@ -15,7 +15,6 @@ module.exports = {
     favicon: 'img/favicon.ico',
     organizationName: 'claritychallenge', // Usually your GitHub org/user name.
     projectName: 'claritychallenge.github.io', // Usually your repo name.
-    /* trailingSlash: false, */
     deploymentBranch: "gh-pages",
     stylesheets: [{
         href: 'https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css',
@@ -48,16 +47,16 @@ module.exports = {
 
                 {
                     type: 'dropdown',
-                    label: 'CEC2 Shortcuts',
+                    label: 'Shortcuts',
                     position: 'left',
                     items: [{
                             type: 'doc',
-                            docId: 'cec2/cec2_intro',
-                            label: 'I want to learn more sbout CEC2...',
+                            docId: 'icassp2023/icassp2023_intro',
+                            label: 'I want to learn more about the ICASSP challenge...',
                         },
                         {
                             type: 'doc',
-                            docId: 'cec2/cec2_download',
+                            docId: 'icassp2023/icassp2023_download',
                             label: 'I want to download the data...',
                         },
                         {
@@ -66,12 +65,12 @@ module.exports = {
                         },
                         {
                             type: 'doc',
-                            docId: 'cec2/taking_part/cec2_registration',
+                            docId: 'icassp2023/taking_part/icassp2023_registration',
                             label: 'I want to register a team...',
                         },
                         {
                             type: 'doc',
-                            docId: 'cec2/taking_part/cec2_submission',
+                            docId: 'icassp2023/taking_part/icassp2023_submission',
                             label: 'I want to submit results...',
                         },
 
@@ -99,25 +98,27 @@ module.exports = {
                     label: 'Challenges',
                     position: 'right',
                     items: [{
-                        type: 'doc',
-                        docId: 'cec2/cec2_intro',
-                        label: 'CEC2 (current)',
-                    }, {
-                        type: 'doc',
-                        docId: 'cpc1/cpc1_intro',
-                        label: 'CPC1',
-                    }, {
-                        type: 'doc',
-                        docId: 'cec1/cec1_intro',
-                        label: 'CEC1',
-                    }, {
-                        type: 'doc',
-                        docId: 'icassp2023/icassp2023_intro',
-                        label: 'ICASSP 2023 Grand Challenge',
-                    }, {
-                        to: '/timeline',
-                        label: 'Future Challenges',
-                    }, ]
+                            type: 'doc',
+                            docId: 'icassp2023/icassp2023_intro',
+                            label: 'ICASSP 2023 Grand Challenge (current)',
+                        },
+                        {
+                            type: 'doc',
+                            docId: 'cec2/cec2_intro',
+                            label: 'CEC2 (workshop in December)',
+                        }, {
+                            type: 'doc',
+                            docId: 'cpc1/cpc1_intro',
+                            label: 'CPC1',
+                        }, {
+                            type: 'doc',
+                            docId: 'cec1/cec1_intro',
+                            label: 'CEC1',
+                        }, {
+                            to: '/timeline',
+                            label: 'Future Challenges',
+                        },
+                    ]
                 },
 
                 {
