@@ -2,11 +2,26 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://claritychallenge.github.io/blog</id>
     <title>The Clarity Project Blog</title>
-    <updated>2022-07-10T00:00:00.000Z</updated>
+    <updated>2022-11-15T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://claritychallenge.github.io/blog"/>
     <subtitle>The Clarity Project Blog</subtitle>
     <icon>https://claritychallenge.github.io/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Announcement of ICASSP 2023 Grand Challenge]]></title>
+        <id>Announcement of ICASSP 2023 Grand Challenge</id>
+        <link href="https://claritychallenge.github.io/blog/Announcement of ICASSP 2023 Grand Challenge"/>
+        <updated>2022-11-15T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[We are pleased to announce that registration for the ICASSP 2023 Clarity Grand Challenge is now open.]]></summary>
+        <content type="html"><![CDATA[<p>We are pleased to announce that registration for the <strong>ICASSP 2023 Clarity Grand Challenge</strong> is now open.</p><p>To register please complete the simple Google form found on the <a href="/docs/icassp2023/taking_part/icassp2023_registration">registration page</a>.</p><p>The remaining important dates for the challenge are as follows:</p><ul><li>TBA</li></ul><p>The challenge training, dev data and initial tools are now fully from the <a href="https://github.com/claritychallenge/clarity" target="_blank" rel="noopener noreferrer">Github repository</a>.</p><p>If you have any questions please do not hesitate to contact us at <a href="mailto:claritychallengecontact@gmail.com" target="_blank" rel="noopener noreferrer">claritychallengecontact@gmail.com</a>.</p>]]></content>
+        <author>
+            <name>Will Bailey</name>
+            <uri>https://www.sheffield.ac.uk/dcs/people/research-staff/will-bailey</uri>
+        </author>
+        <category label="clarity" term="clarity"/>
+        <category label="announcement" term="announcement"/>
+        <category label="CEC2" term="CEC2"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[CPC1 results and prizes]]></title>
         <id>CPC1 results and prizes</id>
