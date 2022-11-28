@@ -9,11 +9,11 @@ const FeatureList = [
     description: (
       <>
         This site provides{" "}
-        <a href="docs/cec2/cec2_intro"> full documentation </a> for all our
-        challenges. Enter the 2nd Enhancement Challenge, running now.{" "}
+        <a href="docs/icassp2023/icassp2023_intro"> full documentation </a> for all our
+        challenges. Enter the ICASSP 2023 Grand Challenge, running now.{" "}
       </>
     ),
-    link: "docs/cec2/cec2_intro",
+    link: "docs/icassp2023/icassp2023_intro",
   },
   {
     title: "Code on Github",

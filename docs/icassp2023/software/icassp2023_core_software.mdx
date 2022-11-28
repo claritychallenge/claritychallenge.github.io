@@ -1,0 +1,63 @@
+---
+id: icassp2023_core_software
+title: Core Software
+sidebar_label: Core Software
+sidebar_position: 7
+---
+
+The code is provided as a [GitHub repository](https://github.com/claritychallenge/clarity) containing individual Python tools and a complete baseline system. Tools will allow the processing of individual scenes or the bulk processing of the complete Clarity dataset.
+
+The key elements of the baseline system are the:
+
+- Scene generator.
+- Baseline hearing aid enhancement.
+- Hearing aid amplification.
+- HASPI speech intelligibility model.
+- HASQI speech quality model.
+
+Additional tools are available to use as you see fit. These include a hearing loss model, differentiable source separation and hearing aid amplification modules and an alternative intelligibility model.
+
+## A. Scene generator
+
+Fully open-source Python code for generating hearing aid inputs for each scene
+
+- **Inputs**: target and interferer signals, HOA-IRs, RAVEN project (rpf) files, scene description JSON files
+- **Outputs**: Mixed target+interferer signals for each hearing aid channel, direct path (simulating a measurement close to the eardrum). Reverberated pre-mixed signals can also be optionally generated.
+
+## B. Hearing aid enhancement stage
+
+The hearing aid enhancement stage supplied simply reduces the six channel input to two channels by selection the 'front' microphone on each ear. This is the component that you are challenged to replace.
+
+- **Inputs**: 6 channel hearing aid input (3 microphones per for each ear)
+- **Outputs**: An enhanced stereo signal that is passed to the amplification stage.
+
+## C. The hearing aid amplification stage
+
+The hearing aid amplifier consists of a NAL-R  fitting amplification stage \[[1](#refs)\] followed by a simple automatic gain compressor. It produces output signals in 16-bit wav format ready for HASPI and HASQI evaluation.
+
+- **Inputs**: Stereo output of the enhancement stage and audiograms to characterise the listeners.
+- **Outputs**: Stereo hearing aid (HA) outputs signals.
+
+## D. HASPI Speech Intelligibility model
+
+Python implementation of the Hearing Aid Speech Perception Index (HASPI) \[[2](#refs)\] model which is used for objective intelligibility estimation. This will be one component of the evaluation metric.
+
+- **Inputs**: reference target signal (i.e., the premixed target signal convolved with the BRIR with the reflections “turned off”, specified as ‘target_anechoic’), HA output signals, audiogram, level reference (level in dB SPL which corresponds to 0 dB FS)
+- **Outputs**: predicted intelligibility score
+It is important to remember that both reference target and HA output signals have to be calibrated to the same dB SPL level before calculating HASPI.
+
+## E. HASQI Speech Quality model
+
+Python implementation of the Hearing Aid Speech Quality Index (HASQI) \[[3](#refs)\] model which is used for objective quality estimation. This will be one component of the evaluation metric.
+
+- **Inputs**: reference target signal (i.e., the premixed target signal convolved with the BRIR with the reflections “turned off”, specified as ‘target_anechoic’), HA output signals, audiogram, level reference (level in dB SPL which corresponds to 0 dB FS)
+- **Outputs**: predicted intelligibility score
+It is important to remember that both reference target and HA output signals have to be calibrated to the same dB SPL level before calculating HASPI.
+
+## References
+
+<a name="refs"></a>
+
+1. Byrne, Denis, and Harvey Dillon. "The National Acoustic Laboratories'(NAL) new procedure for selecting the gain and frequency response of a hearing aid." Ear and hearing 7.4 (1986): 257-265.
+2. Kates, J.M. and Arehart, K.H., 2021. "The hearing-aid speech perception index (haspi) version 2". Speech Communication, 131, pp.35-46.
+3. Kates, J.M. and Arehart, K.H., 2014. "The hearing-aid speech quality index (HASQI) version 2". Journal of the Audio Engineering Society. 62 (3): 99–117.
