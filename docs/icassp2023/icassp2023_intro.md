@@ -39,3 +39,4 @@ The scenario is similar to the second [Clarity Enhancement Challenge](../cec2/ce
   - Speech quality (HASQI) will be assessed in conjunction with speech intelligibility (HASPI)
 
 This site provides access to all the software, data and information that you need to get started.
+
