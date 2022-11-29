@@ -10,10 +10,22 @@ import { TwitterTimelineEmbed } from "react-twitter-embed";
 :::info
 
 - Registration is now open! [Register Now](taking_part/icassp2023_registration.mdx).
+
 :::
-<!--- The Clarity [GitHub repository](https://github.com/claritychallenge/clarity) now includes the [ICASSP 2023 baseline systems](software/icassp2023_baseline.mdx)-->
 
 This ICASSP SP Clarity Challenge (Speech Enhancement for Hearing Aids) is about improving the performance of hearing aids for speech-in-noise. According to the World Health Organization, 430 million people worldwide require rehabilitation to address hearing loss. By 2050, this will increase to one in ten people having disabling hearing loss. Yet even in developed countries, only 40% of people who could benefit from hearing aids have them. A major reason for low uptake and use is the perception that hearing aids perform poorly.
+
+<p/>
+<center>
+ <iframe width="560" height="315" src="https://www.youtube.com/embed/pEhci66Lr28" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</center>
+
+## Organisers
+
+- Michael Akeroyd, Graham Naylor, **University of Nottingham**
+- Jon Barker, Will Bailey, Zehai Tu, **University of Sheffield**
+- Trevor Cox, Simone Graetzer, **University of Salford**
+- John Culling, **Cardiff University**
 
 ## Overview of challenge
 
