@@ -4,7 +4,7 @@ title: Announcement of CPC2
 author: Will Bailey
 author_title: Clarity Team Member
 author_url: https://www.sheffield.ac.uk/dcs/people/research-staff/will-bailey
-author_image_url: ""
+author_image_url: https://avatars.githubusercontent.com/jwillbailey
 tags: [clarity, announcement, CPC2]
 ---
 
