@@ -1,0 +1,90 @@
+---
+id: icassp2023_new_evaluation
+title: ICASSP 2023 Ecologically-valid evaluation set
+sidebar_label: New evaluation set
+sidebar_position: 6.5
+---
+
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
+## Overview
+This more ecologically-valid dataset has been designed to answer the following research question: Can systems trained on simulated data generalise to more ecologically-valid measurement data?
+
+- Recordings were carried in a real room using live talkers.
+- The talkers were recorded on both a close microphone and also a 1st-order ambisonic microphone at the listener position.
+-- Head rotations are done using the spherical harmonic representation of the sound.
+-- HRTFs are applied to get the hearing-aid microphone signals, as for the simulated datasets.
+- The talkers were recorded in noise-free conditions.
+- Noise, music and speech interferers were played from loudspeaker and recorded on the ambisonic microphone.
+- The random positions of the sources and receivers were achieved using the same limitations as applied to the simulated set (e.g. target talker and listener at least 1m apart)
+
+Differences between simulated and ecologically-valid datasets:
+- Talkers speaking and behaving different when asked to talk to a distant microphone in a real room.
+- Real room acoustics instead of simulation using geometric room acoustic model.
+- Directivity of interferers not omni-directional.
+- Transducer noise on the distant ambisonic microphone.
+
+## Environment
+Recordings were done in the [Acoustics Research Centre's listening room at the University of Salford](https://acoustictesting.salford.ac.uk/acoustic-laboratories/listening-room/).
+- Mid-frequency reverberation time: 0.27s
+- Room dimensions: 6.6m × 5.8m × 2.8m
+- Background noise: 5.7 dBA
+
+<figure id="fig1">
+<img width="500" src={useBaseUrl('/img/ICASSP2023/binaural_with_head_tracking_in_salford_university_listening_room.jpg')} />
+<figcaption>Figure 1.  The listening room (photo not from evaluation set recording).
+</figcaption>
+</figure>
+
+## Equipment
+- Close microphone: Neumann KM184 cardioid
+- Close microphone preamp: Alice mic.amp.pak1
+- Ambisonic microphone: Sennheiser Ambeo VR
+- Interface: RME Fireface UFX
+- Loudspeaker for interferer: M-audio BX8a
+
+## Target speech
+A new set of 1,600 sentences generated from the British National Corpus. These will be generated using the same process as before [1].
+- The sentences were read live by 10 actors: 5 male and 5 female.
+	- Ages: 20 - 62.
+	- Standing.
+- The talker faced the ambisonic microphone. They were told to talk to that microphone and ignore the close microphone
+- Recorded in noise-free conditions.
+- Each speaker recorded 160 unique sentences, in blocks of 10 talking positions.
+- A cardioid microphone about 50 cm from the talker recorded the reference speech for HASPI and HASQI.
+
+## Interferers
+- Recordings reproduced by loudspeakers.
+- Recordings from CEC2 evaluation set
+- Each interferer recorded separately on the ambisonics microphone.
+- Loudspeaker facing ambisonic microphone
+
+## Listener
+- Recordings on a 1st order ambisonics microphone.
+- Head rotation will be done virtually via spherical harmonics with the same statistics as the training set.
+- HRTFs will be applied to the ambisonic recordings using a virtual loudspeaker set-up to give the signals on the hearing aid microphones.
+
+## Talker, noise and listener position
+- 16 different layouts (see Figure 2) with random talker, interferer and listener positions.
+- The positions determined using the protocol used for the simulation.
+- A block of 10 sentences read for each layout.
+- Sources and receivers at the same height (but some variation in the talker z-coordinate because of height differences in the actors)
+
+<figure id="fig2">
+<img width="500" src={useBaseUrl('/img/ICASSP2023/layout_icassp_evaluation_set.png')} />
+<figcaption>Figure 2.  The 16 layouts. T talker; A ambisonic mic; N noise interferer; S speech interferer; M music interferer.
+</figcaption>
+</figure>
+
+
+
+
+
+
+## References
+[1] Graetzer, S., Akeroyd, M.A., Barker, J., Cox, T.J., Culling, J.F., Naylor, G., Porter, E. and Viveros-Muñoz, R., 2022. Dataset of British English speech recordings for psychoacoustics and speech processing research: The clarity speech corpus. Data in Brief, 41, p.107951.
+
+
+
+
+
