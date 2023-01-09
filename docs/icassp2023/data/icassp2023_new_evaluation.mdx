@@ -8,18 +8,20 @@ sidebar_position: 6.5
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
 ## Overview
+
 This more ecologically-valid eval set has been designed to answer the following research question: Can systems trained on simulated data generalise to more ecologically-valid measurement data?
 
 - Recordings were carried in a real room using live talkers.
 - The talkers were recorded on both a close microphone and also a 1st-order ambisonic microphone at the listener position.
-	- Head rotations are done using the spherical harmonic representation of the sound.
-	- HRTFs are applied to get the hearing-aid microphone signals, as for the simulated datasets.
+  - Head rotations are done using the spherical harmonic representation of the sound.
+  - HRTFs are applied to get the hearing-aid microphone signals, as for the simulated datasets.
 - The talkers were recorded in noise-free conditions.
 - Noise, music and speech interferers were played from loudspeaker and recorded on the ambisonic microphone.
 - The target talker and intereferer are then mixed to create a scene with a desired SNR.
 - The random positions of the sources and receivers were achieved using the same limitations as applied to the simulated set (e.g. target talker and listener at least 1m apart)
 
 Differences between simulated and ecologically-valid datasets:
+
 - Talkers speaking and behaving different when asked to talk to a distant microphone in a real room.
 - Real room acoustic altering sound instead of simulation using geometric room acoustic model.
 - Directivity of interferers not omni-directional.
@@ -27,7 +29,9 @@ Differences between simulated and ecologically-valid datasets:
 - Measurements had lower order Ambisonics than used in the simulations.
 
 ## Environment
+
 Recordings were done in the [Acoustics Research Centre's listening room at the University of Salford](https://acoustictesting.salford.ac.uk/acoustic-laboratories/listening-room/).
+
 - Mid-frequency reverberation time: 0.27s
 - Room dimensions: 6.6m × 5.8m × 2.8m
 - Background noise: 5.7 dBA
@@ -39,6 +43,7 @@ Recordings were done in the [Acoustics Research Centre's listening room at the U
 </figure>
 
 ## Equipment
+
 - Close microphone: Neumann KM184 cardioid
 - Close microphone preamp: Alice mic.amp.pak1
 - Ambisonic microphone: Sennheiser Ambeo VR
@@ -46,43 +51,50 @@ Recordings were done in the [Acoustics Research Centre's listening room at the U
 - Loudspeaker for interferer: M-audio BX8a
 
 ## Target speech
+
 A new set of 1,600 sentences generated from the British National Corpus not previously used by Clarity. These were generated using the same process as before [1].
+
 - The sentences were read live by 10 actors: 5 male and 5 female.
-	- Ages ranged from 20 to 62.
-	- Actors were standing.
+  - Ages ranged from 20 to 62.
+  - Actors were standing.
 - The talker faced the ambisonic microphone. They were told to talk to that microphone and ignore the close microphone.
 - Recorded in noise-free conditions.
 - Each speaker recorded 160 unique sentences, in blocks of 10 talking positions.
 - A cardioid microphone about 50 cm from the talker recorded the reference speech for HASPI and HASQI.
 
 ## Interferers
+
 - Recordings reproduced by loudspeakers.
 - Recordings of speech, noise and muisc same sources as CEC2 evaluation set.
 - Each interferer recorded separately on the ambisonics microphone.
 - Loudspeaker facing ambisonic microphone
 
 ## Listener
+
 - Recordings on a 1st order ambisonics microphone.
 - Front of ambisonic room along x-axis of room.
 - Head rotation done virtually via spherical harmonics with the same statistics as the training set.
 - HRTFs applied to the ambisonic recordings using a virtual loudspeaker set-up to give the signals on the hearing aid microphones.
 
 ## Talker, noise and listener position
+
 - 16 different room layouts (see Figure 2) with random talker, interferer and listener positions.
-	- These positions determined using the same protocol as used for the simulation.
+  - These positions determined using the same protocol as used for the simulation.
 - A block of 10 sentences read for each layout.
 - Sources and receivers at the same height (but some variation in the talker z-coordinate because of height differences in the actors).
 
 <figure id="fig2">
-<img width="100%" src={useBaseUrl('/img/icassp2023/layout_icassp_evaluation_set.png')} />
+<img width="100%" src={useBaseUrl('/img/ICASSP2023/layout_icassp_evaluation_set.png')} />
 <figcaption>Figure 2.  The 16 layouts. T talker; A ambisonic mic; N noise interferer; S speech interferer; M music interferer.
 </figcaption>
 </figure>
 
 ## Publication
+
 The target speech and interferers will be mixed to gain the desired signal to noise ratio using the same process as for the simulation set. The dataset will be available 1st February 2023.
 
 ## Example recordings
+
 Recording of script reading by someone not used for the evaluation set. The audio starts 3-4 seconds into the recording.
 
 Close microphone:
@@ -122,9 +134,5 @@ Your browser does not support the audio element.
 </audio>
 
 ## References
+
 [1] Graetzer, S., Akeroyd, M.A., Barker, J., Cox, T.J., Culling, J.F., Naylor, G., Porter, E. and Viveros-Muñoz, R., 2022. Dataset of British English speech recordings for psychoacoustics and speech processing research: The clarity speech corpus. Data in Brief, 41, p.107951.
-
-
-
-
-
