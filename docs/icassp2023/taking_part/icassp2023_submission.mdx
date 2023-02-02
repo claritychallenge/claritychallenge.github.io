@@ -6,7 +6,6 @@ sidebar_position: 4
 ---
 import Icon from "@material-ui/core/Icon";
 
-
 :::info
 All teams are [required to register](./icassp2023_registration) for the challenge prior to submission. Please register as early as possible.
 :::
@@ -15,9 +14,9 @@ Submissions will be evaluated using a combination of HASPI and HASQI to give a c
 
 Key dates.
 
-- **1st Feb 2023**: Release of test and eval, plus core software.
-- **8th Feb 2023**: Submission by teams.
-- **13th Feb 2023**: Results released.Top 5 ranked teams invited to submit papers to ICASSP-2023
+- **2nd Feb 2023**: Release of test and eval, plus core software.
+- **10th Feb 2023**: Submission by teams.
+- **14th Feb 2023**: Results released.Top 5 ranked teams invited to submit papers to ICASSP-2023
 - **20th Feb 2023**: Invited papers submitted to ICASSP-2023
 - **4-9th June 2023**: Overview paper and invited papers presented at dedicated ICASSP session
 
@@ -42,14 +41,27 @@ You must submit the stereo audio signals produced at the output of your enhancem
 
 Your processed signals should be named using the conventions used by the baseline system, i.e., `<Scene ID>_<Listener ID>_enhanced.wav` and explained on the [data page](../data/icassp2023_data#d6-enhanced-signals).
 
+Place the processed signals for the two sets into separate directories named `eval1` and `eval2`.
+
 These should be placed in a directory whose name is the unique team ID that you will be sent, e.g., `E001` and  then packaged using `zip` or `tar` or any standard packaging tool.
 
-The resulting file should be about 2 GB.
+The packaged file will have the following structure,
+
+```txt
+E001
+├── eval1 (1500 processed signals)
+└── eval2 (1500 processed signals)
+```
+
+The resulting file should be about 4 GB.
+
+Upload the packaged data to the Google Drive link that you will have been sent.
 
 ## Technical report
 
 - For every entry, a technical report needs to be uploaded to the Google Drive along with your evaluation signals - see [here](../icassp2023_dates.md) for deadline. The draft needs to be sufficiently complete for us to judge whether your system is compliant with the challenge rules.
 - Your report should include an abstract and introduction and sections on experimental setup/methodology including system information and model/network architecture, evaluation/results, discussion, conclusion and references. Please provide an estimation of the computational resources needed. You must describe any external data and pre-existing tools, software and models used.
+- The report can be placed in the Google Drive alongside your data.
 - The top five systems will be invited to submit a paper to the ICASSP 2023 special session.
 
 ## How will intellectual property be handled?
