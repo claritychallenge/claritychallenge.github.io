@@ -9,7 +9,9 @@ import { TwitterTimelineEmbed } from "react-twitter-embed";
 
 :::info
 
-- Registration is now open! [Register Now](taking_part/icassp2023_registration.mdx).
+- Evaluation data now available! [Download Now](https://www.myairbridge.com/en/#!/folder/EkthOZZeBW33aaDBWSDadTgpOkbgaFxO).
+
+- Registration is still open! [Register Now](taking_part/icassp2023_registration.mdx).
 
 :::
 
@@ -44,11 +46,9 @@ The challenge is to improve the speech intelligibility without excessive loss of
 - Listener characteristics, including audiograms and speech-in-noise testing.
 - Software including tools for augmenting training data, a baseline enhancement system, a fixed hearing aid implementation and code for scoring signals using the HASPI and HASQI hearing aid metrics.
 
-
 The scenario is similar to the second [Clarity Enhancement Challenge](../cec2/cec2_intro.md) but with the following key differences:
 
-  - Participants are asked to focus on speech enhancement only. Hearing aid processing/simulation is not part of the challenge
-  - Speech quality (HASQI) will be assessed in conjunction with speech intelligibility (HASPI)
+- Participants are asked to focus on speech enhancement only. Hearing aid processing/simulation is not part of the challenge
+- Speech quality (HASQI) will be assessed in conjunction with speech intelligibility (HASPI)
 
 This site provides access to all the software, data and information that you need to get started.
-
