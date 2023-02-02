@@ -8,7 +8,7 @@ sidebar_position: 6
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
 To obtain the data and baseline code, please see the [download page](../icassp2023_download).
- 
+
 ## A. Training, development and evaluation data
 
 The dataset of 10,000 simulated scenes is split into three sets:
@@ -25,15 +25,15 @@ In addition there will be:
 
 For the dataset of 10,000 simulated scenes
 
-- Each scene corresponds to a unique target utterance and unique segment(s) of noise from the interferers. 
-- The training, development and evaluation sets are disjoint with respect to the target speakers. 
-- Sets are balanced for the gender of the target talker. 
-- Entrants must not use the development or evaluation data sets for training. 
-- The system submitted should be chosen on the evidence provided by the development set. 
+- Each scene corresponds to a unique target utterance and unique segment(s) of noise from the interferers.
+- The training, development and evaluation sets are disjoint with respect to the target speakers.
+- Sets are balanced for the gender of the target talker.
+- Entrants must not use the development or evaluation data sets for training.
+- The system submitted should be chosen on the evidence provided by the development set.
 
 For evaluation
 
-- The final ranking will be performed with the (held-out) evaluation sets. 
+- The final ranking will be performed with the (held-out) evaluation sets.
 - Neither evaluation datasets (simulation nor real) have been used in previous Clarity challenges.
 <!-- The secondary 'real data' evaluation set will be made using live human talkers in a listening room and real interfering noises (e.g. TVs, washing machines). These sounds will be separately recorded so the reference speech can be extracted as needed by the objective metrics. -->
 - The secondary 'real data' evaluation set will be made using real acoustic mixtures but using loudspeaker playback of target talkers so that the reference speech can be extracted as needed by the objective metrics.
@@ -52,7 +52,6 @@ For evaluation, the data available is more limited, i.e.,
 - The hearing characteristics of the listener (e.g. audiogram)
 - The anechoic target reference signal which will be used by the organisers but not released to entrants.
 
-
 High-Order Ambisonic Impulse Responses (HOA-IRs) and Head-Related Impulse Response (HRIRs) are used to model how the sound is altered as it propagates through the room and interacts with the head. See the page on [scene generation](icassp2023_scene_generation.mdx) for more details.
 
 Time-domain acoustic signals are generated for:
@@ -66,7 +65,6 @@ Time-domain acoustic signals are generated for:
 <figcaption>Figure 1. Front (Fr), Middle (Mid) and Rear microphones on a BTE hearing aid form.</figcaption>
 </figure>
 
-
 Head Related Impulse Responses (HRIRs) are used to model how sound is altered as it propagates in a free-field and interacts with the head (i.e., no room is included). These are taken from the [OlHeadHRTF database](https://uol.de/mediphysik/downloads/hearingdevicehrtfs) with permission. These include HRIRs for human heads and for three types of head-and-torso simulator/mannekin. The eardrum HRIRs (labelled `ED`) are for a position close to the eardrum of the open ear.
 
 `rpf` files and `ac` files are specification files for the geometric room acoustic model that include a complete description of the room, both in terms of geometry and room materials.
@@ -78,9 +76,9 @@ For each scene in the training data the following signals and metadata are avail
 - The target and interferer HOA-IRs (4 pairs: front, mid, rear and eardrum for left and right ears).
 - The mono target and interferer signals (pre-convolution).
 - For each hearing aid microphone (channels 1-3 where channel 1 is front, channel 2 is mid and channel 3 is rear) and a position close to the eardrum (channel 0):
-   - The target convolved with the appropriate HOA-IRs and downmixed;
-   - The interferers convolved with the appropriate HOA-IRs and downmixed;
-   - The sum of the target and interferer convolved with the appropriate HOA-IRs and downmixed; (i.e. the noisy signals that would be received by the hearing aid)
+  - The target convolved with the appropriate HOA-IRs and downmixed;
+  - The interferers convolved with the appropriate HOA-IRs and downmixed;
+  - The sum of the target and interferer convolved with the appropriate HOA-IRs and downmixed; (i.e. the noisy signals that would be received by the hearing aid)
 - The target convolved with the anechoic HOA-IRs and downmixed for channel 1 for each ear (‘target_anechoic’). For use as a reference when computing HASPI scores.
 - Metadata describing the scene: a JSON file containing, e.g., the filenames of the sources, the location of the sources, the viewvector of the target source, the location and viewvector of the receiver, the room dimensions (see specification below), and the room number, which corresponds to the RAVEN BRIR, rpf and ac files.
 - A signal describing the head rotation (i.e. azimuthal angle at each sample)
@@ -89,13 +87,13 @@ For each scene in the training data the following signals and metadata are avail
 
 This is made available to allow you to fully examine the performance of your system. Ground truth data (i.e., the premixed target and interferers are available in the development set)
 
-Development data also contains target speaker adaptation sentences, i.e., four utterances from each of the target speakers. These will also be available in the evaluation data. i.e., systems can use these utterances in conjunction with the known target ID to inform their system of the which speaker in the scene should be attended. 
+Development data also contains target speaker adaptation sentences, i.e., four utterances from each of the target speakers. These will also be available in the evaluation data. i.e., systems can use these utterances in conjunction with the known target ID to inform their system of the which speaker in the scene should be attended.
 
 Note, that the data available for the evaluation will be much more limited, e.g. it will not contain premixed ground truth signals or scene metadata, (see Section [B.3](#b3-evaluation-data)).
 
 When using the development data for evaluation, your hearing aid enhancement model should only be using the types of data available in the evaluation data set (see below).
 
-### B.3 Simulated Evaluation data
+### B.3 Simulated Evaluation data  (`eval1`)
 
 The following data will only be available:
 
@@ -113,7 +111,7 @@ One challenge will be identifying the target talker from the hearing aid microph
 
 These two approaches mimic what is available to human listeners. They might focus on a known voice or they might use visual cues to know roughly where and when someone is talking.
 
-### B.4 Real Evaluation data
+### B.4 Real Evaluation data (`eval2`)
 
 The following data will only be available:
 
@@ -123,6 +121,7 @@ The following data will only be available:
 - ID of target talker and a few examples of clean audio that are not the same as the target utterance.
 - Speaker adaptation sentence - 4 clean utterances for each target speaker.
 - Further details to be confirmed.
+
 ## C Listener data
 
 We will provide metadata characterising the hearing abilities of the listeners so the audio signals you generate for evaluation can be individualised to the specific listeners who will be hearing them.
@@ -133,8 +132,8 @@ A panel of hearing-aided listeners will be recruited for evaluation. They will b
 
 The quantification of the listeners’ hearing is done with:
 
- - Left and right pure tone air-conduction audiograms. These measure the threshold at which people can hear a pure-tone sound.
- - Results from the DTT (digit-triplet test, also known as a triple digit test)​
+- Left and right pure tone air-conduction audiograms. These measure the threshold at which people can hear a pure-tone sound.
+- Results from the DTT (digit-triplet test, also known as a triple digit test)​
 
 The audiogram is the standard clinical measurement of hearing ability. It’s the pure-tone threshold of hearing in each ear, measured in quiet in a sound booth. The procedure is standardized e.g., [British Society of Audiology Recommended Procedure](https://www.thebsa.org.uk/resources/pure-tone-air-bone-conduction-threshold-audiometry-without-masking/). Typically it’s measured at octave frequencies and important intermediate frequencies.The values of the audiogram defines how much gain the hearing aid needs to apply, with the calculation typically done by one of a group of "prescription rules", e.g. [CAMFIT](https://www.psychol.cam.ac.uk/hearing/cam2-cameq2-hf-hearing-aid-fitting-software), [NAL-NL2](https://hearworks.com.au/technology/nal-nl2/) or [DSL](https://www.dslio.com/?page_id=95) <!--(for an introduction to the field of hearing-aid fitting, see [here](xxx))-->.
 
@@ -156,10 +155,10 @@ The following abbreviations are used consistently throughout the filenames and r
 - `S` – “scene”: e.g., S00121 # Scene ID for a particular setup in a room I.e., room + choice of target and interferer signals
 - `BNC` – BNC sentence identifier e.g. `BNC_A06_01702`
 - `CH` –
-   - `CH0` – eardrum signal
-   - `CH1` – front signal, hearing aid channel
-   - `CH2` – middle signal, hearing aid channel
-   - `CH3` – rear signal, hearing aid channel
+  - `CH0` – eardrum signal
+  - `CH1` – front signal, hearing aid channel
+  - `CH2` – middle signal, hearing aid channel
+  - `CH3` – rear signal, hearing aid channel
 - `I`/`i1` – Interferer, i.e., noise or sentence ID for the interferer/masker
 - `T` – talker who produced the target speech sentences
 - `L` – listener
@@ -172,7 +171,7 @@ The following abbreviations are used consistently throughout the filenames and r
 - Where stereo signals are provided the two channels represent the left (0) and right (1) signals of the ear or hearing aid microphones.
 - 0 dB FS in the audio signals corresponds to 100 dB SPL.
 - Metadata will be stored in JSON or csv format as appropriate with the exception of
-   - Room descriptions are stored as RAVEN project ‘rpf’ configuration files and ‘ac’ files. (However, key details are reflected in the scene.json files)
+  - Room descriptions are stored as RAVEN project ‘rpf’ configuration files and ‘ac’ files. (However, key details are reflected in the scene.json files)
 - Signals are saved within the Python code as 32-bit floating point by default.
 - Output signals for the listening tests will be required to be in 16-bit format.
 
@@ -215,6 +214,7 @@ Channel ID
 The **anechoic signal** is the signal that will be used as the referernce in the HASPI evaluation.
 
 The **head rotation** signal indicates the precise azimuthal angle of the head at each sample. It is stored as a floating point wav file with values between -1 and +1 where the range maps linearly from -180 degrees to +180 degrees. Teams are free to use this signal in their hearing aid algorithms, but if you do so we will ask you to also submit a version of your system that does not use it, so that the benefit of known head motion can be measured.
+
 ### D.6 Enhanced signals
 
 The signals that are output by the baseline enhancement algorithm.
@@ -260,7 +260,7 @@ JSON file containing the description of a room. This is the data from which the 
 
 ### D.9 Scene metadata
 
-JSON file containing a description of the scene. It is a list of dictionaries with each entry representing a unique scene. A scene can be considered to be a room (see Section [D.7](#d7-room-metadata))  plus the full set of listener, target and interferer details. Note, many scenes can be generated from a single room, i.e. each using different listener, target and interferer settings. 
+JSON file containing a description of the scene. It is a list of dictionaries with each entry representing a unique scene. A scene can be considered to be a room (see Section [D.7](#d7-room-metadata))  plus the full set of listener, target and interferer details. Note, many scenes can be generated from a single room, i.e. each using different listener, target and interferer settings.
 
 ```json
 [
@@ -352,7 +352,7 @@ JSON file named scenes_listeners.json dictates which scenes are to be processed 
     ... 
 }
 ```
- 
+
 ## References
 
 1. Demirsahin, Isin and Kjartansson, Oddur and Gutkin, Alexander and Rivera, Clara, "Open-source Multi-speaker Corpora of the English Accents in the British Isles", Proceedings of The 12th Language Resources and Evaluation Conference (LREC), 6532--6541, 2020, [Avialable Online](https://openslr.org/83/)
