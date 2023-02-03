@@ -82,6 +82,10 @@ module.exports = {
                     label: 'Workshops',
                     position: 'right',
                     items: [{
+                            href: 'https://claritychallenge.github.io/clarity2023-workshop/',
+                            label: 'Clarity 2023',
+                        },
+                        {
                             href: 'https://claritychallenge.github.io/clarity2022-CEC2-workshop/',
                             label: 'Clarity CEC2 2022, Dec',
                         }, {
@@ -99,6 +103,9 @@ module.exports = {
                     label: 'Challenges',
                     position: 'right',
                     items: [{
+                            href: 'https://claritychallenge.org/CPC2_announcement_page/',
+                            label: 'CPC2 (Coming soon!)',
+                        }, {
                             type: 'doc',
                             docId: 'icassp2023/icassp2023_intro',
                             label: 'ICASSP 2023 Grand Challenge (current)',
@@ -106,7 +113,7 @@ module.exports = {
                         {
                             type: 'doc',
                             docId: 'cec2/cec2_intro',
-                            label: 'CEC2 (workshop in December)',
+                            label: 'CEC2',
                         }, {
                             type: 'doc',
                             docId: 'cpc1/cpc1_intro',
@@ -151,7 +158,7 @@ module.exports = {
                     }, ]
                 }, {
                     to: '/blog/',
-                    label: 'Blog',
+                    label: 'Latest',
                     position: 'right'
                 },
 
@@ -239,7 +246,7 @@ module.exports = {
                 blog: {
                     showReadingTime: true,
                     // Please change this to your repo.
-                    blogTitle: 'Clarity Blog',
+                    blogTitle: 'Latest News',
                     blogDescription: 'News and updates about our Challenges and Workshops',
                     postsPerPage: 'ALL',
                     blogSidebarTitle: 'Recent posts',

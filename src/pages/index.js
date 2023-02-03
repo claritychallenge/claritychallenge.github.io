@@ -12,10 +12,28 @@ function HomepageHeader() {
     <header className={clsx("hero hero--primary", styles.heroBanner)}>
       <div className="container">
         <h1 className="hero__title"> {siteConfig.title} </h1>{" "}
-        <p className="hero__subtitle"> {siteConfig.tagline} </p>{" "}
+        <p className="hero__subtitle"> {siteConfig.tagline} </p> Quick links:
         <div className={styles.buttons}>
-          <Link className="button button--secondary button--lg" to="./about">
+          <Link
+            className="button button--secondary button--lg"
+            to="./about"
+            style={{ margin: "10px" }}
+          >
             About Us{" "}
+          </Link>{" "}
+          <Link
+            className="button button--secondary button--lg"
+            to="./docs/icassp2023/icassp2023_intro"
+            style={{ margin: "10px" }}
+          >
+            The Current Challenge{" "}
+          </Link>{" "}
+          <Link
+            className="button button--secondary button--lg"
+            to="./blog"
+            style={{ margin: "10px" }}
+          >
+            Latest News{" "}
           </Link>{" "}
         </div>{" "}
       </div>{" "}
