@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkclarity_cec_1=self.webpackChunkclarity_cec_1||[]).push([[1875],{1037:e=>{e.exports=JSON.parse('{"permalink":"/blog/tags/enhancement","page":1,"postsPerPage":4,"totalPages":1,"totalCount":4,"blogDescription":"News and updates about our Challenges and Workshops","blogTitle":"Clarity Blog"}')}}]);
