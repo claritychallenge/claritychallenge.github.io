@@ -46,12 +46,12 @@ Your processed signals should be named using the conventions used by the baselin
 
 Place the processed signals for the two sets into separate directories named `eval1` and `eval2`.
 
-These should be placed in a directory whose name is the unique team ID that you will be sent, e.g., `E001` and  then packaged using `zip` or `tar` or any standard packaging tool.
+These should be placed in a directory whose name is the unique team ID that you will be sent, e.g., `ICASSP2023_E001` and  then packaged using `zip` or `tar` or any standard packaging tool, e.g., to make a packaged file called `<TEAM_ID>.zip`
 
 The packaged file will have the following structure,
 
 ```txt
-E001
+ICASSP2023_E001
 ├── eval1 (1500 processed signals)
 └── eval2 (1500 processed signals)
 ```
@@ -59,6 +59,24 @@ E001
 The resulting file should be about 4 GB.
 
 Upload the packaged data to the Google Drive link that you will have been sent.
+
+## Using head rotation data and/or extended training data
+
+We would like to be able to separately evaluate the benefit of using the head rotation and extra training data, so in accordance with the challenge rules,
+
+- If you have trained on data which was not included in the core database, then please also provide outputs of a system trained only with the standard data.
+
+- If you have made use of the head rotation data you should also provide outputs of an equivalent system that does not use the head rotation data.
+
+If you have used extra training data and/or the head rotation data, then please package the outputs separately using the following naming convention,
+
+`‹TEAM_ID›.zip` - standard training data and no head rotation (all teams)
+
+`‹TEAM_ID›_hr.zip` - standard data and using head rotation
+
+`‹TEAM_ID›_data.zip` - extended training data without using head rotation
+
+`‹TEAM_ID›_hr_data.zip` - extended training data and using head rotation
 
 ## Technical report
 
