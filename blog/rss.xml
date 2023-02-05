@@ -4,17 +4,29 @@
         <title>The Clarity Project Blog</title>
         <link>https://claritychallenge.github.io/blog</link>
         <description>The Clarity Project Blog</description>
-        <lastBuildDate>Tue, 15 Nov 2022 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 02 Feb 2023 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[ICASSP 2023 evaluation data released]]></title>
+            <link>https://claritychallenge.github.io/blog/ICASSP 2023 evaluation data released</link>
+            <guid>https://claritychallenge.github.io/blog/ICASSP 2023 evaluation data released</guid>
+            <pubDate>Thu, 02 Feb 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[We are pleased to announce that the evaluation dataset for the ICASSP Clarity Challenge is now available for download.]]></description>
+            <content:encoded><![CDATA[<p>We are pleased to announce that the evaluation dataset for the ICASSP Clarity Challenge is now available for download.</p><p><a href="https://www.myairbridge.com/en/#!/folder/EkthOZZeBW33aaDBWSDadTgpOkbgaFxO" target="_blank" rel="noopener noreferrer">https://www.myairbridge.com/en/#!/folder/EkthOZZeBW33aaDBWSDadTgpOkbgaFxO</a></p><p>For instructions on preparing your submission please visit:</p><p><a href="https://claritychallenge.org/docs/icassp2023/taking_part/icassp2023_submission" target="_blank" rel="noopener noreferrer">https://claritychallenge.org/docs/icassp2023/taking_part/icassp2023_submission</a></p><p><strong>If you have not yet registered</strong> it is not too late to do so. Please use the form at the link below and we will then send you a Team ID and a personalised upload link for your submission.</p><p><a href="https://claritychallenge.org/docs/icassp2023/taking_part/icassp2023_registration" target="_blank" rel="noopener noreferrer">https://claritychallenge.org/docs/icassp2023/taking_part/icassp2023_registration</a></p><p>Note, we have extended the deadline for submission until Friday 10th February so that teams have a full week to process the signals.</p><p>The remaining schedule is as follows,</p><ul><li><strong>2nd Feb 2023</strong>: Release of evaluation data.</li><li><strong>10th Feb 2023</strong>: Teams submit processed signals and technical reports.</li><li><strong>14th Feb 2023</strong>: Results released. Top 5 ranked teams invited to submit papers to ICASSP-2023</li><li><strong>20th Feb 2023</strong>: Invited papers submitted to ICASSP-2023</li><li><strong>4-9th June 2023</strong>: Overview paper and invited papers presented at dedicated ICASSP session</li></ul>]]></content:encoded>
+            <category>clarity</category>
+            <category>announcement</category>
+            <category>CEC2</category>
+            <category>ICASSP2023</category>
+        </item>
         <item>
             <title><![CDATA[Announcement of ICASSP 2023 Grand Challenge]]></title>
             <link>https://claritychallenge.github.io/blog/Announcement of ICASSP 2023 Grand Challenge</link>
             <guid>https://claritychallenge.github.io/blog/Announcement of ICASSP 2023 Grand Challenge</guid>
             <pubDate>Tue, 15 Nov 2022 00:00:00 GMT</pubDate>
             <description><![CDATA[We are pleased to announce that registration for the ICASSP 2023 Clarity Grand Challenge is now open.]]></description>
-            <content:encoded><![CDATA[<p>We are pleased to announce that registration for the <strong>ICASSP 2023 Clarity Grand Challenge</strong> is now open.</p><p>To register please complete the simple Google form found on the <a href="/docs/icassp2023/taking_part/icassp2023_registration">registration page</a>.</p><p>The remaining important dates for the challenge are as follows:</p><ul><li>TBA</li></ul><p>The challenge training, dev data and initial tools are now fully from the <a href="https://github.com/claritychallenge/clarity" target="_blank" rel="noopener noreferrer">Github repository</a>.</p><p>If you have any questions please do not hesitate to contact us at <a href="mailto:claritychallengecontact@gmail.com" target="_blank" rel="noopener noreferrer">claritychallengecontact@gmail.com</a>.</p>]]></content:encoded>
+            <content:encoded><![CDATA[<p>We are pleased to announce that registration for the <strong>ICASSP 2023 Clarity Grand Challenge</strong> is now open.</p><p>To register please complete the simple Google form found on the <a href="/docs/icassp2023/taking_part/icassp2023_registration">registration page</a>.</p><p>The remaining important dates for the challenge are as follows:</p><ul><li><strong>28th Nov 2022</strong>: Challenge launch: Release training/dev data; tools; baseline; rules &amp; documentation.</li><li><strong>2nd Feb 2023</strong>: Release of evaluation data.</li><li><strong>10th Feb 2023</strong>: Teams submit processed signals and technical reports.</li><li><strong>14th Feb 2023</strong>: Results released. Top 5 ranked teams invited to submit papers to ICASSP-2023</li><li><strong>20th Feb 2023</strong>: Invited papers submitted to ICASSP-2023</li><li><strong>4-9th</strong> June 2023: Overview paper and invited papers presented at dedicated ICASSP session</li></ul><p>The challenge training, dev data and initial tools are now fully from the <a href="https://github.com/claritychallenge/clarity" target="_blank" rel="noopener noreferrer">Github repository</a>.</p><p>If you have any questions please do not hesitate to contact us at <a href="mailto:claritychallengecontact@gmail.com" target="_blank" rel="noopener noreferrer">claritychallengecontact@gmail.com</a>.</p>]]></content:encoded>
             <category>clarity</category>
             <category>announcement</category>
             <category>CEC2</category>
