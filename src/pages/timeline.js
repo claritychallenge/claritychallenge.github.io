@@ -31,38 +31,45 @@ export default function Home() {
     >
       <main>
         <ContactHeader />
-        <Paper sx={{ p: 4, m: 6 }}>
-          <h2>The Challenges</h2>
+        <Paper
+          sx={{
+            p: 4,
+            m: 6,
+          }}
+        >
+          <h2> The Challenges </h2>{" "}
           <Typography variant="h6">
             The project is running three rounds of enhancement and prediction
-            challenges.
-            <p />
+            challenges. <p />
             <ul>
               <li>
                 {" "}
-                CEC1/CPC1, 2021-2022 - Simple indoor scenes, one interferer
-              </li>
+                CEC1 / CPC1, 2021 - 2022 - Simple indoor scenes, one interferer{" "}
+              </li>{" "}
               <li>
                 {" "}
-                CEC2/CPC2, 2022-2023 - Complex indoor scenes, multiple
-                interferers, head motion
-              </li>
+                CEC2 / CPC2, 2022 - 2023 - Complex indoor scenes, multiple
+                interferers, head motion{" "}
+              </li>{" "}
               <li>
                 {" "}
-                CEC3/CPC3, 2023-2024 - Dynamic outdoor scenes, moving sources,
-                head motion
-              </li>
+                CEC3 / CPC3, 2023 - 2024 - Dynamic outdoor scenes, moving
+                sources, head motion{" "}
+              </li>{" "}
             </ul>
-            We are currently in the participation phase of the 2nd enhancement
-            challenge (CEC2).
-            <p />
-          </Typography>
+            We are currently preparing for the participation phases of the 2nd
+            prediction challenge (CPC2). <p />
+          </Typography>{" "}
         </Paper>
-
         <Zoom>
-          <Paper sx={{ p: 4, m: 6 }}>
-            <h2>The Overal Schedule</h2>
-            The tentative schedule for future challenges is shown below.
+          <Paper
+            sx={{
+              p: 4,
+              m: 6,
+            }}
+          >
+            <h2> The Overal Schedule </h2>
+            The tentative schedule for future challenges is shown below.{" "}
             <Mermaid
               chart={`gantt
             dateFormat  YYYY-MM-DD
@@ -79,49 +86,58 @@ export default function Home() {
             Participation Phase               :active,         2022-03-30, 2022-09-01
             Evaluation Phase               :         2022-09-01,2022-12-02
             section CPC2
-            Participation Phase               :         2023-02-01, 2023-08-01
+            Participation Phase               :         2023-03-01, 2023-08-01
             Evaluation Phase               :         2023-08-01, 2023-08-25
             section CEC3
-            Participation Phase               :         2023-06-01, 2024-01-01
-            Evaluation Phase               :         2024-01-01,2024-04-01
+            Participation Phase               :         2023-09-01, 2024-04-01
+            Evaluation Phase               :         2024-04-01,2024-07-01
             section CPC3
-            Participation Phase               :         2024-04-01, 2024-09-01
-            Evaluation Phase               :         2024-09-01,2024-11-01`}
-            />
-            <h4>Key Dates</h4>
+            Participation Phase               :         2024-07-01, 2024-12-01
+            Evaluation Phase               :         2024-12-01,2025-02-01`}
+            />{" "}
+            <h4> Key Dates </h4>{" "}
             <ul>
               <li>
                 {" "}
-                <b>CEC1 Launch</b> 1st Feb 2021, <b>Submission</b> 15th Jun 2021
-              </li>
+                <b> CEC1 Launch </b> 1st Feb 2021, <b>Submission</b> 15 th Jun
+                2021{" "}
+              </li>{" "}
               <li>
                 {" "}
-                <b>CPC1 Launch</b> 16th Nov 2021, <b>Submission</b> 21st Mar
-                2022
-              </li>
+                <b> CPC1 Launch </b> 16th Nov 2021, <b>Submission</b> 21 st Mar
+                2022{" "}
+              </li>{" "}
               <li>
                 {" "}
-                <b>CEC2 Launch</b> 30th Mar 2022, <b>Submission</b> 1st Sep 2022
-              </li>
+                <b> CEC2 Launch </b> 30th Mar 2022, <b>Submission</b> 1 st Sep
+                2022{" "}
+              </li>{" "}
               <li>
                 {" "}
-                <b>CPC2 Launch</b> 1st Feb 2023, <b>Submission</b> 1st Aug 2023
-              </li>
+                <b> CPC2 Launch </b> 1st Feb 2023, <b>Submission</b> 1 st Aug
+                2023{" "}
+              </li>{" "}
               <li>
                 {" "}
-                <b>CEC3 Launch</b> 1st June 2023, <b>Submission</b> 1st Jan 2024
-              </li>
+                <b> CEC3 Launch </b> 1st June 2023, <b>Submission</b> 1 st Jan
+                2024{" "}
+              </li>{" "}
               <li>
                 {" "}
-                <b>CPC3 Launch</b> 1st Apr 2024, <b>Submission</b> 1st Sep 2024
-              </li>
+                <b> CPC3 Launch </b> 1st Apr 2024, <b>Submission</b> 1 st Sep
+                2024{" "}
+              </li>{" "}
             </ul>{" "}
-          </Paper>
+          </Paper>{" "}
         </Zoom>
-
         <Zoom>
-          <Paper sx={{ p: 4, m: 6 }}>
-            <h2>The 2nd Clarity Enhancement Challenge (CEC2)</h2>
+          <Paper
+            sx={{
+              p: 4,
+              m: 6,
+            }}
+          >
+            <h2> The 2nd Clarity Enhancement Challenge(CEC2) </h2>{" "}
             <Mermaid
               chart={`gantt
             dateFormat  YYYY-MM-DD
@@ -140,13 +156,17 @@ export default function Home() {
 
 
          `}
-            />
-          </Paper>
+            />{" "}
+          </Paper>{" "}
         </Zoom>
-
         <Zoom>
-          <Paper sx={{ p: 4, m: 6 }}>
-            <h2>The 1st Clarity Prediction Challenge (CPC1)</h2>
+          <Paper
+            sx={{
+              p: 4,
+              m: 6,
+            }}
+          >
+            <h2> The 1 st Clarity Prediction Challenge(CPC1) </h2>{" "}
             <Mermaid
               chart={`gantt
             dateFormat  YYYY-MM-DD
@@ -168,13 +188,17 @@ export default function Home() {
 
 
          `}
-            />
-          </Paper>
+            />{" "}
+          </Paper>{" "}
         </Zoom>
-
         <Zoom>
-          <Paper sx={{ p: 4, m: 6 }}>
-            <h2>The 1st Clarity Enhancement Challenge (CEC1)</h2>
+          <Paper
+            sx={{
+              p: 4,
+              m: 6,
+            }}
+          >
+            <h2> The 1 st Clarity Enhancement Challenge(CEC1) </h2>{" "}
             <Mermaid
               chart={`gantt
             dateFormat  YYYY-MM-DD
@@ -193,9 +217,9 @@ export default function Home() {
 
 
          `}
-            />
-          </Paper>
-        </Zoom>
+            />{" "}
+          </Paper>{" "}
+        </Zoom>{" "}
       </main>{" "}
     </Layout>
   );
