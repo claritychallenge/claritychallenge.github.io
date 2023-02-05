@@ -18,18 +18,23 @@ You could just work with the processed signals from the hearing aids and the lis
 
 ## Simulating the audio signals that were processed by the hearing aids
 
-A listener (or receiver) is in a small room that has low to moderate reverberation. They are listening to a target talker, who is selected from our set of 40 speakers. The target talker is producing one of our unique 7-10 word Clarity sentences. Simultaneously, an interferer sound is playing. This is either a competing talker or a continuous noise source (e.g., a washing machine). The target and interferer are at the same height as the listener. The room dimensions, boundary materials, and the locations of the listener, target and interferer are randomised (discussed below). An example scenario is shown in [Figure 1](#fig1). The room geometry showing origin location is defined in [Figure 2](#fig2).
+A listener (or receiver) is in a small room that has low to moderate reverberation. They are listening to a target talker, who is selected from our set of 40 speakers. The target talker is producing one of our unique 7-10 word Clarity sentences. Simultaneously, an interferer sound is playing. This is either a competing talker or a continuous noise source (e.g., a washing machine). The target and interferer are at the same height as the listener. The room dimensions, boundary materials, and the locations of the listener, target and interferer are randomised (discussed below). An example of the scenario is shown in [Figure 1](#fig1). The room geometry showing origin location is defined in [Figure 2](#fig2).
 
+<Tabs>
+<TabItem  value="scene" label="Example Scene" default>
   <figure id="fig1">
   <img width="500" src={useBaseUrl('/img/tutorial/room2_update-1.png')} />
-  <figcaption>Figure 1. Example overview.</figcaption>
+  <figcaption>Figure 1. Example scene.</figcaption>
   </figure>
-
+</TabItem>
+<TabItem  value="geometry" label="Room Geometry">
   <figure id="fig2">
   <img width="500" src={useBaseUrl('/img/tutorial/Room_references.png')} />
   <figcaption>Figure 2. Geometry definition.</figcaption>
   </figure>
-  
+</TabItem>
+</Tabs>
+
 [Figure 3](#fig3), below, shows the basic scene generator. The sound at the receiver is generated first by convolving the source signals with [Binaural](https://en.wikipedia.org/wiki/Binaural) Room [Impulse Responses](https://en.wikipedia.org/wiki/Impulse_response) (BRIRs). This generates reverberated speech and noise that includes the effects of the room and reflections from the listener's head. The reverberated speech and noise signals are then summed after appropriate gains are applied. The gains are set to achieve a Signal-to-Noise Ratio (SNR), which is chosen randomly between limits. The BRIRs are generated using the RAVEN Geometric Room Acoustic Model \[[1](#references)\].
 
 There are additional signal paths and outputs generated that have been omitted from [Figure 3](#fig3) for clarity. In addition to the reverberated signals associated with the hearing aid microphones, the signal close to the eardrum is also generated. You can also access the reverberated speech and noise signals before they are mixed.
