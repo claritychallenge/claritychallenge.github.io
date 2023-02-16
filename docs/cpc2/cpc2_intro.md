@@ -6,7 +6,9 @@ sidebar_position: 1
 ---
 
 <!-- import { TwitterTimelineEmbed } from "react-twitter-embed"; -->
-NEEDS UPDATING
+:::warning
+ALL NEEDS UPDATING
+:::
 
 To allow the development of better hearing aids, we need ways to evaluate the speech intelligibility of audio signals automatically. We need a prediction model that takes the audio produced by a hearing aid and the listener's characteristics (e.g. [audiogram](https://www.hear-it.org/Audiogram-)) and estimates the speech intelligibility score that the listener would achieve in a listening test. Here is a brief introduction to the challenge:
 
@@ -24,7 +26,7 @@ The challenge has two separate but related tracks
 - <b>Track 1: Closed-set</b> - i.e, Systems that can make prediction for hearing-aid algorithms and listeners that have been seen in the training data.
 - <b>Track 2: Open-set</b> - i.e, Systems that can make predictions for unseen hearing-aid algorithms and/or listeners.
 
-We have an [extensive FAQ](./cpc1_faq) to answer key questions competitors might have. So even if you have never worked on speech intelligibility models for people with hearing loss, you will have the knowledge to take part. This includes seminar recordings on the following topics:
+We have an [extensive FAQ](../cpc1/cpc1_faq) to answer key questions competitors might have. So even if you have never worked on speech intelligibility models for people with hearing loss, you will have the knowledge to take part. This includes seminar recordings on the following topics:
 
 - What hearing loss is;
 - How it's typically mitigated in hearing aids; and

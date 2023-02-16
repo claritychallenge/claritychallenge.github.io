@@ -57,7 +57,7 @@ module.exports = {
                         },
                         {
                             type: 'doc',
-                            docId: 'cpc2/cpc2_download',
+                            docId: 'cpc2/taking_part/cpc2_download',
                             label: 'I want to download the data...',
                         },
                         {
