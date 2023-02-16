@@ -5,7 +5,7 @@ sidebar_label: Important dates
 sidebar_position: 1.5
 ---
 
-The schedule for the challenge will be as follows,
+All dates are to be intended anywhere on earth time (AoE).
 
 - **1st March 2023**: Launch of challenge, release of data.
 - **1st July 2023**: Release of evaluation data and opening of submission window.
