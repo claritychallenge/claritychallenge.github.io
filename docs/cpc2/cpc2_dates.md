@@ -2,7 +2,7 @@
 id: cpc2_dates
 title: Important dates
 sidebar_label: Important dates
-sidebar_position: 12
+sidebar_position: 1.5
 ---
 
 The schedule for the challenge will be as follows,

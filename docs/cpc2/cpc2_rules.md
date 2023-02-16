@@ -5,3 +5,4 @@ sidebar_label: Challenge rules
 sidebar_position: 3
 ---
 
+Details to appear.
