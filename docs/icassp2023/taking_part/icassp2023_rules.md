@@ -47,7 +47,6 @@ It is intended that there should be one submission per registered team. Submitti
 
 Each signal will be scored using the average of its HASPI and HASQI scores. A system score will then be computed by averaging over the evaluation set. Separate scores will be computed for the real and simulated evaluation sets, along with a summary score formed by their average. Systems will be ranked according to their summary scores with all three (real, simulated and summary) scores being reported.
 
-
 ## Intellectual property
 
 The following terms apply to participation in this machine learning challenge (“Challenge”). Entrants may create original solutions, prototypes, datasets, scripts, or other content, materials, discoveries or inventions (a “Submission”). The Challenge is organised by the Challenge Organiser.

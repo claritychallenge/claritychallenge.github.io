@@ -14,7 +14,6 @@ We will be awarding prizes for the best performing teams and the best student co
 - Team prizes have been made available by the generosity of the [Hearing Industry Research Consortium](http://www.hearingirc.com)
 - There will be separate MBSTOI and listening test prizes for the top systems.
 
-
 <div className="container">
         <div className="row">
       <div className="text--center padding-horiz--md">
@@ -35,6 +34,7 @@ We will be awarding prizes for the best performing teams and the best student co
 ## The Amazon Student Prize
 
 - Student prizes have been made available by the generosity of [Amazon TTS Research](http://www.amazon.science)
+
 <div className="container">
         <div className="row">
   <div className="text--center padding-horiz--md">
@@ -46,7 +46,7 @@ We will be awarding prizes for the best performing teams and the best student co
      </div>
 </div>
 <p/>
-- The award will be judged by a panel formed from members of the Clarity-2021 workshop scientific committee. 
+- The award will be judged by a panel formed from members of the Clarity-2021 workshop scientific committee.
 - There will be a lightweight nomination process. Details to be announced.
 
 :::info

@@ -21,5 +21,8 @@
         "ambisonic",
         "ambisonics",
         "untarred"
-    ]
+    ],
+    "markdownlint.config": {
+        "MD033": false,
+    }
 }

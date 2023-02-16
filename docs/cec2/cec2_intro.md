@@ -13,7 +13,7 @@ import { TwitterTimelineEmbed } from "react-twitter-embed";
 -->
 :::info
 
-- CEC2 Registration now open! [Register Now](taking_part/cec2_registration.mdx). 
+- CEC2 Registration now open! [Register Now](taking_part/cec2_registration.mdx).
 - The Clarity [GitHub repository](https://github.com/claritychallenge/clarity) now includes the [CEC2 baseline system](software/cec2_baseline.mdx).
 :::
 
@@ -28,12 +28,11 @@ We want you to improve speech in the presence of background noise - see [Figure 
 <figcaption>Figure 1. The scenario involves one talker, a listener who rotates their head, and at least two common sources of unwanted sound.</figcaption>
 </figure>
 
-
 The scenario has been made more difficult than the first [Clarity Enhancement Challenge](../cec1/cec1_intro.md) by having:
 
-  - More noise sources
-  - More varied noise sources (speech, music, appliances)
-  - The listener turns their head during the talking.
-  - Less predictable target onset timing.
+- More noise sources
+- More varied noise sources (speech, music, appliances)
+- The listener turns their head during the talking.
+- Less predictable target onset timing.
 
 For more details use the contents pane on the left to navigate the CEC2 site.

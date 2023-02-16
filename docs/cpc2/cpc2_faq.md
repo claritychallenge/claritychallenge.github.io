@@ -4,7 +4,6 @@ title: FAQ for CPC2
 sidebar_label: FAQ
 sidebar_position: 12
 ---
-
 # FAQ
 
 :::note About this FAQ

@@ -10,26 +10,30 @@ sidebar_position: 12
 ## Speech Intelligibility
 
 ### What is Speech Intelligibility?
+
 The term [Speech Intelligibility](https://en.wikipedia.org/wiki/Intelligibility_(communication)) is generally used in two different ways. It can refer to how much speech is understood by a listener, or to the number of words correctly identified by a listener as a proportion or percentage of the total number of words. In the Clarity project, we are using the latter definition, i.e., the percentage of words in a sentence that a listener identified correctly. This percentage is the target for your prediction models.
 
 Speech intelligibility captures how a listener's ability to participate in conversation is changed when the speech signal is degraded, e.g., by background noise and room reverberation, or is processed, e.g., by a hearing aid. Your prediction model will need to incorporate a model of the hearing abilities of each listener.
 
 ### How is Speech Intelligibility measured with listeners?
+
 In the Clarity project, a set of listeners listen to a sentence and then say what words they heard. In this project, speech intelligibility is measured as the number of words identified correctly as a percentage of the total number of words in a sentence.
 
 You might consider looking at [other metrics](https://www.sciencedirect.com/science/article/pii/S1877050918302187), such as Word Error Rate (WER), which picks up on, e.g., where listeners insert words not in the original sentence. You might do this if you think that an estimate of WER or other metrics would help your system to estimate speech intelligibility, as defined in the Clarity project.
 
 ### How is Speech Intelligibility objectively measured by a computer?
+
 When fitting a hearing aid, it would be beneficial for an audiologist to be able to use an objective measure of speech intelligibility to determine what signal processing algorithm(s) should be used to compensate for the listener's hearing impairment. Objective measures are also useful when measured speech intelligibility scores are unavailable, such as when developing a machine learning-based hearing aid algorithm or some other speech enhancement method. Another advantage of non-intrusive measures is that they do not require time-alignment of processed and reference signals.
 
 Objective measures - or metrics - of speech intelligibility are used to allow a computer to estimate the likely performance of humans in listening tests. The main goal of entries to the prediction challenge is to produce one of these measures that performs well for listeners with hearing loss. There are two broad classes of speech intelligibility models:
+
 - Intrusive metrics (also known as double-ended) are most common. This is where the intelligibility is estimated by comparing the degraded or processed speech signal with the original clean speech signal.
 - Non-intrusive metrics (also known as single-ended or blind) are less well developed. This is where intelligibility is estimated from the degraded or processed speech signal alone.
 
 In the Clarity project, both types of metrics are of interest. Intrusive metrics will be more accurate in many cases. However, there are hearing aid processes where the speech content is shifted in frequency, which will defeat most current intrusive speech intelligibility metrics. We also hypothesise that there might be issues with intrusive metrics and machine learning approaches in hearing aids that revoice the original speech.
 
-
 ### What speech intelligibility models already exist and what are they used for?
+
 There aren't many speech intelligibility models that consider hearing impairment, but one that does is [HASPI by Kates and Arehart](https://www.sciencedirect.com/science/article/pii/S0167639320300431). In this seminar from the first Clarity workshop, James Kates discusses speech intelligibility models with a focus on the ones he has developed. He also discusses the speech quality metric [HASQI](https://en.wikipedia.org/wiki/Hearing-Aid_Speech_Quality_Index). If you're interested in using HASPI or HASQI for the challenge, James Kates has kindly made the [MATLAB code](http://claritychallenge.org/wp-content/uploads/2021/10/HASPIv2_HASQIv2_HAAQIv1.zip) and [user guide](http://claritychallenge.org/wp-content/uploads/2021/10/Users_Guide_ver3.zip) available for download.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/hp9NT1zkGz0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -61,15 +65,19 @@ Hearing loss leads to several unwanted effects. Loss of audibility for soft soun
 ## Prediction model
 
 ### Do I have to use a separate hearing loss model?
+
 No is the short answer! In the baseline, we've used the Cambridge hearing loss model and a separate binaural speech intelligibility model. Another approach would be to create a single model that encapsulates the combined effects of hearing loss and speech perception.
 
 ### What should the output of my prediction model be?
+
 The output should include a predicted speech intelligibility score per input signal, specifically, an estimate of the number of words correct as a percentage of the total number of words in the signal.
 
 ## Data
 
 ### Do you have suggestions for expanding the training data?
+
 The prediction challenge data is limited by having to get the ground truth from listening tests on people with a hearing loss. We look forward to seeing what approaches teams use to help overcome this limitation, such as using unsurpervised models, data augmentation or generating additional ground truth data using a pre-existing model. The baseline model includes a hearing loss and speech intelligibility model that could be used for creating additional pre-training data. There are other models that you might consider where code is available. None have been checked by the Clarity team.
+
 - [Katerina Zmolikova](https://www.fit.vut.cz/person/izmolikova/functions/.en#nav) has made [her Pytorch version of the baseline hearing impairment and speech intelligibility model available](https://github.com/BUTSpeechFIT/torch_msbg_mbstoi). Both model fit a neural network framework, are faster but more approximate (see graphs on github).
 - [HASQI and HASPI](https://pubmed.ncbi.nlm.nih.gov/29554034/) are quality and speech intelligibility metrics designed to work for people with a hearing impairment. [James Kates explains more about these above](cpc1_faq/#speech-intelligibility). [MATLAB code HASPI v2 and HASQI v2](http://claritychallenge.org/wp-content/uploads/2021/10/HASPIv2_HASQIv2_HAAQIv1.zip) are available, along with the [user guide](http://claritychallenge.org/wp-content/uploads/2021/10/Users_Guide_ver3.zip).
 - [STOI-Net: A Deep Learning based Non-Intrusive Speech Intelligibility Assessment Model](https://github.com/dhimasryan/STOI-Net) by Ryandhimas Zezario et al. is monaural and non-intrusive using Python, Keras and TensorFlow. It doesn't model the effect of hearing loss. An alternative is [Asger Heidemann Andersen's MATLAB code](http://ah-andersen.net/code/).

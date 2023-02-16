@@ -14,14 +14,12 @@ Challenge entrants are supplied with a fully functioning baseline system. [Figur
 - The enhancement is individualised for each listener with quantified hearing characteristics, hence there is also a system to select a random listener (white ellipse).
 - The Improved SPIN (speech in noise) that is outputted from your hearing aid, is then passed to the prediction stage (orange box). We are using the Hearing-Aid Speech Perception Index (HASPI) as the objective metric to estimate speech intelligibility \[[1](#refs)].
 
-
 <figure id="fig1">
 <img width="800" src={useBaseUrl('/img/CEC2/baseline.png')} />
 <figcaption>Figure 1, The baseline, for simplicity, not all signal paths are shown.</figcaption>
 </figure>
 
 Your challenge is to improve what happens in the yellow enhancement box. You are free to use any parts of the baseline that are useful to you, and reconfigure the system as you feel fit.
-
 
 More details of the different parts of the baseline appear on the [core software page](./cec2_core_software), see,
 
@@ -30,9 +28,10 @@ More details of the different parts of the baseline appear on the [core software
 - [Speech intelligibility model](./cec2_core_software#e-speech-intelligibility-model)
 
 The code for the baseline system, and all supporting Clarity code, is available on [GitHub](https://github.com/claritychallenge/clarity).
-## Baseline performance 
 
-The average speech intelligibility (HASPI) score for the unprocessed development test set is 0.1615. When processed with the simple baseline hearing aid (i.e., NALR amplification followed by a simple automatic gain compressor) the average HASPI score increases to 0.2493. These results are summarised in the table below. Your task is to improve on the 0.2493 baseline HASPI score. 
+## Baseline performance
+
+The average speech intelligibility (HASPI) score for the unprocessed development test set is 0.1615. When processed with the simple baseline hearing aid (i.e., NALR amplification followed by a simple automatic gain compressor) the average HASPI score increases to 0.2493. These results are summarised in the table below. Your task is to improve on the 0.2493 baseline HASPI score.
 
 | System | HASPI |
 | --- | ---- |

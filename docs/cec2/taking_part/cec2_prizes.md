@@ -14,7 +14,6 @@ We will be awarding prizes for the best performing teams.
 - Team prizes have been made available by the generosity of the [Hearing Industry Research Consortium](http://www.hearingirc.com)
 - There will be separate HASPI and listening test prizes for the top systems.
 
-
 <div className="container">
         <div className="row">
       <div className="text--center padding-horiz--md">

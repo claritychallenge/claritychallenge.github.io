@@ -19,4 +19,3 @@ Key dates are as follows
 - **Sept-Nov 2022**: Listening test evaluation period.
 - **12th Dec 2022**:  Results announced at a Clarity Challenge Workshop; prizes awarded.
   - Workshop likely to be a one-day virtual event
-
