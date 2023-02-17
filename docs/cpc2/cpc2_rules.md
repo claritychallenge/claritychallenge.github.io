@@ -18,7 +18,7 @@ Any audio or metadata can be used during training and development, but during ev
 
 ### Evaluation
 
-The only data that can be used by the prediction model(s) during evaluation are
+The only data that can be used by the prediction model(s) during evaluation are described below.
 
 For non-intrusive methods:
 
@@ -40,7 +40,7 @@ Additionally, for intrusive methods:
 ## What sort of model do I create?
 
 - You model should report the speech intelligibility for the whole sentence for each audio sample/listener combination, i.e. a single score that represents a prediction of the proportion of words that would be recognised correctly
-- The model architecture is entirely up to you, e.g. you can create a model that attempts to recognise individual words and then reduces this down to a proportion, or you can estimate an intelligibility score directly from the audio. Models may have explicit hearing loss model stages or trained directly to map signals and audiograms to predictions.
+- The model architecture is entirely up to you, e.g. you can create a model that attempts to recognise individual words and then reduces this down to a proportion, or you can estimate an intelligibility score directly from the audio. Models may have explicit hearing loss model stages or be trained directly to map signals and audiograms to predictions.
 
 ## Submitting multiple entries
 
@@ -76,7 +76,7 @@ If you wish to submit multiple entries,
 
 ## Intellectual property
 
-The following terms apply to participation in this machine learning challenge (“Challenge”). Entrants may create original solutions, prototypes, datasets, scripts, or other content, materials, discoveries or inventions (a “Submission”). The Challenge is organised by the Challenge Organiser.
+The following terms apply to participation in this machine learning challenge (“Challenge”). The entrants'  “Submission” will consist of a set of intelligibility predictions and an accompanying technical report. The Challenge is organised by the “Challenge Organiser”.
 
 Entrants retain ownership of all intellectual and industrial property rights (including moral rights) in and to Submissions.
 

@@ -12,7 +12,7 @@ The baseline uses the existing HASPI model \[[1](#refs)] to make its predictions
 The baseline is distributed as part of the pyclarity Python package (`pyclarity` >=0.3.0), which is available on [Github](https://github.com/claritychallenge/clarity). The relevant scripts can be found in the recipes directory, `recipes/cpc2/baseline`. Download the code from Github and follow the instructions in the CPC2 baseline recipes's `README` to run the baseline on the CPC2 dataset.
 
 :::note
-The `pyclarity v0.3.0` will be released on 1st March coinciding wth the launch of the challenge.
+The `pyclarity v0.3.0` will be released on 1st March coinciding with the launch of the challenge.
 :::
 
 ## References
