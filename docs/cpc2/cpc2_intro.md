@@ -19,7 +19,54 @@ This site provides entrants with what they need to know to take part in the chal
 
 The task involves estimating the intelligibility of speech-in-noise signals that have been processed by hearing aid algorithms and presented to listeners with hearing loss. Each signal contains a short sentence that the listeners were asked to repeat. The system you build needs to be able to predict how many of the words were recognised correctly by the listeners. It is not expected that systems can do this accurately on a per sentence basis, but rather we will rank systems on this basis of how well they perform over a large evaluation set, i.e., which system produces the lowest average estimation error.
 
-The section below provide a brief description of the task and provide links to pages containing the full details.
+The hearing aid signals being assessed vary widely in quality. Examples of good, fair and poor signals are provided below. Your prediction algorithm needs to be able to cope with this variation.
+
+<table>
+<tr>
+<th>Good</th>
+<th>Fair</th>
+<th>Poor</th>
+</tr>
+<tr>
+<td>
+<audio controls  style={{width: "250px"}} >
+<source src="/audio/CEC2_samples/CEC2_E009/S08501_L0104_HA-output.wav" type="audio/wav"/>
+Your browser does not support the audio element.
+</audio>
+</td>
+<td>
+<audio controls style={{width: "250px"}}>
+<source src="/audio/CEC2_samples/CEC2_E022/S08501_L0104_HA-output.wav" type="audio/wav" />
+Your browser does not support the audio element.
+</audio>
+</td>
+<td>
+<audio controls style={{width: "250px"}}>
+<source src="/audio/CEC2_samples/CEC2_E032/S08501_L0104_HA-output.wav" type="audio/wav" />
+Your browser does not support the audio element.
+</audio>
+</td>
+</tr>
+<tr>
+<td>
+<audio controls style={{width: "250px"}}>
+<source src="/audio/CEC2_samples/CEC2_E009/S08502_L0106_HA-output.wav" type="audio/wav" />
+Your browser does not support the audio element.
+</audio>
+</td>
+<td>
+<audio controls style={{width: "250px"}}>
+<source src="/audio/CEC2_samples/CEC2_E022/S08502_L0106_HA-output.wav" type="audio/wav" />
+Your browser does not support the audio element.
+</audio>
+</td>
+<td>
+<audio controls style={{width: "250px"}}>
+<source src="/audio/CEC2_samples/CEC2_E032/S08502_L0106_HA-output.wav" type="audio/wav" />
+Your browser does not support the audio element.
+</audio>
+</td>
+</tr></table>
 
 ### The data
 
