@@ -10,6 +10,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 Figure 1 is a simplified schematic of the baseline system, where not all signal paths are shown. A scene generator (blue box) creates the speech in noise (SPIN) that the hearing aid model then enhances (yellow box). This enhancement is individualised for each listener; hence, there is also a system to select a random listener (white ellipse) with a particular set of characteristics (e.g., [audiograms](https://www.hear-it.org/Audiogram-)).
 
 The SPIN that has been improved by the hearing aid is then passed to the prediction stage (orange box). This comprises two models:
+
 - a hearing loss model, and
 - a binaural speech intelligibility model.
 
@@ -20,10 +21,10 @@ The SPIN that has been improved by the hearing aid is then passed to the predict
 <figcaption>Figure 1 Simplified overview of the baseline.</figcaption>
 </figure>
 
-
 You are free to choose which parts of the baseline you use and reconfigure the system as you see fit. You can use our hearing loss model as part of your entry, or produce a single model that combines the hearing loss and speech intelligibility models.
 
 For an introduction to elements of the prediction model, please see our [FAQ](./cpc1_faq), which includes an overview of
+
 - [Speech intelligibility, and](./cpc1_faq#speech-intelligibility)
 - [Hearing loss and what hearing aids do.](./cpc1_faq#hearing-loss)
 

@@ -55,6 +55,7 @@ Please see [this blog post](http://claritychallenge.org/latency-computation-time
 ## Submitting multiple entries
 
 If you wish to submit two entries, where one is optimised for MBSTOI and the other, for listening tests,
+
 - Both systems must be submitted for MBSTOI evaluation.
 - You must register two teams, submitting each entry as a different team.
 - In your documentation, you must make it clear which has been optimised for listening tests and the relationship between the two entries.

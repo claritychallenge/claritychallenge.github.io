@@ -50,9 +50,9 @@ For each scene in the training data the following signals and metadata are avail
 - HRIRs including those corresponding to the target azimuth.
 - The mono target and interferer signals (pre-convolution).
 - For each hearing aid microphone (channels 1-3 where channel 1 is front, channel 2 is mid and channel 3 is rear) and a position close to the eardrum (channel 0):
-   - The target convolved with the appropriate BRIR;
-   - The interferer convolved with the appropriate BRIR;
-   - The sum of the target and interferer convolved.
+  - The target convolved with the appropriate BRIR;
+  - The interferer convolved with the appropriate BRIR;
+  - The sum of the target and interferer convolved.
 - The target convolved with the anechoic BRIR (channel 1) for each ear (‘target_anechoic’).
 - Metadata describing the scene: a JSON file containing, e.g., the filenames of the sources, the location of the sources, the viewvector of the target source, the location and viewvector of the receiver, the room dimensions (see specification below), and the room number, which corresponds to the RAVEN BRIR, rpf and ac files.
 
@@ -68,7 +68,7 @@ For each scene, during development, your hearing aid enhancement model must only
 - The IDs of the listeners assigned to the scene in the metadata provided.
 - The audiograms of these listeners.
 
-### B.3 Evaluation scene data 
+### B.3 Evaluation scene data
 
 For each scene in the evaluation data only the following will be available:
 
@@ -82,7 +82,8 @@ For each scene in the evaluation data only the following will be available:
 
 A sample of pure tone air-conduction audiograms that characterise the hearing impairment of potential listeners, split into training and development sets.
 
-### C.2 Evaluation data 
+### C.2 Evaluation data
+
 You will be given the left and right pure tone air-conduction audiograms for the listening panel, so the signals you generate for evaluation can be individualised to the listeners.
 
 A panel of 50 hearing-aided listeners will be recruited for the evaluation panel. We plan that they will be experienced bilateral hearing-aid users (they use two hearing aids but the hearing loss may be asymmetrical) with an averaged hearing loss as measured by pure tone air-conduction of between 25 and about 60 dB in the better ear, with fluent speaking of (and listening to) British English.
@@ -105,10 +106,10 @@ A panel of 50 hearing-aided listeners will be recruited for the evaluation panel
 - `E` – entrant (identifying a team participating in the challenge)
 - `t` – target (used in BRIRs and RAVEN project ‘rpf’ files)
 
-### D.2 General 
+### D.2 General
 
 - Audio and BRIRs will be 44.1 kHz 32 bit wav files in either mono or stereo as appropriate.
-- Where stereo signals are provided the two channels represent the left and right signals of the ear or hearing aid microphones. 
+- Where stereo signals are provided the two channels represent the left and right signals of the ear or hearing aid microphones.
 - HRIRs have a sampling rate of 48 kHz.
 - Metadata will be stored in JSON format wherever possible.
 - Room descriptions are stored as RAVEN project ‘rpf’ configuration files.
@@ -123,11 +124,11 @@ The following text is available for the target speech:
 - These are stored in the master json metadata file.
 
 ### D.4 Source audio files
- 
+
 - Wav files containing the original source materials.
 - Original target sentence recordings:
 
-```
+```text
   <Talker ID>_<BNC sentence identifier>.wav
 ```
 
@@ -135,7 +136,7 @@ The following text is available for the target speech:
 
 Audio files storing the signals picked up by the hearing aid microphone ready for processing. Separate signals are generated for each hearing aid microphone pair or ‘channel’.
 
-```
+```text
 <Scene ID>_target_<Channel ID>.wav
 <Scene ID>_interferer_<Channel ID>.wav
 <Scene ID>_mixed_<Channel ID>.wav
@@ -146,14 +147,14 @@ Audio files storing the signals picked up by the hearing aid microphone ready fo
 
 - `S` followed by 5 digit integer with 0 pre-padding
 
-`Channel ID`   
+`Channel ID`
 
 - `CH0` – Eardrum signal
 - `CH1` – Hearing aid front microphone
 - `CH2` – Hearing aid middle microphone
 - `CH3` – Hearing aid rear microphone
 
-### D.6 Enhanced signals 
+### D.6 Enhanced signals
 
 The signals that are output by the enhancement (hearing aid) model.
 
@@ -161,7 +162,7 @@ The signals that are output by the enhancement (hearing aid) model.
 
 `Listener ID`  – ID of the listener panel member,  e.g., L001 to L100 for initial ‘pseudo-listeners’, etc.  We are no longer providing the script for post-processing signals in preparation for the listener panel.
 
-### D.7 Enhanced signals processed by the hearing loss model 
+### D.7 Enhanced signals processed by the hearing loss model
 
 The signals that are produced by the hearing loss (HL) model.
 

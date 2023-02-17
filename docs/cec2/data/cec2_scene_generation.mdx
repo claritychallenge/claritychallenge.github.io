@@ -11,17 +11,16 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 - The ambisonics RIRs (Room Impulse Response) are generated through the geometric room acoustic model RAVEN \[[1](#refs)\] - blue box to left.
 - The Scene Generator (middle blue box) works on the metadata (shown in green) to create the scene definition metadata, this includes:
-   - The metadata associated with the randomly generated scenarios in RPF and JSON format (described on the [data page](./cec2_data.mdx)).
-   - The metadata for the target speech and the three types of noise interferer.
+  - The metadata associated with the randomly generated scenarios in RPF and JSON format (described on the [data page](./cec2_data.mdx)).
+  - The metadata for the target speech and the three types of noise interferer.
 - The Scene Renderer takes the metadata, the ambisonics room impulse responses, and the audio of the target speech and interferers, and then produces:
-   - Ambisonic audio of the scene.
-   - Binaural audio for the hearing aid microphones.
+  - Ambisonic audio of the scene.
+  - Binaural audio for the hearing aid microphones.
 
 <figure id="fig1">
 <img width="500" src={useBaseUrl('/img/CEC2/scene_pipeline.png')} />
 <figcaption>Figure 1. The scene pipeline.</figcaption>
 </figure>
-
 
 [Figure 2](#fig2) shows the scene renderer processing in detail:
 
@@ -34,7 +33,6 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 <img width="500" src={useBaseUrl('/img/CEC2/scene_renderer.png')} />
 <figcaption>Figure 2. The scene renderer.</figcaption>
 </figure>
-
 
 ## References
 

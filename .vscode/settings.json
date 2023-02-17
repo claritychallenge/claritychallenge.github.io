@@ -19,6 +19,12 @@
     ],
     "cSpell.words": [
         "ambisonic",
-        "ambisonics"
-    ]
+        "ambisonics",
+        "Kates",
+        "RMSE",
+        "untarred"
+    ],
+    "markdownlint.config": {
+        "MD033": false,
+    }
 }

@@ -22,4 +22,3 @@ import { TwitterTimelineEmbed } from "react-twitter-embed";
 - [Prizes](./cec1_prizes) - information about our prizes.
 
 - [Download](./cec1_download) - where to go to download the software and challenge data.
-

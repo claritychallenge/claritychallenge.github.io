@@ -16,6 +16,7 @@ To allow the development of better hearing aids, we need ways to evaluate the sp
 <iframe width="560" height="315" src="https://www.youtube.com/embed/9DY2VOeRU0s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 For the prediction challenge we will provide the following data:
+
 - Audio produced by a variety of (simulated) hearing aids for speech-in-noise;
 - The corresponding clean reference signals (the original speech);
 - Characteristics of the listeners (pure tone audiogram, etc.); and
@@ -23,17 +24,18 @@ For the prediction challenge we will provide the following data:
 
 The challenge has two separate but related tracks
 
-- <b>Track 1: Closed-set</b> - i.e, Systems that can make prediction for hearing-aid algorithms and listeners that have been seen in the training data. 
-- <b>Track 2: Open-set</b> - i.e, Systems that can make predictions for unseen hearing-aid algorithms and/or listeners. 
+- <b>Track 1: Closed-set</b> - i.e, Systems that can make prediction for hearing-aid algorithms and listeners that have been seen in the training data.
+- <b>Track 2: Open-set</b> - i.e, Systems that can make predictions for unseen hearing-aid algorithms and/or listeners.
 
 We have an [extensive FAQ](./cpc1_faq) to answer key questions competitors might have. So even if you have never worked on speech intelligibility models for people with hearing loss, you will have the knowledge to take part. This includes seminar recordings on the following topics:
+
 - What hearing loss is;
 - How it's typically mitigated in hearing aids; and
 - How speech intelligibility is measured and estimated using metrics.
 
 ## Key dates (updated 14/01/22)
 
-- **16th November 2021**: Launch of challenge, release of data. 
+- **16th November 2021**: Launch of challenge, release of data.
 - **23rd November 2021**: Webinar to introduce the challenge 15:00-17:00 UK time.
 - **1st March 2022**: Release of evaluation data.
 - **21st March 2022**: Submission deadline. All entrants submit their predictions plus a draft of their technical report (details below). Scores will be returned with 24 hours of submission.
@@ -63,4 +65,3 @@ We have an [extensive FAQ](./cpc1_faq) to answer key questions competitors might
 - [Find a team](../cec2/cec2_find_a_team) - if you'd like to find collaborators to help you compete.
 
 - [FAQ](./cpc1_faq) - an extensive FAQ answering key questions and providing background knowledge to help you compete.
-

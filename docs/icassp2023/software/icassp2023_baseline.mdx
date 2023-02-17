@@ -15,7 +15,6 @@ Challenge entrants are supplied with a fully functioning baseline system. [Figur
 - Listener characteristics. i.e. an audiogram (green oval) are supplied to both the enhancement and amplification stage.
 - The hearing aid outputs are then evaluated by computing the mean of the  Hearing-Aid Speech Perception Index (HASPI) \[[1](#refs)] and Hearing-Aid Speech Quality Index (HASQI) \[[2](#refs)] (orange boxes) which are estimates of intelligibility and quality respectively . Note, HASPI and HASQI are 'intrusive' measures which require a clean speech reference as indicated in the figure.
 
-
 <figure id="fig1">
 <img width="800" src={useBaseUrl('/img/ICASSP2023/pipeline.png')} />
 <figcaption>Figure 1, The baseline, for simplicity, not all signal paths are shown.</figcaption>
@@ -30,6 +29,7 @@ More details of the different parts of the baseline appear on the [core software
 - [Speech intelligibility model](./icassp2023_core_software#e-speech-intelligibility-model)
 
 The code for the baseline system, and all supporting Clarity code, is available on [GitHub](https://github.com/claritychallenge/clarity).
+
 ## Baseline performance
 
 Baseline performance using amplification with no enhancement will appear shortly.
@@ -40,7 +40,6 @@ Baseline performance using amplification with no enhancement will appear shortly
 | --- | ---- |
 | Unprocessed | 0.1615 |
 | NAL-R baseline | 0.2493 | 
-
 
 Note, HASPI and HASQI add random noise at the hearing threshold, this means the objective scores have a small variation. The baseline code sets the random seed to ensure reproducibility.
 -->

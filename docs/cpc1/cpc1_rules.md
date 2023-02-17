@@ -36,6 +36,7 @@ Entrants provide Submissions on an “AS IS” BASIS, WITHOUT WARRANTIES OR COND
 ### Training and development
 
 For
+
 - <b>Track 1 (closed-set)</b>, teams should use the signals and listener responses provided in the `CPC1.train.json` file.
 - <b>Track 2 (open-set)</b>, teams should use the signals and listener responses provided in the smaller `CPC1.train_indep.json`.
 
@@ -55,7 +56,6 @@ The only data that can be used by the prediction model(s) during evaluation are
 
 If you use text from the speech prompts as part of evaluating the systems, we will classify that as an __intrusive__ method for the purpose of awarding [prizes](./cpc1_prizes).
 
-
 ## Baseline models and computational restrictions
 
 - Teams may choose to use all or some of the provided baseline models.
@@ -70,6 +70,7 @@ If you use text from the speech prompts as part of evaluating the systems, we wi
 ## Submitting multiple entries
 
 If you wish to submit multiple entries,
+
 - All systems/models must be submitted for evaluation.
 - Your systems must have significant differences in their approach.
 - You must register multiple teams, submitting each entry as a different team.
@@ -78,4 +79,3 @@ If you wish to submit multiple entries,
 ## Evaluation of systems
 
 - Entries will be ranked according to their performance in predicting measured intelligibility scores.
-

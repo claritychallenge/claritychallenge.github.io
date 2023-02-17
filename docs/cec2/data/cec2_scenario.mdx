@@ -29,9 +29,9 @@ The scenarios are for:
 - The target talker is selected from our set of 40 speakers.
 - The target talker produces a randomly chosen 7-10 word utterance.
 - There are two or three interferer sounds running throughout the audio. This can be a:
-   - stream of competing speech;
-   - continuous domestic noise source (e.g., a washing machine); or
-   - music source.
+  - stream of competing speech;
+  - continuous domestic noise source (e.g., a washing machine); or
+  - music source.
 - The target speech source will onset about one second into the scene.
 - The listener starts not looking at the target talker, but around the time the target speech starts, the listener rotates their head to approximately face towards the target.
 
@@ -111,23 +111,22 @@ For the reference channel,
 
 - The segment of the summed interferers that overlaps with the target (without padding), $i'$, and the target (without padding), $t'$, are extracted
 - Speech-weighted SNRs are calculated for each ear, SNR$_L$ and SNR$_R$:
-   - Signals $i'$ and $t'$ are separately convolved with a speech-weighting filter, h (specified below).
-   - The rms is calculated for each convolved signal.
-   - SNR$_L$ and SNR$_R$ are calculated as the ratio of these rms values.
+  - Signals $i'$ and $t'$ are separately convolved with a speech-weighting filter, h (specified below).
+  - The rms is calculated for each convolved signal.
+  - SNR$_L$ and SNR$_R$ are calculated as the ratio of these rms values.
 - The `BE_SNR` is selected as the maximum of the two SNRs: `BE_SNR` = max(SNR$_L$ and SNR$_R$).
 
 Then per channel,
 
 - The summed interferer signal, i, is scaled by the BE_SNR
-   - $i = i \times$ `BE_SNR`
+  - $i = i \times$ `BE_SNR`
 - Finally, i is scaled as follows:
-   - $i = i \times 10^{((-SNR_D)/20)}$
+  - $i = i \times 10^{((-SNR_D)/20)}$
 
 The speech-weighting filter is an FIR designed using the host window method \[[2](#refs), [3](#refs)\]. The frequency response is shown in [Figure 2](#fig2). The specification is:
 
 - Frequency (Hz) = `[0, 150, 250, 350, 450, 4000, 4800, 5800, 7000, 8500, 9500, 22050]`
 - Magnitude of transfer function at each frequency = `[0.0001, 0.0103, 0.0261, 0.0419, 0.0577, 0.0577, 0.046, 0.0343, 0.0226, 0.0110, 0.0001, 0.0001]`
-
 
 <figure id="fig2">
 <img width="500" src={useBaseUrl('/img/tutorial/speech_weighting_filter.png')} />

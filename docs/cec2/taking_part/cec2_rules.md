@@ -33,6 +33,7 @@ The only data that can be used by the Enhancement Processor during evaluation ar
 - The listener characterisation (pure tone air-conduction audiograms and/or digit triple test results).
 - The provided clean audio examples for the target talker (these will not be the same as any of the target utterances.)
 - The head-rotation signal (but if used, a version of the system that does not use it should also be prepared for comparison.)
+
 ## Computational restrictions
 
 - Teams may choose to use all, some or none of the parts of the baseline model.
@@ -63,8 +64,8 @@ We will assume that if only one of these systems is to go forward to listening t
 - There is a limit on how many systems can be evaluated by the listener panel.
 - A maximum of two entries can go through to the listener panel from any individual entrant. Furthermore, a second will only be allowed if it is judged by us to use significantly different signal processing approaches.
 - We will choose which will go to the listener panel based on
-   - The top N scored using the objective metric HASPI.
-   - A sample of M others that use contrasting and promising approaches.
+  - The top N scored using the objective metric HASPI.
+  - A sample of M others that use contrasting and promising approaches.
 
 ## Intellectual property
 

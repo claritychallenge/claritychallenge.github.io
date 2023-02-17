@@ -52,12 +52,12 @@ module.exports = {
                     position: 'left',
                     items: [{
                             type: 'doc',
-                            docId: 'icassp2023/icassp2023_intro',
-                            label: 'I want to learn more about the ICASSP challenge...',
+                            docId: 'cpc2/cpc2_intro',
+                            label: 'I want to learn more about the CPC2 challenge...',
                         },
                         {
                             type: 'doc',
-                            docId: 'icassp2023/icassp2023_download',
+                            docId: 'cpc2/taking_part/cpc2_download',
                             label: 'I want to download the data...',
                         },
                         {
@@ -66,15 +66,46 @@ module.exports = {
                         },
                         {
                             type: 'doc',
-                            docId: 'icassp2023/taking_part/icassp2023_registration',
+                            docId: 'cpc2/taking_part/cpc2_registration',
                             label: 'I want to register a team...',
                         },
                         {
                             type: 'doc',
-                            docId: 'icassp2023/taking_part/icassp2023_submission',
+                            docId: 'cpc2/taking_part/cpc2_submission',
                             label: 'I want to submit results...',
                         },
 
+                    ]
+                },
+                {
+                    type: 'dropdown',
+                    label: 'Challenges',
+                    position: 'right',
+                    items: [{
+                            type: 'doc',
+                            docId: 'cpc2/cpc2_intro',
+                            label: 'CPC2',
+                        }, {
+                            type: 'doc',
+                            docId: 'icassp2023/icassp2023_intro',
+                            label: 'ICASSP 2023 Grand Challenge',
+                        },
+                        {
+                            type: 'doc',
+                            docId: 'cec2/cec2_intro',
+                            label: 'CEC2',
+                        }, {
+                            type: 'doc',
+                            docId: 'cpc1/cpc1_intro',
+                            label: 'CPC1',
+                        }, {
+                            type: 'doc',
+                            docId: 'cec1/cec1_intro',
+                            label: 'CEC1',
+                        }, {
+                            to: '/timeline',
+                            label: 'Future Challenges',
+                        },
                     ]
                 },
                 {
@@ -96,36 +127,6 @@ module.exports = {
                             label: 'Clarity 2021',
                         }
 
-                    ]
-                },
-                {
-                    type: 'dropdown',
-                    label: 'Challenges',
-                    position: 'right',
-                    items: [{
-                            href: 'https://claritychallenge.org/CPC2_announcement_page/',
-                            label: 'CPC2 (Coming soon!)',
-                        }, {
-                            type: 'doc',
-                            docId: 'icassp2023/icassp2023_intro',
-                            label: 'ICASSP 2023 Grand Challenge (current)',
-                        },
-                        {
-                            type: 'doc',
-                            docId: 'cec2/cec2_intro',
-                            label: 'CEC2',
-                        }, {
-                            type: 'doc',
-                            docId: 'cpc1/cpc1_intro',
-                            label: 'CPC1',
-                        }, {
-                            type: 'doc',
-                            docId: 'cec1/cec1_intro',
-                            label: 'CEC1',
-                        }, {
-                            to: '/timeline',
-                            label: 'Future Challenges',
-                        },
                     ]
                 },
 
@@ -169,6 +170,12 @@ module.exports = {
             links: [{
                     title: 'Docs',
                     items: [{
+                        label: 'CPC2 Documentation',
+                        to: '/docs/cpc2/cpc2_intro/',
+                    }, {
+                        label: 'ICASSP 2023 Documentation',
+                        to: '/docs/icassp2023/icassp2023_intro/',
+                    }, {
                         label: 'CEC2 Documentation',
                         to: '/docs/cec2/cec2_intro/',
                     }, {
@@ -177,9 +184,6 @@ module.exports = {
                     }, {
                         label: 'CEC1 Documentation',
                         to: '/docs/cec1/cec1_intro/',
-                    }, {
-                        label: 'CASSP 2023 Documentation',
-                        to: '/docs/icassp2023/icassp2023_intro/',
                     }, ],
                 },
                 {
