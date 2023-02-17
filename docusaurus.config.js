@@ -79,27 +79,6 @@ module.exports = {
                 },
                 {
                     type: 'dropdown',
-                    label: 'Workshops',
-                    position: 'right',
-                    items: [{
-                            href: 'https://claritychallenge.github.io/clarity2023-workshop/',
-                            label: 'Clarity 2023',
-                        },
-                        {
-                            href: 'https://claritychallenge.github.io/clarity2022-CEC2-workshop/',
-                            label: 'Clarity CEC2 2022, Dec',
-                        }, {
-                            href: 'https://claritychallenge.github.io/clarity2022-workshop/',
-                            label: 'Clarity 2022, Jun',
-                        }, {
-                            href: 'https://claritychallenge.github.io/clarity2021-workshop/',
-                            label: 'Clarity 2021',
-                        }
-
-                    ]
-                },
-                {
-                    type: 'dropdown',
                     label: 'Challenges',
                     position: 'right',
                     items: [{
@@ -127,6 +106,27 @@ module.exports = {
                             to: '/timeline',
                             label: 'Future Challenges',
                         },
+                    ]
+                },
+                {
+                    type: 'dropdown',
+                    label: 'Workshops',
+                    position: 'right',
+                    items: [{
+                            href: 'https://claritychallenge.github.io/clarity2023-workshop/',
+                            label: 'Clarity 2023',
+                        },
+                        {
+                            href: 'https://claritychallenge.github.io/clarity2022-CEC2-workshop/',
+                            label: 'Clarity CEC2 2022, Dec',
+                        }, {
+                            href: 'https://claritychallenge.github.io/clarity2022-workshop/',
+                            label: 'Clarity 2022, Jun',
+                        }, {
+                            href: 'https://claritychallenge.github.io/clarity2021-workshop/',
+                            label: 'Clarity 2021',
+                        }
+
                     ]
                 },
 
