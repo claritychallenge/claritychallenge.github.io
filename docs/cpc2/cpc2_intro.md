@@ -8,7 +8,7 @@ sidebar_position: 1
 <!-- import { TwitterTimelineEmbed } from "react-twitter-embed"; -->
 
 :::caution
-**The CPC2 site is currently under construction**. Information is provisional and subject to change up until the challenge launch on March 1st.
+**The CPC2 site is currently under construction**. The pages documenting the data are incomplete. Expected to be completed by March 4th.
 :::
 
 To allow the development of better hearing aids, we need ways to evaluate the speech intelligibility of audio signals automatically. We need a prediction model that takes the audio produced by a hearing aid and the listener's characteristics (e.g. [audiogram](https://www.hear-it.org/Audiogram-)) and estimates the speech intelligibility score that the listener would achieve in a listening test.
