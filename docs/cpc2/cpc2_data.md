@@ -8,7 +8,7 @@ sidebar_position: 2
 The data for CPC2 is derived from 1st and 2nd Clarity Enhancement challenges (CEC1 and CEC2), i.e. the processed signals are the outputs of systems submitted by participants, and the listener responses were collected when evaluating these systems.
 
 :::info
-To download this data, please visit the [download page](./cpc2_download).
+To download this data, please visit the [download page](./taking_part/cpc2_download).
 :::
 
 The data is distributed as a single gzipped tarball, `clarity_CPC2_data.v1_0.tgz` which will unpack into the following directory structure:
