@@ -16,13 +16,11 @@ The evaluation data consists of audio signals processed by hearing aid systems, 
 
 The evaluation data is will be made available when the submission period opens. See the [download](./cpc2_download) page for more details.
 
+There will be three evaluation sets (`eval1`, `eval2` and `eval3`), corresponding to the three three training data partitions. i.e., predictions for the `eval1` set should be made with systems trained on the `train1` partition; `eval2` with `train2` and `eval3` with `train3`.
+
 Note, the evaluation data does not contain the listener responses. We will score your submission for you and return your score (we aim to do this within 24 hours of submission). We will then release the true listener responses the day after the submission deadline to allow teams to perform analysis of their results.
 
 ## What do I need to submit?
-
-:::caution
-WARNING: The information in this section is provisional and subject to change up until March 1st.
-:::
 
 All teams must submit
 
@@ -31,19 +29,17 @@ All teams must submit
 
 ### The predicted intelligibility scores
 
-You must submit your predicted intelligibility scores for the signals provided.
+Scores for each evaluation set should be stored in a separate CSV file named as follows  `CPC2_<TEAM_ID>.<SET>.csv`, where `<TEAM_ID>` is your individual team ID, e.g. 'E001' and `<SET>` is the evaluation set number, either 1, 2, or 3.
 
-The predictions should be sent in CSV format files with two columns:
+The CSV files should have two columns,
 
 ```csv
 signal_ID, intelligibility_score
 ```
 
-Where the `signal_ID` is the unique signal identifier used for the wav file name (e.g., `S08510_L0239_E001`) and `intelligibility_score` is the predicted intelligibility given in terms of the percentage words recognised correctly for the signal (i.e., from 0 to 100).
+where the `signal_ID` is the unique signal identifier used for the wav file name (e.g., `S08510_L0239_E001`) and `intelligibility_score` is the predicted intelligibility given in terms of the percentage words recognised correctly for the signal (i.e., from 0 to 100).
 
-Your CSV files should be named as follows  `CPC2_<TEAM_ID>.csv`, where `<TEAM_ID>` is your individual team ID, e.g. 'E001'.
-
-The files should be sent as email attachments to the email address: [claritychallengecontact@gmail.com](mailto:claritychallengecontact@gmail.com)
+The three CSV files should be sent as email attachments to the email address: [claritychallengecontact@gmail.com](mailto:claritychallengecontact@gmail.com)
 
 Please use "CPC2 Submission <TEAM_ID>" as the subject line.
 
