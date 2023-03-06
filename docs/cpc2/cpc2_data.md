@@ -63,7 +63,9 @@ The target reference signals and hearing aid **input** signals are stored under 
 There are a set of stereo audio files for each scene, as follows:
 
 ```bash
-<SCENE_ID>_target_anechoic.wav  # The anechoic speech target reference signal
+<SCENE_ID>_target_ref.wav  # The target reference signal for the intrusiveness intelligibility prediction task
+
+<SCENE_ID>_target_anechoic.wav  # The anechoic speech target signal
 <SCENE_ID>_target_<CHANNEL>.wav   # The target speech signal for the scene
 <SCENE_ID>_interferer_<CHANNEL>.wav  # The interfering noise for the scene
 <SCENE_ID>_mixed_<CHANNEL>.wav  # The mixed target and interfering noise.
@@ -73,14 +75,15 @@ where `<SCENE_ID>` is the scene identifier and `<CHANNEL>` can be either `CH0`, 
 
 Of these signals, the following is the most important:
 
-- `<SCENE_ID>_target_anechoic.wav`
-    This is the signal that should be used as **the reference for your intrusive intelligibility prediction model**. Note, this is the only signal that will be available in the evaluation data. It is a non-reverberant version of the target signal aligned with the target component of in the mixed signal received by the hearing aid.
+- `<SCENE_ID>_target_ref.wav`
+    This is the signal that should be used as **the reference for your intrusive intelligibility prediction model**. Note, this is the only signal that will be available in the evaluation data. It is a non-reverberant version of the target signal aligned with the target component of the mixed signal received by the hearing aid. It has been scaled to have the same energy as the target component of the mixed signal received by the hearing aid.
 
 The remaining hearing aid input signals are provided for completeness
 
 - `<SCENE_ID>_mixed_<CHANNEL>.wav` The noisy speech signals that were received by the hearing aid, i.e. the signals that were processed to produce the HA output signals.
 - `<SCENE_ID>_target_<CHANNEL>.wav` The target speech component of the mixed signals that were received by the hearing aid.
 - `<SCENE_ID>_interferer_<CHANNEL>.wav` The interfering noise component of the mixed signals that were received by the hearing aid.
+- `<SCENE_ID>_target_anechoic.wav` The anechoic target speech signal (i.e., same as the target reference signal but without the correct scaling).
 
 It is not anticipated that you will necessarily need these signals for training prediction models but they have been included to help participants gain a better understanding of the data.
 
