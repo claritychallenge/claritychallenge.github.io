@@ -1,11 +1,16 @@
 ---
 id: cpc2_intro
-title: CPC2 Introduction
+title: The 2nd Clarity Prediction Challenge
 sidebar_label: CPC2 Introduction
 sidebar_position: 1
 ---
 
 <!-- import { TwitterTimelineEmbed } from "react-twitter-embed"; -->
+:::info
+The 2nd Clarity Prediction Challenge is currently open. All participation instructions can be found on this site. Results will be presented at the <b><a href="https://claritychallenge.org/clarity2023-workshop/">ISCA Clarity-2023 Workshsop</a></b> in Dublin on 19th August.
+
+For details on our current challenge see <b><a href="https://claritychallenge.org/docs/cpc2/cpc2_intro">here</a></b>.
+:::
 
 To allow the development of better hearing aids, we need ways to evaluate the speech intelligibility of audio signals automatically. We need a prediction model that takes the audio produced by a hearing aid and the listener's characteristics (e.g. [audiogram](https://www.hear-it.org/Audiogram-)) and estimates the speech intelligibility score that the listener would achieve in a listening test.
 

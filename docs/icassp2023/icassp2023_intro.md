@@ -1,6 +1,6 @@
 ---
 id: icassp2023_intro
-title: ICASSP 2023 Clarity Challenge
+title: The ICASSP 2023 Clarity Challenge
 sidebar_label: ICASSP 2023 Introduction
 sidebar_position: 1
 ---
@@ -8,10 +8,14 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 import { TwitterTimelineEmbed } from "react-twitter-embed";
 
 :::info
+The Clarity ICASSP 2023 Challenge is now closed. Outcomes will be presented at ICASSP in June.
+
+For details on our current challenge see <b><a href="https://claritychallenge.org/docs/cpc2/cpc2_intro">here</a></b>.
+:::
+
+:::info
 
 - Evaluation data now available! [Download Now](https://www.myairbridge.com/en/#!/folder/EkthOZZeBW33aaDBWSDadTgpOkbgaFxO).
-
-- Registration is still open! [Register Now](taking_part/icassp2023_registration.mdx).
 
 :::
 
