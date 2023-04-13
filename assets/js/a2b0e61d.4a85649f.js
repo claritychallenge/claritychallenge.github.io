@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkclarity_cec_1=self.webpackChunkclarity_cec_1||[]).push([[5341],{6351:a=>{a.exports=JSON.parse('{"label":"CPC1","permalink":"/blog/tags/cpc-1","allTagsPath":"/blog/tags","count":3}')}}]);
