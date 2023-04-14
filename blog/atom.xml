@@ -2,11 +2,27 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://claritychallenge.github.io/blog</id>
     <title>The Clarity Project Blog</title>
-    <updated>2023-03-14T00:00:00.000Z</updated>
+    <updated>2023-04-14T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://claritychallenge.github.io/blog"/>
     <subtitle>The Clarity Project Blog</subtitle>
     <icon>https://claritychallenge.github.io/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Announcing the Clarity-2023 Workshop, Dublin]]></title>
+        <id>https://claritychallenge.github.io/blog/Announcing the Clarity-2023 Workshop, Dublin</id>
+        <link href="https://claritychallenge.github.io/blog/Announcing the Clarity-2023 Workshop, Dublin"/>
+        <updated>2023-04-14T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[The 4th Clarity Workshop on Machine Learning Challenges for Hearing Aids (Clarity-2023) will be held as an official ISCA satellite event of Interspeech-2023 and will be a one-day event held on 19th August 2023 in Dublin, Ireland.]]></summary>
+        <content type="html"><![CDATA[<p>The <a href="https://claritychallenge.org/clarity2023-workshop" target="_blank" rel="noopener noreferrer">4th Clarity Workshop on Machine Learning Challenges for Hearing Aids (Clarity-2023)</a> will be held as an official ISCA satellite event of Interspeech-2023 and will be a one-day event held on 19th August 2023 in Dublin, Ireland.</p><p>Any work related to the challenges of hearing aid signal processing will be considered relevant. Topics include, but are not limited to:</p><ul><li>Binaural technology for speech enhancement and source separation</li><li>Multi-microphone processing technology</li><li>Real-time approaches to speech enhancement</li><li>Statistical model-driven approaches to hearing aid processing</li><li>Audio quality &amp; intelligibility assessment hearing aid and cochlear implant users</li><li>Efficient and effective integration of psychoacoustic testing in machine learning</li><li>Machine learning for diverse target listeners</li><li>Machine learning models of hearing impairment</li></ul><p>The workshop will also be hosting the 2nd Clarity Prediction Challenge (CPC2) and will provide a forum for the presentation of the results.</p><p><strong>Important Dates</strong></p><ul><li><strong>Mid April</strong> - Workshop registration opens</li><li><strong>2nd June</strong> - Submission deadline for regular workshop papers</li><li><strong>31st July</strong> - Submission deadline for CPC2 papers</li><li><strong>19th August</strong> - ISCA Clarity 2023 workshop @ Interspeech</li></ul><p>The programme will consist of a mix of oral and poster presentations, panel discussions and keynote talks. For full details please visit the workshop website: <a href="https://claritychallenge.org/clarity2023-workshop/" target="_blank" rel="noopener noreferrer">https://claritychallenge.org/clarity2023-workshop/</a></p>]]></content>
+        <author>
+            <name>Jon Barker</name>
+            <uri>http://staffwww.dcs.shef.ac.uk/people/J.Barker/</uri>
+        </author>
+        <category label="clarity" term="clarity"/>
+        <category label="announcement" term="announcement"/>
+        <category label="CPC2" term="CPC2"/>
+        <category label="Clarity-2023" term="Clarity-2023"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Launching the 2nd Clarity Prediction Challenge]]></title>
         <id>https://claritychallenge.github.io/blog/Launch of CPC2</id>
