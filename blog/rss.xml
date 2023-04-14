@@ -4,10 +4,22 @@
         <title>The Clarity Project Blog</title>
         <link>https://claritychallenge.github.io/blog</link>
         <description>The Clarity Project Blog</description>
-        <lastBuildDate>Thu, 02 Feb 2023 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 14 Mar 2023 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[Launching the 2nd Clarity Prediction Challenge]]></title>
+            <link>https://claritychallenge.github.io/blog/Launch of CPC2</link>
+            <guid>https://claritychallenge.github.io/blog/Launch of CPC2</guid>
+            <pubDate>Tue, 14 Mar 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[The 2nd round of the Clarity Prediction Challenge (CPC2) has now been launched. This builds on the first challenge by using more complex signals and a larger set of listening test data for training and evaluating the prediction systems.]]></description>
+            <content:encoded><![CDATA[<p>The 2nd round of the Clarity Prediction Challenge (CPC2) has now been launched. This builds on the first challenge by using more complex signals and a larger set of listening test data for training and evaluating the prediction systems.</p><p>The outputs of the new challenge will be presented at an the <a href="https://claritychallenge.org/clarity2022-workshop/" target="_blank" rel="noopener noreferrer">ISCA Clarity-2023 workshop</a> that is being run as a satellite event to Interspeech 2023 in Dublin on 19th August 2023.</p><p>Full details can be found on the <a href="https://claritychallenge.org/docs/cpc2/cpc2_intro" target="_blank" rel="noopener noreferrer">Challenge Website</a>.</p><p><strong>Register now to take part</strong></p><p>If you are interested in participating please register now via the <a href="https://claritychallenge.org/docs/cpc2/taking_part/cpc2_registration" target="_blank" rel="noopener noreferrer">online registration form</a>.</p><p><strong>Important Dates</strong></p><ul><li><strong>March</strong> - Launch of challenge, release of training data + baseline system.</li><li><strong>1st July</strong> - Release of evaluation data and opening of submission window.</li><li><strong>31st July</strong> - Submission deadline.</li><li><strong>19th August</strong> - ISCA Clarity 2023 workshop @ Interspeech</li><li><strong>19th September</strong> - Deadline for submission of finalised Workshop papers</li></ul><p><strong>What is provided</strong></p><ul><li>Audio produced by a variety of (simulated) hearing aids for speech-in-noise;</li><li>The corresponding clean reference signals (the original speech);</li><li>Characteristics of the listeners (pure tone audiograms, etc);</li><li>The measured speech intelligibility scores from listening tests, where hearing-impaired listeners were asked to say what they heard after listening to the hearing aid processed signals.</li><li>Software tools including a baseline system based on HASPI scores.</li></ul><p><strong>For further information</strong></p><p>To be kept up to date please join our Clarity Challenge <a href="https://groups.google.com/g/clarity-challenge" target="_blank" rel="noopener noreferrer">Google group</a>. If you have questions, please contact us directly using the contact details found here.</p><p>If you have any questions please do not hesitate to contact us at <a href="mailto:claritychallengecontact@gmail.com" target="_blank" rel="noopener noreferrer">claritychallengecontact@gmail.com</a>.</p>]]></content:encoded>
+            <category>clarity</category>
+            <category>announcement</category>
+            <category>CPC2</category>
+            <category>Clarity-2023</category>
+        </item>
         <item>
             <title><![CDATA[ICASSP 2023 evaluation data released]]></title>
             <link>https://claritychallenge.github.io/blog/ICASSP 2023 evaluation data released</link>
