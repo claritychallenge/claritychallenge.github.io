@@ -37,7 +37,7 @@ module.exports = {
         ], require.resolve("docusaurus-plugin-image-zoom")
     ],
     themeConfig: {
-        navbar: {
+            navbar: {
             title: 'Clarity',
             hideOnScroll: true,
             logo: {
