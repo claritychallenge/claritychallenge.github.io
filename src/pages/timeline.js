@@ -53,11 +53,11 @@ export default function Home() {
               </li>{" "}
               <li>
                 {" "}
-                CEC3 / CPC3, 2023 - 2024 - Dynamic outdoor scenes, moving
+                CEC3 / CPC3, 2024 - 2025 - Dynamic outdoor scenes, moving
                 sources, head motion{" "}
               </li>{" "}
             </ul>
-            We are currently preparing for the participation phases of the 2nd
+            We are currently running the participation phases of the 2nd
             prediction challenge (CPC2). <p />
           </Typography>{" "}
         </Paper>
@@ -89,11 +89,11 @@ export default function Home() {
             Participation Phase               :         2023-03-01, 2023-08-01
             Evaluation Phase               :         2023-08-01, 2023-08-25
             section CEC3
-            Participation Phase               :         2023-09-01, 2024-04-01
-            Evaluation Phase               :         2024-04-01,2024-07-01
+            Participation Phase               :         2024-01-01, 2024-08-01
+            Evaluation Phase               :         2024-08-01,2024-11-01
             section CPC3
-            Participation Phase               :         2024-07-01, 2024-12-01
-            Evaluation Phase               :         2024-12-01,2025-02-01`}
+            Participation Phase               :         2024-11-01, 2025-04-01
+            Evaluation Phase               :         2025-04-01,2025-06-01`}
             />{" "}
             <h4> Key Dates </h4>{" "}
             <ul>
@@ -119,13 +119,12 @@ export default function Home() {
               </li>{" "}
               <li>
                 {" "}
-                <b> CEC3 Launch </b> 1st June 2023, <b>Submission</b> 1 st Jan
-                2024{" "}
+                <b> CEC3 Launch </b> 1st Jan 2024, <b>Submission</b> 1st August 2024 {" "}
               </li>{" "}
               <li>
                 {" "}
-                <b> CPC3 Launch </b> 1st Apr 2024, <b>Submission</b> 1 st Sep
-                2024{" "}
+                <b> CPC3 Launch </b> 1st Nov 2024, <b>Submission</b> 1st April
+                2025{" "}
               </li>{" "}
             </ul>{" "}
           </Paper>{" "}
