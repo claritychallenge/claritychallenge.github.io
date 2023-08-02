@@ -1,0 +1,71 @@
+---
+slug: Clarity-2023 Workshop @ Interspeech, Dublin
+title: Clarity-2023 Workshop @ Interspeech, Dublin
+author: Jon Barker
+author_title: Clarity Team Member
+author_url: http://staffwww.dcs.shef.ac.uk/people/J.Barker/
+author_image_url: https://avatars.githubusercontent.com/jonbarker68
+tags: [clarity, announcement, CPC2]
+---
+
+We are pleased to announce the **4th ISCA Clarity Workshop on Machine Learning Challenges for Hearing Aids (Clarity-2023)**.
+
+The event will be a one-day workshop held as an ISCA satellite event to Interspeech 2023 in Dublin, Ireland.
+
+For registration and programme details please visit the workshop website
+
+[https://claritychallenge.github.io/clarity2023-workshop/](https://claritychallenge.github.io/clarity2023-workshop/
+)
+
+**IMPORTANT DATES**
+
+- 2nd June 2023 - Workshop Submission Deadline (Regular Papers)
+- 31st July 2023 - Workshop Submission Deadline (Clarity Challenge Papers)
+- 5th August 2023 - Registration closes
+- 19th August - Workshop / Clarity Challenge results announced
+
+**About**
+
+One of the biggest challenges for hearing-impaired listeners is understanding speech in the presence of background noise. Everyday social noise levels can have a devastating impact on speech intelligibility. The inability to communicate effectively can lead to social withdrawal and isolation. Disabling hearing impairment affects 360 million people worldwide, with that number increasing because of the ageing population. Unfortunately, current hearing aid technology is often ineffective in noisy situations. Although amplification can restore audibility, it does not compensate fully for the effects of hearing loss.
+
+The Clarity workshops are designed to stimulate a two-way conversation between the speech research community and hearing aid developers. Hearing aid developers, who are not typically represented at Interspeech, will have an opportunity to present the challenges of their industry to the speech community; the speech community will be able to present and discuss potentially transformative approaches to speech in noise processing in the presence of hearing researchers and industry experts.
+
+**Topics**
+
+Any work related to the challenges of hearing aid signal processing will be considered relevant topics include,
+
+- Binaural technology for speech enhancement and source separation
+- Multi-microphone processing technology
+- Real-time approaches to speech enhancement
+- Statistical model-driven approaches to hearing aid processing
+- Audio quality & intelligibility assessment hearing aid and cochlear implant users
+- Efficient and effective integration of psychoacoustic testing in machine learning
+- Machine learning for diverse target listeners
+- Machine learning models of hearing impairment
+
+**The 2nd Clarity Prediction Challenge**
+
+The Clarity-2023 will also host the 2nd Clarity Prediction Challenge, that is addressing the problem of developing new intrusive and non-intrusive approaches to hearing-aid speech intelligibility prediction. The Challenge will be launching on 1st March, is you may be interested in participating please sign up to our Google group for further announcements.
+
+**Keynote Talks**
+
+- Prof Fei Chen, SUSTech, China,
+- Prof DeLiang Wang, Ohio State University, US
+
+**Organisers**
+
+- Michael Akeroyd, University of Nottingham
+- Jon Barker,  University of Sheffield
+- Trevor Cox, University of Salford
+- Fei Chen, Southern University of Science and Technology, China
+- John Culling,  University of Cardiff
+- Simone Graetzer, University of Salford
+- Andrew Hines, University College Dublin
+
+**For further information**
+
+To be kept up to date please join our [Clarity Challenge Google group](https://groups.google.com/g/clarity-challenge). If you have questions, please contact us directly using the [contact details found here](https://claritychallenge.org/contact).
+
+**Funded by** the Engineering and Physical Sciences Research Council (EPSRC), UK
+
+**Supported by** RNID (formerly Action on Hearing Loss), Hearing Industry Research Consortium, Amazon TTS Research

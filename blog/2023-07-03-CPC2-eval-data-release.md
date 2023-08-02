@@ -1,0 +1,23 @@
+---
+slug: CPC2 eval data released
+title: CPC2 eval data released
+author: Jon Barker
+author_title: Clarity Team Member
+author_url: http://staffwww.dcs.shef.ac.uk/people/J.Barker/
+author_image_url: https://avatars.githubusercontent.com/jonbarker68
+tags: [clarity, announcement, CPC2]
+---
+
+The CPC2 evaluation data has now been released.
+
+The data is available for download as a single 478 MB file, [clarity_CPC2_data.test.v1_0.tgz](https://mab.to/138typ3cpVBmK). The evaluation data should be untarred into the same root as the training data. Further details can be found on the [challenge website](https://claritychallenge.org/docs/cpc2/cpc2_intro).
+
+The data consists of the hearing aid algorithm output signals, clean reference signals, listener audiograms, and head rotation information. Listener responses are not provided for the evaluation data but will be made available after the submission window has closed.
+
+For details on how to prepare your submission [please see the instructions on the website](https://claritychallenge.org/docs/cpc2/taking_part/cpc2_submission).
+
+If you have any questions please feel free to post them on this forum.
+
+The submission window will close on the 31st of July.
+
+Good luck!

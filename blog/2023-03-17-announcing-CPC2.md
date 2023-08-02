@@ -1,14 +1,17 @@
 ---
-slug: Announcing the 2nd Clarity Prediction Challenge (CPC2)
+slug: Announcing CPC2
 title: Announcing the 2nd Clarity Prediction Challenge (CPC2)
-author: Jon Barker
-author_title: Clarity Team Member
-author_url: http://staffwww.dcs.shef.ac.uk/people/J.Barker/
-author_image_url: https://avatars.githubusercontent.com/jonbarker68
+authors:
+- name: Jon Barker
+  title: Clarity Team Member
+  url: http://staffwww.dcs.shef.ac.uk/people/J.Barker/
+  image_url: https://avatars.githubusercontent.com/jonbarker68
+- name: Trevor Cox
+  title: Clarity Team Member
+  url: http://trevorcox.me/trevor-cox
+  image_url: https://avatars.githubusercontent.com/trevorjcox
 tags: [clarity, announcement, CPC2]
 ---
-
-import useBaseUrl from '@docusaurus/useBaseUrl';
 
 The 2nd Clarity Prediction Challenge - [Register Now](https://claritychallenge.org/docs/cpc2/taking_part/cpc2_registration)
 
