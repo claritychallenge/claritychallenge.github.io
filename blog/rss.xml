@@ -4,10 +4,20 @@
         <title>The Clarity Project Blog</title>
         <link>https://claritychallenge.github.io/blog</link>
         <description>The Clarity Project Blog</description>
-        <lastBuildDate>Thu, 02 Feb 2023 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 17 Mar 2023 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[Announcing the 2nd Clarity Prediction Challenge (CPC2)]]></title>
+            <link>https://claritychallenge.github.io/blog/Announcing the 2nd Clarity Prediction Challenge (CPC2)</link>
+            <guid>https://claritychallenge.github.io/blog/Announcing the 2nd Clarity Prediction Challenge (CPC2)</guid>
+            <pubDate>Fri, 17 Mar 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[The 2nd Clarity Prediction Challenge - Register Now]]></description>
+            <category>clarity</category>
+            <category>announcement</category>
+            <category>CPC2</category>
+        </item>
         <item>
             <title><![CDATA[ICASSP 2023 evaluation data released]]></title>
             <link>https://claritychallenge.github.io/blog/ICASSP 2023 evaluation data released</link>
