@@ -9,7 +9,7 @@ import { TwitterTimelineEmbed } from "react-twitter-embed";
 :::info
 The 1st Clarity Enhancement Challenge has now finished. For the details of the systems that were submitted and to see the table of results, please visit the <b><a href="https://claritychallenge.org/clarity2021-workshop/">Clarity-2021 Workshsop website</a></b>.
 
-For details on our current challenge see <b><a href="https://claritychallenge.org/docs/cpc2/cpc2_intro">here</a></b>.
+For details of information on forthcoming challenge see <b><a href="https://claritychallenge.org/timeline">here</a></b>.
 :::
 
 - [Scenario](./cec1_scenario) - a description of the listening scenario and how it has been simulated.

@@ -10,7 +10,7 @@ import { TwitterTimelineEmbed } from "react-twitter-embed";
 :::info
 The Clarity ICASSP 2023 Challenge is now closed. Outcomes will be presented at ICASSP in June.
 
-For details on our current challenge see <b><a href="https://claritychallenge.org/docs/cpc2/cpc2_intro">here</a></b>.
+For details of information on forthcoming challenge see <b><a href="https://claritychallenge.org/timeline">here</a></b>.
 :::
 
 :::info

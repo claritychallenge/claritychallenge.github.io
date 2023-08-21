@@ -57,8 +57,8 @@ export default function Home() {
                 sources, head motion{" "}
               </li>{" "}
             </ul>
-            We are currently running the participation phases of the 2nd
-            prediction challenge (CPC2). <p />
+            We have now completed evaluation of the 2nd
+            prediction challenge (CPC2) and are busy preparing the 3rd enhancement challenge (CEC3) for launch in early 2024. <p />
           </Typography>{" "}
         </Paper>
         <Zoom>
