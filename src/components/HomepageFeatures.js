@@ -10,7 +10,7 @@ const FeatureList = [
       <>
         This site provides{" "}
         <a href="docs/icassp2023/icassp2023_intro"> full documentation </a> for all our
-        challenges. Enter the ICASSP 2023 Grand Challenge, running now.{" "}
+        challenges.{" "}
       </>
     ),
     link: "docs/icassp2023/icassp2023_intro",
