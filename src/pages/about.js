@@ -112,10 +112,10 @@ const PersonList = [
     avatar: "/img/avatar/akeroyd.jpeg",
   },
   {
-    name: "Will Bailey",
+    name: "Jianyuan Sun",
     affiliation: "University of Sheffield",
-    url: "https://www.sheffield.ac.uk/dcs/people/research-staff/will-bailey",
-    avatar: "/img/avatar/bailey.png",
+    url: "https://www.sheffield.ac.uk/dcs/people/research-staff/jianyuan-sun",
+    avatar: "/img/avatar/yuan.png",
   },
   {
     name: "Jon Barker",

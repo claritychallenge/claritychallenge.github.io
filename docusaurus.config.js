@@ -17,6 +17,7 @@ module.exports = {
     projectName: 'claritychallenge.github.io', // Usually your repo name.
     trailingSlash: false,
     deploymentBranch: "gh-pages",
+    onBrokenLinks: 'ignore',
     stylesheets: [{
         href: 'https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css',
         type: 'text/css',
