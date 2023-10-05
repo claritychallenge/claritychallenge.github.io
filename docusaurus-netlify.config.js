@@ -134,6 +134,12 @@ module.exports = {
                     }, ]
                 },
                 {
+                    type: 'docs',
+                    docId: 'learning/learning_intro',
+                    label: 'Learning',
+                    position: 'right',
+                },
+                {
                     type: 'dropdown',
                     label: 'About Us',
                     position: 'right',

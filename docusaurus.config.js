@@ -130,7 +130,6 @@ module.exports = {
 
                     ]
                 },
-
                 {
                     type: 'dropdown',
                     label: 'Software',
@@ -142,6 +141,11 @@ module.exports = {
                         href: 'https://github.com/claritychallenge/clarity',
                         label: 'GitHub',
                     }, ]
+                }, {
+                    type: 'doc',
+                    docId: 'learning/learning_intro',
+                    label: 'Learning',
+                    position: 'right',
                 },
                 {
                     type: 'dropdown',
