@@ -115,7 +115,7 @@ const PersonList = [
     name: "Jianyuan Sun",
     affiliation: "University of Sheffield",
     url: "https://www.sheffield.ac.uk/dcs/people/research-staff/jianyuan-sun",
-    avatar: "/img/avatar/yuan.png",
+    avatar: "/img/avatar/yuanyuan.png",
   },
   {
     name: "Jon Barker",
