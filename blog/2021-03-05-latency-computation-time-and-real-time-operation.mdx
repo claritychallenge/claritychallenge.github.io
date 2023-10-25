@@ -9,7 +9,7 @@ authors:
 tags: [challenge, computation, enhancement, latency, real-time]
 ---
 
-
+import {remarkMath} from "remark-math";
 
 An explanation of the time and computational limits for the first round of the enhancement challenge.
 
@@ -26,15 +26,15 @@ The rules state the following:
 
 Mathematically this is:
 
-yn=f(xm , xm+1 ... xn+N–1 , xn+N , L )
+$y_n=f(x_m , x_{m+1} ... x_{n+N–1} , x_{n+N} , L )$
 
-- where yn is the output from your hearing aid for sample n.
-- x is the audio input signal from a hearing aid microphone.
-- N = 0.005 fs where fs is the sampling frequency.
-- m is a sample number where m <= n.
-- L is the listener characteristics.
-- f() is the hearing aid function. There is no limitation on how long this takes to compute.
-- You can use multiple microphones; only a single input signal x is shown here just for simplicity.
+- where $y_n$ is the output from your hearing aid for sample $n$.
+- $x$ is the audio input signal from a hearing aid microphone.
+- $N = 0.005 fs$ where $fs$ is the sampling frequency.
+- $m$ is a sample number where $m \le n$.
+- $L$ is the listener characteristics.
+- $f()$ is the hearing aid function. There is no limitation on how long this takes to compute.
+- You can use multiple microphones; only a single input signal $x$ is shown here just for simplicity.
 
 Here it is illustrated as a diagram.
 

@@ -260,6 +260,12 @@ module.exports = {
                     postsPerPage: 'ALL',
                     blogSidebarTitle: 'Recent posts',
                     blogSidebarCount: 10,
+                    remarkPlugins: [math],
+                    rehypePlugins: [
+                        [katex, {
+                            strict: false
+                        }]
+                    ]
                 },
                 theme: {
                     customCss: require.resolve('./src/css/custom.css'),
