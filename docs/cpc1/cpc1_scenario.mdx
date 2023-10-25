@@ -61,7 +61,7 @@ A sofa is simulated at a random position as a layer on the wall and the floor. F
 
 ## The receiver
 
-The receiver has position, $\vec{r} = (x_r,y_r,z_r)$
+The receiver has position, $(x_r,y_r,z_r)$
 
 This is positioned within the room using uniform probability distribution random number generators for the x and y coordinates (see [Figure 2](#fig2) for origin location). The reciver can have one of two heights (seated or standing height). There are constraints to ensure that the receiver is not too close to the wall:
 
@@ -73,7 +73,7 @@ The receiver is positioned so as to be roughly facing the target talker. That is
 
 ## The target talker
 
-The target talker has position $\vec{t} = (x_t,y_t,z_t)$
+The target talker has position $(x_t,y_t,z_t)$
 
 The target talker is positioned within the room using uniform probability distribution random number generators for the coordinates. Constraints ensure the target is not too close to the wall or receiver. It is set to have the same height as the receiver.
 
@@ -86,7 +86,7 @@ A speech directivity pattern is used, which is directed at the listener.
 
 ## The interferer
 
-The interferer has position $\vec{i} = (x_i,y_i,z_i)$
+The interferer has position $(x_i,y_i,z_i)$
 
 The interferer is a single point source radiating speech or non-speech noise omnidirectionally. It is placed within the room using uniform probability distribution random number generators for the coordinates. These constraints ensure the interferer is not too close to the wall or receiver. It is set to be at the same height as the receiver. Note, this means that the interferer can be at any angle relative to the receiver.
 
@@ -118,9 +118,9 @@ For the reference channel,
 Then per channel,
 
 - The whole interferer signal, i, is scaled by the BE_SNR
-  - $i = i*BE_{SNR}$
+  - $i = i \times $BE_SNR
 - Finally, i is scaled as follows:
-  - $i = i*10^{((-SNR_D)/20)}$
+  - $i = i \times 10$<sup>((-SNR_D)/20)</sup>
   
 The speech-weighting filter is an FIR designed using the host window method \[[2](#references), [3](#references)\]. The specification is:
 

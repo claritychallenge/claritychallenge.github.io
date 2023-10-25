@@ -9,6 +9,7 @@ authors:
 tags: [challenge, computation, enhancement, latency, real-time]
 ---
 
+import rehypeKatex from 'rehype-katex'
 import {remarkMath} from "remark-math";
 
 An explanation of the time and computational limits for the first round of the enhancement challenge.
@@ -26,9 +27,9 @@ The rules state the following:
 
 Mathematically this is:
 
-$y_n=f(x_m , x_{m+1} ... x_{n+N–1} , x_{n+N} , L )$
+y<sub>n</sub>=f(x<sub>m</sub> , x<sub>m+1</sub> ... x<sub>n+N-1</sub> , x<sub>n+N</sub> , L )
 
-- where $y_n$ is the output from your hearing aid for sample $n$.
+- where y<sub>n</sub> is the output from your hearing aid for sample $n$.
 - $x$ is the audio input signal from a hearing aid microphone.
 - $N = 0.005 fs$ where $fs$ is the sampling frequency.
 - $m$ is a sample number where $m \le n$.

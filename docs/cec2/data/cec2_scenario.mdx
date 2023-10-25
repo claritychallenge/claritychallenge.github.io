@@ -7,6 +7,7 @@ sidebar_position: 4
 import Tabs from "@theme/Tabs";
 import TabItem from "@theme/TabItem";
 import useBaseUrl from '@docusaurus/useBaseUrl';
+import {remarkMath} from "remark-math";
 
 The scenario is that of a listener listening to a target speaker in a room with two or three interfering sound sources are also active. The scenes are described by a large number of randomized parameters:
 
@@ -45,7 +46,7 @@ An example scenario is shown in [Figure 1](#fig1). It also defines the coordinat
 ## Room geometry
 
 - Cuboid rooms with dimensions length $L$ by width $W$ by height $H$.
-- Length $L$ set using a uniform probability distribution random number generator with 3 $<$ $L$ (m) $≤$ 8.
+- Length $L$ set using a uniform probability distribution random number generator with $3 < L(m) \le 8$.
 - Height $H$ set using a Gaussian distribution random number generator with a mean of 2.7 m and standard deviation of 0.8 m.
 - Area $L×W$ set using a Gaussian distribution random number generator with mean 17.7 m$^2$  and standard deviation of 5.5 m$^2$
 
@@ -59,7 +60,7 @@ A sofa is simulated at a random position as a layer on the wall and the floor. F
 
 ## The listener (receiver)
 
-The listener has position, $\vec{r} = (x_r,y_r,z_r)$
+The listener has position, $(x_r,y_r,z_r)$
 
 This is positioned within the room using uniform probability distribution random number generators for the x and y coordinates (see Figure 2 for origin location). There are constraints to ensure that the receiver is not too close to the wall:
 
@@ -78,7 +79,7 @@ The listener is initially oriented away from the target and will turn to be roug
 
 ## The target talker
 
-​​The target talker has position $\vec{t} = (x_t,y_t,z_t)$
+​​The target talker has position $(x_t,y_t,z_t)$
 
 The target talker is positioned within the room using uniform probability distribution random number generators for the coordinates. Constraints ensure the target is not too close to the wall or receiver. It is set to have the same height as the receiver.
 
@@ -92,7 +93,7 @@ The target speech starts between 1.0 and 1.5 seconds into the mixed sound files 
 
 ## The interferers
 
-The interferers have position $\vec{i_{1,2,3}} = (x_i,y_i,z_i)$
+The interferers have position $(x_i,y_i,z_i)$
 
 Each interferer is modelled as an omnidirectional point source. They will be radiating: speech, noise or music. They are placed within the room using uniform probability distribution random number generators for the coordinates. The following constraints ensure the interferer is not too close to the wall or listener. However, interferers are independently positioned with no constraint on their position relative to each other. They are set to be at the same height as the listener. Note, this means that the interferers can be at any angle relative to the listener.
 
@@ -121,7 +122,7 @@ Then per channel,
 - The summed interferer signal, i, is scaled by the BE_SNR
   - $i = i \times$ `BE_SNR`
 - Finally, i is scaled as follows:
-  - $i = i \times 10^{((-SNR_D)/20)}$
+  - $i = i \times 10$<sup>((-SNR_D)/20)</sup>
 
 The speech-weighting filter is an FIR designed using the host window method \[[2](#refs), [3](#refs)\]. The frequency response is shown in [Figure 2](#fig2). The specification is:
 
