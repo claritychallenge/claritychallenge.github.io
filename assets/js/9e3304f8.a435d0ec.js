@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkclarity=self.webpackChunkclarity||[]).push([[2176],{18606:a=>{a.exports=JSON.parse('{"label":"latency","permalink":"/blog/tags/latency","allTagsPath":"/blog/tags","count":1,"unlisted":false}')}}]);
