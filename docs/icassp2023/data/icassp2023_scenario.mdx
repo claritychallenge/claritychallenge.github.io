@@ -7,7 +7,6 @@ sidebar_position: 4
 import Tabs from "@theme/Tabs";
 import TabItem from "@theme/TabItem";
 import useBaseUrl from '@docusaurus/useBaseUrl';
-import {remarkMath} from "remark-math";
 
 ## The scenario
 
@@ -51,7 +50,7 @@ A sofa is simulated at a random position as a layer on the wall and the floor. F
 
 ## The listener (receiver)
 
-The listener has position, $(x_r,y_r,z_r)$
+The listener has position, $\vec{r} = (x_r,y_r,z_r)$
 
 This is positioned within the room using uniform probability distribution random number generators for the x and y coordinates (see Figure 2 for origin location). There are constraints to ensure that the receiver is not too close to the wall:
 
@@ -70,7 +69,7 @@ The listener is initially oriented away from the target and will turn to be roug
 
 ## The target talker
 
-​​The target talker has position $(x_t,y_t,z_t)$
+​​The target talker has position $\vec{t} = (x_t,y_t,z_t)$
 
 The target talker is positioned within the room using uniform probability distribution random number generators for the coordinates. Constraints ensure the target is not too close to the wall or receiver. It is set to have the same height as the receiver.
 
@@ -84,7 +83,7 @@ The target speech starts between 1.0 and 1.5 seconds into the mixed sound files 
 
 ## The interferers
 
-The interferers have position $(x_i,y_i,z_i)$
+The interferers have position $\vec{i}_{1,2,3} = (x_i,y_i,z_i)$
 
 Each interferer is modelled as an omnidirectional point source. They will be radiating: speech, noise or music. They are placed within the room using uniform probability distribution random number generators for the coordinates. The following constraints ensure the interferer is not too close to the wall or listener. However, interferers are independently positioned with no constraint on their position relative to each other. They are set to be at the same height as the listener. Note, this means that the interferers can be at any angle relative to the listener.
 
@@ -97,7 +96,7 @@ The interferers are present over the whole mixed sound file.
 
 ## Signal-to-noise ratio (SNR)
 
-The SNR of the mixtures are engineered to achieve a suitable range of speech intelligibility values. A desired signal-to-noise ratio, SNR_D (dB), is chosen at random. This is generated with a uniform probability distribution between limits determined by pilot listening tests. The better ear SNR (BE_SNR) models the better ear effect in binaural listening. It is calculated for the reference channel (channel 1, which corresponds to the front microphone of the hearing aid). This value is used to scale all interferer channels. The procedure is described below.
+The SNR of the mixtures are engineered to achieve a suitable range of speech intelligibility values. A desired signal-to-noise ratio, SNR$_D$ (dB), is chosen at random. This is generated with a uniform probability distribution between limits determined by pilot listening tests. The better ear SNR (BE_SNR) models the better ear effect in binaural listening. It is calculated for the reference channel (channel 1, which corresponds to the front microphone of the hearing aid). This value is used to scale all interferer channels. The procedure is described below.
 
 For the reference channel,
 
@@ -113,7 +112,7 @@ Then per channel,
 - The summed interferer signal, i, is scaled by the BE_SNR
   - $i = i \times$ `BE_SNR`
 - Finally, i is scaled as follows:
-  - $i = i \times 10$<sup>((-SNR_D)/20)</sup>
+  - $i = i \times 10^{-SNR_D/20}$
 
 The speech-weighting filter is an FIR designed using the host window method \[[2](#refs), [3](#refs)\]. The frequency response is shown in [Figure 2](#fig2). The specification is:
 
