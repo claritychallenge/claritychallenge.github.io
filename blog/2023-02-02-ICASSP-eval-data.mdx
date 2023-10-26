@@ -17,15 +17,15 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 We are pleased to announce that the evaluation dataset for the ICASSP Clarity Challenge is now available for download.
 
-<https://www.myairbridge.com/en/#!/folder/EkthOZZeBW33aaDBWSDadTgpOkbgaFxO>
+[https://www.myairbridge.com/en/#!/folder/EkthOZZeBW33aaDBWSDadTgpOkbgaFxO](https://www.myairbridge.com/en/#!/folder/EkthOZZeBW33aaDBWSDadTgpOkbgaFxO)
 
 For instructions on preparing your submission please visit:
 
-<https://claritychallenge.org/docs/icassp2023/taking_part/icassp2023_submission>
+[https://claritychallenge.org/docs/icassp2023/taking_part/icassp2023_submission](https://claritychallenge.org/docs/icassp2023/taking_part/icassp2023_submission)
 
 **If you have not yet registered** it is not too late to do so. Please use the form at the link below and we will then send you a Team ID and a personalised upload link for your submission.
 
-<https://claritychallenge.org/docs/icassp2023/taking_part/icassp2023_registration>
+[https://claritychallenge.org/docs/icassp2023/taking_part/icassp2023_registration](https://claritychallenge.org/docs/icassp2023/taking_part/icassp2023_registration)
 
 Note, we have extended the deadline for submission until Friday 10th February so that teams have a full week to process the signals.
 

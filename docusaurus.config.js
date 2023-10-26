@@ -1,9 +1,9 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
-const math = require('remark-math');
-const katex = require('rehype-katex');
-const {
-    MailRounded
-} = require('@mui/icons-material');
+//const math = require('remark-math');
+//const katex = require('rehype-katex');
+//const rehypeKatex = require('rehype-katex');
+import remarkMath from 'remark-math';
+import rehypeKatex from 'rehype-katex';
 
 module.exports = {
     title: 'The Clarity Project',
@@ -244,9 +244,9 @@ module.exports = {
                 },
                 docs: {
                     sidebarPath: require.resolve('./sidebars.js'),
-                    remarkPlugins: [require('mdx-mermaid'), math],
+                    remarkPlugins: [remarkMath],
                     rehypePlugins: [
-                        [katex, {
+                        [rehypeKatex, {
                             strict: false
                         }]
                     ],
@@ -260,6 +260,8 @@ module.exports = {
                     postsPerPage: 'ALL',
                     blogSidebarTitle: 'Recent posts',
                     blogSidebarCount: 10,
+                    remarkPlugins: [remarkMath],
+                    rehypePlugins: [rehypeKatex]
                 },
                 theme: {
                     customCss: require.resolve('./src/css/custom.css'),

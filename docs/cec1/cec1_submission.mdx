@@ -4,15 +4,15 @@ title: Submission
 sidebar_label: Submission
 sidebar_position: 9
 ---
-import Icon from "@material-ui/core/Icon";
+import { FiberNew } from '@mui/icons-material';
 
 We are operating a two-stage submission process with the following key dates.
 
 - **1st June**: Evaluation data release for MBSTOI evaluation for all entrants.
-- **11th June**: Registration deadline. <span class="material-icons primary">fiber_new</span>
+- **11th June**: Registration deadline. <FiberNew/>
 
 - **15th June**: All entrants submit (i) audio for MBSTOI evaluation and (ii) a draft of their technical report (details below).
-- **22nd June**: Deadline by which all entrants must submit two page technical reports to Clarity-2021 workshop (details below).  <span class="material-icons primary">fiber_new</span>
+- **22nd June**: Deadline by which all entrants must submit two page technical reports to Clarity-2021 workshop (details below).  <FiberNew/>
 
 - **22nd June**: Entrants informed which systems are going forward to the listening test evaluation stage. Evaluation data for listening tests released to those entrants.
 - **29th June**: Entrants submit audio for listening tests.
@@ -44,7 +44,7 @@ You must submit the audio signals produced at the output of your simulated heari
 
 1. **MBSTOI evaluation**. Signals should be submitted in floating point WAV format with a 44.1 kHz sampling rate. For levels, we will follow the convention in the baseline hearing aid (at the output) and hearing loss models. That is, a +/-1 square wave has RMS = 0 dB FS and corresponds to 120 dB.
 
-2. **Listening tests**. Signals should be submitted as 16-bit WAV files with a 32 kHz sampling rate (due to hardware limitations). You should ensure that any samples that are >+1 or <-1 have been hard-clipped at +/-1 before submission. Here, 0 dB FS corresponds to approximately 100 dB, given the capabilities of the reproduction equipment. These signals will be played as is to the listener panel.
+2. **Listening tests**. Signals should be submitted as 16-bit WAV files with a 32 kHz sampling rate (due to hardware limitations). You should ensure that any samples that are greater than +1 or less than -1 have been hard-clipped at +/-1 before submission. Here, 0 dB FS corresponds to approximately 100 dB, given the capabilities of the reproduction equipment. These signals will be played as is to the listener panel.
 
 We also encourage you to submit your simulated hearing aid code.
 
