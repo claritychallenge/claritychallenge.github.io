@@ -1,9 +1,6 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 //const math = require('remark-math');
 //const katex = require('rehype-katex');
-const {
-    MailRounded
-} = require('@mui/icons-material');
 //const rehypeKatex = require('rehype-katex');
 import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
