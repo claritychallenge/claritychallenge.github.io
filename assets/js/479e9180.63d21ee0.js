@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkclarity=self.webpackChunkclarity||[]).push([[8613],{70036:a=>{a.exports=JSON.parse('{"label":"hearing aid","permalink":"/blog/tags/hearing-aid","allTagsPath":"/blog/tags","count":2,"unlisted":false}')}}]);
