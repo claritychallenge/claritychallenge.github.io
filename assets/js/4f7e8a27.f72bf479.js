@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkclarity=self.webpackChunkclarity||[]).push([[6424],{70887:a=>{a.exports=JSON.parse('{"permalink":"/blog/tags/cocktail-party","page":1,"postsPerPage":1,"totalPages":1,"totalCount":1,"blogDescription":"News and updates about our Challenges and Workshops","blogTitle":"Latest News"}')}}]);
