@@ -23,7 +23,33 @@ module.exports = {
         type: 'text/css',
         integrity: 'sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X',
         crossorigin: 'anonymous',
-    }, "https://fonts.googleapis.com/icon?family=Material+Icons", ],
+    }, "https://fonts.googleapis.com/icon?family=Material+Icons",
+        "/js-datatable/css.min/bootstrap-table.min.css",
+        "/js-datatable/css.min/datatable.min.css"
+    ],
+    scripts: [
+        {
+            src: 'https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js',
+            async: false,
+        },
+        {
+            src: '/bootstrap/bootstrap.bundle.min.js',
+            async: false,
+        },
+        {
+            src: '/js-datatable/js.min/bootstrap-table.min.js',
+            async: false,
+        },
+        {
+            src: '/js-datatable/js.min/Chart.bundle.min.js',
+            async: false,
+        },
+        {
+            src: '/js-datatable/js.min/datatable.min.js',
+            async: false,
+        }
+
+    ],
     plugins: [
         [require.resolve('docusaurus-lunr-search'), {
             indexBaseUrl: true
