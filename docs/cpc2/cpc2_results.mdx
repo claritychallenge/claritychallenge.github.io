@@ -9,122 +9,102 @@ The 2nd Clarity Prediction Challenge is now complete. Results and system descrip
 
 import Chart from "chart.js/auto";
 import React from "react";
+import BootstrapTable from 'react-bootstrap-table-next';
 
-import { ArcElement, Tooltip, Legend } from "chart.js";
-import { CategoryScale, LinearScale, BarElement, Title } from "chart.js";
+import { CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend  } from "chart.js";
 
-import { Doughnut } from "react-chartjs-2";
 import { Bar } from "react-chartjs-2";
-
-export const data = {
-  labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
-  datasets: [
-    {
-      label: "# of Votes",
-      data: [12, 19, 3, 5, 2, 3],
-      backgroundColor: [
-        "rgba(255, 99, 132, 0.2)",
-        "rgba(54, 162, 235, 0.2)",
-        "rgba(255, 206, 86, 0.2)",
-        "rgba(75, 192, 192, 0.2)",
-        "rgba(153, 102, 255, 0.2)",
-        "rgba(255, 159, 64, 0.2)",
-      ],
-      borderColor: [
-        "rgba(255, 99, 132, 1)",
-        "rgba(54, 162, 235, 1)",
-        "rgba(255, 206, 86, 1)",
-        "rgba(75, 192, 192, 1)",
-        "rgba(153, 102, 255, 1)",
-        "rgba(255, 159, 64, 1)",
-      ],
-      borderWidth: 1,
-    },
-  ],
-};
 
 export const options = {
   responsive: true,
+  elements: {
+    bar: {
+      borderWidth: 2,
+    },
+  },
   plugins: {
     legend: {
       position: "top",
     },
-    title: {
-      display: true,
-      text: "Chart.js Bar Chart",
-    },
   },
+  scales: {
+    yRMSE: {
+         type: 'linear',
+         min: 24,
+         position: 'left',
+         title: {
+          display: true,
+          text: 'RMSE',
+          color: 'red',
+          font: {
+            size: 18,
+          }},
+          ticks: {
+            color: 'red',
+          }
+    },
+    yCorr: {
+        type: 'linear',
+        position: 'right',
+        max: 1.0,
+        title: {
+        display: true,
+        text: 'Corr',
+        color: 'blue',
+        font: {
+            size: 18,
+        }},
+        ticks: {
+            color: 'blue',
+        },
+        grid: {
+          drawOnChartArea: false, // only want the grid lines for one axis to show up
+        },
+    }
+
+  }
 };
 
 export const labels = [
-  "January",
-  "February",
-  "March",
-  "April",
-  "May",
-  "June",
-  "July",
+  "E011", "E002", "E009", "E022", "E023", "E016", "E025", "beHASPI", "E003", "E024", "E015", "E020", "Prior"
 ];
 
 export const data2 = {
   labels: labels,
   datasets: [
     {
-      label: "Dataset 1",
-      data: [12, 19, 3, 5, 2, 3, 10],
+      label: "RMSE",
+      data: [25.1, 25.3, 25.4, 25.7, 26.4, 26.8, 27.9, 28.7, 31.1, 31.7, 35.0, 39.8, 40.0],
       backgroundColor: "rgba(255, 99, 132, 0.5)",
+      borderColor: "RED",
+      yAxisID: 'yRMSE',
     },
     {
-      label: "Dataset 2",
-      data: [2, 3, 20, 5, 1, 4, 10],
+      label: "Corr",
+      data: [0.78, 0.77, 0.78, 0.77, 0.76, 0.75, 0.72, 0.70, 0.64, 0.62, 0.60, 0.33, null],
       backgroundColor: "rgba(53, 162, 235, 0.5)",
+      borderColor: "BLUE",
+      yAxisID: 'yCorr',
     },
   ],
 };
 
-<Doughnut data={data} />
+export const rows = labels.map((label, index) => {return {id: label, RMSE: data2.datasets[0].data[index], Corr: data2.datasets[1].data[index]}});
+
+export const columns = [{
+  dataField: 'id',
+  text: 'Product ID',
+   sort: true,
+}, {
+  dataField: 'RMSE',
+  text: 'RMSE',
+  sort: true,
+}, {
+  dataField: 'Corr',
+  text: 'Corr',
+   sort: true,
+}];
+
 <Bar data={data2} options={options} />
 
-import { DataGrid, GridColDef, GridValueGetterParams } from "@mui/x-data-grid";
-
-export const columns = [
-  { field: "id", headerName: "ID", width: 70 },
-  { field: "firstName", headerName: "First name", width: 130 },
-  { field: "lastName", headerName: "Last name", width: 130 },
-  { field: "age", headerName: "Age", type: "number", width: 90 },
-  {
-    field: "fullName",
-    headerName: "Full name",
-    description: "This column has a value getter and is not sortable.",
-    sortable: false,
-    width: 160,
-    valueGetter: (params) =>
-      `${params.row.firstName || ""} ${params.row.lastName || ""}`,
-  },
-];
-
-export const rows = [
-  { id: 1, lastName: "Snow", firstName: "Jon", age: 35 },
-  { id: 2, lastName: "Lannister", firstName: "Cersei", age: 42 },
-  { id: 3, lastName: "Lannister", firstName: "Jaime", age: 45 },
-  { id: 4, lastName: "Stark", firstName: "Arya", age: 16 },
-  { id: 5, lastName: "Targaryen", firstName: "Daenerys", age: null },
-  { id: 6, lastName: "Melisandre", firstName: null, age: 150 },
-  { id: 7, lastName: "Clifford", firstName: "Ferrara", age: 44 },
-  { id: 8, lastName: "Frances", firstName: "Rossini", age: 36 },
-  { id: 9, lastName: "Roxie", firstName: "Harvey", age: 65 },
-];
-
-    <div style={{ height: 400, width: '100%' }}>
-      <DataGrid
-        rows={rows}
-        columns={columns}
-        initialState={{
-          pagination: {
-            paginationModel: { page: 0, pageSize: 5 },
-          },
-        }}
-        pageSizeOptions={[5, 10]}
-        checkboxSelection
-      />
-    </div>
+<BootstrapTable bootstrap4 keyField='id' data={ rows } columns={ columns } striped hover condensed />
