@@ -29,7 +29,6 @@
         "@mdx-js/react": "^2.3.0",
         "@mui/icons-material": "^5.14.15",
         "@mui/material": "^5.14.15",
-        "@mui/x-data-grid": "^6.17.0",
         "@svgr/webpack": "^6.5.1",
         "chart.js": "^4.4.0",
         "clsx": "^1.1.1",
