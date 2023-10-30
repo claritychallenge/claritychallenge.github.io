@@ -15,6 +15,8 @@ import { CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend  } from 
 
 import { Bar } from "react-chartjs-2";
 
+import all_data from "/cpc2_results.json";
+
 export const options = {
   responsive: true,
   elements: {
@@ -65,28 +67,19 @@ export const options = {
   }
 };
 
-export const rank = [1,2,3,4,5,6,7,8,9,10,11,12,13];
-export const labels = [
-  "E011", "E002", "E009", "E022", "E023", "E016", "E025", "beHASPI", "E003", "E024", "E015", "E020", "Prior"
-];
-
-export const intrusive = [
-    "No", "No", "Yes", "Yes", "No", "No", "No", "Yes", "No", "No", "No", "No", "No"
-];
-
 export const data = {
-  labels: labels,
+  labels: all_data.map((row) => row.id),
   datasets: [
     {
       label: "RMSE",
-      data: [25.1, 25.3, 25.4, 25.7, 26.4, 26.8, 27.9, 28.7, 31.1, 31.7, 35.0, 39.8, 40.0],
+      data: all_data.map((row) => row.RMSE),
       backgroundColor: "rgba(255, 99, 132, 0.5)",
       borderColor: "RED",
       yAxisID: 'yRMSE',
     },
     {
       label: "Corr",
-      data: [0.78, 0.77, 0.78, 0.77, 0.76, 0.75, 0.72, 0.70, 0.64, 0.62, 0.60, 0.33, null],
+      data: all_data.map((row) => row.corr),
       backgroundColor: "rgba(53, 162, 235, 0.5)",
       borderColor: "BLUE",
       yAxisID: 'yCorr',
@@ -94,58 +87,47 @@ export const data = {
   ],
 };
 
-export const paper = [
-    "https://claritychallenge.org/clarity2023-workshop/papers/CPC2_E011_report.pdf",
-    "https://claritychallenge.org/clarity2023-workshop/papers/CPC2_E002_report.pdf",
-    "https://claritychallenge.org/clarity2023-workshop/papers/CPC2_E009_report.pdf",
-    "https://claritychallenge.org/clarity2023-workshop/papers/CPC2_E022_report.pdf",
-    "https://claritychallenge.org/clarity2023-workshop/papers/CPC2_E023_report.pdf",
-    "https://claritychallenge.org/clarity2023-workshop/papers/CPC2_E016_report.pdf",
-    "https://claritychallenge.org/clarity2023-workshop/papers/CPC2_E025_report.pdf",
-    null,
-    "https://claritychallenge.org/clarity2023-workshop/papers/CPC2_E003_report.pdf",
-    "https://claritychallenge.org/clarity2023-workshop/papers/CPC2_E024_report.pdf",
-    "https://claritychallenge.org/clarity2023-workshop/papers/CPC2_E015_report.pdf",
-    "https://claritychallenge.org/clarity2023-workshop/papers/CPC2_E020_report.pdf",
-    null,
-]
-
-export const rows = labels.map((label, index) => {return {id: label, rank: rank[index], paper: paper[index],  intrusive:intrusive[index], RMSE: data.datasets[0].data[index], Corr: data.datasets[1].data[index]}});
-
 export const makeColumns = e => {
     const Formatter = (cell, row, rowIndex, extraData) => {
         return(row.paper ? <a href={row.paper}>Paper</a>: null)
 
     }
-    const columns = [{
-    dataField: 'rank',
-    text: 'Rank',
-    sort: true,
-    },{
-    dataField: 'id',
-    text: 'ID',
-    sort: true,
-    }, {
-    dataField: 'paper',
-    text: 'Paper',
-    formatter: Formatter,
-    },{
-    dataField: 'intrusive',
-    text: 'Intrusive',
-    sort: true,
-    },{
-    dataField: 'RMSE',
-    text: 'RMSE',
-    sort: true,
-    }, {
-    dataField: 'Corr',
-    text: 'Corr',
-    sort: true,
-    }];
-return columns;}
+    return [
+        {
+            dataField: 'rank',
+            text: 'Rank',
+            sort: true
+        },
+        {
+            dataField: 'id',
+            text: 'ID',
+            sort: true
+        }, 
+        {  
+            dataField: 'paper',
+            text: 'Paper',
+            formatter: Formatter,
+        },
+        {
+            dataField: 'intrusive',
+            text: 'Intrusive',
+            sort: true,
+        },
+        {
+            dataField: 'RMSE',
+            text: 'RMSE',
+            sort: true,
+        }, 
+        {
+            dataField: 'corr',
+            text: 'Corr',
+            sort: true,
+        }
+    ];
+}
 
 <Bar data={data} options={options} />
 
 <div style={{  paddingTop: 50, textAlign: "center" }} >
-<BootstrapTable bootstrap4 keyField='id' data={ rows } columns={ makeColumns() }  />
+<BootstrapTable bootstrap4 keyField='id' data={ all_data } columns={ makeColumns() }  />
 </div>
