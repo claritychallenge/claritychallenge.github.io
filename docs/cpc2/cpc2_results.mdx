@@ -65,11 +65,16 @@ export const options = {
   }
 };
 
+export const rank = [1,2,3,4,5,6,7,8,9,10,11,12,13];
 export const labels = [
   "E011", "E002", "E009", "E022", "E023", "E016", "E025", "beHASPI", "E003", "E024", "E015", "E020", "Prior"
 ];
 
-export const data2 = {
+export const intrusive = [
+    "No", "No", "Yes", "Yes", "No", "No", "No", "Yes", "No", "No", "No", "No", "No"
+];
+
+export const data = {
   labels: labels,
   datasets: [
     {
@@ -89,22 +94,58 @@ export const data2 = {
   ],
 };
 
-export const rows = labels.map((label, index) => {return {id: label, RMSE: data2.datasets[0].data[index], Corr: data2.datasets[1].data[index]}});
+export const paper = [
+    "https://claritychallenge.org/clarity2023-workshop/papers/CPC2_E011_report.pdf",
+    "https://claritychallenge.org/clarity2023-workshop/papers/CPC2_E002_report.pdf",
+    "https://claritychallenge.org/clarity2023-workshop/papers/CPC2_E009_report.pdf",
+    "https://claritychallenge.org/clarity2023-workshop/papers/CPC2_E022_report.pdf",
+    "https://claritychallenge.org/clarity2023-workshop/papers/CPC2_E023_report.pdf",
+    "https://claritychallenge.org/clarity2023-workshop/papers/CPC2_E016_report.pdf",
+    "https://claritychallenge.org/clarity2023-workshop/papers/CPC2_E025_report.pdf",
+    null,
+    "https://claritychallenge.org/clarity2023-workshop/papers/CPC2_E003_report.pdf",
+    "https://claritychallenge.org/clarity2023-workshop/papers/CPC2_E024_report.pdf",
+    "https://claritychallenge.org/clarity2023-workshop/papers/CPC2_E015_report.pdf",
+    "https://claritychallenge.org/clarity2023-workshop/papers/CPC2_E020_report.pdf",
+    null,
+]
 
-export const columns = [{
-  dataField: 'id',
-  text: 'Product ID',
-   sort: true,
-}, {
-  dataField: 'RMSE',
-  text: 'RMSE',
-  sort: true,
-}, {
-  dataField: 'Corr',
-  text: 'Corr',
-   sort: true,
-}];
+export const rows = labels.map((label, index) => {return {id: label, rank: rank[index], paper: paper[index],  intrusive:intrusive[index], RMSE: data.datasets[0].data[index], Corr: data.datasets[1].data[index]}});
 
-<Bar data={data2} options={options} />
+export const makeColumns = e => {
+    const Formatter = (cell, row, rowIndex, extraData) => {
+        return(row.paper ? <a href={row.paper}>Paper</a>: null)
 
-<BootstrapTable bootstrap4 keyField='id' data={ rows } columns={ columns } striped hover condensed />
+    }
+    const columns = [{
+    dataField: 'rank',
+    text: 'Rank',
+    sort: true,
+    },{
+    dataField: 'id',
+    text: 'ID',
+    sort: true,
+    }, {
+    dataField: 'paper',
+    text: 'Paper',
+    formatter: Formatter,
+    },{
+    dataField: 'intrusive',
+    text: 'Intrusive',
+    sort: true,
+    },{
+    dataField: 'RMSE',
+    text: 'RMSE',
+    sort: true,
+    }, {
+    dataField: 'Corr',
+    text: 'Corr',
+    sort: true,
+    }];
+return columns;}
+
+<Bar data={data} options={options} />
+
+<div style={{  paddingTop: 50, textAlign: "center" }} >
+<BootstrapTable bootstrap4 keyField='id' data={ rows } columns={ makeColumns() }  />
+</div>
