@@ -1,0 +1,179 @@
+{
+    "defaultSortField": "eval1_average",
+    "format":
+    [
+        {
+            "dataField": "rank",
+            "text": "Rank",
+            "sort": false
+        },   
+        {
+            "dataField": "team",
+            "text": "Team",
+            "sort": false
+        }, 
+       {
+            "dataField": "id",
+            "text": "ID",
+            "sort": false
+        }, 
+        {  
+            "dataField": "paper",
+            "text": "Paper",
+            "type": "Link"
+        },
+        {
+            "dataField": "eval1_HASPI",
+            "text": "Eval 1 (HASPI)",
+            "sort": true
+        }, 
+        {
+            "dataField": "eval1_HASQI",
+            "text": "Eval 1 (HASQI)",
+            "sort": true
+        },
+        {
+            "dataField": "eval1_average",
+            "text": "Eval 1 (Average)",
+            "sort": true
+        },
+        {
+            "dataField": "eval2_HASPI",
+            "text": "Eval 2 (HASPI)",
+            "sort": true
+        }, 
+        {
+            "dataField": "eval2_HASQI",
+            "text": "Eval 2 (HASQI)",
+            "sort": true
+        },
+        {
+            "dataField": "eval2_average",
+            "text": "Eval 2 (Average)",
+            "sort": true
+        }
+    ],
+    "data":
+    [
+        {
+            "rank": 8,
+            "team": "Baseline",
+            "id": "Baseline",
+            "paper": null,
+            "eval1_average": 0.197,
+            "eval1_HASPI": 0.266,
+            "eval1_HASQI": 0.128,
+            "eval2_average": 0.149,
+            "eval2_HASPI": 0.176,
+            "eval2_HASQI": 0.121
+        },
+        {
+            "rank": 9,
+            "team": "T001",
+            "id": "E002",
+            "paper": null,
+            "eval1_average": 0.136,
+            "eval1_HASPI": 0.179,
+            "eval1_HASQI": 0.093,
+            "eval2_average": 0.090,
+            "eval2_HASPI": 0.101,
+            "eval2_HASQI": 0.078
+        },
+        {
+            "rank": 7,
+            "team": "T002",
+            "id": "E009",
+            "paper": null,
+            "eval1_average": 0.224,
+            "eval1_HASPI": 0.286,
+            "eval1_HASQI": 0.161,
+            "eval2_average": 0.117,
+            "eval2_HASPI": 0.126,
+            "eval2_HASQI": 0.108
+        },
+        {
+            "rank": 5,
+            "team": "T003",
+            "id": "E014",
+            "paper": null,
+            "eval1_average": 0.606,
+            "eval1_HASPI": 0.797,
+            "eval1_HASQI": 0.414,
+            "eval2_average": 0.201,
+            "eval2_HASPI": 0.291,
+            "eval2_HASQI": 0.110
+        },
+        {
+            "rank": 10,
+            "team": "T004",
+            "id": "E023",
+            "paper": null,
+            "eval1_average": 0.082,
+            "eval1_HASPI": 0.117,
+            "eval1_HASQI": 0.047,
+            "eval2_average": 0.018,
+            "eval2_HASPI": 0.026,
+            "eval2_HASQI": 0.019
+        },
+        {
+            "rank": 2,
+            "team": "T005",
+            "id": "E028",
+            "paper": null,
+            "eval1_average": 0.653,
+            "eval1_HASPI": 0.780,
+            "eval1_HASQI": 0.526,
+            "eval2_average": 0.022,
+            "eval2_HASPI": 0.026,
+            "eval2_HASQI": 0.019
+        },
+        {
+            "rank": 1,
+            "team": "T005",
+            "id": "E028_data",
+            "paper": null,
+            "eval1_average": 0.693,
+            "eval1_HASPI": 0.816,
+            "eval1_HASQI": 0.570,
+            "eval2_average": 0.199,
+            "eval2_HASPI": 0.249,
+            "eval2_HASQI": 0.154
+        },
+        {
+            "rank": 4,
+            "team": "T006",
+            "id": "E029",
+            "paper": null,
+            "eval1_average": 0.613,
+            "eval1_HASPI": 0.835,
+            "eval1_HASQI": 0.393,
+            "eval2_average": 0.180,
+            "eval2_HASPI": 0.256,
+            "eval2_HASQI": 0.104
+        },
+        {
+            "rank": 3,
+            "team": "T006",
+            "id": "E029_hr",
+            "paper": null,
+            "eval1_average": 0.616,
+            "eval1_HASPI": 0.838,
+            "eval1_HASQI": 0.393,
+            "eval2_average": 0.180,
+            "eval2_HASPI": 0.256,
+            "eval2_HASQI": 0.103
+        },
+        {
+            "rank": 6,
+            "team": "T007",
+            "id": "E030",
+            "paper": null,
+            "eval1_average": 0.522,
+            "eval1_HASPI": 0.729,
+            "eval1_HASQI": 0.316,
+            "eval2_average": 0.208,
+            "eval2_HASPI": 0.284,
+            "eval2_HASQI": 0.132
+        }
+    ]
+}
