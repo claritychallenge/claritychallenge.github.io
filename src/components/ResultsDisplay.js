@@ -31,7 +31,7 @@ export default function ResultsDisplay({ all_data }) {
         datasets: [
             {
                 label: "",
-                data: data.map((row) => row[all_data.defaultSortField]),
+                data: data.map((row) => row[all_data.defaultSort.field]),
                 backgroundColor: "rgba(53, 162, 235, 0.5)",
                 borderColor: "BLUE",
                 yAxisID: 'y',
@@ -40,8 +40,9 @@ export default function ResultsDisplay({ all_data }) {
     });
       
 
-    const [sortField, setSortField] = useState({
-        field: all_data.defaultSortField,
+    const [sortState, setSortState] = useState({
+        field: all_data.defaultSort.field,
+        direction: all_data.defaultSort.direction,
     });
 
     
@@ -55,11 +56,11 @@ export default function ResultsDisplay({ all_data }) {
         scales: {
           y: {
                type: 'linear',
-               min:  (all_data.format.find(obj => obj.dataField === sortField.field) || { min: 0 }).min,
+               min:  (all_data.format.find(obj => obj.dataField === sortState.field) || { min: 0 }).min,
                position: 'left',
                title: {
                 display: true,
-                text: (all_data.format.find(obj => obj.dataField === sortField.field) || { text: 0 }).text,
+                text: (all_data.format.find(obj => obj.dataField === sortState.field) || { text: 0 }).text,
                 font: {
                   size: 18,
                 }},  
@@ -119,9 +120,10 @@ export default function ResultsDisplay({ all_data }) {
                 }
             ],
         }));
-        setSortField((prevSortField) => ({
-            ...prevSortField,
+        setSortState((prevSortState) => ({
+            ...prevSortState,
             field: newState.sortField,
+            direction: newState.sortOrder,
         }));
     }
 
@@ -149,8 +151,8 @@ export default function ResultsDisplay({ all_data }) {
         // Trigger the onTableChange event with initial parameters
         const initialEventType = 'sort'; 
         const initialEventNewState = {
-          sortField: sortField.field, 
-          sortOrder: 'asc',
+          sortField: sortState.field, 
+          sortOrder: sortState.direction,
           data: all_data.data, 
         };
     

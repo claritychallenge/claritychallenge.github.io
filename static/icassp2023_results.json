@@ -1,5 +1,8 @@
 {
-    "defaultSortField": "eval1_average",
+    "defaultSort": {
+        "field": "eval1_average",
+        "direction": "desc"
+    },
     "format":
     [
         {

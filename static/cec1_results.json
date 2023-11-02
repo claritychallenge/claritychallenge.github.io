@@ -1,5 +1,8 @@
 {
-    "defaultSortField": "mbstoi_noise",
+    "defaultSort": {
+        "field": "mbstoi_noise",
+        "order": "desc"
+    },
     "format":
     [
         {
