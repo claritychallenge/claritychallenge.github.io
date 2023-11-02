@@ -1,0 +1,180 @@
+{
+    "defaultSortField": "HASPI",
+    "format":
+    [
+        {
+            "dataField": "rank",
+            "text": "Rank",
+            "sort": false
+        },   
+        {
+            "dataField": "team",
+            "text": "Team",
+            "sort": false
+        }, 
+       {
+            "dataField": "id",
+            "text": "ID",
+            "sort": false
+        }, 
+        {  
+            "dataField": "paper",
+            "text": "Paper",
+            "type": "Link"
+        },
+        {
+            "dataField": "spkr_id",
+            "text": "Spkr. ID",
+            "sort": false
+        },
+        {
+            "dataField": "head_rot",
+            "text": "Head Rot.",
+            "sort": false
+        }, 
+        {
+            "dataField": "HASPI",
+            "text": "HASPI",
+            "sort": true
+        }, 
+        {
+            "dataField": "listener",
+            "text": "Listener",
+            "sort": true,
+            "min": 20
+        }
+    ],
+    "data":
+    [
+        {
+            "rank": 1,
+            "team": "T01",
+            "id": "E009",
+            "spkr_id": null,
+            "head_rot": null,
+            "paper": "https://claritychallenge.org/clarity2022-CEC2-workshop/papers/Clarity_2022_CEC2_paper_cornell.pdf",
+            "HASPI": 0.966,
+            "listener": 93.2
+        },
+        {
+            "rank": 2,
+            "team": "T02",
+            "id": "E031",
+            "spkr_id": "Yes",
+            "head_rot": null,
+            "paper": "https://claritychallenge.org/clarity2022-CEC2-workshop/papers/Clarity_2022_CEC2_paper_liu.pdf",
+            "HASPI": 0.801,
+            "listener": 76.5
+        },
+        {
+            "rank": 3,
+            "team": "T03",
+            "id": "E008_hr",
+            "spkr_id": null,
+            "head_rot": "Yes",
+            "paper": "https://claritychallenge.org/clarity2022-CEC2-workshop/papers/Clarity_2022_CEC2_paper_ouyang.pdf",
+            "HASPI": 0.784,
+            "listener": 52.6
+        },
+        {
+            "rank": 4,
+            "team": "T03",
+            "id": "E008",
+            "spkr_id": null,
+            "head_rot": null,
+            "paper": "https://claritychallenge.org/clarity2022-CEC2-workshop/papers/Clarity_2022_CEC2_paper_ouyang.pdf",
+            "HASPI": 0.777,
+            "listener": null
+         },
+        {
+            "rank": 5,
+            "team": "T04",
+            "id": "E037",
+            "spkr_id": null,
+            "head_rot": null,
+            "paper": "https://claritychallenge.org/clarity2022-CEC2-workshop/papers/Clarity_2022_CEC2_paper_lei.pdf",
+            "HASPI": 0.775,
+            "listener": 68.4
+        },
+        {
+            "rank": 6,
+            "team": "T04",
+            "id": "E022",
+            "spkr_id": null,
+            "head_rot": null,
+            "paper": "https://claritychallenge.org/clarity2022-CEC2-workshop/papers/Clarity_2022_CEC2_paper_lei.pdf",
+            "HASPI": 0.721,
+            "listener": 65.5
+        },
+        {
+            "rank": 7,
+            "team": "T05",
+            "id": "E024_hr",
+            "spkr_id": null,
+            "head_rot": "Yes",
+            "paper": "https://claritychallenge.org/clarity2022-CEC2-workshop/papers/Clarity_2022_CEC2_paper_lee.pdf",
+            "HASPI": 0.630,
+            "listener": 44.8
+        },
+        {
+            "rank": 8,
+            "team": "T05",
+            "id": "E024",
+            "spkr_id": null,
+            "head_rot": null,
+            "paper": "https://claritychallenge.org/clarity2022-CEC2-workshop/papers/Clarity_2022_CEC2_paper_lee.pdf",
+            "HASPI": 0.617,
+            "listener": null
+        },
+        {
+            "rank": 9,
+            "team": "T06",
+            "id": "E036",
+            "spkr_id": "Yes",
+            "head_rot": null,
+            "paper": "https://claritychallenge.org/clarity2022-CEC2-workshop/papers/Clarity_2022_CEC2_paper_tammen.pdf",
+            "HASPI": 0.599,
+            "listener": 45.6
+        },
+        {
+            "rank": 10,
+            "team": "T06",
+            "id": "E038",
+            "spkr_id": "Yes",
+            "head_rot": null,
+            "paper": "https://claritychallenge.org/clarity2022-CEC2-workshop/papers/Clarity_2022_CEC2_paper_tammen.pdf",
+            "HASPI": 0.554,
+            "listener": 34.1
+        },
+        {
+            "rank": 11,
+            "team": "T07",
+            "id": "E032",
+            "spkr_id": "Yes",
+            "head_rot": null,
+            "paper": "https://claritychallenge.org/clarity2022-CEC2-workshop/papers/Clarity_2022_CEC2_paper_tu.pdf",
+            "HASPI": 0.549,
+            "listener": 35.3
+        },
+        {
+            "rank": 12,
+            "team": "T01",
+            "id": "Baseline",
+            "spkr_id": null,
+            "head_rot": null,
+            "paper": null,
+            "HASPI": 0.258,
+            "listener": 27.0
+        },
+        {
+            "rank": 13,
+            "team": "T01",
+            "id": "None",
+            "spkr_id": null,
+            "head_rot": null,
+            "paper": null,
+            "HASPI": 0.172,
+            "listener": null
+        }
+    ]
+}
