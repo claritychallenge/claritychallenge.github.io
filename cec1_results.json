@@ -1,0 +1,185 @@
+{
+    "defaultSortField": "mbstoi_noise",
+    "format":
+    [
+        {
+            "dataField": "rank",
+            "text": "Rank",
+            "sort": false
+        },   
+        {
+            "dataField": "id",
+            "text": "ID",
+            "sort": false
+        },  
+        {
+            "dataField": "team",
+            "text": "Team",
+            "sort": false
+        }, 
+        {  
+            "dataField": "paper",
+            "text": "Paper",
+            "type": "Link"
+        },
+        {
+            "dataField": "mbstoi_noise",
+            "text": "MBSTOI (noise)",
+            "sort": true,
+            "min": 0.2
+        },
+        {
+            "dataField": "mbstoi_noise",
+            "text": "MBSTOI (speech)",
+            "sort": true,
+            "min": 0.2
+        },
+        {
+            "dataField": "listener_noise",
+            "text": "Listener (noise)",
+            "sort": true,
+            "min": 30
+        },
+        {
+            "dataField": "listener_speech",
+            "text": "Listener (speech)",
+            "sort": true,
+            "min": 30
+        }
+   ],
+    "data":
+    [
+ 
+        {
+            "rank": 1,
+            "team": "Sheffield",
+            "id": "E009",
+            "paper": "https://claritychallenge.org/clarity2021-workshop/papers/Clarity_2021_CEC1_paper_final_tu.pdf",
+            "mbstoi_noise": 0.693,
+            "mbstoi_speech": 0.741,
+            "listener_noise": 80.426,
+            "listener_speech": 82.432
+        },
+        {
+            "rank": 2,
+            "team": "Brno",
+            "id": "E007",
+            "paper": "https://claritychallenge.org/clarity2021-workshop/papers/Clarity_2021_CEC1_paper_final_zmolikova.pdf",
+            "mbstoi_noise": 0.678,
+            "mbstoi_speech": 0.715,
+            "listener_noise": 75.424,
+            "listener_speech": 81.498
+        },
+        {
+            "rank": 3,
+            "team": "Sheffield",
+            "id": "E002",
+            "paper": "https://claritychallenge.org/clarity2021-workshop/papers/Clarity_2021_CEC1_paper_final_tu.pdf",
+            "mbstoi_noise": 0.672,
+            "mbstoi_speech": 0.704,
+            "listener_noise": 0,
+            "listener_speech": 0
+        },
+        {
+            "rank": 4,
+            "team": "ELO-SPHERES",
+            "id": "E013",
+            "paper": "https://claritychallenge.org/clarity2021-workshop/papers/Clarity_2021_CEC1_paper_final_moore.pdf",
+            "mbstoi_noise": 0.653,
+            "mbstoi_speech": 0.676,
+            "listener_noise": 83.613,
+            "listener_speech": 82.895
+        },
+        {
+            "rank": 5,
+            "team": "Music Tribe",
+            "id": "E010",
+            "paper": "https://claritychallenge.org/clarity2021-workshop/papers/Clarity_2021_CEC1_paper_final_kendrick.pdf",
+            "mbstoi_noise": 0.639,
+            "mbstoi_speech": 0.701,
+            "listener_noise": 72.222,
+            "listener_speech": 77.778
+        },
+        {
+            "rank": 6,
+            "team": "Googlears",
+            "id": "E003",
+            "paper": "https://claritychallenge.org/clarity2021-workshop/papers/Clarity_2021_CEC1_paper_final_yang.pdf",
+            "mbstoi_noise": 0.632,
+            "mbstoi_speech": 0.670,
+            "listener_noise": 85.532,
+            "listener_speech": 4.444
+        },
+        {
+            "rank": 7,
+            "team": "Oldenburg",
+            "id": "E021",
+            "paper": "https://claritychallenge.org/clarity2021-workshop/papers/Clarity_2021_CEC1_paper_final_tammen.pdf",
+            "mbstoi_noise": 0.611,
+            "mbstoi_speech": 0.636,
+            "listener_noise": 84.914,
+            "listener_speech": 83.929
+        },
+        {
+            "rank": 8,
+            "team": "Oldenburg",
+            "id": "E019",
+            "paper": "https://claritychallenge.org/clarity2021-workshop/papers/Clarity_2021_CEC1_paper_final_tammen.pdf",
+            "mbstoi_noise": 0.607,
+            "mbstoi_speech": 0.634,
+            "listener_noise": 86.726,
+            "listener_speech": 86.885
+        },
+        {
+            "rank": 9,
+            "team": "Oldenburg",
+            "id": "E016",
+            "paper": "https://claritychallenge.org/clarity2021-workshop/papers/Clarity_2021_CEC1_paper_final_tammen.pdf",
+            "mbstoi_noise": 0.603,
+            "mbstoi_speech": 0.628,
+            "listener_noise": 0,
+            "listener_speech": 0
+        },
+        {
+            "rank": 10,
+            "team": "Tencent/Shenzhen",
+            "id": "E004",
+            "paper": "https://claritychallenge.org/clarity2021-workshop/papers/Clarity_2021_CEC1_paper_final_chen.pdf",
+            "mbstoi_noise": 0.558,
+            "mbstoi_speech": 0.553,
+            "listener_noise": 60.593,
+            "listener_speech": 44.681
+        },
+        {
+            "rank": 11,
+            "team": "Tencent/Shenzhen",
+            "id": "E018",
+            "paper": "https://claritychallenge.org/clarity2021-workshop/papers/Clarity_2021_CEC1_paper_final_chen.pdf",
+            "mbstoi_noise": 0.524,
+            "mbstoi_speech": 0.521,
+            "listener_noise": 0,
+            "listener_speech": 0
+        },
+        {
+            "rank": 12,
+            "team": "Hannover",
+            "id": "E005",
+            "paper": "https://claritychallenge.org/clarity2021-workshop/papers/Clarity_2021_CEC1_paper_final_gajecki.pdf",
+            "mbstoi_noise": 0.481,
+            "mbstoi_speech": 0.549,
+            "listener_noise": 0,
+            "listener_speech": 0
+        },
+        {
+            "rank": 13,
+            "team": "Baseline",
+            "id": "E001",
+            "paper": "https://claritychallenge.org/clarity2021-workshop/papers/Clarity_2021_CEC1_paper_final_baseline.pdf",
+            "mbstoi_noise": 0.282,
+            "mbstoi_speech": 0.335,
+            "listener_noise": 33.202,
+            "listener_speech": 51.152
+        }
+ 
+    ]
+}

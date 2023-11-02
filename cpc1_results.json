@@ -1,0 +1,221 @@
+{
+    "defaultSortField": "RMSE_closed",
+    "format":
+    [
+        {
+            "dataField": "rank",
+            "text": "Rank",
+            "sort": false
+        },   
+        {
+            "dataField": "id",
+            "text": "ID",
+            "sort": false
+        }, 
+        {  
+            "dataField": "paper",
+            "text": "Paper",
+            "type": "Link"
+        },
+        {
+            "dataField": "intrusive",
+            "text": "Intrusive",
+            "sort": false
+        },
+        {
+            "dataField": "RMSE_open",
+            "text": "RMSE (open)",
+            "sort": true,
+            "min": 20
+        }, 
+        {
+            "dataField": "corr_open",
+            "text": "Corr (open)",
+            "sort": true
+        },
+        {
+            "dataField": "RMSE_closed",
+            "text": "RMSE (closed)",
+            "sort": true,
+            "min": 20
+        }, 
+        {
+            "dataField": "corr_closed",
+            "text": "Corr (closed)",
+            "sort": true
+        }
+    ],
+    "data":
+    [
+        {
+            "rank": 1,
+            "id": "E30",
+            "RMSE_closed": 22.5,
+            "corr_closed": 0.79,
+            "RMSE_open": null,
+            "corr_open": null,
+            "paper": "https://claritychallenge.org/clarity2022-workshop/papers/CPC1_E030_report.pdf",
+            "intrusive": "Yes"
+        },
+        {
+            "rank": 2,
+            "id": "E32",
+            "RMSE_closed": 23.1,
+            "corr_closed": 0.77,
+            "RMSE_open": 23.5,
+            "corr_open": 0.76,
+            "paper": "https://claritychallenge.org/clarity2022-workshop/papers/CPC1_E032_report.pdf",
+            "intrusive": "Yes"
+        },
+        {
+            "rank": 3,
+            "id": "E29",
+            "RMSE_closed": 23.3,
+            "corr_closed": 0.77,
+            "RMSE_open": 24.6,
+            "corr_open": 0.73,
+            "paper": "https://claritychallenge.org/clarity2022-workshop/papers/CPC1_E029_report.pdf",
+            "intrusive": "No"
+        },
+        {
+            "rank": 4,
+            "id": "E36",
+            "RMSE_closed": 24.0,
+            "corr_closed": 0.76,
+            "RMSE_open": 29.2,
+            "corr_open": 0.60,
+            "paper": "https://claritychallenge.org/clarity2022-workshop/papers/CPC1_E036_report.pdf",
+            "intrusive": "Yes"
+        },
+        {
+            "rank": 5,
+            "id": "E33",
+            "RMSE_closed": 24.1,
+            "corr_closed": 0.75,
+            "RMSE_open": 28.9,
+            "corr_open": 0.65,
+            "paper": "https://claritychallenge.org/clarity2022-workshop/papers/CPC1_E033_report.pdf",
+            "intrusive": "No"
+        },
+        {
+            "rank": 6,
+            "id": "E16",
+            "RMSE_closed": 24.7,
+            "corr_closed": 0.74,
+            "RMSE_open": 30.7,
+            "corr_open": 0.59,
+            "paper": "https://claritychallenge.org/clarity2022-workshop/papers/CPC1_E016_report.pdf",
+            "intrusive": "No"
+        },
+        {
+            "rank": 7,
+            "id": "E22",
+            "RMSE_closed": 25.9,
+            "corr_closed": 0.70,
+            "RMSE_open": 32.1,
+            "corr_open": 0.54,
+            "paper": "https://claritychallenge.org/clarity2022-workshop/papers/CPC1_E022_report.pdf",
+            "intrusive": "No"
+        },
+        {
+            "rank": 8,
+            "id": "E19",
+            "RMSE_closed": 27.5,
+            "corr_closed": 0.66,
+            "RMSE_open": 28.1,
+            "corr_open": 0.63,
+            "paper": "https://claritychallenge.org/clarity2022-workshop/papers/CPC1_E019_report.pdf",
+            "intrusive": "Yes"
+        },
+        {
+            "rank": 9,
+            "id": "Baseline",
+            "RMSE_closed": 28.5,
+            "corr_closed": 0.62,
+            "RMSE_open": 36.5,
+            "corr_open": 0.53,
+            "paper": null,
+            "intrusive": "Yes"
+        },
+        {
+            "rank": 10,
+            "id": "E06",
+            "RMSE_closed": 32.0,
+            "corr_closed": 0.50,
+            "RMSE_open": null,
+            "corr_open": null,
+            "paper": "https://claritychallenge.org/clarity2022-workshop/papers/CPC1_E006_report.pdf",
+            "intrusive": "No"
+        },
+        {
+            "rank": 11,
+            "id": "E34",
+            "RMSE_closed": 33.4,
+            "corr_closed": 0.43,
+            "RMSE_open": null,
+            "corr_open": null,
+            "paper": "https://claritychallenge.org/clarity2022-workshop/papers/CPC1_E034_report.pdf",
+            "intrusive": "No"
+        },
+        {
+            "rank": 12,
+            "id": "E35",
+            "RMSE_closed": 35.4,
+            "corr_closed": 0.25,
+            "RMSE_open": 35.7,
+            "corr_open": 0.22,
+            "paper": "https://claritychallenge.org/clarity2022-workshop/papers/CPC1_E035_report.pdf",
+            "intrusive": "No"
+        },
+        {
+            "rank": 13,
+            "id": "Prior",
+            "RMSE_closed": 36.4,
+            "corr_closed": null,
+            "RMSE_open": 36.2,
+            "corr_open": null,
+            "paper": null,
+            "intrusive": "No"
+        },
+        {
+            "rank": 14,
+            "id": "E31",
+            "RMSE_closed": 37.2,
+            "corr_closed": 0.41,
+            "RMSE_open": 28.3,
+            "corr_open": 0.67,
+            "paper": "https://claritychallenge.org/clarity2022-workshop/papers/CPC1_E031_report.pdf",
+            "intrusive": "Yes"
+        },
+        {
+            "rank": 15,
+            "id": "E23",
+            "RMSE_closed": 41.5,
+            "corr_closed": 0.07,
+            "RMSE_open": 43.7,
+            "corr_open": 0.05,
+            "paper": "https://claritychallenge.org/clarity2022-workshop/papers/CPC1_E023_report.pdf",
+            "intrusive": "No"
+        },
+        {
+            "rank": 16,
+            "id": "E02",
+            "RMSE_closed": null,
+            "corr_closed": null,
+            "RMSE_open": 35.2,
+            "corr_open": 0.38,
+            "paper": "https://claritychallenge.org/clarity2022-workshop/papers/CPC1_E002_report.pdf",
+            "intrusive": "Yes"
+        },
+        {
+            "rank": 17,
+            "id": "E38",
+            "RMSE_closed": null,
+            "corr_closed": null,
+            "RMSE_open": 49.7,
+            "corr_open": 0.30,
+            "paper": "https://claritychallenge.org/clarity2022-workshop/papers/CPC1_E038_report.pdf",
+            "intrusive": "Yes"
+        }
+    ]
+}
