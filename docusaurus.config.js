@@ -18,6 +18,15 @@ module.exports = {
     trailingSlash: false,
     deploymentBranch: "gh-pages",
     onBrokenLinks: 'ignore',
+    markdown: {
+        format: 'mdx',
+        mermaid: true,
+        mdx1Compat: {
+          comments: false,
+          admonitions: false,
+          headingIds: false,
+        },
+      },
     stylesheets: [{
         href: 'https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css',
         type: 'text/css',
