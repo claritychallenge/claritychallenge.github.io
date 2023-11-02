@@ -1,5 +1,8 @@
 {
-    "defaultSortField": "RMSE_closed",
+    "defaultSort": {
+        "field": "RMSE_closed",
+        "direction": "asc"
+    },
     "format":
     [
         {

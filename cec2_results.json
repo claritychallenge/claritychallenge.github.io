@@ -1,5 +1,8 @@
 {
-    "defaultSortField": "HASPI",
+    "defaultSort": {
+        "field": "HASPI",
+        "order": "desc"
+    },
     "format":
     [
         {
