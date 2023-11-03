@@ -4,6 +4,7 @@
 //const rehypeKatex = require('rehype-katex');
 import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
+import {themes as prismThemes} from 'prism-react-renderer';
 
 module.exports = {
     title: 'The Clarity Project',
@@ -17,7 +18,6 @@ module.exports = {
     projectName: 'claritychallenge.github.io', // Usually your repo name.
     trailingSlash: false,
     deploymentBranch: "gh-pages",
-    onBrokenLinks: 'ignore',
     markdown: {
         format: 'mdx',
         mermaid: true,
@@ -26,7 +26,8 @@ module.exports = {
           admonitions: false,
           headingIds: false,
         },
-      },
+    },
+    themes: ['@docusaurus/theme-mermaid'],
     stylesheets: [{
         href: 'https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css',
         type: 'text/css',
@@ -61,7 +62,10 @@ module.exports = {
         ], require.resolve("docusaurus-plugin-image-zoom")
     ],
     themeConfig: {
-            navbar: {
+        prism: {
+            additionalLanguages: ['json']
+        },
+        navbar: {
             title: 'Clarity',
             hideOnScroll: true,
             logo: {
@@ -69,7 +73,6 @@ module.exports = {
                 src: 'img/logo.png',
             },
             items: [
-
                 {
                     type: 'dropdown',
                     label: 'Shortcuts',
@@ -255,6 +258,7 @@ module.exports = {
                 }
             }
         }
+        
     },
     presets: [
         [
