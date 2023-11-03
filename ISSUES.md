@@ -35,5 +35,5 @@ Answer seems to be here but needs more investigation:
 Simply had to upgrade `remark-math` and `rehype-katex` with:
 
 ```bash
-yarn add remark-math@5 rehype-katex@6
+yarn add remark-math@6 rehype-katex@7
 ```

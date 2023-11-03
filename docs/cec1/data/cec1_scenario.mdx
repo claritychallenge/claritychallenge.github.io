@@ -11,30 +11,28 @@ import TabItem from "@theme/TabItem";
 
 A listener – or receiver – is sitting or standing in a small room that has low to moderate reverberation. The person is listening to a target talker, who is selected from our set of 40 speakers. The target talker is producing one of our unique 7-10 word Clarity utterances. Simultaneously, an interferer sound is playing; this is either a competing talker or a continuous noise source (e.g., a washing machine). The target and interferer are at the same height as the listener. The room dimensions, boundary materials, and the locations of the listener, target and interferer are randomised (discussed below). An example scenario is shown in Figure 1. The room geometry showing origin location is defined in Figure 2.
 
-{/*
 <Tabs>
 <TabItem value="scene" label="Example Scene">
 <figure id="fig1">
-<img width="500" src="../../img/tutorial/room2_update-1.png" />
+<img width="500" src="../../../img/tutorial/room2_update-1.png" />
 <figcaption>Figure 1. Example overview.</figcaption>
 </figure>
 </TabItem>
 <TabItem value="geometry" label="Room Geometry">
 <figure id="fig2">
 
-<img width="500" src="../../img/tutorial/Room_references.png" />
+<img width="500" src="../../../img/tutorial/Room_references.png" />
 <figcaption>Figure 2. Geometry definition.</figcaption>
 
 </figure>
 </TabItem>
 </Tabs>
-*/}
 
 Figure 3, below, shows the basic scene generator. The sound at the receiver is generated first by convolving the source signals with Binaural Room Impulse Responses (BRIRs). The reverberated speech and noise signals are then summed after appropriate gains are applied. The gains are set to achieve a Signal-to-Noise Ratio (SNR), which is chosen pseudo-randomly between limits. The BRIRs are generated using the RAVEN Geometric Room Acoustic Model \[[1](#refs)\].
 
 There are additional signal paths and outputs generated that have been omitted from Figure 3 for clarity. In addition to the reverberated signals associated with the hearing aid microphones, the signal close to the eardrum is also generated. You can also access the reverberated speech and noise signals before they are mixed.
 
-<img src="../../img/tutorial/scene_generator-1536x784.png" />
+<img src="../../../img/tutorial/scene_generator-1536x784.png" />
 
 *Figure 3. Simplified diagram of the scene generator. RIR refers to Room Impulse Response, HRTFs refers to Head Related Transfer Functions, SNRs are signal-to-noise ratios, and gain calc. indicates gain calculation. Dry here means anechoic. The outputs are noisy speech signals.*
 
