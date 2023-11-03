@@ -35,7 +35,7 @@ The BRIRs are generated for:
 - Close to the eardrum.
 - The anechoic target reference (front microphone).
 
-<img src="../img/tutorial/BTE-e1606144768702.png" width="200" />
+<img src="/img/tutorial/BTE-e1606144768702.png" width="200" />
 
 *Figure 1. Front (Fr), Middle (Mid) and Rear microphones on a BTE hearing aid form.*
 
@@ -176,17 +176,17 @@ The signals that are produced by the hearing loss (HL) model.
 
 JSON file containing a description of the scene and assigns the scene to a specific member of the listening panel. It is a hierarchical dictionary, with the top level being scenes indexed by unique scene ID, and each scene described by a second-level dictionary. Here, viewvector indicates the direction vector or line of sight.
 
-```json
+```json title="scenes.json"
 [
    {
-     scene": "S00001", 
+     "scene": "S00001", 
      "room": {
        "name": "R00001",
-       "dimensions": "5.9x3.4186x2.9" # Room dimensions in metres
+       "dimensions": "5.9x3.4186x2.9" // Room dimensions in metres
      },
      "SNR": 3.8356,
-     "hrirfilename": "VP_N5-ED", # HRIR filename
-     "target": { # target positions (x,y,z) and view vectors (look directions, x,y,z)
+     "hrirfilename": "VP_N5-ED", // HRIR filename
+     "target": { // target positions (x,y,z) and view vectors (look directions, x,y,z)
        "Positions": [ 
          -0.5,
          3.4,
@@ -197,8 +197,8 @@ JSON file containing a description of the scene and assigns the scene to a speci
          -0.957,
          0
        ],
-       "name": "T022_HCS_00002", # target speaker code and BNCid
-       "nsamples": 153468, # length of target speech in samples
+       "name": "T022_HCS_00002", // target speaker code and BNCid
+       "nsamples": 153468, // length of target speech in samples
      },
      "listener": {
        "Positions": [
@@ -218,20 +218,20 @@ JSON file containing a description of the scene and assigns the scene to a speci
          3.2,
          1.2
        ],
-       "name": "CIN_dishwasher_012", # interferer name
-       "nsamples": 1190700, # interferer length in samples
-       "duration": 27, # interferer duration in seconds
-       "type": "noise", # interferer type: noise or speech
-       "offset": 182115, # interferer segment starts at n samples from beginning of recording
+       "name": "CIN_dishwasher_012", // interferer name
+       "nsamples": 1190700, // interferer length in samples
+       "duration": 27, // interferer duration in seconds
+       "type": "noise", // interferer type: noise or speech
+       "offset": 182115, // interferer segment starts at n samples from beginning of recording
        },
-     "azimuth_target_listener": -7.55, # angle azimuth in degrees of target for receiver
-     "azimuth_interferer_listener": -29.92, # angle azimuth in degrees of interferer for receiver
-     "dataset": "train", # dataset: train, dev or eval/test
-     "pre_samples": 88200, # number of samples of interferer before target onset
-     "post_samples": 44100 # number of samples of interferer after target offset
+     "azimuth_target_listener": -7.55, // angle azimuth in degrees of target for receiver
+     "azimuth_interferer_listener": -29.92, // angle azimuth in degrees of interferer for receiver
+     "dataset": "train", // dataset: train, dev or eval/test
+     "pre_samples": 88200, // number of samples of interferer before target onset
+     "post_samples": 44100 // number of samples of interferer after target offset
    },
    {
-    etc.
+    // etc.
    }
  ]
 ```
@@ -245,16 +245,18 @@ JSON file containing a description of the scene and assigns the scene to a speci
 
 Listener data stored in a single JSON file with the following format.
 
-```json
-{“L0001”: {
-    “name”: “L0001”,
-"audiogram_cfs": [250, 500, 1000, 2000, 3000, 4000, 6000, 8000],
-    “audiogram_levels_l”: [10, 10, 20, 30, 40, 55, 55, 60],
-    “audiogram_levels_r”: [ … ],
-          },
-“L0002”: {
+```json title="listeners.json"
+{  
+    "L0001": {
+        "name": "L0001",
+        "audiogram_cfs": [250, 500, 1000, 2000, 3000, 4000, 6000, 8000],
+        "audiogram_levels_l": [10, 10, 20, 30, 40, 55, 55, 60],
+        "audiogram_levels_r": [ 10, 15, 25, 40, 50, 65, 65, 70 ],
+        },
+    "L0002": {
+        // ... etc
     },
-...
+// ... etc
 }
 ```
 
@@ -262,9 +264,10 @@ Listener data stored in a single JSON file with the following format.
 
 JSON file named scenes_listeners.json dictates which scenes are to be processed by which listeners.
 
-```json
-{“S00001”: [“L0001”, “L0002”, “L0003”],
-“S00002”: [“L0003”. “L0005”, “L0007”],
-etc
+```json title="scenes_listeners.json"
+{
+    "S00001": ["L0001", "L0002", "L0003"],
+    "S00002": ["L0003". "L0005", "L0007"],
+// etc
 }
 ```

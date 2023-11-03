@@ -108,19 +108,22 @@ The contents of these files are as follows.
 
 The `CEC1.train.x.json` and `CEC2.train.x.json` files contains a list of dictionaries, each describing a listener response to a signal. The fields are as follows:
 
-```json
- {
-    "prompt": "i don't want us to apportion blame she said",
-    "scene": "S08547",
-    "n_words": 9,
-    "hits": 4,
-    "listener": "L0239",
-    "system": "E001",
-    "correctness": 44.4444444444,
-    "response": "i don't want to have to report he said",
-    "volume": 56,
-    "signal": "S08547_L0239_E001"
-  }
+```json title="CEC<x>.train.<y>.json"
+ [
+   {
+      "prompt": "i don't want us to apportion blame she said",
+      "scene": "S08547",
+      "n_words": 9,
+      "hits": 4,
+      "listener": "L0239",
+      "system": "E001",
+      "correctness": 44.4444444444,
+      "response": "i don't want to have to report he said",
+      "volume": 56,
+      "signal": "S08547_L0239_E001"
+  },
+  // ... etc
+ ]
 ```
 
 In the above,
@@ -136,7 +139,7 @@ The `listeners.json` provides the pure tone audiogram of the left and right ear 
 
 For each listener the audiogram is stored as a list of frequencies and the corresponding list of levels for the left and right ear. The frequencies are in Hz and the levels are in dB HL.
 
-```json
+```json title="listeners.json"
 {
     "L0200": {
         "name": "L0200",
@@ -144,7 +147,7 @@ For each listener the audiogram is stored as a list of frequencies and the corre
         "audiogram_levels_l": [35, 30, 25, 50, 55, 65, 70, 65],
         "audiogram_levels_r": [45, 40, 35, 60, 65, 75, 80, 75],
     },
-    ...
+    // ... etc
 }
 ```
 
