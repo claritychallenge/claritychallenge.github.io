@@ -5,8 +5,6 @@ sidebar_label: Submission
 sidebar_position: 7
 ---
 
-import Admonition from '@theme/Admonition';
-
 ## Registration
 
 Teams are required to [register](./cpc1_registration) to help us organise the challenge. Registered teams will be assigned a unique team ID.
@@ -37,7 +35,7 @@ The predictions should be sent in CSV format files with two columns:
 signal_ID, intelligibility_score
 ```
 
-Where the `signal_ID` is the unique signal identifier used for the wav file name (e.g., `S08510_L0239_E001`) and `intelligibility_score` is the predicted intelligibilty given in terms of the percentage words recognised correctly for the signal (i.e., for 0 to 100).
+Where the `signal_ID` is the unique signal identifier used for the wav file name (e.g., `S08510_L0239_E001`) and `intelligibility_score` is the predicted intelligibility given in terms of the percentage words recognised correctly for the signal (i.e., for 0 to 100).
 
 Your CSV files should be named as follows  `CPC1_<TEAM_ID>.test.csv` and `CPC1_<TEAM_ID>.test_indep.csv` for closed set and open set evaluations respectively, where `<TEAM_ID>` is your individual team ID, e.g. 'E001'.
 
@@ -47,9 +45,9 @@ Please use "CPC1 Submission &lt;TEAM_ID&gt;" as the subject line.
 
 We also encourage you to submit your prediction model(s) code.
 
-<Admonition type="info">
+:::info
 All registered teams will be emailed with their unique team ID shortly before the submission deadline. If you plan to submit please register before the submission deadline.
-</Admonition>
+:::
 
 ### Interspeech paper submission
 
