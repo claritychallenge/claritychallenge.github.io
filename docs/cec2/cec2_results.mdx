@@ -5,10 +5,30 @@ sidebar_label: Results
 sidebar_position: 11
 ---
 
+import { EmojiEvents } from "@mui/icons-material";
+
 import ResultsDisplay from "/src/components/ResultsDisplay";
 
 The 2nd Clarity Enhancement Challenge is now complete. Results are shown below along with links to the system description papers. Further information can be found on the Clarity-CEC2-2022 workshop website [here](https://claritychallenge.org/clarity2022-CEC2-workshop/results).
 
 import all_data from "/cec2_results.json";
 
+The table below reports both the HASPI and listener intelligibility scores for all the submitted systems. The column 'Spkr. ID' and 'Head Rot.' indicate whether systems made use of the speaker identity and head rotation information, respectively. Links to the system reports are also provided.
+
 <ResultsDisplay all_data={ all_data } />
+
+## Prizes
+
+The Hearing Industry Research Consortium prizes for systems with the best HASPI score were awarded as follows:
+
+- **1st place**:   System E009, Cornell et al, *Multi-channel Target Speaker Extraction with Refinement: The WAVLAB Submission to the Second Clarity Enhancement Challenge* <EmojiEvents style={{  color: "gold" }} />
+- **2nd place**:  System E031, Liu and Zhang, *DRC-NET for The 2nd Clarity Enhancement Challenge* <EmojiEvents style={{  color: "silver" }} />
+- **3rd place**:  System E008_hr, Ouyang et al., *The Orka Inc Entry to the 2nd Clarity Enhancement Challenge* <EmojiEvents style={{  color: "#ff6347" }} />
+
+The Hearing Industry Research Consortium prizes for systems providing the best listener intelligibility scores were awarded as follows:
+
+- **1st place**:   System E009, Cornell et al, *Multi-channel Target Speaker Extraction with Refinement: The WAVLAB Submission to the Second Clarity Enhancement Challenge* <EmojiEvents style={{  color: "gold" }} />
+- **2nd place**:  System E031, Liu and Zhang, *DRC-NET for The 2nd Clarity Enhancement Challenge* <EmojiEvents style={{  color: "silver" }} />
+- **3rd place**:  System E037, Lei et al., *The Nanjing University / Horizon Robotics system for the 2nd Clarity Enhancement Challenge*<EmojiEvents style={{  color: "#ff6347" }} />
+
+Congratulations to the winners!
