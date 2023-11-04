@@ -49,9 +49,9 @@ module.exports = {
         }
     ],
     plugins: [
-        [require.resolve('docusaurus-lunr-search'), {
-            indexBaseUrl: true
-        }], './sitePlugin', [
+        [require.resolve('docusaurus-lunr-search'), {indexBaseUrl: true}],
+        './sitePlugin',
+        [
             '@docusaurus/plugin-client-redirects',
             {
                 redirects: [{
@@ -59,7 +59,8 @@ module.exports = {
                     from: '/clarity_CC_doc',
                 }, ],
             },
-        ], require.resolve("docusaurus-plugin-image-zoom")
+        ],
+        require.resolve('docusaurus-plugin-image-zoom')
     ],
     themeConfig: {
         prism: {
@@ -250,13 +251,14 @@ module.exports = {
         },
         zoom: {
             selector: '.markdown img',
+            background: {
+                light: 'rgb(255, 255, 255)',
+                dark: 'rgb(27, 27, 27)'
+            },
             config: {
                 // options you can specify via https://github.com/francoischalifour/medium-zoom#usage
-                background: {
-                    light: 'rgb(255, 255, 255)',
-                    dark: 'rgb(50, 50, 50)'
-                }
             }
+           
         }
         
     },
