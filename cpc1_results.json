@@ -9,7 +9,12 @@
             "dataField": "rank",
             "text": "Rank",
             "sort": false
-        },   
+        },
+        {
+            "dataField": "team",
+            "text": "Team",
+            "sort": false
+        },    
         {
             "dataField": "id",
             "text": "ID",
@@ -52,6 +57,7 @@
     [
         {
             "rank": 1,
+            "team": "T01",
             "id": "E30",
             "RMSE_closed": 22.5,
             "corr_closed": 0.79,
@@ -62,76 +68,84 @@
         },
         {
             "rank": 2,
+            "team": "T02",
             "id": "E32",
             "RMSE_closed": 23.1,
             "corr_closed": 0.77,
             "RMSE_open": 23.5,
             "corr_open": 0.76,
-            "paper": "https://claritychallenge.org/clarity2022-workshop/papers/CPC1_E032_report.pdf",
+            "paper": "/papers/cpc1/CPC1_E032_report.pdf",
             "intrusive": "Yes"
         },
         {
             "rank": 3,
+            "team": "T02",
             "id": "E29",
             "RMSE_closed": 23.3,
             "corr_closed": 0.77,
             "RMSE_open": 24.6,
             "corr_open": 0.73,
-            "paper": "https://claritychallenge.org/clarity2022-workshop/papers/CPC1_E029_report.pdf",
+            "paper": "/papers/cpc1/CPC1_E029_report.pdf",
             "intrusive": "No"
         },
         {
             "rank": 4,
+            "team": "T03",
             "id": "E36",
             "RMSE_closed": 24.0,
             "corr_closed": 0.76,
             "RMSE_open": 29.2,
             "corr_open": 0.60,
-            "paper": "https://claritychallenge.org/clarity2022-workshop/papers/CPC1_E036_report.pdf",
+            "paper": "/papers/cpc1/CPC1_E036_report.pdf",
             "intrusive": "Yes"
         },
         {
             "rank": 5,
+            "team": "T04",
             "id": "E33",
             "RMSE_closed": 24.1,
             "corr_closed": 0.75,
             "RMSE_open": 28.9,
             "corr_open": 0.65,
-            "paper": "https://claritychallenge.org/clarity2022-workshop/papers/CPC1_E033_report.pdf",
+            "paper": "/papers/cpc1/CPC1_E033_report.pdf",
             "intrusive": "No"
         },
         {
             "rank": 6,
+            "team": "T04",
             "id": "E16",
             "RMSE_closed": 24.7,
             "corr_closed": 0.74,
             "RMSE_open": 30.7,
             "corr_open": 0.59,
-            "paper": "https://claritychallenge.org/clarity2022-workshop/papers/CPC1_E016_report.pdf",
+            "paper": "/papers/cpc1/CPC1_E016_report.pdf",
             "intrusive": "No"
         },
         {
             "rank": 7,
+            "team": "T05",
             "id": "E22",
             "RMSE_closed": 25.9,
             "corr_closed": 0.70,
             "RMSE_open": 32.1,
             "corr_open": 0.54,
-            "paper": "https://claritychallenge.org/clarity2022-workshop/papers/CPC1_E022_report.pdf",
+            "paper": "https://www.isca-speech.org/archive/pdfs/interspeech_2022/robach22_interspeech.pdf",
             "intrusive": "No"
         },
         {
             "rank": 8,
+            "team": "T06",
             "id": "E19",
             "RMSE_closed": 27.5,
             "corr_closed": 0.66,
             "RMSE_open": 28.1,
             "corr_open": 0.63,
-            "paper": "https://claritychallenge.org/clarity2022-workshop/papers/CPC1_E019_report.pdf",
+            "paper": "/papers/cpc1/CPC1_E019_report.pdf",
             "intrusive": "Yes"
         },
         {
             "rank": 9,
+            "team": null,
             "id": "Baseline",
             "RMSE_closed": 28.5,
             "corr_closed": 0.62,
@@ -142,16 +156,18 @@
         },
         {
             "rank": 10,
+            "team": "T07",
             "id": "E06",
             "RMSE_closed": 32.0,
             "corr_closed": 0.50,
             "RMSE_open": null,
             "corr_open": null,
-            "paper": "https://claritychallenge.org/clarity2022-workshop/papers/CPC1_E006_report.pdf",
+            "paper": "https://www.isca-speech.org/archive/pdfs/interspeech_2022/close22_interspeech.pdf",
             "intrusive": "No"
         },
         {
             "rank": 11,
+            "team": "T07",
             "id": "E34",
             "RMSE_closed": 33.4,
             "corr_closed": 0.43,
@@ -162,16 +178,18 @@
         },
         {
             "rank": 12,
+            "team": "T08",
             "id": "E35",
             "RMSE_closed": 35.4,
             "corr_closed": 0.25,
             "RMSE_open": 35.7,
             "corr_open": 0.22,
-            "paper": "https://claritychallenge.org/clarity2022-workshop/papers/CPC1_E035_report.pdf",
+            "paper": "/papers/cpc1/CPC1_E035_report.pdf",
             "intrusive": "No"
         },
         {
             "rank": 13,
+            "team": null,
             "id": "Prior",
             "RMSE_closed": 36.4,
             "corr_closed": null,
@@ -182,6 +200,7 @@
         },
         {
             "rank": 14,
+            "team": "T09",
             "id": "E31",
             "RMSE_closed": 37.2,
             "corr_closed": 0.41,
@@ -192,32 +211,35 @@
         },
         {
             "rank": 15,
+            "team": "T08",
             "id": "E23",
             "RMSE_closed": 41.5,
             "corr_closed": 0.07,
             "RMSE_open": 43.7,
             "corr_open": 0.05,
-            "paper": "https://claritychallenge.org/clarity2022-workshop/papers/CPC1_E023_report.pdf",
+            "paper": "/papers/cpc1/CPC1_E023_report.pdf",
             "intrusive": "No"
         },
         {
             "rank": 16,
+            "team": "T10",
             "id": "E02",
             "RMSE_closed": null,
             "corr_closed": null,
             "RMSE_open": 35.2,
             "corr_open": 0.38,
-            "paper": "https://claritychallenge.org/clarity2022-workshop/papers/CPC1_E002_report.pdf",
+            "paper": "https://www.isca-speech.org/archive/pdfs/interspeech_2022/cardinale22_interspeech.pdf",
             "intrusive": "Yes"
         },
         {
             "rank": 17,
+            "team": "T10",
             "id": "E38",
             "RMSE_closed": null,
             "corr_closed": null,
             "RMSE_open": 49.7,
             "corr_open": 0.30,
-            "paper": "https://claritychallenge.org/clarity2022-workshop/papers/CPC1_E038_report.pdf",
+            "paper": "https://www.isca-speech.org/archive/pdfs/interspeech_2022/cardinale22_interspeech.pdf",
             "intrusive": "Yes"
         }
     ]
