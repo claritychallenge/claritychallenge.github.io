@@ -2,11 +2,15 @@
 
 ## Current Issues
 
-### 1. docusaurus-lunr-search
+### 1. Timeline
+
+Mermaid timelime diagrams are appearing on top of each other when running yarn start! But appear to be OK when making final build.
+
+### 2. docusaurus-lunr-search
 
 using a private fork of version 2.1.15. Can't remember why but it doesn't seem to work with official versions. e.g. when running 'yarn build' the message will report 'indexed 0 out of X documents'
 
-### 2. Dependencies
+### 3. Dependencies
 
 Various warnings during 'yarn install' most appear to be originating from the lunr-search. See below
 
