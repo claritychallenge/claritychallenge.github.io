@@ -107,7 +107,7 @@ The quantification of the listeners’ hearing is done with:
 - Left and right pure tone air-conduction audiograms. These measure the threshold at which people can hear a pure-tone sound.
 - Results from the DTT (digit-triplet test, also known as a triple digit test)​
 
-The audiogram is the standard clinical measurement of hearing ability. It’s the pure-tone threshold of hearing in each ear, measured in quiet in a sound booth. The procedure is standardized e.g., [British Society of Audiology Recommended Procedure](https://www.thebsa.org.uk/resources/pure-tone-air-bone-conduction-threshold-audiometry-without-masking/). Typically it’s measured at octave frequencies and important intermediate frequencies.The values of the audiogram defines how much gain the hearing aid needs to apply, with the calculation typically done by one of a group of "prescription rules", e.g. [CAMFIT](https://www.psychol.cam.ac.uk/hearing/cam2-cameq2-hf-hearing-aid-fitting-software), [NAL-NL2](https://hearworks.com.au/technology/nal-nl2/) or [DSL](https://www.dslio.com/?page_id=95) <!--(for an introduction to the field of hearing-aid fitting, see [here](xxx))-->.
+The audiogram is the standard clinical measurement of hearing ability. It’s the pure-tone threshold of hearing in each ear, measured in quiet in a sound booth. The procedure is standardized e.g., [British Society of Audiology Recommended Procedure](https://www.thebsa.org.uk/resources/pure-tone-air-bone-conduction-threshold-audiometry-without-masking/). Typically it’s measured at octave frequencies and important intermediate frequencies.The values of the audiogram defines how much gain the hearing aid needs to apply, with the calculation typically done by one of a group of "prescription rules", e.g. [CAMFIT](https://www.psychol.cam.ac.uk/hearing/cam2-cameq2-hf-hearing-aid-fitting-software), [NAL-NL2](https://hearworks.com.au/technology/nal-nl2/) or [DSL](https://www.dslio.com/?page_id=95) {/*(for an introduction to the field of hearing-aid fitting, see [here](xxx))*/}.
 
 Note that the scale of an audiogram is in “dB HL” = “dB Hearing Level”. This is not dB SPL; instead, it’s relative to an international standard such that 0-dB is “normal hearing” at every frequency. For background see [Why the Audiogram Is Upside-down | The Hearing Review](https://hearingreview.com/hearing-loss/patient-care/evaluation/why-the-audiogram-is-upside-down) and [The Quest for Audiometric Zero | The Hearing Review](https://hearingreview.com/resource-center/expert-insight/quest-audiometric-zero)
 
@@ -199,12 +199,12 @@ Listener ID – ID of the listener panel member, e.g., L001 to L100 for initial 
 
 JSON file containing the description of a room. This is the data from which the ambisonic room impulse response are generated. It stores the fixed room, listener, target and interferer geometry but does not specify the dynamic factors (e.g. signals, SNRs, head movements etc) that are needed to fully define a scene.
 
- ```json
+ ```json title="rooms.json"
 [
   {
-    "name": "R00001", # ID of room linking to RAVEN rpf and ac files
-    "dimensions": "6.9933x3x3" # Room dimensions in metres,
-    "target": { # target positions (x,y,z) and view vectors (look directions, x,y,z)
+    "name": "R00001", // ID of room linking to RAVEN rpf and ac files
+    "dimensions": "6.9933x3x3", // Room dimensions in metres
+    "target": { // # target positions (x,y,z) and view vectors (look directions, x,y,z)
       "position": [-0.3, 2.4, 1.2],
       "view_vector": [0.071, 0.997, 0.0],
     },
@@ -216,7 +216,7 @@ JSON file containing the description of a room. This is the data from which the 
       {
         "position": [0.4, 4.0, 1.2],
       },
-      { # etc, up to three interferers
+      { // # etc, up to three interferers
       }
     ],
   },
@@ -228,21 +228,21 @@ JSON file containing the description of a room. This is the data from which the 
 
 JSON file containing a description of the scene. It is a list of dictionaries with each entry representing a unique scene. A scene can be considered to be a room (see Section [D.7](#d7-room-metadata))  plus the full set of listener, target and interferer details. Note, many scenes can be generated from a single room, i.e. each using different listener, target and interferer settings.
 
-```json
+```json title="scenes.json"
 [
   {
-    "scene": "S00001",  # the unique scene ID
-    "room":: "R00001", # ID of room linking to rooms.json
+    "scene": "S00001",  // the unique scene ID
+    "room":: "R00001", // ID of room linking to rooms.json
     "target": { 
-      "name": "T005_JYD_04274", # target speaker code and BNCid
-      "time_start": 107210, # start time of target in samples
-      "time_end": 217019 # end time of target in samples
+      "name": "T005_JYD_04274", // target speaker code and BNCid
+      "time_start": 107210, // start time of target in samples
+      "time_end": 217019 // end time of target in samples
     },
     "listener": {
-      "rotation": [ # Defines the head motion - list of time, direction pairs
+      "rotation": [ // Defines the head motion - list of time, direction pairs
         {
           "sample": 88200,
-          "angle": 30  # Azimuth angle in degrees
+          "angle": 30  // Azimuth angle in degrees
         },
         {
           "sample": 176400,
@@ -252,23 +252,23 @@ JSON file containing a description of the scene. It is a list of dictionaries wi
       "hrir_filename":  ["VP_N4-ED",
         "VP_N4-BTE_fr",
         "VP_N4-BTE_mid",
-        "VP_N4-BTE_rear"] # HRIR filename for each channel to generate
+        "VP_N4-BTE_rear"] // HRIR filename for each channel to generate
     },
     "interferers": [
       {
-        "position": 1,  # Index of interferer position (See rooms.json)
-        "time_start": 0, # time of interferer onset in samples
-        "time_end": 261119, # time of interferer offset in samples
-        "name": "track_1353255", # interferer name
-        "type": "music", # interferer type: speech, noise or music
-        "offset": 4076256 # index into interferer file at which to extract sample
+        "position": 1,  // Index of interferer position (See rooms.json)
+        "time_start": 0, // time of interferer onset in samples
+        "time_end": 261119, // time of interferer offset in samples
+        "name": "track_1353255", // interferer name
+        "type": "music", // interferer type: speech, noise or music
+        "offset": 4076256 // index into interferer file at which to extract sample
       },
-      { # etc, up to three interferers
+      { // etc, up to three interferers
       }
     ],
-    "dataset": "train", # the dataset to which the scene belongs: train, dev or eval
-    "duration": 261119,  # total duration of scene in samples
-    "SNR": 6.89  # targe SNR for the scene
+    "dataset": "train", // the dataset to which the scene belongs: train, dev or eval
+    "duration": 261119,  // total duration of scene in samples
+    "SNR": 6.89  // targe SNR for the scene
   },
   ...
 ]
@@ -290,7 +290,7 @@ Given the type and name, further interferer metadata can be found in the files `
 
 Audiogram data is stored in a single JSON file with the following format.
 
-```json
+```json title="listeners.json"
 {
     "L0001": {
         "name": "L0001",
@@ -311,7 +311,7 @@ Additional metadata (e.g. digit triple test results) are stored in a csv file. D
 
 JSON file named scenes_listeners.json dictates which scenes are to be processed by which listeners.
 
-```json
+```json title="scenes_listeners.json"
 {
     "S00001": ["L0001", "L0002", "L0003"],
     "S00002": ["L0003", "L0005", "L0007"],

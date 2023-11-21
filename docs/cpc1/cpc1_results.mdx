@@ -1,0 +1,36 @@
+---
+id: cpc1_results
+title: Results
+sidebar_label: Results
+sidebar_position: 11
+---
+
+import { EmojiEvents } from "@mui/icons-material";
+
+import ResultsDisplay from "/src/components/ResultsDisplay";
+
+The 1st Clarity Prediction Challenge is now complete. Results are shown below along with links to the system description papers. Further information can be found on the Clarity-2022 workshop website [here](https://claritychallenge.org/clarity2022-workshop/results).
+
+import all_data from "/cpc1_results.json";
+
+The table below reports both the RMSE and the correlation coefficient (CC) between the predicted and actual intelligibility scores. Results are shown separately for the closed (systems seen during training) and open evaluation sets (systems not seen during training).The column 'intrusive' indicates whether the system is intrusive (i.e., requires access to the clean speech signal) or not. Links to the technical reports are also provided.
+
+<ResultsDisplay all_data={ all_data } />
+
+## Prizes
+
+The Hearing Industry Research Consortium prizes for best system were awarded as follows:
+
+- **1st place**: System E33, Zezario et al, *MBI-Net: A Non-Intrusive Multi-Branched Speech Intelligibility Prediction Model for Hearing Aids* for best performance for a non-intrusive system,  <EmojiEvents style={{  color: "gold" }} />
+- **2nd place**: System E30, Huckvale et al, *ELO-SPHERES Intelligibility Prediction Model for the Clarity Prediction Challenge 2022* for best performance of an intrusive system, <EmojiEvents style={{  color: "silver" }} />
+- **3rd place**: System E019, Röttges et al., *Speech Intelligibility Prediction for Hearing-Impaired Listeners with the bBSIM-STI Model* for best performance in the open-set track <EmojiEvents style={{  color: "#ff6347" }} />
+
+The Hearing Industry Research Consortium prizes for best student contribution were awarded as follows:
+
+- **1st place**: **Ryandhimas Zezario** from the National Taiwan University,  <EmojiEvents style={{  color: "gold" }} />
+- **2nd place**: **Franklin Yohan Alvarez Cardinale** from Medizinische Hochschule Hannover, Germany <EmojiEvents style={{  color: "silver" }} />
+- **3rd place**:  **Jana Rossbach** from Carl von Ossietzky University, Oldenburg, Germany.<EmojiEvents style={{  color: "#ff6347" }} />
+
+Congratulations to the winners!
+
+(Note, systems E29 and E32 had links to the organizers and so were not eligible for prizes).

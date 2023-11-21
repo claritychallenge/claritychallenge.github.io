@@ -57,8 +57,9 @@ export default function Home() {
                 sources, head motion{" "}
               </li>{" "}
             </ul>
-            We have now completed evaluation of the 2nd
-            prediction challenge (CPC2) and are busy preparing the 3rd enhancement challenge (CEC3) for launch in early 2024. <p />
+            We have now completed evaluation of the 2nd prediction challenge
+            (CPC2) and are busy preparing the 3rd enhancement challenge (CEC3)
+            for launch in early 2024. <p />
           </Typography>{" "}
         </Paper>
         <Zoom>
@@ -119,7 +120,8 @@ export default function Home() {
               </li>{" "}
               <li>
                 {" "}
-                <b> CEC3 Launch </b> 1st Jan 2024, <b>Submission</b> 1st August 2024 {" "}
+                <b> CEC3 Launch </b> 1st Jan 2024, <b>Submission</b> 1st August
+                2024{" "}
               </li>{" "}
               <li>
                 {" "}

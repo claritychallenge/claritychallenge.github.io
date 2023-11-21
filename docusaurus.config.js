@@ -4,6 +4,7 @@
 //const rehypeKatex = require('rehype-katex');
 import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
+import {themes as prismThemes} from 'prism-react-renderer';
 
 module.exports = {
     title: 'The Clarity Project',
@@ -17,17 +18,40 @@ module.exports = {
     projectName: 'claritychallenge.github.io', // Usually your repo name.
     trailingSlash: false,
     deploymentBranch: "gh-pages",
-    onBrokenLinks: 'ignore',
+    markdown: {
+        format: 'mdx',
+        mermaid: true,
+        mdx1Compat: {
+          comments: false,
+          admonitions: false,
+          headingIds: false,
+        },
+    },
+    themes: ['@docusaurus/theme-mermaid'],
     stylesheets: [{
         href: 'https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css',
         type: 'text/css',
         integrity: 'sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X',
         crossorigin: 'anonymous',
-    }, "https://fonts.googleapis.com/icon?family=Material+Icons", ],
+    }, "https://fonts.googleapis.com/icon?family=Material+Icons",
+        "/js-datatable/css.min/bootstrap-table.min.css",
+        "/js-datatable/css.min/datatable.min.css",
+        "/react-bootstrap-table2.min.css"
+    ],
+    scripts: [
+        {
+            src: 'https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js',
+            async: false,
+        },
+        {
+            src: '/bootstrap/bootstrap.bundle.min.js',
+            async: false,
+        }
+    ],
     plugins: [
-        [require.resolve('docusaurus-lunr-search'), {
-            indexBaseUrl: true
-        }], './sitePlugin', [
+        [require.resolve('docusaurus-lunr-search'), {indexBaseUrl: true}],
+        './sitePlugin',
+        [
             '@docusaurus/plugin-client-redirects',
             {
                 redirects: [{
@@ -35,10 +59,14 @@ module.exports = {
                     from: '/clarity_CC_doc',
                 }, ],
             },
-        ], require.resolve("docusaurus-plugin-image-zoom")
+        ],
+        require.resolve('docusaurus-plugin-image-zoom')
     ],
     themeConfig: {
-            navbar: {
+        prism: {
+            additionalLanguages: ['json']
+        },
+        navbar: {
             title: 'Clarity',
             hideOnScroll: true,
             logo: {
@@ -46,7 +74,6 @@ module.exports = {
                 src: 'img/logo.png',
             },
             items: [
-
                 {
                     type: 'dropdown',
                     label: 'Shortcuts',
@@ -58,7 +85,7 @@ module.exports = {
                         },
                         {
                             type: 'doc',
-                            docId: 'cpc2/taking_part/cpc2_download',
+                            docId: 'cpc2/cpc2_download',
                             label: 'I want to download the data...',
                         },
                         {
@@ -224,14 +251,16 @@ module.exports = {
         },
         zoom: {
             selector: '.markdown img',
+            background: {
+                light: 'rgb(255, 255, 255)',
+                dark: 'rgb(27, 27, 27)'
+            },
             config: {
                 // options you can specify via https://github.com/francoischalifour/medium-zoom#usage
-                background: {
-                    light: 'rgb(255, 255, 255)',
-                    dark: 'rgb(50, 50, 50)'
-                }
             }
+           
         }
+        
     },
     presets: [
         [

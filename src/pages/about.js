@@ -3,7 +3,6 @@ import clsx from "clsx";
 import Layout from "@theme/Layout";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import styles from "./index.module.css";
-import Container from "@mui/material/Container";
 import Box from "@mui/material/Box";
 import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
@@ -33,28 +32,30 @@ function AboutHeader() {
 
 function PersonCard({ name, affiliation, avatar, url }) {
   return [
-    <Card>
-      <CardHeader
-        avatar={
-          <Avatar
-            alt={name}
-            sx={{ bgcolor: red[500] }}
-            aria-label="recipe"
-            src={useBaseUrl(avatar)}
-            sx={{ width: 104, height: 104 }}
-          />
-        }
-        title={name}
-        subheader={affiliation}
-        titleTypographyProps={{ variant: "h5" }}
-        subheaderTypographyProps={{ variant: "h7" }}
-      />
-      <CardActions>
-        <Button href={url} size="small">
-          Learn More
-        </Button>
-      </CardActions>
-    </Card>,
+    <Zoom a11yNameButtonZoom="hello" a11yNameButtonUnzoom="Unzoom">
+      <Card>
+        <CardHeader
+          avatar={
+            <Avatar
+              alt={name}
+              sx={{ bgcolor: red[500] }}
+              aria-label="recipe"
+              src={useBaseUrl(avatar)}
+              sx={{ width: 104, height: 104 }}
+            />
+          }
+          title={name}
+          subheader={affiliation}
+          titleTypographyProps={{ variant: "h5" }}
+          subheaderTypographyProps={{ variant: "h7" }}
+        />
+        <CardActions>
+          <Button href={url} size="small">
+            Learn More
+          </Button>
+        </CardActions>
+      </Card>
+    </Zoom>,
   ];
 }
 

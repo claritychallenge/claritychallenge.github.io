@@ -4,5 +4,25 @@ title: Results
 sidebar_label: Results
 sidebar_position: 11
 ---
+import { EmojiEvents } from "@mui/icons-material";
 
-The 2nd Clarity Prediction Challenge is now complete. Results and system descriptions can be found on the Clarity-2023 workshop website [here](https://claritychallenge.org/clarity2023-workshop/results).
+import ResultsDisplay from "/src/components/ResultsDisplay";
+
+The 2nd Clarity Prediction Challenge is now complete. Results are shown below along with links to the system description papers. Further information can be found on the Clarity-2023 workshop website [here](https://claritychallenge.org/clarity2023-workshop/results).
+
+import all_data from "/cpc2_results.json";
+
+The table below reports both the RMSE and the correlation coefficient (CC) between the predicted and actual intelligibility scores. The column 'intrusive' indicates whether the system is intrusive (i.e., requires access to the clean speech signal) or not.  Links to the technical reports are also provided.
+
+<ResultsDisplay all_data={ all_data } />
+
+## Prizes
+
+The Hearing Industry Research Consortium best system prizes were awarded as follows:
+
+- **1st place**:   Cuervo and Marxer, <em>Temporal-heirarchical features from noise-robust speech foundation models for non-intrusive intelligibility prediction</em> <EmojiEvents style={{  color: "gold" }} />
+- **2nd place**: Mogridge, Close, Sutherland, Goetze and Ragni, <em>Pre-training intermediate ASR features and Human memory simulation for non-intrusive speech intelligibility prediction in the Clarity Prediction Challenge 2</em> <EmojiEvents style={{  color: "silver" }} />
+
+(Note, although 1st and 2nd place systems had very similar RMSE scores, a paired t-test showed that the difference was highly significant).
+
+Congratulations to the winners!

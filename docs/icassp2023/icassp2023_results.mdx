@@ -1,0 +1,16 @@
+---
+id: icassp2023_results
+title: Results
+sidebar_label: Results
+sidebar_position: 11
+---
+
+import ResultsDisplay from "/src/components/ResultsDisplay";
+
+The Clarity ICASSP-2023 Enhancement Challenge is now complete. Results are shown below along with links to the system description papers.
+
+The table below reports the HASPI, HASQI and average (over HASPI and HASQI) scores for all the submitted systems. Results are shown for both Eval 1 (the simulated evaluation set) and Eval 2 (using the real recordings). Where a system ID ends with '_data', additional training data has been used. Those that end with '_hr' has exploitied the head rotation information. Links to the system reports are also provided. The Eval 1 average has been used to rank the systems.
+
+import all_data from "/icassp2023_results.json";
+
+<ResultsDisplay all_data={ all_data } />
