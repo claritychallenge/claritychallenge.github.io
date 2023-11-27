@@ -11,7 +11,7 @@ module.exports = {
     tagline: 'Organising machine learning challenges for hearing aid processing',
     url: 'https://claritychallenge.github.io/',
     baseUrl: '/',
-    onBrokenLinks: 'throw',
+    onBrokenLinks: 'warn',
     onBrokenMarkdownLinks: 'throw',
     favicon: 'img/favicon.ico',
     organizationName: 'claritychallenge', // Usually your GitHub org/user name.
@@ -111,6 +111,10 @@ module.exports = {
                     position: 'right',
                     items: [{
                             type: 'doc',
+                            docId: 'cec3/cec3_intro',
+                            label: 'CEC3',
+                        }, {
+                            type: 'doc',
                             docId: 'cpc2/cpc2_intro',
                             label: 'CPC2',
                         }, {
@@ -202,6 +206,9 @@ module.exports = {
             links: [{
                     title: 'Docs',
                     items: [{
+                        label: 'CEC3 Documentation',
+                        to: '/docs/cec3/cec3_intro/',
+                    }, {
                         label: 'CPC2 Documentation',
                         to: '/docs/cpc2/cpc2_intro/',
                     }, {

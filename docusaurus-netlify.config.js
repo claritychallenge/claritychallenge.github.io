@@ -44,7 +44,6 @@ module.exports = {
                 src: 'img/logo.png',
             },
             items: [
-
                 {
                     type: 'dropdown',
                     label: 'Shortcuts',
@@ -98,6 +97,11 @@ module.exports = {
                     label: 'Challenges',
                     position: 'right',
                     items: [{
+                            type: 'doc',
+                            docId: 'cec3/cec3_intro',
+                            label: 'CEC3',
+                        },
+                        {
                             type: 'doc',
                             docId: 'icassp2023/icassp2023_intro',
                             label: 'ICASSP 2023 Grand Challenge (current)',
@@ -166,6 +170,9 @@ module.exports = {
             links: [{
                     title: 'Docs',
                     items: [{
+                        label: 'CEC3 Documentation',
+                        to: '/docs/cec3/cec3_intro/',
+                    }, {
                         label: 'CEC2 Documentation',
                         to: '/docs/cec2/cec2_intro/',
                     }, {
