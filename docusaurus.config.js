@@ -46,6 +46,10 @@ module.exports = {
         {
             src: '/bootstrap/bootstrap.bundle.min.js',
             async: false,
+        },
+        {
+            src: 'https://cdn.jsdelivr.net/gh/pcooksey/bibtex-js@1.0.0/src/bibtex_js.min.js',
+            async: false,
         }
     ],
     plugins: [
