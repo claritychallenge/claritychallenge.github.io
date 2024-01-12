@@ -170,6 +170,11 @@ module.exports = {
                     }, ]
                 },{
                     type: 'doc',
+                    docId: 'publications',
+                    label: 'Publications',
+                    position: 'right',
+                },{
+                    type: 'doc',
                     docId: 'learning/learning_intro',
                     label: 'Learning',
                     position: 'right',
