@@ -169,8 +169,7 @@ module.exports = {
                         label: 'GitHub',
                     }, ]
                 },{
-                    type: 'doc',
-                    docId: 'publications',
+                    to: 'publications',
                     label: 'Publications',
                     position: 'right',
                 },{
