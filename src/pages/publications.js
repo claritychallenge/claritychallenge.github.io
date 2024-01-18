@@ -25,6 +25,10 @@ function PublicationsHeader() {
 }
 
 const renderCitation = (publication) => {
+  const url = publication.entryTags.url;
+  publication.entryTags.url = "";
+  publication.entryTags.doi = "";
+
   const citationString = bibtexParse.toBibtex([publication], false);
   const citation = new Cite(citationString);
   const formattedCitation = citation.format("bibliography", {
@@ -32,12 +36,12 @@ const renderCitation = (publication) => {
     template: "apa",
     lang: "en-US",
   });
-  const url = publication.entryTags.url;
   if (url) {
+    publication.entryTags.url = "";
     return (
       <div>
         <div dangerouslySetInnerHTML={{ __html: formattedCitation }} />
-        <a href={url}>Link to Publication</a>
+        <a href={url}>{url}</a>
       </div>
     );
   } else {
