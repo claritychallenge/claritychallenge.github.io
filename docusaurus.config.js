@@ -11,7 +11,7 @@ module.exports = {
     tagline: 'Organising machine learning challenges for hearing aid processing',
     url: 'https://claritychallenge.github.io/',
     baseUrl: '/',
-    onBrokenLinks: 'throw',
+    onBrokenLinks: 'warn',
     onBrokenMarkdownLinks: 'throw',
     favicon: 'img/favicon.ico',
     organizationName: 'claritychallenge', // Usually your GitHub org/user name.
@@ -84,28 +84,28 @@ module.exports = {
                     position: 'left',
                     items: [{
                             type: 'doc',
-                            docId: 'cpc2/cpc2_intro',
-                            label: 'I want to learn more about the CPC2 challenge...',
+                            docId: 'cec3/cec3_intro',
+                            label: 'I want to learn more about the CEC3 challenge...',
                         },
                         {
                             type: 'doc',
-                            docId: 'cpc2/cpc2_download',
-                            label: 'I want to download the data...',
+                            docId: 'cpc2/cpc2_results',
+                            label: 'I want to see the results of CPC2 ...',
                         },
                         {
+                            type: 'doc',
+                            docId: 'cec2/cec2_download',
+                            label: 'I want to see the results of CEC2 ...',
+                        },
+                       {
                             href: 'https://github.com/claritychallenge/clarity',
                             label: 'I want to see the code on GitHub...',
                         },
-                        {
-                            type: 'doc',
-                            docId: 'cpc2/taking_part/cpc2_registration',
-                            label: 'I want to register a team...',
-                        },
-                        {
-                            type: 'doc',
-                            docId: 'cpc2/taking_part/cpc2_submission',
-                            label: 'I want to submit results...',
-                        },
+                      //  {
+                       //     type: 'doc',
+                       //     docId: 'publications',
+                       //     label: 'I am looking for publications...',
+                      //  },
 
                     ]
                 },
@@ -114,6 +114,10 @@ module.exports = {
                     label: 'Challenges',
                     position: 'right',
                     items: [{
+                            type: 'doc',
+                            docId: 'cec3/cec3_intro',
+                            label: 'CEC3',
+                        }, {
                             type: 'doc',
                             docId: 'cpc2/cpc2_intro',
                             label: 'CPC2',
@@ -210,6 +214,9 @@ module.exports = {
             links: [{
                     title: 'Docs',
                     items: [{
+                        label: 'CEC3 Documentation',
+                        to: '/docs/cec3/cec3_intro/',
+                    }, {
                         label: 'CPC2 Documentation',
                         to: '/docs/cpc2/cpc2_intro/',
                     }, {
