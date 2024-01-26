@@ -90,11 +90,11 @@ export default function Home() {
             Participation Phase               :         2023-03-01, 2023-08-01
             Evaluation Phase               :         2023-08-01, 2023-08-25
             section CEC3
-            Participation Phase               :         2024-01-01, 2024-08-01
-            Evaluation Phase               :         2024-08-01,2024-11-01
+            Participation Phase               :         2024-03-01, 2024-09-01
+            Evaluation Phase               :         2024-09-01,2024-12-01
             section CPC3
-            Participation Phase               :         2024-11-01, 2025-04-01
-            Evaluation Phase               :         2025-04-01,2025-06-01`}
+            Participation Phase               :         2025-03-01, 2025-08-01
+            Evaluation Phase               :         2025-08-01,2025-09-01`}
             />{" "}
             <h4> Key Dates </h4>{" "}
             <ul>
@@ -120,12 +120,12 @@ export default function Home() {
               </li>{" "}
               <li>
                 {" "}
-                <b> CEC3 Launch </b> 1st Jan 2024, <b>Submission</b> 1st August
+                <b> CEC3 Launch </b> 30th Mar 2024, <b>Submission</b> 1st Sep
                 2024{" "}
               </li>{" "}
               <li>
                 {" "}
-                <b> CPC3 Launch </b> 1st Nov 2024, <b>Submission</b> 1st April
+                <b> CPC3 Launch </b> 1st Mar 2025, <b>Submission</b> 1st August
                 2025{" "}
               </li>{" "}
             </ul>{" "}
