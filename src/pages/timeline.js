@@ -78,23 +78,23 @@ export default function Home() {
             excludes weekdays 2014-01-10
             
             section CEC1
-            Participation Phase            : done,    2021-02-01, 2021-06-15
-            Evaluation Phase               : done, 2021-06-15, 2021-09-17 
+            Participation Phase            :done,    2021-02-01, 2021-06-15
+            Evaluation Phase               :done, 2021-06-15, 2021-09-17 
             section CPC1
             Participation Phase              :done,         2021-11-16, 2022-03-21
             Evaluation Phase               :done,        2022-03-21,2022-06-29
             section CEC2
-            Participation Phase               :active,         2022-03-30, 2022-09-01
-            Evaluation Phase               :         2022-09-01,2022-12-02
+            Participation Phase               :done,         2022-03-30, 2022-09-01
+            Evaluation Phase               :done,         2022-09-01,2022-12-02
             section CPC2
-            Participation Phase               :         2023-03-01, 2023-08-01
-            Evaluation Phase               :         2023-08-01, 2023-08-25
+            Participation Phase               :done,        2023-03-01, 2023-08-01
+            Evaluation Phase               :done,         2023-08-01, 2023-08-25
             section CEC3
-            Participation Phase               :         2024-03-01, 2024-09-01
-            Evaluation Phase               :         2024-09-01,2024-12-01
+            Participation Phase               :,         2024-03-01, 2024-09-01
+            Evaluation Phase               :,         2024-09-01,2024-12-01
             section CPC3
-            Participation Phase               :         2025-03-01, 2025-08-01
-            Evaluation Phase               :         2025-08-01,2025-09-01`}
+            Participation Phase               :,         2025-03-01, 2025-08-01
+            Evaluation Phase               :,         2025-08-01,2025-09-01`}
             />{" "}
             <h4> Key Dates </h4>{" "}
             <ul>
@@ -120,7 +120,7 @@ export default function Home() {
               </li>{" "}
               <li>
                 {" "}
-                <b> CEC3 Launch </b> 30th Mar 2024, <b>Submission</b> 1st Sep
+                <b> CEC3 Launch </b> 2nd Apr 2024, <b>Submission</b> 1st Sep
                 2024{" "}
               </li>{" "}
               <li>
@@ -138,6 +138,64 @@ export default function Home() {
               m: 6,
             }}
           >
+            <h2> The 3rd Clarity Enhancement Challenge(CEC3) </h2>{" "}
+            <Mermaid
+              chart={`gantt
+            dateFormat  YYYY-MM-DD
+            title CEC3 Schedule
+            excludes weekdays 2014-01-10
+
+            section CEC3
+            1st Announcement             :milestone,         2024-01-28, 1min
+            Participation Phase             :,         2024-04-02, 2024-09-01
+            Challenge details + rules published :milestone, 2024-03-14, 1min
+            Dev/Training data released :milestone, 2024-04-02, 1min
+            Complete baseline released :milestone, 2024-04-02, 1min
+            Eval data released :milestone, 2024-07-25, 1min
+            Evaluation Phase               :,         2024-09-01,2024-12-02
+            HASPI Submission deadline  :milestone, 2024-09-01, 1min
+            Listening test Submission deadline  :milestone, 2024-09-15, 1min
+            Clarity Workshop         :milestone,        2024-12-02, 1min
+
+
+         `}
+            />{" "}
+          </Paper>{" "}
+        </Zoom>
+               <Zoom>
+          <Paper
+            sx={{
+              p: 4,
+              m: 6,
+            }}
+          >
+            <h2> The 2nd Clarity Prediction Challenge(CPC2) </h2>{" "}
+            <Mermaid
+              chart={`gantt
+            dateFormat  YYYY-MM-DD
+            title CPC2 Schedule
+
+            section CPC2
+            Participation Phase             :done,         2023-03-01, 2023-07-31
+            Challenge details + rules published :milestone, 2023-02-01, 1min
+            Dev/Training data released :milestone, 2023-03-01, 1min
+            Evaluation data released :milestone, 2023-07-01, 1min
+            Submission deadline  :milestone, 2023-07-31, 1min
+            Results returned to participants :milestone, 2023-08-02, 1min
+            Clarity Workshop         :milestone,        2023-08-19, 1min
+
+
+         `}
+            />{" "}
+          </Paper>{" "}
+        </Zoom>
+        <Zoom>
+          <Paper
+            sx={{
+              p: 4,
+              m: 6,
+            }}
+          >
             <h2> The 2nd Clarity Enhancement Challenge(CEC2) </h2>{" "}
             <Mermaid
               chart={`gantt
@@ -145,13 +203,13 @@ export default function Home() {
             title CEC2 Schedule
 
             section CEC2
-            Participation Phase             :active,         2022-03-30, 2022-09-01
+            Participation Phase             :done,         2022-03-30, 2022-09-01
             Challenge details + rules published :milestone, 2022-03-30, 1min
             Dev/Training data released :milestone, 2022-04-14, 1min
             Complete baseline released :milestone, 2022-04-30, 1min
             Eval data released :milestone, 2022-07-25, 1min
             HASPI Submission deadline  :milestone, 2022-09-01, 1min
-            Evaluation Phase               :         2022-09-01,2022-12-02
+            Evaluation Phase               :done,         2022-09-01,2022-12-02
             Listening test Submission deadline  :milestone, 2022-09-15, 1min
             Clarity Workshop         :milestone,        2022-12-02, 1min
 
