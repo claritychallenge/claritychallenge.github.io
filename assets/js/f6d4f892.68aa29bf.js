@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkclarity=self.webpackChunkclarity||[]).push([[3016],{81576:e=>{e.exports=JSON.parse('{"permalink":"/blog/tags/launch","page":1,"postsPerPage":1,"totalPages":1,"totalCount":1,"blogDescription":"News and updates about our Challenges and Workshops","blogTitle":"Latest News"}')}}]);

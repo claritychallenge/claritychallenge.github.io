@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkclarity=self.webpackChunkclarity||[]).push([[1152],{95660:a=>{a.exports=JSON.parse('{"label":"HASPI","permalink":"/blog/tags/haspi","allTagsPath":"/blog/tags","count":1,"unlisted":false}')}}]);

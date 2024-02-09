@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkclarity=self.webpackChunkclarity||[]).push([[5304],{17410:a=>{a.exports=JSON.parse('{"label":"real-time","permalink":"/blog/tags/real-time","allTagsPath":"/blog/tags","count":1,"unlisted":false}')}}]);

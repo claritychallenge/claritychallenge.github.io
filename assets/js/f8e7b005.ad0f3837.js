@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkclarity=self.webpackChunkclarity||[]).push([[9456],{6350:e=>{e.exports=JSON.parse('{"permalink":"/blog/tags/cpc-2","page":1,"postsPerPage":3,"totalPages":1,"totalCount":3,"blogDescription":"News and updates about our Challenges and Workshops","blogTitle":"Latest News"}')}}]);

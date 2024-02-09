@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkclarity=self.webpackChunkclarity||[]).push([[1712],{88298:s=>{s.exports=JSON.parse('{"label":"sounds","permalink":"/blog/tags/sounds","allTagsPath":"/blog/tags","count":1,"unlisted":false}')}}]);
