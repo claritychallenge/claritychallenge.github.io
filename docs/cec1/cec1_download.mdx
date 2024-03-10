@@ -5,6 +5,80 @@ sidebar_label: Download Data
 sidebar_position: 2
 ---
 
-The baseline code is available on [Github](https://github.com/claritychallenge/clarity_CEC1).
+## Software
 
-The github repository includes instructions for obtaining the data.
+All the necessary software tools are available as a single package, [pyClarity available on GitHub](https://github.com/claritychallenge/clarity).
+
+### Data
+
+To download data, [please visit here](https://mab.to/bavGDV87BZISg).
+
+The data is split into two packages:
+
+- `clarity_CEC1_data.train.tgz` [192 GB],
+- `clarity_CEC1_data.dev_eval_metadata.tgz` [163 GB].
+
+Please also download and unpack `clarity_CEC1_data.anechoic.v1_3.tgz` [11.4 GB], which contains the correct version of anechoic signals for reference, and use them to replace the incorrected anechoic signals within the `clarity_CEC1_data.train.tgz` and `clarity_CEC1_data.dev_eval_metadata.tgz` packages.
+
+Unpack packages under the same root directory using
+
+```bash
+tar -xvzf <PACKAGE_NAME>
+```
+
+**Training data** is stored in `clarity_CEC1_data.train.tgz` with the following structure,
+
+```text
+clarity_data
+|
+└───train
+    └───interferers
+    |   |    nosie 3.9G
+    |   |    speech 4.5G
+    |
+    └───rooms
+    |   |    ac 48M
+    |   |    brir 46G
+    |   |    rpf 379M
+    |
+    └───scenes 166G
+    |
+    └───targets 2.8G
+```
+
+**The dev and eval data** is stored in `clarity_CEC1_data.dev_eval_metadata.tgz` contains
+
+```text
+clarity_data
+|
+└───dev
+|   └───interferers
+|   |   |    nosie 587M
+|   |   |    speech 1.4G
+|   |
+|   └───rooms
+|   |   |    ac 20M
+|   |   |    brir 20G
+|   |   |    rpf 158M
+|   |
+|   └───scenes 72G
+|   |
+|   └───targets 1.3G
+|
+└───eval
+|   |   |    nosie 675M
+|   |   |    speech 1.3G
+|   |
+|   └───rooms
+|   |   |    ac 12M
+|   |   |    brir 12G
+|   |   |    rpf 95M
+|   |
+|   └───scenes 58G
+|   |
+|   └───targets 749M
+|
+└───eval2/scenes 21G  # eval signal processed by baseline system
+```
+
+For further details and code for running the baseline, see [the baseline recipe in the pyClarity repository](https://github.com/claritychallenge/clarity/edit/main/recipes/cec1).
