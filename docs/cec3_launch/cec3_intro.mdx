@@ -1,0 +1,47 @@
+---
+id: cec3_intro
+title: The 3rd Clarity Enhancement Challenge
+sidebar_label: CEC3 Introduction
+sidebar_position: 1
+---
+import useBaseUrl from '@docusaurus/useBaseUrl';
+import { TwitterTimelineEmbed } from "react-twitter-embed";
+
+This third Clarity Enhancement Challenge (CEC3) is about improving the performance of hearing aids for speech-in-noise. According to the World Health Organization, 430 million people worldwide require rehabilitation to address hearing loss. By 2050, this will increase to one in ten people having disabling hearing loss. Yet even in developed countries, only 40% of people who could benefit from hearing aids have them. A major reason for low uptake and use is the perception that hearing aids perform poorly.
+
+## Overview of challenge
+
+The challenge provides participants with hearing aid input signals representing scenes containing a target speaker. Participants are asked to process the signals to provide hearing aid output signals that will be intelligible to hearing-impaired listeners. The challenge is evaluated using standard objective speech intelligibility metrics but also with listening tests with hearing-impaired listeners.
+
+The challenge will be organised into two Tracks which extend the previous [2nd Clarity Enhancement Challenge](../cec2/cec2_intro) in complementary directions. Further details of the tracks are presented below.
+
+### Track 1: Real hearing aid signals
+
+In the previous CEC1 and CEC2 challenges, hearing aid input signals were simulated using pre-recorded audio sources mixed with simulated room impulse responses and hearing aid head-related transfer functions. In this track, we provide participants with scenes that use the same domestic living room scenario, but which are closer to real hearing aid signals. There will be two types of data:
+
+- First, the same as CEC2 but now using measured impulse responses from a real room.
+- Second, using acoustic scenes that have been recorded over real hearing-aid shells worn by a listener who is actively engaged in the scene.
+
+For the second case, the recordings will be subject to natural head movements and accurate head movement data will be provided for training purposes.
+
+### Track 2: Real dynamic background noises
+
+In all previous Clarity challenges, the interfering signals have been static and carefully controlled. In this track, we will use naturally occurring, dynamic noise backgrounds. We are collecting a dataset of 64-channel ambisonic audio recordings from settings that hearing-impaired listeners find challenging. These include train stations, roadsides and large social gatherings (i.e., the 'cocktail party' scenario). Using these recordings and measured impulse responses, we will create a dataset of hearing aid input signals feature target sentences in dynamic background noise.
+
+For both tracks, we will be providing standard training, development and evaluation datasets. The training and development datasets will be released at the start of the challenge. The evaluation dataset will be released shortly before the submission deadline without reference signals. Participants will then be asked to submit their processed signals for remote evaluation.
+
+**Further details of the challenge tracks** will be presented on this site in the run-up to the official launch of the challenge on 30th March. To stay up to date please sign up for the [Clarity Challenge’s Google group](https://groups.google.com/g/clarity-challenge).
+
+## Important Dates
+
+Key dates are as follows
+
+- **2nd April 2024**: Challenge launch with dataset and baseline software
+- **25th July 2024**: Evaluation data released
+- **2nd Sept 2024**: First round submission deadline for evaluation by objective measure
+
+- **16th Sept 2024**: Second round submission deadline for listening tests
+
+- **Sept-Nov 2024**: Listening test evaluation period.
+- **Dec 2024**:  Results announced at a Clarity Challenge Workshop; prizes awarded.
+  - The workshop is likely to be a one-day virtual event. Date to be decided.

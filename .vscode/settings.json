@@ -26,5 +26,12 @@
     ],
     "markdownlint.config": {
         "MD033": false,
-    }
+    },
+    "grammarly.selectors": [
+        {
+            "language": "markdown",
+            "scheme": "file",
+            "pattern": "docs/cec3/cec3_intro.mdx"
+        }
+    ]
 }
