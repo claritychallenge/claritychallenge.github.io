@@ -1,5 +1,5 @@
 position: 4 # float position is supported
-label: "Task 2"
+label: "Task 2 - Real recordings"
 collapsible: true # make the category collapsible
 collapsed: false # keep the category open by default
 className: red
