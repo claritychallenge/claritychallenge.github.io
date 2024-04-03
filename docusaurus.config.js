@@ -115,7 +115,7 @@ module.exports = {
                     position: 'right',
                     items: [{
                             type: 'doc',
-                            docId: 'cec3/cec3_intro',
+                            docId: 'cec3_launch/cec3_intro',
                             label: 'CEC3',
                         }, {
                             type: 'doc',
