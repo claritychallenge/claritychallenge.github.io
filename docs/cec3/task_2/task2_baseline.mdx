@@ -25,9 +25,9 @@ The stereo pair is then passed through a hearing aid amplification stage using a
 
 Once the enhancement has been run, the `evaluate.py` script can compute the HASPI scores for the signals stored in the amplified_signals folder. The script will read the scene-listener pairs from the development set and calculate the HASPI score for each pair. The final score is the mean HASPI score across all pairs.
 
-The results are stored in a CSV file which is read by the report_scores script to generate a report. The code has been designed so that the evaluation can be run on multiple processes and the report_scores will then collate the results from each CSV file.
+The results are stored in a CSV file which is then read by the final `report_scores.py` script which will generate a report. This two step process means that it is easy to run evaluate on multiple processors on subsets of the full evaluation set: each processes will produce a separate CSV and `report_score.py` will collate the results, check their integrity and generate the final report.
 
-For examples of how to run the script see the [README.md](https://github.com/claritychallenge/clarity/tree/main/recipes/cec3) file in the CEC3 baseline recipe of the PyClarity toolkit on GitHub.
+The scripts have been designed to run with minimal configuration, but with flexible options for performing partial runs, parallel processing, or running on a cluster. For full documentation and examples of how to run the scripts see the [README.md](https://github.com/claritychallenge/clarity/tree/main/recipes/cec3) file in the CEC3 baseline recipe of the PyClarity toolkit on GitHub.
 
 ### Baseline performance for Task 2
 

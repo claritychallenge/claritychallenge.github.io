@@ -4,8 +4,15 @@ title: Task 2 Data
 sidebar_label: Data
 sidebar_position: 20
 ---
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+import Box from "@mui/material/Box";
+import Grid from "@mui/material/Grid";
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
-The data download contains the following directories for Task 2:
+The Task 2 data consists of real acoustic scenes that have been recorded over hearing aid shells, each with three channels (front, middle, back). The scenes are based on the domestic environments used in previous Clarity challenges consisting of a target sentence and either two or three interferers. The interferers can be speech, music or noise from domestic appliances in any combination. Data has been split into two sets: 6,000 scenes for training and a 2,500 scene development set. A further 1,500 scenes were recorded and have been set aside for evaluation.
+
+The data is organised into the following directories, and can be obtained from the [download page](./../cec3_download).
 
 ```text
 clarity_CEC3_data
@@ -13,17 +20,128 @@ clarity_CEC3_data
 |── task1
 |── task2
 |   └── clarity_data
-|       |── metadata
+|       |── metadata  - metadata for each scene
 |       |── train
-|       |   |── scenes
-|       |   |── interferers
-|       |   └── targets
+|       |   |── scenes  - audio and headtracking data for training scenes
+|       |   |── interferers - complete set of interferer signals available for training
+|       |   └── targets - complete set of target signals available for training
 |       └── dev
 |           |── scenes
 |           |── interferers
 |           |── targets
-|           └── speaker_adapt
+|           └── speaker_adapt - speaker adaptation utterances (see below)
 └── task3
 ```
 
-A full description of the data will be appearing here shortly. In the meantime, you can download the data from the [download page](./cec3_download).
+The sections below describe the recording setup, the format of the audio and headtracking data, and the metadata provided for each scene.
+
+## Recording setup
+
+The scenes were recorded over the period of two weeks in a recording room at the University of Sheffield. The target and interferer signals were played using a set of 13 loudspeakers arranged around a listener. The listener was wearing hearing aid shells with three microphones (front, middle, back) and a pair of glasses with reflective markers that were tracked with a Vicon motion capture system. Nine loudspeakers were placed in front of the listener arranged at semi-randomly selected locations on a polar grid (the grid has distances of 2 m to 4 m spaced at 0.5 m and angles from -60 degrees to 60 degrees spaced at 7.5 degrees). The remaining four loudspeakers were placed in a line behind the listener. For each scene, one of the front loudspeakers was chosen to play the target utterances, and two or three of the 12 remaining speakers (front and back) were chosen to play the interferers.
+
+<Tabs>
+<TabItem value="scene" label="Recording Room">
+<figure id="fig1">
+<img width="700" src={useBaseUrl('/img/CEC3/recording1.jpeg')} />
+<figcaption>Figure 1. A view of the recording room with a B&K HATS in the listener position. <br/> (The four rear loudspeakers are not visible in this in this view.)</figcaption>
+</figure>
+</TabItem>
+<TabItem value="scene2" label="...another view">
+
+<figure id="fig2">
+<img width="700" src={useBaseUrl('/img/CEC3/recording2.jpeg')} />
+<figcaption>Figure 2. Recording room with the front loudspeakers in a typical arrangement and with their labels attached.</figcaption>
+</figure>
+</TabItem>
+<TabItem value="scene3" label="... and another.">
+
+<figure id="fig3">
+<img width="700" src={useBaseUrl('/img/CEC3/recording3.jpeg')} />
+<figcaption>Figure 3. Recording room with the front loudspeakers at their maximum distances (being photobombed by a B&K HATS!).</figcaption>
+</figure>
+</TabItem>
+
+</Tabs>
+
+Scenes were recording in blocks of 125 where each block had the same target speaker and the same speaker locations. The front speakers were labelled 1 to 9 so that they could be easily identified by the listener. For each scene one of the 9 front speakers, other than the target speaker, was chosen as the initial look direction speaker. Before the scene is played, the look-direction speaker plays it's number and the listener is instructed to turn to face it. Then after a short pause the multisource scene plays. Within the scene, the target speaker starts about two seconds after the interfering noise sources. The listener is asked to attend to the target speech source and turn to face it when it starts, and also to note down the speaker number. This process is repeated 125 times with a short pause between scenes. The entire block recording lasts about 20 minutes and once recording is complete the audio and headtracking data is segmented into individual scenes.
+
+After each recording block the front speakers are moved to a new set of locations on the grid. Each of the 80 blocks has its own unique speaker layout. The speaker locations were randomised such there was only ever one loudspeaker along each radial direction and that the loudspeaker were spread across the full range of angles. Some examples are shown below.
+The precise locations of the speakers are provided in the metadata for each scene.
+
+
+<figure id="fig4">
+<Grid container spacing={3}>
+    {[1, 2, 3, 4, 5, 6].map((item) => (
+        <Grid item xs={12} sm={6} md={4} key={item}>
+            <img
+                src={useBaseUrl(`/img/CEC3/cec3_speaker_pos.0${item}.svg`)} alt={`speaker layout ${item}`} loading="lazy"
+                style={{width: '100%'}}
+            />
+        </Grid>
+    ))}
+</Grid>
+<figcaption>Figure 4. Six of the 80 different speaker layouts that were used.</figcaption>
+</figure>
+
+Following CEC2, the scenes were designed to produce a large range of SNRs for the target. This was set to be between -12 dB and 6 dB in the condition that all the loudspeaker signals are instanteously added. Note, the actual SNRs recorded at the microphones will vary further depending on the rooms acoustics and the listeners head rotation etc, e.g., SNRs will be higher than that recording in the meta data if the target is closer to the listener than the interferers, and lower if the target is further away. (We plan to release estimates of the SNRs at the microphones in the future.)
+
+The signals were recorded using hearing aid shell with three microphones (front, middle and back). The figure below shows how these are positions when the shell are being worn. The microphones are each about 1 cm apart and form an approximately horizontal line when the head it level. Click on the image to enlarge.
+
+<figure id="fig5">
+<Grid container spacing={3}>
+        <Grid item xs={12} sm={6} md={4} key={item}>
+
+<img width="200" src={useBaseUrl('/img/CEC3/ear.png')} />
+        </Grid>
+       <Grid item xs={12} sm={6} md={4} key={item}>
+
+<img width="200" src={useBaseUrl('/img/CEC3/glasses.png')} />
+        </Grid>
+
+</Grid>
+<figcaption>Figure 5. Image showing the locations of the three hearing aid microphone.</figcaption>
+</figure>
+
+## Audio and Headtracking Data format
+
+All audio data is provided in 16-bit PCM format at a sample rate of 48 kHz. File names have been designed to be compatible with previous Clarity challenges. For each scene the folloiwng audio files are provided:
+  
+```text
+- <SCENE_ID>_mix_CH1.wav - the left and right stereo pair from the front microphone.
+- <SCENE_ID>_mix_CH2.wav - the left and right stereo pair from the middle microphone.
+- <SCENE_ID>_mix_CH3.wav - the left and right stereo pair from the back microphone.
+- <SCENE_ID>_target.wav - the target speech signal.
+- <SCENE_ID>_interferer.wav - the interferer signals stored as either 2 or 3 channel audio files.
+- <SCENE_ID>_reference.wav - the signal to be used as the reference for HASPI evaluation.
+```
+
+These signals are provided for both the training and development data set. When the evaluation data is released only the mix files will be provided.
+
+The headtracking data is provided in a CSV file with a frame rate of 250 Hz,
+
+```text
+- <SCENE_ID>_hr.csv - the audio-aligned 6 DOF head track
+```
+
+The headtracking has been carefully aligned with the audio recordings. The csv files have six columns: TX, TY, TZ, RX, RY and RZ. (TX, TY, TZ) are the locations of the head with respect to the tracker origin. (RX, RY, RZ) is the rotation of the head with respect to a level, forward facing head. The angles are stored in radians in `helical' form, i.e. they represent a vector which whose direction is the axis of rotation and whose magnitude is the size of the rotation in radian.
+
+*Add figure here*
+
+The headtracking data is provided for both the training and development data set and will be provided for optional use during evaluation as well.
+
+## Speaker adaptation data
+
+The scenes that you have been asked to enhance often contain speech signals as interferers. This means that the task of enhancing the target speaker is ambiguous unless you are told which of the speaker to use as target. In this task, we follow the approach used in CEC2 and provide a small set of clean target speaker example utterances. So, for each scene, the ID of the target speaker is provided in the metadata, and systems can then use the examples and select the target as the one that has the matching voice.
+
+Note, these same utterances will be used in the final subjective listening tests, i.e. the listeners will be presented with the examples before listening to the processed signal and told that these are examples of the target speaker that they are meant to be listening to.
+
+## Metadata Formats
+
+The following metadata files are provided
+
+```text
+- scenes.train.csv - metadata for the training scenes
+- rooms.train.csv - metadata for the training rooms
+```
+import G from "glob"
+
