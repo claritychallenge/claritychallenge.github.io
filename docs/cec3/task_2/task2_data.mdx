@@ -122,10 +122,31 @@ The headtracking data is provided in a CSV file with a frame rate of 250 Hz,
 - <SCENE_ID>_hr.csv - the audio-aligned 6 DOF head track
 ```
 
-The headtracking has been carefully aligned with the audio recordings. The csv files have six columns: TX, TY, TZ, RX, RY and RZ. (TX, TY, TZ) are the locations of the head with respect to the tracker origin. (RX, RY, RZ) is the rotation of the head with respect to a level, forward facing head. The angles are stored in radians in `helical' form, i.e. they represent a vector which whose direction is the axis of rotation and whose magnitude is the size of the rotation in radian.
+The headtracking has been carefully aligned with the audio recordings. The csv files have six columns: TX, TY, TZ, RX, RY and RZ. (TX, TY, TZ) are the locations of the head with respect to the tracker origin. (RX, RY, RZ) is the rotation of the head with respect to a level, forward facing head. The angles are stored in radians in `helical' form, i.e. they represent a vector which whose direction is the axis of rotation and whose magnitude is the size of the rotation in radian. The figure below plots the raw RX, RY and RZ data for three different scenes. Note, the helical representation makes interpretation a little difficult, but broadly speaking RY is the head turning left to right, RX is the head tipping up and down and RZ is the head tilting.
 
-*Add figure here*
+<Tabs>
+<TabItem value="scene" label="Head rotation example">
+<figure id="fig1">
+<img width="850" src={useBaseUrl('/img/CEC3/headtrack_300.png')} />
+<figcaption>Figure 6. Typical head trajectory with head turning from left to right (red) and tipping down (green) at the end of the scene. The tilt (blue) occurs naturally as the head turns.)</figcaption>
+</figure>
+</TabItem>
+<TabItem value="scene2" label="...and another">
 
+<figure id="fig2">
+<img width="850" src={useBaseUrl('/img/CEC3/headtrack_400.png')} />
+<figcaption>Figure 7. An example where the listener has initially turned in the wrong direction and is struggling to identify the target</figcaption>
+</figure>
+</TabItem>
+<TabItem value="scene3" label="... and another.">
+
+<figure id="fig3">
+<img width="850" src={useBaseUrl('/img/CEC3/headtrack_700.png')} />
+<figcaption>Figure 8. An example where the listener only need a small rotation.</figcaption>
+</figure>
+</TabItem>
+
+</Tabs>
 The headtracking data is provided for both the training and development data set and will be provided for optional use during evaluation as well.
 
 ## Speaker adaptation data
@@ -139,6 +160,117 @@ Note, these same utterances will be used in the final subjective listening tests
 The following metadata files are provided
 
 ```text
-- scenes.train.csv - metadata for the training scenes
-- rooms.train.csv - metadata for the training rooms
+# The description of the scenes
+- scenes.[train|dev].json - metadata for the training/dev scenes
+- rooms.[train|dev].json - metadata for the training/dev rooms
+
+# Listener information
+- scenes_listeners.dev.json - the listeners/scene pairings to for the standard development set
+- listeners.json - the audiograms of the listeners
+
+# Materials used to make up the scenes
+- masker_music_list.json - the list of music interferers
+- masker_nonspeech_list.json - the list of non-speech interferers
+- masker_speech_list.json - the list of speech interferers
+- target_speech_list.json - the list target utterances
 ```
+
+Most of these files follow the same format as in CEC2. The most important are the `scenes.json` and `rooms.json` files and these are described below.
+
+The `room` describes the locations of the 13 loudspeaker and the listener. There are 80 different 'rooms' corresponding to the 80 different recording sessions, each of which had their own speaker layout. The 'scenes' are represented by a 'room' (i.e., a loudspeaker configuration) and a description of the target and interferers and which of the loudspeakers they were played from. Note, there is a one-to-many relationship between rooms and scenes, i.e., each room is used to record 125 different scenes. However, different subsets of the loudspeakers are used for each scene, so few scenes will have the target and maskers in the same location.
+
+The `room' and`scene' metadata files are described in more detail below.
+
+### The Room Metadata
+
+The room metadata is stored in a JSON file as a list of dictionaries, with one dictionary representing each room. The format is as follows:
+
+```json
+[
+  {
+    "name": "R001",  // The Room identifier (R001 to R080)
+    "dimensions": "6.0x6.0x3.0",  // Approximate room dimensions (fixed)
+    "sources": [ // A list of the 13 loudspeaker locations
+      {
+        "position": [   
+          -2.5981, // In x,y,z coordinate but map onto the polar grid
+          1.5, 
+          1.4 // This is the approximate height of the loudspeakers and is fixed
+        ],
+        "view_vector": [ // Loudspeakers all directed towards listener
+          2.5981,   
+          -1.5,
+          0.0
+        ]
+      },
+      // etc,  13 source positions in total 
+    ]
+    "listener": [
+      {
+        "position": [ // Note the origin is at the listener location
+          0.0,
+          0.0,
+          1.4
+        ],
+        "view_vector": [ // For compatibility with CEC2 but replace with headtracking data
+          0.0,
+          1.0,
+          0.0
+        ]
+      }
+    ]
+  },
+  ... //  more rooms 
+]
+```
+
+### The Scene Metadata
+
+The scene metadata is stored in a JSON file as a list of dictionaries with one dictionary for each scene. There are 6000 scenes in the training set and 2500 in the development set. A further 1500 have been retained for the final evaluation.
+
+```json
+[
+  {
+    "scene": "S00508",  // The Scene ID  (S00001 to S10000)
+    "target": {  // The target description
+      "name": "T001_FRD_00503",  // The utterance ID which starts with the talker ID (T001 to T040)
+      "time_start": 77020, // The sample at which the target starts
+      "time_end": 176245, // The sample at which the target ends
+      "position": 7,  // The loudspeaker number (indexed 1 to 13). The location is in the rooms metadata.
+      "dataset": "train"  // Can be train, dev or eval
+    },
+    "interferers": [  // The list of interferers. Either two or three.
+      {
+        "name": "scm_08421",  // The interferer ID
+        "time_start": 0,  // The sample at which the interferer starts (always 0)
+        "time_end": 220345, // The sample at which the interferer ends (always the end of the scene)
+        "position": 3, // The loudspeaker number (indexed 1 to 13). The location is in the rooms metadata.
+        "dataset": "train",  // Can be train, dev or eval
+        "type": "speech", // The type of interferer (speech, music, noise)
+        "offset": 10306318 // The offset of the interferer in the complete audio file
+      },
+      {
+        "name": "nom_03397",
+        "time_start": 0,
+        "time_end": 220345,
+        "position": 10,
+        "dataset": "train",
+        "type": "speech",
+        "offset": 15349869
+      }
+    ],
+    "listener": {  // The listener information
+      "ID": "L001", // The listener ID (always L001)
+      "initial_head_orientation": 3 // The initial look direction (1 to 9)
+    },
+    "room": "R001",  // The Room ID (R001 to R080) which provides the loudspeaker locations
+    "SNR": -1.1145819681656075,  // The SNR of the target signal (-12 to 6 dB)
+    "duration": 220345,  // The duration of the scene in samples
+    "dataset": "train" // Can be train, dev or eval
+  },
+  ```
+
+Some important points to note are:
+
+- **The timing of events is recorded in samples at 44100 Hz**. This was the sampling rate at which all the audio target and interferer materials are stored and so was used for scene construction. **However**, signals were then upsampled to **48 kHz** to meet the specification of the recording and playback hardware in the recording room. So take care to convert the sample numbers to the correct rate if you are using them to analyse the audio, e.g. to endpoint the target speech.
+- **The SNR** is not the SNR at the microphones. It is the SNR that would be obtained if the signals delivered to the loudspeakers were summed instantaneously (i.e. without any room acoustic effects). They can be used as a rough guide. We plan to produce estimates of the true SNRs later in the challenge to allow for more accurate performance evaluation. The SNR is computed over the duration of the target signal and using a speech weighted filter. The signal generation code will be made available in the GitHub repository.

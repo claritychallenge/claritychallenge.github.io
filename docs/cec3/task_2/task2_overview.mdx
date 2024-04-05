@@ -5,13 +5,27 @@ sidebar_label: Overview
 sidebar_position: 10
 ---
 
-:::warning[SITE UNDER CONSTRUCTION]
-**Details will be appearing on this site over the next few days**. Once the site is complete, we will be sending out an email to the Clarity Challenge Google group. If you are not already a member, please sign up [here](https://groups.google.com/g/clarity-challenge). The data for Task 1 and 2 is fully prepared and can be downloaded from the [download page](./cec3_download). Task 3 data will be available from the 1st May.
-:::
+import Grid from "@mui/material/Grid";
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
 ### Motivation
 
 Previous Clarity challenges have used fully simulated signals to train and evaluate systems. Not only does this make the task easier because the training and evaluation data are closely matched, it has also led to data that missing many of the complexities of real-world signals. In this task, we are moving closer to real world conditions by using signals that have been live-recorded over real microphones in a hearing-aid configuration worn by a participant listening to Clarity scenes reproduced over loudspeakers. This captures aspects of the problem that were previously neglected including complex head motions, real room acoustics, and real microphone characteristics. We are interested in how well systems can cope with this more challenging data.
+
+<figure id="fig5">
+<Grid container spacing={3}>
+        <Grid item xs={12} sm={4} md={4} key={1}>
+
+<img height="240"  src={useBaseUrl('/img/CEC3/ear.png')} />
+        </Grid>
+       <Grid item xs={12} sm={8} md={8} key={2}>
+
+<img height="240" src={useBaseUrl('/img/CEC3/glasses.png')} />
+        </Grid>
+
+</Grid>
+<figcaption>Figure 1. Data is recorded over real microphones (left) and is accompanied by accurate head motion tracked using reflective markers (right)</figcaption>
+</figure>
 
 ### Task Description
 
@@ -21,4 +35,4 @@ The task design has been modelled closely on CEC2, with a 6,000 scene training s
 
 Evaluation sets will contain data that are closely matched to the training sets that will be used for ranking systems. However, we will also publish some additional ‘surprise’ evaluation sets that are deliberately mismatched in a number of ways (listener head size, room T60 time, source location distribution). These will be used to study how well systems generalise outside of the training domain. Evaluation will initially be performed using the HASPI objective metric, but this will be followed by a round of subjective listening tests with hearing-impaired listeners.
 
-In the sections that follow we describe how that data has been collected and the what data has been provided; the [rules](./task2_rules.mdx) that all systems need to follow; the evaluation metric and the performance of a [baseline system](./task2_baseline.mdx). Near the submission date we will publish a final evaluation set and instructions on how to submit your signals for [evaluation](./task2_submission.mdx).
+In the sections that follow we provide a detailed description of the [challenge data](./task2_data.mdx); the [rules](./task2_rules.mdx) that all systems need to follow; the evaluation metric and the performance of a [baseline system](./task2_baseline.mdx). Near the submission date we will publish a final evaluation set and instructions on how to submit your signals for [evaluation](./task2_submission.mdx).
