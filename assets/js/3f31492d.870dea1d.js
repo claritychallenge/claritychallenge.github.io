@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkclarity=self.webpackChunkclarity||[]).push([[983],{76433:e=>{e.exports=JSON.parse('{"label":"speech","permalink":"/blog/tags/speech","allTagsPath":"/blog/tags","count":1,"unlisted":false}')}}]);

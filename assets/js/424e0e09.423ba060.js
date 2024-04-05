@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkclarity=self.webpackChunkclarity||[]).push([[1028],{13626:e=>{e.exports=JSON.parse('{"permalink":"/blog/tags/evaluation","page":1,"postsPerPage":2,"totalPages":1,"totalCount":2,"blogDescription":"News and updates about our Challenges and Workshops","blogTitle":"Latest News"}')}}]);
