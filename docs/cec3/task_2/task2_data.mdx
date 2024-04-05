@@ -68,7 +68,6 @@ Scenes were recording in blocks of 125 where each block had the same target spea
 After each recording block the front speakers are moved to a new set of locations on the grid. Each of the 80 blocks has its own unique speaker layout. The speaker locations were randomised such there was only ever one loudspeaker along each radial direction and that the loudspeaker were spread across the full range of angles. Some examples are shown below.
 The precise locations of the speakers are provided in the metadata for each scene.
 
-
 <figure id="fig4">
 <Grid container spacing={3}>
     {[1, 2, 3, 4, 5, 6].map((item) => (
@@ -89,17 +88,17 @@ The signals were recorded using hearing aid shell with three microphones (front,
 
 <figure id="fig5">
 <Grid container spacing={3}>
-        <Grid item xs={12} sm={6} md={4} key={item}>
+        <Grid item xs={12} sm={4} md={4} key={1}>
 
-<img width="200" src={useBaseUrl('/img/CEC3/ear.png')} />
+<img height="240"  src={useBaseUrl('/img/CEC3/ear.png')} />
         </Grid>
-       <Grid item xs={12} sm={6} md={4} key={item}>
+       <Grid item xs={12} sm={8} md={8} key={2}>
 
-<img width="200" src={useBaseUrl('/img/CEC3/glasses.png')} />
+<img height="240" src={useBaseUrl('/img/CEC3/glasses.png')} />
         </Grid>
 
 </Grid>
-<figcaption>Figure 5. Image showing the locations of the three hearing aid microphone.</figcaption>
+<figcaption>Figure 5. (left) the locations of the three hearing aid microphone; (right) the glasses worn to track the head</figcaption>
 </figure>
 
 ## Audio and Headtracking Data format
@@ -143,5 +142,3 @@ The following metadata files are provided
 - scenes.train.csv - metadata for the training scenes
 - rooms.train.csv - metadata for the training rooms
 ```
-import G from "glob"
-
