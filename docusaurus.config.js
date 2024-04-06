@@ -54,7 +54,6 @@ module.exports = {
     ],
     plugins: [
         [require.resolve('docusaurus-lunr-search'), {indexBaseUrl: true}],
-        './sitePlugin',
         [
             '@docusaurus/plugin-client-redirects',
             {
