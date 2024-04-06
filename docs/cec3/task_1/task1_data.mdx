@@ -21,4 +21,152 @@ clarity_CEC3_data
 └── task3
 ```
 
-A full description of the data will be appearing here shortly. In the meantime, you can download the data from the [download page](./cec3_download).
+## Recording setup
+
+Details to appear
+
+## The Hearing Aid signal simulation
+
+Details to appear
+
+## Audio Data format
+
+All audio data is provided in 16-bit PCM format at a sample rate of 44100 kHz. File names have been designed to be compatible with previous Clarity challenges. For each scene the following audio files are provided:
+
+```text
+- <SCENE_ID>_mix_CH1.wav - the left and right stereo pair from the front microphone.
+- <SCENE_ID>_mix_CH2.wav - the left and right stereo pair from the middle microphone.
+- <SCENE_ID>_mix_CH3.wav - the left and right stereo pair from the back microphone.
+- <SCENE_ID>_hr.wav - the head rotation signal
+- <SCENE_ID>_reference.wav - the signal to be used as the reference for HASPI evaluation.
+```
+
+## Metadata Formats
+
+The following metadata files are provided
+
+```text
+# The description of the scenes
+- scenes.dev.json - metadata for the dev scenes
+- rooms.dev.json - metadata for the dev rooms
+- hrir_data.json - HRIRs using in the simulation
+
+# Listener information
+- scenes_listeners.dev.json - the listeners/scene pairings to for the standard development set
+- listeners.json - the audiograms of the listeners
+
+# Materials used to make up the scenes
+- masker_music_list.json - the list of music interferers
+- masker_nonspeech_list.json - the list of non-speech interferers
+- masker_speech_list.json - the list of speech interferers
+- target_speech_list.json - the list target utterances
+```
+
+Most of these files follow the same format as in CEC2. The most important are the `scenes.json` and `rooms.json` files and these are described below.
+
+The `room` describes the locations of the three loudspeakers and the microphone. There are 16 different 'rooms' each describing a different loudspeaker and microphone layout (as shown in the earlier figure). The 'scenes' are represented by a 'room' (i.e., a loudspeaker configuration) and a description of the target and interferers and which of the loudspeakers they were played from. Note, there is a one-to-many relationship between rooms and scenes, i.e., each room is re-used in multiple scenes although not always with the same selection of interferer locations.
+
+The `room` and `scene` metadata files are described in more detail below.
+
+### The Room Metadata
+
+The room metadata is stored in a JSON file as a list of dictionaries, with one dictionary representing each room. There are 16 room layouts released for development data. A separate set of 15 will be used for evaluation. The metadata for the evaluation set will remain hidden.
+
+The format is as follows:
+
+```json
+[
+  {
+    "name": "R001",  // The Room identifier (R001 to R080)
+    "dimensions": "5.0x5.0x2.0",  // Approximate room dimensions (fixed)
+     "target": { // The target (i.e., the talker position)
+      "position": [ // The target position
+        3.0,
+        4.2,
+        1.2  // Heights are either 1.2 or 1.6 and target, listener and inferferer heights are always match
+      ],
+      "view_vector": [ // The target direction - will be towards the listener
+        -0.179,
+        0.984,
+        0.0
+      ]
+    },
+    "listener": { // The listener (i.e., the microphone position)
+      "position": [ // The listener position
+        3.4,
+        2.0,
+        1.2
+      ],
+      "view_vector": [ // The listener default view direction
+        0.179,
+        -0.984,
+        0.0
+      ]
+    },
+    "interferers": [ // A list of 3 interferer positions
+      {
+        "position": [
+          2.2,
+          2.0,
+          1.2
+        ]
+      }, // ... followed by two more positions 
+    ]
+  },
+  ... //  more rooms 
+]
+```
+
+### The Scene Metadata
+
+The scene metadata is stored in a JSON file as a list of dictionaries with one dictionary for each scene. There are 2500 scenes in the development set. A further 1500 have been retained for the final evaluation and these will use a different set of room layouts.
+
+```json
+[
+  {
+    "dataset": "dev", // The dataset (dev or eval)
+    "room": "R20001", // The room identifier (R20001 to R20016) corresponds to R001 to R016 in the rooms metadata
+    "scene": "S06001", // The Scene ID  (S6001 to S8500)
+    "target": {
+      "name": "T030_A08_01034", // The utterance ID which starts with the talker ID (T001 to T040)
+      "time_start": 80491, // The sample at which the target starts
+      "time_end": 214114 // The sample at which the target ends
+    },
+    "duration": 258214, // The duration of the scene in samples
+    "interferers": [ // Either 2 or 3 interferers in positions 1, 2 and/or 3
+      {
+        "position": 1, // The loudspeaker number (indexed 1 to 3). The location is in the rooms metadata. 
+        "time_start": 0, // The sample at which the interferer starts (always 0)
+        "time_end": 258214, // The sample at which the interferer ends (always the end of the scene)
+        "type": "music", // The type of interferer (speech, music, noise)
+        "name": "51/662051.low.mp3",   // The interferer ID
+        "offset": 2563402 // The offset of the interferer in the complete audio file
+      },
+      // ... followed by one or two more interferers
+    ],
+    "SNR": -9.5306,  // The SNR of the target signal (-12 to 6 dB)
+    "listener": {
+      "rotation": [ // Describes a rotation in the horizontal plane
+        {
+          "sample": 74252.5369, // The time (in samples) at which the rotation starts
+          "angle": 71.2240 // The initialial angle in degrees
+        },
+        {
+          "sample": 82883.5369,  // The time  (in samples) at which the rotation starts
+          "angle": 97.4871 // The final angle degrees
+        }
+      ],
+      "hrir_filename": [ // The HRIR used to simulate the hearing aid inputs
+        "BuK-ED",  // The 'ear drum' HRIR
+        "BuK-BTE_fr", // The front microphone HRIR
+        "BuK-BTE_mid",  // The middle microphone HRIR
+        "BuK-BTE_rear"  // The rear microphone HRIR
+      ]
+    }
+  },
+ // ... more scenes
+]
+```
+
+- All times in the `scenes.json` file are measured in samples at 44100 Hz.
+- In order to simulate the hearing aid signals, the HRIRs are taken from the  [OlHeadHRTF database](https://uol.de/mediphysik/downloads/hearingdevicehrtfs) with permission . Different scenes have used different heads as indicated by the `hrir_filename` field.
