@@ -5,6 +5,10 @@ sidebar_label: Overview
 sidebar_position: 10
 ---
 
+
+import Grid from "@mui/material/Grid";
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 :::warning[SITE UNDER CONSTRUCTION]
 **Details will be appearing on this site over the next few days**. Once the site is complete, we will be sending out an email to the Clarity Challenge Google group. If you are not already a member, please sign up [here](https://groups.google.com/g/clarity-challenge). The data for Task 1 and 2 is fully prepared and can be downloaded from the [download page](./cec3_download). Task 3 data will be available from the 1st May.
 :::
@@ -12,6 +16,26 @@ sidebar_position: 10
 ### Motivation
 
 In the 2nd Clarity Enhancement Challenge (CEC2), the best systems were able to achieve extremely high levels of performances. We believe this is in part because the training data and evaluation data were fully simulated and produced with the same simulation tools. Evaluating in this way may favour systems that are able to exploit the consistency of the simulation, but which do not generalise well to real-world scenarios. So, in this first task, we are taking a small step towards greater realism by constructing an evaluate set using impulse responses that have been recorded in a real room, and which therefore cannot be so easily modelled by simulation.
+
+<figure id="fig1">
+
+<Grid container spacing={1}>
+        <Grid item xs={12} sm={6} md={4} key={1}>
+<img height="320" src={useBaseUrl('/img/CEC3/salford_speaker_eigenmike.jpg')} />
+</Grid>
+
+       <Grid item xs={12} sm={6} md={4} key={2}>
+<img height="320" src={useBaseUrl('/img/CEC3/eigenmike_portrait.jpg')} />
+</Grid>
+
+       <Grid item xs={12} sm={6} md={4} key={2}>
+<img height="320" src={useBaseUrl('/img/CEC3/salford_eigenmike_speaker.jpg')} />
+</Grid>
+
+</Grid>
+
+<figcaption>Figure 1. 6th Order Ambisonic Impulse responses recorded with an MH Acoustics' em64 Eigenmike </figcaption>
+</figure>
 
 ### Task Description
 
