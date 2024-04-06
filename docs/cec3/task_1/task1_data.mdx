@@ -5,6 +5,10 @@ sidebar_label: Data
 sidebar_position: 20
 ---
 
+import Tabs from "@theme/Tabs";
+import TabItem from "@theme/TabItem";
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 The data download contains the following directories for Task 2:
 
 ```text
@@ -24,6 +28,35 @@ clarity_CEC3_data
 ## Recording setup
 
 Details to appear
+
+<Tabs>
+<TabItem value="scene" label="Recording Room">
+<figure id="fig1">
+<img width="700" src={useBaseUrl('/img/CEC3/salford_room1.jpg')} />
+<figcaption>Figure 1. A view of the recording room with floor markings.</figcaption>
+</figure>
+</TabItem>
+<TabItem value="scene2" label="...another view">
+
+<figure id="fig2">
+<img width="700" src={useBaseUrl('/img/CEC3/salford_room2.jpg')} />
+<figcaption>Figure 2. Recording one of the impulse responses with the Eigenmike EM64.</figcaption>
+</figure>
+</TabItem>
+<TabItem value="scene3" label="... and another.">
+
+<figure id="fig3">
+<img width="700" src={useBaseUrl('/img/CEC3/salford_pano.jpg')} />
+<figcaption>Figure 3. A panoramic shot of the recording room.</figcaption>
+</figure>
+</TabItem>
+
+</Tabs>
+
+<figure id="fig4">
+<img width="700" src={useBaseUrl('/img/CEC3/cec3_salford_rooms.jpg')} />
+<figcaption>Schematics showing the 16 room layouts used in the development data. T = Target talker; I = Interferer; L = Listener.</figcaption>
+</figure>
 
 ## The Hearing Aid signal simulation
 
