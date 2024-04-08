@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkclarity=self.webpackChunkclarity||[]).push([[1991],{29775:e=>{e.exports=JSON.parse('{"permalink":"/blog","page":1,"postsPerPage":25,"totalPages":1,"totalCount":25,"blogDescription":"News and updates about our Challenges and Workshops","blogTitle":"Latest News"}')}}]);

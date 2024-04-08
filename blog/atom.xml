@@ -2,11 +2,45 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://claritychallenge.github.io/blog</id>
     <title>The Clarity Project Blog</title>
-    <updated>2023-07-03T00:00:00.000Z</updated>
+    <updated>2024-04-08T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://claritychallenge.github.io/blog"/>
     <subtitle>The Clarity Project Blog</subtitle>
     <icon>https://claritychallenge.github.io/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Launch of CEC3]]></title>
+        <id>https://claritychallenge.github.io/blog/launch of CEC3</id>
+        <link href="https://claritychallenge.github.io/blog/launch of CEC3"/>
+        <updated>2024-04-08T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[We are pleased to announce the launch of the 3rd Clarity Enhancement Challenge (CEC3).]]></summary>
+        <content type="html"><![CDATA[<p>We are pleased to announce the launch of the <strong><a href="https://claritychallenge.github.io/docs/cec3/cec3_intro">3rd Clarity Enhancement Challenge (CEC3)</a></strong>.</p>
+<p>The challenge follows on from the success of the <a href="https://claritychallenge.github.io/docs/cec2/cec2_intro">2nd Clarity Enhancement Challenge (CEC2)</a> and is about improving the performance of hearing aids for speech-in-noise. The challenge extends CEC2 is three separate directions which have been presented as three different tasks.</p>
+<ul>
+<li>Task 1: Real ambisonic room impulse responses (<!-- -->🔥<!-- --> LIVE <!-- -->🔥<!-- -->)</li>
+<li>Task 2: Real hearing aid signals (<!-- -->🔥<!-- --> LIVE <!-- -->🔥<!-- -->)</li>
+<li>Task 3: Real dynamic backgrounds (launching 1st May)</li>
+</ul>
+<p>Participants are welcome to submit to one or more tasks. We are particularly interested in systems that handle all three cases with little or no redesign/retraining.</p>
+<p>The website has been fully updated to provide you with all the information you will need to participate. The necessary data and software are available for download.</p>
+<p>The schedule for the challenge is as follows:</p>
+<ul>
+<li><strong>2nd April 2024</strong>: Launch of <a href="https://claritychallenge.github.io/docs/cec3/task_1/cec3_task1_overview">Task 1</a> and <a href="https://claritychallenge.github.io/docs/cec3/task_2/cec3_task2_overview">Task 2</a> with training and development data; initial tools.</li>
+<li><strong>1st May 2024</strong>: Launch of <a href="https://claritychallenge.github.io/docs/cec3/task_3/cec3_task3_overview">Task 3</a>.</li>
+<li><strong>25th July 2024</strong>: Evaluation data released</li>
+<li><strong>2nd Sept 2024</strong>: 1st round submission for evaluation by objective measure</li>
+<li><strong>15th Sept 2024</strong>: 2nd round submission deadline for listening tests (Task 2 and 3)</li>
+<li><strong>Sept-Nov 2024</strong>: Listening test evaluation period.</li>
+<li><strong>Dec 2024</strong>:  Results announced at a Clarity Challenge Workshop (Details TBD); prizes awarded.</li>
+</ul>
+<p>If you have any questions please do not hesitate to contact us at <a href="mailto:claritychallengecontact@gmail.com" target="_blank" rel="noopener noreferrer">claritychallengecontact@gmail.com</a>. If you wish to be kept informed, please sign up to our <a href="https://groups.google.com/g/clarity-challenge" target="_blank" rel="noopener noreferrer">Google group</a>. If you are considering participating, please complete the registration form on the <a href="https://claritychallenge.github.io/docs/cec3/taking_part/cec3_registration">registration page</a>. Registration is free and carries no obligation to participate, but will help us to keep you informed of any changes to the challenge.</p>]]></content>
+        <author>
+            <name>Jon Barker</name>
+            <uri>http://staffwww.dcs.shef.ac.uk/people/J.Barker/</uri>
+        </author>
+        <category label="clarity" term="clarity"/>
+        <category label="launch" term="launch"/>
+        <category label="CEC3" term="CEC3"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[CPC2 eval data released]]></title>
         <id>https://claritychallenge.github.io/blog/CPC2 eval data released</id>
@@ -629,59 +663,5 @@ We have a chosen a limit of 5 ms because in a real hearing aid there will be oth
         </author>
         <category label="machine learning" term="machine learning"/>
         <category label="speech-in-noise" term="speech-in-noise"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Hearing loss simulation]]></title>
-        <id>https://claritychallenge.github.io/blog/Hearing loss simulation</id>
-        <link href="https://claritychallenge.github.io/blog/Hearing loss simulation"/>
-        <updated>2020-06-23T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[What our hearing loss algorithms simulate, with audio examples to illustrate hearing loss.]]></summary>
-        <content type="html"><![CDATA[<p>What our hearing loss algorithms simulate, with audio examples to illustrate hearing loss.</p>
-<p>Our challenge entrants are going to use machine learning to develop better processing of speech in noise (SPIN) for hearing aids. For a machine learning algorithm to learn new ways of processing audio for the hearing impaired, it needs to estimate how the sound will be degraded by any hearing loss. Hence, we need an algorithm to simulate hearing loss for each of our listeners. The diagram belows shows our draft baseline system that was detailed in a previous blog. The hearing loss simulation is part of the prediction model. The Enhancement Model to the left is effectively the hearing aid and the Prediction Model to the right is estimating how someone will perceive the intelligibility of the speech in noise.</p>
-<p><img decoding="async" loading="lazy" alt="baseline" src="https://claritychallenge.github.io/assets/images/baseline-1536x684-6a47c3181c95392a5977f1fd51b82c3c.png" width="1536" height="684" class="img_ev3q"></p>
-<p>The draft baseline system (where SPIN is speech in noise, DRC is Dynamic Range Compression, HL is Hearing Loss, SI is Speech Intelligibility and L &amp; R are Left and Right).</p>
-<p>There are different causes of hearing loss, but we’re concentrating on the most common type that happens when you age (<a href="https://www.nhs.uk/conditions/hearing-loss/" target="_blank" rel="noopener noreferrer">presbycusis</a>). <a href="https://rnid.org.uk/" target="_blank" rel="noopener noreferrer">RNID</a> (formerly Action on Hearing Loss) estimate that more than 40% of people over the age of 50 have a hearing loss, and this rises to 70% of people who are older than 70.</p>
-<p>The aspects of hearing loss we’ve decided to simulate are</p>
-<ol>
-<li>The loss of ability to sense the quietest sounds (increase in absolute threshold).</li>
-<li>How as an audible sound increases in level, the perceived increase in loudness is greater than normal (loudness recruitment) (Moore et al. 1996).</li>
-<li>How the ear has a poorer ability to discriminate the frequency of sounds (impaired frequency selectivity).</li>
-</ol>
-<!-- -->
-<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="audio-examples-of-hearing-loss">Audio examples of hearing loss<a href="https://claritychallenge.github.io/blog/Hearing%20loss%20simulation#audio-examples-of-hearing-loss" class="hash-link" aria-label="Direct link to Audio examples of hearing loss" title="Direct link to Audio examples of hearing loss">​</a></h2>
-<p>Here are two samples of speech in noise processed through the simulator. In each audio example there are three versions of the same sentence:</p>
-<ol>
-<li>Unimpaired hearing</li>
-<li>Mild hearing impairment</li>
-<li>Moderate to severe hearing impairment</li>
-</ol>
-<p>0 dB signal to noise ratio</p>
-<audio controls=""><source src="/audio/spin_example.wav" type="audio/wav"><p>Your browser does not support the audio element.</p></audio>
-<p>And here is an example where the noise is louder:</p>
-<audio controls=""><source src="/audio/spin_example-10SNR.wav" type="audio/wav"><p>Your browser does not support the audio element.</p></audio>
-<p>Noisier: -10dB signal to noise ratio</p>
-<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="acknowledgements">Acknowledgements<a href="https://claritychallenge.github.io/blog/Hearing%20loss%20simulation#acknowledgements" class="hash-link" aria-label="Direct link to Acknowledgements" title="Direct link to Acknowledgements">​</a></h2>
-<p>The hearing loss model we’re using was generously supplied by <a href="https://www.research.manchester.ac.uk/portal/michael.stone.html" target="_blank" rel="noopener noreferrer">Michael Stone at the University of Manchester</a> as MATLAB code and translated by us into Python. The original code was written by members of the Auditory Perception Group at the University of Cambridge, ca. 1991-2013, including Michael Stone, Brian Moore, Brian Glasberg and Thomas Baer. Information about the model can be found primarily in Nejime and Moore (1997), but also in Nejime and Moore (1998), Baer and Moore (1993 and 1994), and Moore and Glasberg (1993).</p>
-<p>The original speech recordings come from the ARU corpus, University of Liverpool (Hopkins et al. 2019). This corpus is freely available at the link in the reference below.</p>
-<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="references">References<a href="https://claritychallenge.github.io/blog/Hearing%20loss%20simulation#references" class="hash-link" aria-label="Direct link to References" title="Direct link to References">​</a></h2>
-<ul>
-<li>Baer, T., &amp; Moore, B. C. (1993). Effects of spectral smearing on the intelligibility of sentences in noise. <em>The Journal of the Acoustical Society of America</em>, 94(3), 1229-1241.</li>
-<li>Baer, T., &amp; Moore, B. C. (1994). Effects of spectral smearing on the intelligibility of sentences in the presence of interfering speech. <em>The Journal of the Acoustical Society of America</em>, 95(4), 2277-2280.</li>
-<li>Hopkins, C., Graetzer, S., &amp; Seiffert, G. (2019). ARU adult British English speaker corpus of IEEE sentences (ARU speech corpus) version 1.0 [data collection]. Acoustics Research Unit, School of Architecture, University of Liverpool, United Kingdom. DOI: 10.17638/datacat.liverpool.ac.uk/681. Retrieved from <a href="http://datacat.liverpool.ac.uk/681/" target="_blank" rel="noopener noreferrer">http://datacat.liverpool.ac.uk/681/</a>.</li>
-<li>Moore, B. C., &amp; Glasberg, B. R. (1993). Simulation of the effects of loudness recruitment and threshold elevation on the intelligibility of speech in quiet and in a background of speech. <em>The Journal of the Acoustical Society of America</em>, 94(4), 2050-2062.</li>
-<li>Moore, B. C., Glasberg, B. R., &amp; Vickers, D. A. (1996). Factors influencing loudness perception in people with cochlear hearing loss. B. Kollmeier, <em>World Scientific</em>, Singapore, 7-18.</li>
-<li>Nejime, Y., &amp; Moore, B. C. (1997). Simulation of the effect of threshold elevation and loudness recruitment combined with reduced frequency selectivity on the intelligibility of speech in noise. <em>The Journal of the Acoustical Society of America</em>, 102(1), 603-615.</li>
-<li>Nejime, Y., &amp; Moore, B. C. (1998). Evaluation of the effect of speech-rate slowing on speech intelligibility in noise using a simulation of cochlear hearing loss. <em>The Journal of the Acoustical Society of America</em>, 103(1), 572-576.</li>
-</ul>]]></content>
-        <author>
-            <name>Trevor Cox</name>
-            <uri>http://trevorcox.me/trevor-cox</uri>
-        </author>
-        <author>
-            <name>Simone Graetzer</name>
-            <uri>https://www.salford.ac.uk/our-staff/simone-graetzer</uri>
-        </author>
-        <category label="baseline" term="baseline"/>
-        <category label="hearing loss simulation" term="hearing loss simulation"/>
     </entry>
 </feed>
