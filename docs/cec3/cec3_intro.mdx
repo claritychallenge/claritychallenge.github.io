@@ -8,8 +8,8 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 import { TwitterTimelineEmbed } from "react-twitter-embed";
 import Button from "@mui/material/Button";
 
-:::warning[SITE UNDER CONSTRUCTION]
-**Details will be appearing on this site over the next few days**. Once the site is complete, we will be sending out an email to the Clarity Challenge Google group. If you are not already a member, please sign up [here](https://groups.google.com/g/clarity-challenge). The data for Task 1 and 2 is fully prepared and can be downloaded from the [download page](./cec3_download). Task 3 data will be available from the 1st May.
+:::info[CEC3 Task1 and Task2 are now live! 🔥🔥🔥]
+Task 1 and 2 are now live. The data can be obtained from the [download page](./cec3_download) and full task descriptions are available on this site.Task 3 data will be available from the 1st May.
 :::
 
 The third Clarity Enhancement Challenge (CEC3) is about improving the performance of hearing aids for speech-in-noise. According to the World Health Organization, 430 million people worldwide require rehabilitation to address hearing loss. By 2050, this will increase to one in ten people having disabling hearing loss. Yet even in developed countries, only 40% of people who could benefit from hearing aids have them. A major reason for low uptake and use is the perception that hearing aids perform poorly.
@@ -20,19 +20,19 @@ The challenge provides participants with hearing aid input signals representing 
 
 The challenge is formed of three enhancement tasks that add realism to the fully simulated scenes used in the previous [2nd Clarity Enhancement Challenge](../cec2/cec2_intro) in complementary directions. Participants are welcome to submit to one or more tasks. We are particularly interested in systems that handle all three cases with little or no redesign/retraining. Further details of the tasks are presented below.
 
-### Task 1: Real ambisonic room impulse responses
+### Task 1: Real ambisonic room impulse responses :fire::fire::fire:
 
 In the previous CEC1 and CEC2 challenges, hearing aid input signals were simulated using pre-recorded audio sources mixed with simulated room impulse responses. These simulated responses were then used to make training and evaluation data. In this first task, we are rerunning the CEC2 scenario, but with a new evaluation set that is using real impulse responses measured using an ambisonic microphone array in a real room. We are interested in how well systems that are trained on simulated data can generalise to this new evaluation set.
 
 <Button variant="outlined" href="./task_1/cec3_task1_overview">Task 1 Details...</Button>
 
-### Task 2: Real hearing aid signals
+### Task 2: Real hearing aid signals :fire::fire::fire:
 
 In all previous Clarity, hearing aid input signals are simulated using room impulse responses and head-related transfer function. In this task, we provide participants with real microphone signals. We have recorded scenes using real microphones in a hearing-aid configuration worn by a listener attending a target speaker. The scenario closely follows CEC2, i.e. the same noise interferers, etc, but the data is more challenging because it includes real room acoustics, real head movements and real microphone characteristics. A matched training set has been provided and we are interested in how well systems can cope with the inherently more complex data. Ground truth head motion data is also provided and we are interested in whether systems can exploit this information.
 
 <Button variant="outlined" href="./task_2/cec3_task2_overview">Task 2 Details...</Button>
 
-### Task 3: Real dynamic backgrounds (launching 1st May)
+### 🔜 Task 3: Real dynamic backgrounds (launching 1st May)
 
 In all previous Clarity challenges, the interfering signals have been static and carefully controlled. In this task, we will use naturally occurring, dynamic noise backgrounds. We are collecting a dataset of 64-channel ambisonic audio recordings from settings that hearing-impaired listeners find challenging. These include train stations, roadsides and large social gatherings (i.e., the 'cocktail party' scenario). Using these recordings and measured impulse responses, we will create a dataset of hearing aid input signals feature target sentences in dynamic background noise.
 

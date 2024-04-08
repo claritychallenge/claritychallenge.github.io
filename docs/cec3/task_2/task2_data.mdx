@@ -41,23 +41,23 @@ The scenes were recorded over the period of two weeks in a recording room at the
 
 <Tabs>
 <TabItem value="scene" label="Recording Room">
-<figure id="fig1">
+<figure id="fig1a">
 <img width="700" src={useBaseUrl('/img/CEC3/recording1.jpeg')} />
-<figcaption>Figure 1. A view of the recording room with a B&K HATS in the listener position. <br/> (The four rear loudspeakers are not visible in this in this view.)</figcaption>
+<figcaption>Figure 1a. A view of the recording room with a B&K HATS in the listener position. <br/> (The four rear loudspeakers are not visible in this in this view.)</figcaption>
 </figure>
 </TabItem>
 <TabItem value="scene2" label="...another view">
 
-<figure id="fig2">
+<figure id="fig1b">
 <img width="700" src={useBaseUrl('/img/CEC3/recording2.jpeg')} />
-<figcaption>Figure 2. Recording room with the front loudspeakers in a typical arrangement and with their labels attached.</figcaption>
+<figcaption>Figure 1b. Recording room with the front loudspeakers in a typical arrangement and with their labels attached.</figcaption>
 </figure>
 </TabItem>
 <TabItem value="scene3" label="... and another.">
 
-<figure id="fig3">
+<figure id="fig1c">
 <img width="700" src={useBaseUrl('/img/CEC3/recording3.jpeg')} />
-<figcaption>Figure 3. Recording room with the front loudspeakers at their maximum distances (being photobombed by a B&K HATS!).</figcaption>
+<figcaption>Figure 1c. Recording room with the front loudspeakers at their maximum distances (being photobombed by a B&K HATS!).</figcaption>
 </figure>
 </TabItem>
 
@@ -68,7 +68,7 @@ Scenes were recording in blocks of 125 where each block had the same target spea
 After each recording block the front speakers are moved to a new set of locations on the grid. Each of the 80 blocks has its own unique speaker layout. The speaker locations were randomised such there was only ever one loudspeaker along each radial direction and that the loudspeaker were spread across the full range of angles. Some examples are shown below.
 The precise locations of the speakers are provided in the metadata for each scene.
 
-<figure id="fig4">
+<figure id="fig2">
 <Grid container spacing={3}>
     {[1, 2, 3, 4, 5, 6].map((item) => (
         <Grid item xs={12} sm={6} md={4} key={item}>
@@ -79,14 +79,14 @@ The precise locations of the speakers are provided in the metadata for each scen
         </Grid>
     ))}
 </Grid>
-<figcaption>Figure 4. Six of the 80 different speaker layouts that were used.</figcaption>
+<figcaption>Figure 2. Six of the 80 different speaker layouts that were used.</figcaption>
 </figure>
 
 Following CEC2, the scenes were designed to produce a large range of SNRs for the target. This was set to be between -12 dB and 6 dB in the condition that all the loudspeaker signals are instantaneously added. Note, the actual SNRs recorded at the microphones will vary further depending on the rooms acoustics and the listeners head rotation etc, e.g., SNRs will be higher than that recording in the meta data if the target is closer to the listener than the interferers, and lower if the target is further away. (We plan to release estimates of the SNRs at the microphones in the future.)
 
 The signals were recorded using hearing aid shell with three microphones (front, middle and back). The figure below shows how these are positions when the shell are being worn. The microphones are each about 1 cm apart and form an approximately horizontal line when the head it level. Click on the image to enlarge.
 
-<figure id="fig5">
+<figure id="fig3">
 <Grid container spacing={3}>
         <Grid item xs={12} sm={4} md={4} key={1}>
 
@@ -98,7 +98,7 @@ The signals were recorded using hearing aid shell with three microphones (front,
         </Grid>
 
 </Grid>
-<figcaption>Figure 5. (left) the locations of the three hearing aid microphone; (right) the glasses worn to track the head</figcaption>
+<figcaption>Figure 3. (left) the locations of the three hearing aid microphone; (right) the glasses worn to track the head</figcaption>
 </figure>
 
 ## Audio and Headtracking Data format
@@ -126,23 +126,23 @@ The headtracking has been carefully aligned with the audio recordings. The csv f
 
 <Tabs>
 <TabItem value="scene" label="Head rotation example">
-<figure id="fig1">
+<figure id="fig4a">
 <img width="850" src={useBaseUrl('/img/CEC3/headtrack_300.png')} />
-<figcaption>Figure 6. Typical head trajectory with head turning from left to right (red) and tipping down (green) at the end of the scene. The tilt (blue) occurs naturally as the head turns.)</figcaption>
+<figcaption>Figure 4a. Typical head trajectory with head turning from left to right (red) and tipping down (green) at the end of the scene. The tilt (blue) occurs naturally as the head turns.)</figcaption>
 </figure>
 </TabItem>
 <TabItem value="scene2" label="...and another">
 
-<figure id="fig2">
+<figure id="fig4b">
 <img width="850" src={useBaseUrl('/img/CEC3/headtrack_400.png')} />
-<figcaption>Figure 7. An example where the listener has initially turned in the wrong direction and is struggling to identify the target</figcaption>
+<figcaption>Figure 4b. An example where the listener has initially turned in the wrong direction and is struggling to identify the target</figcaption>
 </figure>
 </TabItem>
 <TabItem value="scene3" label="... and another.">
 
-<figure id="fig3">
+<figure id="fig4c">
 <img width="850" src={useBaseUrl('/img/CEC3/headtrack_700.png')} />
-<figcaption>Figure 8. An example where the listener only need a small rotation.</figcaption>
+<figcaption>Figure 4c. An example where the listener only need a small rotation.</figcaption>
 </figure>
 </TabItem>
 
