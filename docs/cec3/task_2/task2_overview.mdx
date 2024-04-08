@@ -1,0 +1,38 @@
+---
+id: cec3_task2_overview
+title: Task 2 - Using real hearing aid recordings
+sidebar_label: Overview
+sidebar_position: 10
+---
+
+import Grid from "@mui/material/Grid";
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
+### Motivation
+
+Previous Clarity challenges have used fully simulated signals to train and evaluate systems. Not only does this make the task easier because the training and evaluation data are closely matched, it has also led to data that missing many of the complexities of real-world signals. In this task, we are moving closer to real world conditions by using signals that have been live-recorded over real microphones in a hearing-aid configuration worn by a participant listening to Clarity scenes reproduced over loudspeakers. This captures aspects of the problem that were previously neglected including complex head motions, real room acoustics, and real microphone characteristics. We are interested in how well systems can cope with this more challenging data.
+
+<figure id="fig5">
+<Grid container spacing={3}>
+        <Grid item xs={12} sm={4} md={4} key={1}>
+
+<img height="240"  src={useBaseUrl('/img/CEC3/ear.png')} />
+        </Grid>
+       <Grid item xs={12} sm={8} md={8} key={2}>
+
+<img height="240" src={useBaseUrl('/img/CEC3/glasses.png')} />
+        </Grid>
+
+</Grid>
+<figcaption>Figure 1. Data is recorded over real microphones (left) and is accompanied by accurate head motion tracked using reflective markers (right)</figcaption>
+</figure>
+
+### Task Description
+
+The task considers the scenario of a hearing aid user listening to a target speaker in a domestic living room while two or three interfering sounds are also active. Participants will be provided with signals recorded over a hearing aid shells each with three microphones. These devices were worn by a participant who was seated in front of loud speakers that were reproducing scenes similar to those used in previous Clarity challenges. Loud speakers were moved between recording sessions in order to produce a large set of spatial configurations.
+
+The task design has been modelled closely on CEC2, with a 6,000 scene training set recorded in the same way as the development and evaluation sets. Participants are asked to training systems using this data. They may also augment the training data using the simulation tools and simulated data from previous challenge rounds, or using any publicly available resources. We are also providing ground truth head motion data that can be used to improve system performance. We are interested in how well systems can exploit this information.
+
+Evaluation sets will contain data that are closely matched to the training sets that will be used for ranking systems. However, we will also publish some additional ‘surprise’ evaluation sets that are deliberately mismatched in a number of ways (listener head size, room T<sub>60</sub> time, source location distribution). These will be used to study how well systems generalise outside of the training domain. Evaluation will initially be performed using the HASPI objective metric, but this will be followed by a round of subjective listening tests with hearing-impaired listeners.
+
+In the sections that follow we provide a detailed description of the [challenge data](./task2_data.mdx); the [rules](./task2_rules.mdx) that all systems need to follow; the evaluation metric and the performance of a [baseline system](./task2_baseline.mdx). Near the submission date we will publish a final evaluation set and instructions on how to submit your signals for [evaluation](./task2_submission.mdx).

@@ -1,0 +1,41 @@
+---
+id: cec3_task2_rules
+title: Task 2 Rules
+sidebar_label: Rules
+sidebar_position: 30
+---
+
+
+## What information can I use?
+
+### Training and development
+
+Teams can expand the training data provided using augmentation or by supplementing it with data from other publicly available sources, excluding datasets that may appear in the evaluation (this prohibits training on any previous Clarity challenge evaluation data, speech from [Crowdsourced high-quality UK and Ireland English Dialect speech data set](https://www.openslr.org/83/), or music from the [MTG-Jamendo Dataset](https://mtg.github.io/mtg-jamendo-dataset/)). Any additional data used must be made clear in the technical report. Teams can also use publicly available pre-trained models.
+
+Any of the CEC3 metadata can be used during training and development, but during evaluation, the system will only have access to the hearing aid input signals and the listener audiograms.
+
+Teams that augment or extend the training dataset must also submit a version of the system using only the standard dataset. etc
+
+### Evaluation
+
+The only data that can be used during evaluation are
+
+- The 6-channels hearing aid input signals
+- The listener characterisation (pure tone air-conduction audiograms and/or digit triple test results).
+- The provided clean audio examples for the target talker (these will not be the same as any of the target utterances.)
+- The head-rotation signal (but if used, a version of the system that does not use it should also be prepared for comparison.)
+
+## Computational restrictions
+
+- Systems must be causal; the output from the hearing aid at time t must not use any information from input samples more than 5 ms into the future (i.e., no information from input samples >t+5 ms).
+- There is no limit on computational requirements but memory and processing requirements should be clearly stated in the technical reports.
+
+Please see [this blog post](https://claritychallenge.org/blog/Latency,%20computation%20time%20and%20real-time%20operation) for further explanation of these last two rules about latency and computation time.
+
+## Objective vs Subjective evaluation
+
+You can submit two versions of your entry, where one is optimised for HASPI and the other for listening tests if you wish. In this case:
+
+- Both systems must be submitted for HASPI evaluation.
+- Both versions must be described in the same technical report and differences between how they have been tuned must be made clear.
+ to appear.
