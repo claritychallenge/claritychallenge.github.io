@@ -94,16 +94,16 @@ For the reference channel,
   - Signals $i'$ and $t'$ are separately convolved with a speech-weighting filter, h (specified below).
   - The rms is calculated for each convolved signal.
   - SNR$_L$ and SNR$_R$ are calculated as the ratio of these rms values.
-- The `BE_SNR` is selected as the maximum of the two SNRs: `BE_SNR` = max(SNR$_L$ and SNR$_R$).
+- The BE_SNR is selected as the maximum of the two SNRs: BE_SNR = max(SNR$_L$ and SNR$_R$).
 
 Then per channel,
 
 - The summed interferer signal, i, is scaled by the BE_SNR
-  - $i = i \times$ `BE_SNR`
+  - $i = i \times 10^ {-BE\_SNR/20}$ 
 - Finally, i is scaled as follows:
-  - $i = i \times 10^{-SNR_D/20}$
+  - $i = i \times 10^ {-SNR_D/20}$
 
-The speech-weighting filter is an FIR designed using the host window method \[[2](#refs), [3](#refs)\]. The frequency response is shown in [Figure 2](#fig2). The specification is:
+The speech-weighting filter is an FIR designed using the host window method \[[2](#refs), [3](#refs)\]. The frequency response is shown in [Figure 2](#fig2).  The specification is:
 
 - Frequency (Hz) = `[0, 150, 250, 350, 450, 4000, 4800, 5800, 7000, 8500, 9500, 22050]`
 - Magnitude of transfer function at each frequency = `[0.0001, 0.0103, 0.0261, 0.0419, 0.0577, 0.0577, 0.046, 0.0343, 0.0226, 0.0110, 0.0001, 0.0001]`
