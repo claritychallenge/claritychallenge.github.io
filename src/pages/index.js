@@ -7,6 +7,7 @@ import styles from "./index.module.css";
 import HomepageFeatures from "../components/HomepageFeatures";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
+import Admonition from '@theme/Admonition';
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
@@ -45,17 +46,32 @@ function HomepageHeader() {
 
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
-  return (
+    return (
+        
     <Layout
       title={`Hello from ${siteConfig.title}`}
       description="Description will go into a meta tag in <head />"
     >
-      <HomepageHeader />
+          
+          
+          <HomepageHeader />
+ 
           <main>
           
+        
               
-          <Box sx={{ p: 10}}>
+          <div>
+      
+                </div>
+                
+                 <Box sx={{ p: 0, marginRight: 10, marginTop: 8, marginLeft: 10, marginBottom: -4 }}>
 
+ <Admonition type="info">
+     <center>   <h1>🔥🔥 <a href="/docs/cec3/cec3_intro"> The 3rd Clarity Enhancement Challenge is now Live</a> 🔥🔥 </h1> </center>
+                    </Admonition>
+                </Box>
+                
+          <Box sx={{ p: 10}}>
 <p>
   <Typography variant="h6">
     The Clarity Project is a{" "}
@@ -77,9 +93,13 @@ export default function Home() {
     hearing aid speech-in-noise processing.{" "}
   </Typography>
 </p>
- </Box>
+</Box>
 
-        <HomepageFeatures />
+                
+                <HomepageFeatures />
+                
+               
+
       </main>{" "}
     </Layout>
   );
