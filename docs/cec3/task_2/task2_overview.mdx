@@ -10,7 +10,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 ### Motivation
 
-Previous Clarity challenges have used fully simulated signals to train and evaluate systems. Not only does this make the task easier because the training and evaluation data are closely matched, it has also led to data that missing many of the complexities of real-world signals. In this task, we are moving closer to real world conditions by using signals that have been live-recorded over real microphones in a hearing-aid configuration worn by a participant listening to Clarity scenes reproduced over loudspeakers. This captures aspects of the problem that were previously neglected including complex head motions, real room acoustics, and real microphone characteristics. We are interested in how well systems can cope with this more challenging data.
+Previous Clarity challenges have used fully simulated signals to train and evaluate systems. Not only does this make the task easier because the training and evaluation data are closely matched, it has also led to data that missing many of the complexities of real-world signals. In this task, we are moving closer to real world conditions by using signals that have been live-recorded over real microphones of a hearing aid worn by a participant listening to Clarity scenes reproduced over loudspeakers. This captures aspects of the problem that were previously neglected including complex head motions, real room acoustics, and real microphone characteristics. We are interested in how well systems can cope with this more challenging data.
 
 <figure id="fig5">
 <Grid container spacing={3}>
@@ -29,7 +29,12 @@ Previous Clarity challenges have used fully simulated signals to train and evalu
 
 ### Task Description
 
-The task considers the scenario of a hearing aid user listening to a target speaker in a domestic living room while two or three interfering sounds are also active. Participants will be provided with signals recorded over a hearing aid shells each with three microphones. These devices were worn by a participant who was seated in front of loud speakers that were reproducing scenes similar to those used in previous Clarity challenges. Loud speakers were moved between recording sessions in order to produce a large set of spatial configurations.
+The scenario is a hearing aid user listening to a target speaker in a domestic living room while two or three interfering sounds are also active. Participants will be provided with signals recorded over left and right hearing aid shells each with three microphones. These devices were worn by a participant who was seated in front of loudspeakers that were reproducing scenes similar to those used in previous Clarity challenges. Loudspeakers were moved between recording sessions in order to produce a large set of spatial configurations.
+
+<figure id="fig2">
+<img width="400" src={useBaseUrl('/img/ICASSP2023/scenario.png')} />
+<figcaption>Figure 2. A domestic scenario for Task 2: one talker, a listener who rotates their head, and at least two sources of unwanted sound.</figcaption>
+</figure>
 
 The task design has been modelled closely on CEC2, with a 6,000 scene training set recorded in the same way as the development and evaluation sets. Participants are asked to training systems using this data. They may also augment the training data using the simulation tools and simulated data from previous challenge rounds, or using any publicly available resources. We are also providing ground truth head motion data that can be used to improve system performance. We are interested in how well systems can exploit this information.
 

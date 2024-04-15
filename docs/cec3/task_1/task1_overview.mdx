@@ -5,13 +5,12 @@ sidebar_label: Overview
 sidebar_position: 10
 ---
 
-
 import Grid from "@mui/material/Grid";
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
 ### Motivation
 
-In the 2nd Clarity Enhancement Challenge (CEC2), the best systems were able to achieve extremely high levels of performances. We believe this is in part because the training data and evaluation data were fully simulated and produced with the same simulation tools. Evaluating in this way may favour systems that are able to exploit the consistency of the simulation, but which do not generalise well to real-world scenarios. So, in this first task, we are taking a small step towards greater realism by constructing an evaluate set using impulse responses that have been recorded in a real room, and which therefore cannot be so easily modelled by simulation.
+In the 2nd Clarity Enhancement Challenge (CEC2), the best systems were able to achieve extremely high levels of performances. We believe this is in part because the training data and evaluation data were fully simulated and produced with the same simulation tools. Evaluating in this way may favour systems that are able to exploit the consistency of the simulation, but which do not generalise well to real-world scenarios. In the Clarity ICASSP 2023 challenge [1], it was seen that systems struggled with a real room evaluation set, even those that did well on the simulated evaluation set. So, in this first task, we are taking a step towards understanding the generalisation problem by constructing an evaluate set using impulse responses that have been recorded in a real room, and which therefore cannot be so easily modelled by simulation.
 
 <figure id="fig1">
 
@@ -35,8 +34,17 @@ In the 2nd Clarity Enhancement Challenge (CEC2), the best systems were able to a
 
 ### Task Description
 
-The task considers the scenario of a hearing aid user listening to a target speaker in a domestic living room while two or three interfering sounds are also active. Participants will be provided with signals representing the six input channels of a hearing aid device, and will be asked to process the signals so as to produce hearing aid outputs that maximise the intelligibility of the target speech. For each scene that needs to be processed, the audiogram of the hearing aid user will be provided.
+The scenario is of a hearing aid user listening to a target speaker in a domestic living room while two or three interfering sounds are also active. Participants are provided with signals representing the six input channels of a binaural hearing aid device (three left, three right). You will process the signals so as to produce hearing aid outputs that maximise the intelligibility of the target speech. For each scene that needs to be processed, the audiogram of the hearing aid user will be provided.
+
+<figure id="fig2">
+<img width="400" src={useBaseUrl('/img/ICASSP2023/scenario.png')} />
+<figcaption>Figure 2. The scenario involves one talker, a listener who rotates their head, and at least two sources of unwanted sound.</figcaption>
+</figure>
 
 Participants are asked to train their systems using the training data and training data generation tools provided with CEC2, or with any other data they choose so long as it is openly available. Submissions will be evaluated using the HASPI objective metric. The evaluation data has been produced to have the same inherent degree of difficulty as the previous CEC2 challenge, so that results can be compared across the challenges. We are interested to see whether systems are able to achieve similar levels of performance despite the extra challenge of not having such closely matched training data provided.
 
 In the sections that follow we describe how that data has been collected and the what data has been provided; the [rules](./task1_rules.mdx) that all systems need to follow; the evaluation metric and the performance of a [baseline system](./task1_baseline.mdx). Near the submission date we will publish a final evaluation set and instructions on how to submit your signals for [evaluation](./task1_submission.mdx).
+
+### References
+
+[1] Cox, T.J., Barker, J., Bailey, W., Graetzer, S., Akeroyd, M.A., Culling, J.F. and Naylor, G., 2023, June. Overview of the 2023 ICASSP SP Clarity Challenge: Speech Enhancement for Hearing Aids. In ICASSP 2023-2023 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP). Institute of Electrical and Electronics Engineers.
