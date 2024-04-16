@@ -99,7 +99,7 @@ For the reference channel,
 Then per channel,
 
 - The summed interferer signal, i, is scaled by the BE_SNR
-  - $i = i \times 10^ {-BE\_SNR/20}$ 
+  - $i = i \times 10^ {-BE\_SNR/20}$
 - Finally, i is scaled as follows:
   - $i = i \times 10^ {-SNR_D/20}$
 
@@ -156,6 +156,12 @@ All audio data is provided in 16-bit PCM format at a sample rate of 44100 kHz. F
 The **reference signal** is an anechoic version of the target that is to be used as the standard reference for HASPI evaluation. Note, this signal has been processed with the appropriate HRTFs so that it matches the target signal recorded by the front microphone pair at the hearing aid.
 
 The **head rotation** signal indicates the precise azimuthal angle of the head at each sample. It is stored as a floating point wav file with values between -1 and +1 where the range maps linearly from -180 degrees to +180 degrees. You are free to use this signal in your hearing aid algorithm, but if you do so we would also ask that you evaluate an equivalent version of the system that does not use it (i.e., an ablation study), so that the benefit of known head motion can be measured.
+
+## Speaker adaptation data
+
+The scenes that you have been asked to enhance often contain speech signals as interferers. This means that the task of enhancing the target speaker is ambiguous unless you are told which of the speaker to use as target. In this task, we follow the approach used in CEC2 and provide a small set of clean target speaker example utterances. So, for each scene, the ID of the target speaker is provided in the metadata, and systems can then use the examples and select the target as the one that has the matching voice.
+
+Note, these same utterances will be used in the final subjective listening tests, i.e. the listeners will be presented with the examples before listening to the processed signal and told that these are examples of the target speaker that they are meant to be listening to.
 
 ## Metadata formats
 
