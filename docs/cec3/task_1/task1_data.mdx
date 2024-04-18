@@ -115,7 +115,7 @@ The speech-weighting filter is an FIR designed using the host window method \[[2
 
 ### Signal generation
 
-The signal processing pipeline for generating the scene is shown in [Figure 1](#fig1).
+The signal processing pipeline for generating the scene is shown in [Figure 4](#fig4).
 
 - The Scene Generator (middle blue box) works on the metadata (shown in green) to create the scene definition metadata, this includes:
   - The metadata associated with the randomly generated scenarios in RPF and JSON format (described on the [data page](./cec2_data)).
@@ -129,7 +129,7 @@ The signal processing pipeline for generating the scene is shown in [Figure 1](#
 <figcaption>Figure 4. The scene pipeline.</figcaption>
 </figure>
 
-The scene renderer processing is shown in more detail in [Figure 2](#fig2) and is described below:
+The scene renderer processing is shown in more detail in [Figure 5](#fig5) and is described below:
 
 - It takes the ambisonics room impulse responses (RIR); the target and interferer audio; and the scene definition metadata as the input (top line).
 - First, it generates the HOA (High Order Ambisonic) signals through convolution (left blue box).

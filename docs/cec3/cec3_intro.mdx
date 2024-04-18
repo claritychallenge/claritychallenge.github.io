@@ -27,17 +27,22 @@ The challenge is formed of three enhancement tasks that add realism to the fully
 
 ### Task 1: Real ambisonic room impulse responses :fire::fire::fire:
 
-In the previous CEC1 and CEC2 challenges, hearing aid input signals were simulated using pre-recorded audio sources mixed with simulated room impulse responses. These simulated responses were then used to make training and evaluation data. In this first task, we are rerunning the CEC2 scenario, but with a new evaluation set that is using real impulse responses measured using an ambisonic microphone array in a real room. We are interested in how well systems that are trained on simulated data can generalise to this new evaluation set.
+In the previous CEC1 and CEC2 challenges, hearing aid input signals were simulated using pre-recorded audio sources mixed with simulated room impulse responses. These simulated responses were then used to make training and evaluation data. In this first task, we are rerunning the CEC2 scenario, but with a new evaluation set that uses real impulse responses measured with an ambisonic microphone array in a real room. We are interested in how well systems that are trained on simulated data can generalise to this new evaluation set.
 
 <Button variant="outlined" href="./task_1/cec3_task1_overview">Task 1 Details...</Button>
 
 ### Task 2: Real hearing aid signals :fire::fire::fire:
 
-In all previous Clarity, hearing aid input signals are simulated using room impulse responses and head-related transfer function. In this task, we provide participants with real microphone signals. We have recorded scenes using microphones on a behind-the-ear hearing-aid worn by a real listener attending a target speaker. The scenario closely follows CEC2, i.e. the same noise interferers, etc, but the data is more challenging because it includes real room acoustics, real head movements and real microphone characteristics. A matched training set has been provided and we are interested in how well systems can cope with the inherently more complex data. Ground truth head motion data is also provided and we are interested in whether systems can exploit this information.
+In all previous Clarity challenges, hearing aid input signals are simulated using room impulse responses and head-related transfer function. In this task, we provide participants with real microphone signals. We have recorded scenes using microphones on a behind-the-ear hearing-aid worn by a real listener attending to a target speaker. The scenario closely follows CEC2, i.e. the same noise interferers, etc, but the data is more challenging because it includes real room acoustics, real head movements and real microphone characteristics. A matched training set has been provided and we are interested in how well systems can cope with the inherently more complex data. Ground truth head motion data is also provided and we are interested in whether systems can exploit this information.
 
 <Button variant="outlined" href="./task_2/cec3_task2_overview">Task 2 Details...</Button>
 
 ### 🔜 Task 3: Real dynamic backgrounds (launching 1st May)
+
+<figure id="fig2">
+<img width="400" src={useBaseUrl('/img/CEC3/task3_railway_scenario_CEC3_smaller.png')} />
+<figcaption>Fig 1. Task 3 is a scenario with dynamic background noise, including recordings at a railway station (with trains!).</figcaption>
+</figure>
 
 In all previous Clarity challenges, the interfering signals have been static and carefully controlled. In this task, we will use naturally occurring, dynamic noise backgrounds. We are collecting a dataset of 64-channel ambisonic audio recordings from settings that hearing-impaired listeners find challenging. These include train stations, roadsides and large social gatherings (i.e., the 'cocktail party' scenario). Using these recordings and measured impulse responses, we will create a dataset of hearing aid input signals feature target sentences in dynamic background noise.
 
