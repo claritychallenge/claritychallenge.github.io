@@ -13,7 +13,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 The Task 3 data consists of simulated hearing aid inputs that have been constructed using a set of real high-order ambisonic noise backgrounds and high-order ambisonic impulse responses that were recorded for the challenge. Target materials were added to the backgrounds in a similar manner to that used in Task 1, i.e. with the target speaker onsetting shortly after the scene starts and with a listener head rotation. Data has been split into two sets: 6,000 scenes for training and a 2,500 scene development set. A further 1,500 scenes were recorded and have been set aside for evaluation.
 
-The data is organised into the following directories, and can be obtained from the [download page](./../cec3_download).
+The data is organised into the following directories, and can be obtained from the [download page](./../cec3_download) (Available shortly).
 
 ```text
 clarity_CEC3_data
@@ -44,7 +44,7 @@ A measurement rig was developed that included a portable power supply with the E
 
 <figure id="fig4b">
 <img width="650" src={useBaseUrl('/img/CEC3/cardiff_rig1.jpg')} />
-<figcaption>Figure 1  Recording an outdoor impulse response</figcaption>
+<figcaption>Figure 1.  Recording an outdoor impulse response at a quiet location.</figcaption>
 </figure>
 
 The roadside recordings were obtained from a variety of different recording positions next to busy roads in central Cardiff over six different recording sessions. The railway recordings were all made on platforms at Newport station on two separate days. For the outdoor recordings it proved impractical to record impulse responses against these noisy backgrounds, so an independent set of outdoor impulses were recorded from quieter locations (e,g., see above). Consequently, there is no relationship between the acoustic reflection patterns in the outdoor recordings and the outdoor impulse responses.
@@ -236,7 +236,7 @@ Some important points to note are:
 
 - All times in the `scenes.json` file are measured in samples at 48000 Hz.
 - In order to simulate the hearing aid signals, the HRIRs are taken from the  [OlHeadHRTF database](https://uol.de/mediphysik/downloads/hearingdevicehrtfs) with permission . Different scenes have used different heads as indicated by the `hrir_filename` field.
-- The `listener' and`target' locations provide an approximately correct listener-target distance but for this task they do not have meaning in an absolute sense. i.e. the listener position is always recorded at (0, 0, 1.6).
+- The `listener` and `target` locations provide an approximately correct listener-target distance but for this task they do not have meaning in an absolute sense. i.e. the listener position is always recorded at (0, 0, 1.6).
 
 ### The Background metadata
 
@@ -261,7 +261,7 @@ The ambisonic background recordings metadata is stored in a JSON file as a list 
 Notes,
 
 - The session ID is a unique identifier for the recording session. Most of the sessions resulted in the recording of multiple background noise files.
-- The `ir_location' field indicates which target impulse responses can be paired with this background. For station and road this will be 'external'. For the party backgrounds it will be 'party_<SESSION>', i.e., for the party recordings there are paired backgrounds and IRs for each recording session, and each session is represents a different recording location in the room. The`ir_location' field will also appear in the `room' metadata, i.e., providing a clear link between the backgrounds and IRs.
+- The `ir_location` field indicates which target impulse responses can be paired with this background. For station and road this will be 'external'. For the party backgrounds it will be 'party_<SESSION>', i.e., for the party recordings there are paired backgrounds and IRs for each recording session, and each session is represents a different recording location in the room. The `ir_location` field will also appear in the`room' metadata, i.e., providing a clear link between the backgrounds and IRs.
 
 ## References
 
