@@ -5,6 +5,46 @@ sidebar_label: Baseline
 sidebar_position: 40
 ---
 
-:::warning[SITE UNDER CONSTRUCTION]
-**The 3rd task will be available from 1st May**. When the data has been released full details will appear on this site and an announcement will be made on the Clarity Challenge Google group. If you are not already a member, please sign up [here](https://groups.google.com/g/clarity-challenge).
-:::
+A baseline system for all of the tasks is provided as part of the latest release of the PyClarity toolkit [available on GitHub](https://github.com/claritychallenge/clarity/tree/main). For this challenge round we ask entrants to use latest packaged release in the [v0.5.x series](https://github.com/claritychallenge/clarity/releases).
+
+The baseline takes the form of a pipeline of three Python scripts,
+
+- `enhance.py`
+- `evaluate.py`
+- `report_scores.py`
+
+The first of these can be replaced by your own enhancement system, while the other two scripts should remain fixed to match how we will evaluate final submissions. For the development set, the reference signals have been provided so you can run the complete pipeline and obtain scores. For the final evaluation set, we will not release references, but instead, you will send us the enhanced signals and we will score them remotely using the same scripts.
+
+### Enhancement
+
+The `enhance.py` script performs the baseline enhancement. The baseline simply takes the 6-channel hearing aid inputs and reduces this to a stereo hearing aid output by passing through the 'front' microphone signal of the left and right ear.
+
+The stereo pair is then passed through a hearing aid amplification stage using a NAL-R [1] fitting amplification and a simple automatic gain compressor. The amplification is determined by the audiograms defined by the scene-listener pairs in clarity_data/metadata/scenes_listeners.dev.json for the development set. After amplification, the evaluate function calculates the better-ear HASPI [2].
+
+### Evaluation
+
+Once the enhancement has been run, the `evaluate.py` script can compute the HASPI scores for the signals stored in the amplified_signals folder. The script will read the scene-listener pairs from the development set and calculate the HASPI score for each pair. The final score is the mean HASPI score across all pairs.
+
+The results are stored in a CSV file which is then read by the final `report_scores.py` script which will generate a report. This two step process means that it is easy to run evaluate on multiple processors on subsets of the full evaluation set: each processes will produce a separate CSV and `report_score.py` will collate the results, check their integrity and generate the final report.
+
+The scripts have been designed to run with minimal configuration, but with flexible options for performing partial runs, parallel processing, or running on a cluster. For full documentation and examples of how to run the scripts see the [README.md](https://github.com/claritychallenge/clarity/tree/main/recipes/cec3) file in the CEC3 baseline recipe of the PyClarity toolkit on GitHub.
+
+### Baseline performance for Task 3
+
+Running all three scripts on Task 3 will lead to the following output:
+
+```text
+Evaluation set size: 7500
+Mean HASPI score: 0.19600830050060633
+
+                 SNR     haspi
+SNR
+(-12, -9] -10.565021  0.037197
+(-9, -6]   -7.483742  0.068648
+(-6, -3]   -4.542632  0.108995
+(-3, 0]    -1.439869  0.204429
+(0, 3]      1.518856  0.321640
+(3, 6]      4.428666  0.436806
+```
+
+The mean HASPI score (0.196) is the metric that will be used for ranking. The table shows the mean HASPI score for each SNR range to help you understand the performance of your system.
