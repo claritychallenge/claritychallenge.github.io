@@ -13,7 +13,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 The Task 3 data consists of simulated hearing aid inputs that have been constructed using a set of real high-order ambisonic noise backgrounds and high-order ambisonic impulse responses that were recorded for the challenge. Target materials were added to the backgrounds in a similar manner to that used in Task 1, i.e. with the target speaker onsetting shortly after the scene starts and with a listener head rotation. Data has been split into two sets: 6,000 scenes for training and a 2,500 scene development set. A further 1,500 scenes were recorded and have been set aside for evaluation.
 
-The data is organised into the following directories, and can be obtained from the [download page](./../cec3_download) (Available shortly).
+The data is organised into the following directories, and can be obtained from the [download page](./../cec3_download).
 
 ```text
 clarity_CEC3_data
@@ -257,7 +257,7 @@ Some points to note are:
 - All times in the `scenes.json` file are measured in samples at 48000 Hz.
 - In order to simulate the hearing aid signals, the HRIRs are taken from the  [OlHeadHRTF database](https://uol.de/mediphysik/downloads/hearingdevicehrtfs) with permission . Different scenes have used different heads as indicated by the `hrir_filename` field.
 - For indoor responses, the listener location as measured in the 13.3 m by 6 m room with the origin at the botton left corner of the plan view. For outdoor responses, the x and y coordinates are recorded as 0, 0. The height is always 1.5 m.
-- For external responses, the dimensions contain "13.3 m x 6 m" - this is an error and should be ignored.
+- For external responses, the dimension field contains "13.3 m x 6 m" - this is an error and should be ignored.
 
 ### The Background Metadata
 
