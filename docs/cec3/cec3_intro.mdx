@@ -8,12 +8,12 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 import { TwitterTimelineEmbed } from "react-twitter-embed";
 import Button from "@mui/material/Button";
 
-The third Clarity Enhancement Challenge (CEC3) is about improving the performance of hearing aids for speech-in-noise. According to the World Health Organization, 430 million people worldwide require rehabilitation to address hearing loss. By 2050, this will increase to one in ten people having disabling hearing loss. Yet even in developed countries, only 40% of people who could benefit from hearing aids have them and use them enough. A major reason for low uptake is the perception that hearing aids perform poorly.
 
-<figure id="fig1">
-<img width="400" src={useBaseUrl('/img/ICASSP2023/scenario.png')} />
-<figcaption>Fig 1. Task 1 and 2 is a scenario with one talker, a listener with hearing loss and wearing hearing aids, a domestic environment and common sources of unwanted sound.</figcaption>
-</figure>
+:::info[All tasks are now live! 🔥🔥🔥]
+Task 1, 2 and 3 are now live. The data can be obtained from the [download page](./cec3_download) and full task descriptions are available on this site. .
+:::
+
+The third Clarity Enhancement Challenge (CEC3) is about improving the performance of hearing aids for speech-in-noise. According to the World Health Organization, 430 million people worldwide require rehabilitation to address hearing loss. By 2050, this will increase to one in ten people having disabling hearing loss. Yet even in developed countries, only 40% of people who could benefit from hearing aids have them and use them enough. A major reason for low uptake is the perception that hearing aids perform poorly.
 
 ## Overview of challenge
 
@@ -22,6 +22,11 @@ The challenge provides participants with hearing aid input signals representing 
 The challenge is formed of three enhancement tasks that add realism to the fully simulated scenes used in the previous [2nd Clarity Enhancement Challenge](../cec2/cec2_intro). Participants are welcome to submit to one or more tasks. We are particularly interested in systems that handle all three cases with little or no redesign/retraining. Further details of the tasks are presented below.
 
 ### Task 1: Real ambisonic room impulse responses :fire::fire::fire:
+
+<figure id="fig1">
+<img width="400" src={useBaseUrl('/img/ICASSP2023/scenario.png')} />
+<figcaption>Fig 1. The scenario for tasks 1 and 2 is a listener with hearing loss and wearing hearing aids, listening to a talker in a domestic environment with common sources of unwanted sound.</figcaption>
+</figure>
 
 In the previous CEC1 and CEC2 challenges, hearing aid input signals were simulated using pre-recorded audio sources mixed with simulated room impulse responses. These simulated responses were then used to make training and evaluation data. In this first task, we are rerunning the CEC2 scenario, but with a new evaluation set that uses real impulse responses measured with an ambisonic microphone array in a real room. We are interested in how well systems that are trained on simulated data can generalise to this new evaluation set.
 
@@ -33,11 +38,11 @@ In all previous Clarity challenges, hearing aid input signals are simulated usin
 
 <Button variant="outlined" href="./task_2/cec3_task2_overview">Task 2 Details...</Button>
 
-### 🔜 Task 3: Real dynamic backgrounds (launching 1st May)
+### Task 3: Real dynamic backgrounds :fire::fire::fire:
 
 <figure id="fig2">
 <img width="400" src={useBaseUrl('/img/CEC3/task3_railway_scenario_CEC3_smaller.png')} />
-<figcaption>Fig 1. Task 3 is a scenario with dynamic background noise, including recordings at a railway station (with trains!).</figcaption>
+<figcaption>Fig 2. Task 3 is a scenario with dynamic background noise, including recordings at a railway station (with trains!).</figcaption>
 </figure>
 
 In all previous Clarity challenges, the interfering signals have been static and carefully controlled. In this task, we will use naturally occurring, dynamic noise backgrounds. We are collecting a dataset of 64-channel ambisonic audio recordings from settings that hearing-impaired listeners find challenging. These include train stations, roadsides and large social gatherings (i.e., the 'cocktail party' scenario). Using these recordings and measured impulse responses, we will create a dataset of hearing aid input signals feature target sentences in dynamic background noise.

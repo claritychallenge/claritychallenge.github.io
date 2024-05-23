@@ -19,7 +19,7 @@ The first of these can be replaced by your own enhancement system, while the oth
 
 The `enhance.py` script performs the baseline enhancement. The baseline simply takes the 6-channel hearing aid inputs and reduces this to a stereo hearing aid output by passing through the 'front' microphone signal of the left and right ear.
 
-The stereo pair is then passed through a hearing aid amplification stage using a NAL-R [1] fitting amplification and a simple automatic gain compressor. The amplification is determined by the audiograms defined by the scene-listener pairs in clarity_data/metadata/scenes_listeners.dev.json for the development set. After amplification, the evaluate function calculates the better-ear HASPI [2].
+The stereo pair is then passed through a hearing aid amplification stage using a NAL-R \[[1](#refs)\] fitting amplification and a simple automatic gain compressor. The amplification is determined by the audiograms defined by the scene-listener pairs in clarity_data/metadata/scenes_listeners.dev.json for the development set. After amplification, the evaluate function calculates the better-ear HASPI \[[2](#refs)\].
 
 ### Evaluation
 
@@ -48,3 +48,10 @@ SNR
 ```
 
 The mean HASPI score (0.186) is the metric that will be used for ranking. The table shows the mean HASPI score for each SNR range to help you understand the performance of your system.
+
+## References
+
+<a name="refs"></a>
+
+1. Byrne, Denis, and Harvey Dillon. "The National Acoustic Laboratories'(NAL) new procedure for selecting the gain and frequency response of a hearing aid." Ear and hearing 7.4 (1986): 257-265.
+2. Kates, J.M. and Arehart, K.H., 2021. The hearing-aid speech perception index (HASPI) version 2. Speech Communication, 131, pp.35-46.
