@@ -22,6 +22,7 @@
 </ul>
 <p>Participants are welcome to submit to one or more tasks. We are particularly interested in systems that handle all three cases with little or no redesign/retraining.</p>
 <p>The website has been fully updated to provide you with all the information you will need to participate. The necessary data and software are available for download.</p>
+<!-- -->
 <p>The schedule for the challenge is as follows:</p>
 <ul>
 <li><strong>2nd April 2024</strong>: Launch of <a href="https://claritychallenge.github.io/docs/cec3/task_1/cec3_task1_overview">Task 1</a> and <a href="https://claritychallenge.github.io/docs/cec3/task_2/cec3_task2_overview">Task 2</a> with training and development data; initial tools.</li>
@@ -35,6 +36,7 @@
 <p>If you have any questions please do not hesitate to contact us at <a href="mailto:claritychallengecontact@gmail.com" target="_blank" rel="noopener noreferrer">claritychallengecontact@gmail.com</a>. If you wish to be kept informed, please sign up to our <a href="https://groups.google.com/g/clarity-challenge" target="_blank" rel="noopener noreferrer">Google group</a>. If you are considering participating, please complete the registration form on the <a href="https://claritychallenge.github.io/docs/cec3/taking_part/cec3_registration">registration page</a>. Registration is free and carries no obligation to participate, but will help us to keep you informed of any changes to the challenge.</p>]]></content>
         <author>
             <name>Jon Barker</name>
+            <email>clarity-group@sheffield.ac.uk</email>
             <uri>http://staffwww.dcs.shef.ac.uk/people/J.Barker/</uri>
         </author>
         <category label="clarity" term="clarity"/>
@@ -53,9 +55,11 @@
 <p>For details on how to prepare your submission <a href="https://claritychallenge.org/docs/cpc2/taking_part/cpc2_submission" target="_blank" rel="noopener noreferrer">please see the instructions on the website</a>.</p>
 <p>If you have any questions please feel free to post them on this forum.</p>
 <p>The submission window will close on the 31st of July.</p>
-<p>Good luck!</p>]]></content>
+<p>Good luck!</p>
+]]></content>
         <author>
             <name>Jon Barker</name>
+            <email>clarity-group@sheffield.ac.uk</email>
             <uri>http://staffwww.dcs.shef.ac.uk/people/J.Barker/</uri>
         </author>
         <category label="clarity" term="clarity"/>
@@ -79,6 +83,7 @@
 <li>5th August 2023 - Registration closes</li>
 <li>19th August - Workshop / Clarity Challenge results announced</li>
 </ul>
+<!-- -->
 <p><strong>About</strong></p>
 <p>One of the biggest challenges for hearing-impaired listeners is understanding speech in the presence of background noise. Everyday social noise levels can have a devastating impact on speech intelligibility. The inability to communicate effectively can lead to social withdrawal and isolation. Disabling hearing impairment affects 360 million people worldwide, with that number increasing because of the ageing population. Unfortunately, current hearing aid technology is often ineffective in noisy situations. Although amplification can restore audibility, it does not compensate fully for the effects of hearing loss.</p>
 <p>The Clarity workshops are designed to stimulate a two-way conversation between the speech research community and hearing aid developers. Hearing aid developers, who are not typically represented at Interspeech, will have an opportunity to present the challenges of their industry to the speech community; the speech community will be able to present and discuss potentially transformative approaches to speech in noise processing in the presence of hearing researchers and industry experts.</p>
@@ -117,6 +122,7 @@
 <p><strong>Supported by</strong> RNID (formerly Action on Hearing Loss), Hearing Industry Research Consortium, Amazon TTS Research</p>]]></content>
         <author>
             <name>Jon Barker</name>
+            <email>clarity-group@sheffield.ac.uk</email>
             <uri>http://staffwww.dcs.shef.ac.uk/people/J.Barker/</uri>
         </author>
         <category label="clarity" term="clarity"/>
@@ -134,9 +140,10 @@
 <p>Last year we ran the <a href="https://claritychallenge.org/docs/cpc1/cpc1_intro" target="_blank" rel="noopener noreferrer">CPC1 Challenge</a> to develop such models. The challenge was presented at an online workshop and a special session of Interspeech 2022. We are now running the 2nd round of this challenge (CPC2), which builds on the first by using more complex signals and a larger set of listening test data for training and evaluating the prediction systems.</p>
 <p>The outputs of the new challenge will be presented at an <a href="https://claritychallenge.org/clarity2023-workshop/" target="_blank" rel="noopener noreferrer">ISCA workshop</a> that is being run as a satellite event to Interspeech 2023 in Dublin on 19th August 2023.</p>
 <p>Full details can be found on the Challenge Website.</p>
-<h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="register-now-to-take-part">Register now to take part<a class="hash-link" aria-label="Direct link to Register now to take part" title="Direct link to Register now to take part" href="https://claritychallenge.github.io/blog/Announcing%20CPC2#register-now-to-take-part">​</a></h3>
+<!-- -->
+<h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="register-now-to-take-part">Register now to take part<a href="https://claritychallenge.github.io/blog/Announcing%20CPC2#register-now-to-take-part" class="hash-link" aria-label="Direct link to Register now to take part" title="Direct link to Register now to take part">​</a></h3>
 <p>If you are interested in participating please register now via the <a href="https://claritychallenge.org/docs/cpc2/taking_part/cpc2_registration" target="_blank" rel="noopener noreferrer">online registration form</a>.</p>
-<h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="important-dates">Important Dates<a class="hash-link" aria-label="Direct link to Important Dates" title="Direct link to Important Dates" href="https://claritychallenge.github.io/blog/Announcing%20CPC2#important-dates">​</a></h3>
+<h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="important-dates">Important Dates<a href="https://claritychallenge.github.io/blog/Announcing%20CPC2#important-dates" class="hash-link" aria-label="Direct link to Important Dates" title="Direct link to Important Dates">​</a></h3>
 <ul>
 <li>March - Launch of challenge, release of training data + baseline system.</li>
 <li>1st July - Release of evaluation data and opening of submission window.</li>
@@ -144,7 +151,7 @@
 <li>19th August - ISCA Clarity 2023 workshop @ Interspeech</li>
 <li>19th September - Deadline for submission of finalised Workshop papers</li>
 </ul>
-<h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="what-will-be-provided">What will be provided<a class="hash-link" aria-label="Direct link to What will be provided" title="Direct link to What will be provided" href="https://claritychallenge.github.io/blog/Announcing%20CPC2#what-will-be-provided">​</a></h3>
+<h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="what-will-be-provided">What will be provided<a href="https://claritychallenge.github.io/blog/Announcing%20CPC2#what-will-be-provided" class="hash-link" aria-label="Direct link to What will be provided" title="Direct link to What will be provided">​</a></h3>
 <ul>
 <li>Audio produced by a variety of (simulated) hearing aids for speech-in-noise;</li>
 <li>The corresponding clean reference signals (the original speech);</li>
@@ -152,14 +159,16 @@
 <li>The measured speech intelligibility scores from listening tests, where hearing-impaired listeners were asked to say what they heard after listening to the hearing aid processed signals.</li>
 <li>Software tools including a baseline system based on HASPI scores.</li>
 </ul>
-<h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="for-further-information">For further information<a class="hash-link" aria-label="Direct link to For further information" title="Direct link to For further information" href="https://claritychallenge.github.io/blog/Announcing%20CPC2#for-further-information">​</a></h3>
+<h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="for-further-information">For further information<a href="https://claritychallenge.github.io/blog/Announcing%20CPC2#for-further-information" class="hash-link" aria-label="Direct link to For further information" title="Direct link to For further information">​</a></h3>
 <p>To be kept up to date please join our <a href="https://groups.google.com/g/clarity-challenge" target="_blank" rel="noopener noreferrer">Clarity Challenge Google group</a>. If you have questions, please contact us directly using the contact details found <a href="https://claritychallenge.org/contact" target="_blank" rel="noopener noreferrer">here</a>.</p>]]></content>
         <author>
             <name>Jon Barker</name>
+            <email>clarity-group@sheffield.ac.uk</email>
             <uri>http://staffwww.dcs.shef.ac.uk/people/J.Barker/</uri>
         </author>
         <author>
             <name>Trevor Cox</name>
+            <email>clarity-group@sheffield.ac.uk</email>
             <uri>http://trevorcox.me/trevor-cox</uri>
         </author>
         <category label="clarity" term="clarity"/>
@@ -186,13 +195,16 @@
 <li><strong>14th Feb 2023</strong>: Results released. Top 5 ranked teams invited to submit papers to ICASSP-2023</li>
 <li><strong>20th Feb 2023</strong>: Invited papers submitted to ICASSP-2023</li>
 <li><strong>4-9th June 2023</strong>: Overview paper and invited papers presented at dedicated ICASSP session</li>
-</ul>]]></content>
+</ul>
+]]></content>
         <author>
             <name>Jon Barker</name>
+            <email>clarity-group@sheffield.ac.uk</email>
             <uri>http://staffwww.dcs.shef.ac.uk/people/J.Barker/</uri>
         </author>
         <author>
             <name>Trevor Cox</name>
+            <email>clarity-group@sheffield.ac.uk</email>
             <uri>http://trevorcox.me/trevor-cox</uri>
         </author>
         <category label="clarity" term="clarity"/>
@@ -218,9 +230,11 @@
 <li><strong>4-9th</strong> June 2023: Overview paper and invited papers presented at dedicated ICASSP session</li>
 </ul>
 <p>The challenge training, dev data and initial tools are now fully from the <a href="https://github.com/claritychallenge/clarity" target="_blank" rel="noopener noreferrer">Github repository</a>.</p>
-<p>If you have any questions please do not hesitate to contact us at <a href="mailto:claritychallengecontact@gmail.com" target="_blank" rel="noopener noreferrer">claritychallengecontact@gmail.com</a>.</p>]]></content>
+<p>If you have any questions please do not hesitate to contact us at <a href="mailto:claritychallengecontact@gmail.com" target="_blank" rel="noopener noreferrer">claritychallengecontact@gmail.com</a>.</p>
+]]></content>
         <author>
             <name>Will Bailey</name>
+            <email>clarity-group@sheffield.ac.uk</email>
             <uri>https://www.sheffield.ac.uk/dcs/people/research-staff/will-bailey</uri>
         </author>
         <category label="clarity" term="clarity"/>
@@ -236,9 +250,11 @@
         <content type="html"><![CDATA[<p>The 1st Clarity Prediction Challenge is now complete. Thank you to all who took part!</p>
 <p>The full results can be found on the <a href="https://claritychallenge.org/clarity2022-workshop/">Clarity-2022 workshop website</a> where you will also find links to system papers and the overview presentation.</p>
 <p>Many of the systems have led to successful Interspeech 2022 papers and will be contributing to the Interspeech 2022 special session on <a href="https://claritychallenge.org/interspeech2022_siphil/">Speech Intelligibility Prediction for Hearing-Impaired Listeners</a>. We hope to see many of you in Korea!</p>
-<p>In the meantime, please be sure to check out the onging <a href="https://claritychallenge.org/docs/cec2/cec2_intro">2nd Clarity Enhancement Challenge</a>. The deadline for submitting enhanced signals is 1st September 2022, so there is still time to participate. To register a team please use the form <a href="https://claritychallenge.org/docs/cec2/taking_part/cec2_registration">here</a>.</p>]]></content>
+<p>In the meantime, please be sure to check out the onging <a href="https://claritychallenge.org/docs/cec2/cec2_intro">2nd Clarity Enhancement Challenge</a>. The deadline for submitting enhanced signals is 1st September 2022, so there is still time to participate. To register a team please use the form <a href="https://claritychallenge.org/docs/cec2/taking_part/cec2_registration">here</a>.</p>
+]]></content>
         <author>
             <name>Jon Barker</name>
+            <email>clarity-group@sheffield.ac.uk</email>
             <uri>http://staffwww.dcs.shef.ac.uk/people/J.Barker/</uri>
         </author>
         <category label="clarity" term="clarity"/>
@@ -262,9 +278,11 @@
 <li><strong>2nd Dec 2022</strong>:  Results announced at a Clarity Challenge Workshop; prizes awarded.</li>
 </ul>
 <p>The challenge training, dev data and initial tools are now fully from the <a href="https://github.com/claritychallenge/clarity" target="_blank" rel="noopener noreferrer">Github repository</a>.</p>
-<p>If you have any questions please do not hesitate to contact us at <a href="mailto:claritychallengecontact@gmail.com" target="_blank" rel="noopener noreferrer">claritychallengecontact@gmail.com</a>.</p>]]></content>
+<p>If you have any questions please do not hesitate to contact us at <a href="mailto:claritychallengecontact@gmail.com" target="_blank" rel="noopener noreferrer">claritychallengecontact@gmail.com</a>.</p>
+]]></content>
         <author>
             <name>Jon Barker</name>
+            <email>clarity-group@sheffield.ac.uk</email>
             <uri>http://staffwww.dcs.shef.ac.uk/people/J.Barker/</uri>
         </author>
         <category label="clarity" term="clarity"/>
@@ -283,9 +301,11 @@
 <p>HASPI scores for the dev set have been measured. The scores are as follows.</p>
 <table><thead><tr><th>System</th><th>HASPI</th></tr></thead><tbody><tr><td>Unprocessed</td><td>0.1615</td></tr><tr><td>NAL-R baseline</td><td>0.2493</td></tr></tbody></table>
 <p>See <a href="https://claritychallenge.github.io/docs/cec2/software/cec2_baseline">here</a> for further details.</p>
-<p>If you have any problems using the baseline code please do not hesitate to contact us at <a href="mailto:claritychallengecontact@gmail.com" target="_blank" rel="noopener noreferrer">claritychallengecontact@gmail.com</a>, or post questions on the <a href="https://groups.google.com/g/clarity-challenge" target="_blank" rel="noopener noreferrer">Google group</a>.</p>]]></content>
+<p>If you have any problems using the baseline code please do not hesitate to contact us at <a href="mailto:claritychallengecontact@gmail.com" target="_blank" rel="noopener noreferrer">claritychallengecontact@gmail.com</a>, or post questions on the <a href="https://groups.google.com/g/clarity-challenge" target="_blank" rel="noopener noreferrer">Google group</a>.</p>
+]]></content>
         <author>
             <name>Jon Barker</name>
+            <email>clarity-group@sheffield.ac.uk</email>
             <uri>http://staffwww.dcs.shef.ac.uk/people/J.Barker/</uri>
         </author>
         <category label="clarity" term="clarity"/>
@@ -313,9 +333,11 @@
 <li><strong>2nd Dec 2022</strong>:  Results announced at a Clarity Challenge Workshop; prizes awarded.</li>
 </ul>
 <p>The challenge training, dev data and initial tools will be available from 13th April. In the meantime, please visit the <a href="https://claritychallenge.github.io/docs/cec2/cec2_intro">CEC2 Intro page</a> to learn more about the task.</p>
-<p>If you have any questions please do not hesitate to contact us at <a href="mailto:claritychallengecontact@gmail.com" target="_blank" rel="noopener noreferrer">claritychallengecontact@gmail.com</a>.</p>]]></content>
+<p>If you have any questions please do not hesitate to contact us at <a href="mailto:claritychallengecontact@gmail.com" target="_blank" rel="noopener noreferrer">claritychallengecontact@gmail.com</a>.</p>
+]]></content>
         <author>
             <name>Jon Barker</name>
+            <email>clarity-group@sheffield.ac.uk</email>
             <uri>http://staffwww.dcs.shef.ac.uk/people/J.Barker/</uri>
         </author>
         <category label="clarity" term="clarity"/>
@@ -331,10 +353,11 @@
         <content type="html"><![CDATA[<p>The Clarity team are hosting two live sessions this month related to the Prediction Challenge. Everyone is welcome to attend, whether or not you have registered to participate in the challenge or are still considering signing up.</p>
 <p><strong>The presentations will be very similar to the webinar in November.</strong> These events are intended as a chance for people in different time zones to attend live and ask the team questions.</p>
 <p>Hosting is via Microsoft Teams. You can join from your browser without needing to install Teams, but if you join from a mobile device you may need to install the Teams app.</p>
-<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="webinar---challenge-overview">Webinar - Challenge Overview<a class="hash-link" aria-label="Direct link to Webinar - Challenge Overview" title="Direct link to Webinar - Challenge Overview" href="https://claritychallenge.github.io/blog/Jan-2-live-events#webinar---challenge-overview">​</a></h2>
-<h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="friday-14th-january">Friday 14th January<a class="hash-link" aria-label="Direct link to Friday 14th January" title="Direct link to Friday 14th January" href="https://claritychallenge.github.io/blog/Jan-2-live-events#friday-14th-january">​</a></h3>
+<!-- -->
+<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="webinar---challenge-overview">Webinar - Challenge Overview<a href="https://claritychallenge.github.io/blog/Jan-2-live-events#webinar---challenge-overview" class="hash-link" aria-label="Direct link to Webinar - Challenge Overview" title="Direct link to Webinar - Challenge Overview">​</a></h2>
+<h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="friday-14th-january">Friday 14th January<a href="https://claritychallenge.github.io/blog/Jan-2-live-events#friday-14th-january" class="hash-link" aria-label="Direct link to Friday 14th January" title="Direct link to Friday 14th January">​</a></h3>
 <p><strong>9:00 GMT | 17:00 CST (GMT+8)</strong></p>
-<h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="click-here-to-join-the-webinar"><a href="https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZjFhNjJhMzYtOWEyMC00NjNiLThjOTEtYTIwMTk2YTczZGRh%40thread.v2/0?context=%7b%22Tid%22%3a%2265b52940-f4b6-41bd-833d-3033ecbcf6e1%22%2c%22Oid%22%3a%223f282402-9a2d-4e68-b2d4-3c1f86585a45%22%7d" target="_blank" rel="noopener noreferrer">Click here to join the webinar</a><a class="hash-link" aria-label="Direct link to click-here-to-join-the-webinar" title="Direct link to click-here-to-join-the-webinar" href="https://claritychallenge.github.io/blog/Jan-2-live-events#click-here-to-join-the-webinar">​</a></h3>
+<h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="click-here-to-join-the-webinar"><a href="https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZjFhNjJhMzYtOWEyMC00NjNiLThjOTEtYTIwMTk2YTczZGRh%40thread.v2/0?context=%7b%22Tid%22%3a%2265b52940-f4b6-41bd-833d-3033ecbcf6e1%22%2c%22Oid%22%3a%223f282402-9a2d-4e68-b2d4-3c1f86585a45%22%7d" target="_blank" rel="noopener noreferrer">Click here to join the webinar</a><a href="https://claritychallenge.github.io/blog/Jan-2-live-events#click-here-to-join-the-webinar" class="hash-link" aria-label="Direct link to click-here-to-join-the-webinar" title="Direct link to click-here-to-join-the-webinar">​</a></h3>
 <p>An introduction to the aims of the challenge and some background to the problem of speech intelligibility prediction for hearing aids:</p>
 <ul>
 <li>Welcome, introduction to Clarity.</li>
@@ -345,14 +368,15 @@
 </ul>
 <p>The presentations will be recorded and made available online shortly after the event. The Q&amp;A discussion will not be recorded.</p>
 <p>You are welcome to join slightly later if you are only interested in joining for the Q&amp;A section (presentations should finish around 9:40 GMT).</p>
-<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="live-qa-session">Live Q&amp;A session<a class="hash-link" aria-label="Direct link to Live Q&amp;A session" title="Direct link to Live Q&amp;A session" href="https://claritychallenge.github.io/blog/Jan-2-live-events#live-qa-session">​</a></h2>
-<h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="monday-17th-january">Monday 17th January<a class="hash-link" aria-label="Direct link to Monday 17th January" title="Direct link to Monday 17th January" href="https://claritychallenge.github.io/blog/Jan-2-live-events#monday-17th-january">​</a></h3>
+<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="live-qa-session">Live Q&amp;A session<a href="https://claritychallenge.github.io/blog/Jan-2-live-events#live-qa-session" class="hash-link" aria-label="Direct link to Live Q&amp;A session" title="Direct link to Live Q&amp;A session">​</a></h2>
+<h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="monday-17th-january">Monday 17th January<a href="https://claritychallenge.github.io/blog/Jan-2-live-events#monday-17th-january" class="hash-link" aria-label="Direct link to Monday 17th January" title="Direct link to Monday 17th January">​</a></h3>
 <p><strong>17:00 GMT | 12:00 EST (GMT-5) | 9:00 PST (GMT-8)</strong></p>
-<h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="click-here-to-join-the-qa"><a href="https://teams.microsoft.com/l/meetup-join/19%3ameeting_YTJhOGRmZGMtMjRiZS00MGY0LTliNjctZmZhMzhmNDI5M2I0%40thread.v2/0?context=%7b%22Tid%22%3a%2265b52940-f4b6-41bd-833d-3033ecbcf6e1%22%2c%22Oid%22%3a%223f282402-9a2d-4e68-b2d4-3c1f86585a45%22%7d" target="_blank" rel="noopener noreferrer">Click here to join the Q&amp;A</a><a class="hash-link" aria-label="Direct link to click-here-to-join-the-qa" title="Direct link to click-here-to-join-the-qa" href="https://claritychallenge.github.io/blog/Jan-2-live-events#click-here-to-join-the-qa">​</a></h3>
+<h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="click-here-to-join-the-qa"><a href="https://teams.microsoft.com/l/meetup-join/19%3ameeting_YTJhOGRmZGMtMjRiZS00MGY0LTliNjctZmZhMzhmNDI5M2I0%40thread.v2/0?context=%7b%22Tid%22%3a%2265b52940-f4b6-41bd-833d-3033ecbcf6e1%22%2c%22Oid%22%3a%223f282402-9a2d-4e68-b2d4-3c1f86585a45%22%7d" target="_blank" rel="noopener noreferrer">Click here to join the Q&amp;A</a><a href="https://claritychallenge.github.io/blog/Jan-2-live-events#click-here-to-join-the-qa" class="hash-link" aria-label="Direct link to click-here-to-join-the-qa" title="Direct link to click-here-to-join-the-qa">​</a></h3>
 <p>A chance to ask the team questions about the Clarity Prediction Challenge - for anyone that could not attend the webinar on Friday 14th due to time zone differences.</p>
 <p><strong>Please note there will be no presentations in this session.</strong> The talks from Friday’s webinar will be uploaded to the <a href="https://www.youtube.com/channel/UCIc8FCHUA3Il9PUPt-sW1qw/videos" target="_blank" rel="noopener noreferrer">Clarity project YouTube channel</a> later in the day so you are invited to watch those before joining this live Q&amp;A.</p>]]></content>
         <author>
             <name>Lara Harris</name>
+            <email>clarity-group@sheffield.ac.uk</email>
             <uri>https://acoustictesting.salford.ac.uk/</uri>
         </author>
         <category label="clarity" term="clarity"/>
@@ -372,9 +396,11 @@
 <p><a href="https://drive.google.com/file/d/1rScmDEUrtjBHG14VhWrKQu66-PiesU85/view?usp=sharing" target="_blank" rel="noopener noreferrer">2 Speech Intelligibility Models</a></p>
 <p><a href="https://drive.google.com/file/d/1CQptm9sSIC8o2qHf_mtzQstLVhBnBzM_/view?usp=sharing" target="_blank" rel="noopener noreferrer">3 Hearing Impariment and SI Prediction</a></p>
 <p><a href="https://drive.google.com/file/d/1BVeqMbygIWyiIo61HEMjwjyEALxHipzP/view?usp=sharing" target="_blank" rel="noopener noreferrer">4 Clarity Prediction Challenge Details</a></p>
-<p>Note that we did not record the Q&amp;A session at the end, but if you have questions about taking part in the challenge you can contact us at <a href="mailto:claritychallengecontact@gmail.com" target="_blank" rel="noopener noreferrer">claritychallengecontact@gmail.com</a></p>]]></content>
+<p>Note that we did not record the Q&amp;A session at the end, but if you have questions about taking part in the challenge you can contact us at <a href="mailto:claritychallengecontact@gmail.com" target="_blank" rel="noopener noreferrer">claritychallengecontact@gmail.com</a></p>
+]]></content>
         <author>
             <name>Lara Harris</name>
+            <email>clarity-group@sheffield.ac.uk</email>
             <uri>https://acoustictesting.salford.ac.uk/</uri>
         </author>
         <category label="clarity" term="clarity"/>
@@ -387,9 +413,11 @@
         <link href="https://claritychallenge.github.io/blog/welcome to CPC1"/>
         <updated>2021-07-08T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Welcome to the new Clarity CPC1 site for the first prediction challenge launching in autumn 2021. Feel free to look around. At the moment we're still doing listening tests and preparing the data, so the download links don't work. If anything is unclear or you've got questions, please contact us through the Google group.]]></summary>
-        <content type="html"><![CDATA[<p>Welcome to the new Clarity CPC1 site for the first prediction challenge launching in autumn 2021. Feel free to look around. At the moment we're still doing listening tests and preparing the data, so the download links don't work. If anything is unclear or you've got questions, please contact us through the Google group.</p>]]></content>
+        <content type="html"><![CDATA[<p>Welcome to the new Clarity CPC1 site for the first prediction challenge launching in autumn 2021. Feel free to look around. At the moment we're still doing listening tests and preparing the data, so the download links don't work. If anything is unclear or you've got questions, please contact us through the Google group.</p>
+]]></content>
         <author>
             <name>Trevor Cox</name>
+            <email>clarity-group@sheffield.ac.uk</email>
             <uri>http://trevorcox.me/trevor-cox</uri>
         </author>
         <category label="clarity" term="clarity"/>
@@ -406,9 +434,11 @@
 <p>Please remember to submit your finalised system descriptions by June 22nd to the Clarity workshop following the <a href="https://claritychallenge.github.io/clarity2021-workshop/submissions.html" target="_blank" rel="noopener noreferrer">instructions provided on the workshop website</a>.</p>
 <p>We are currently busy evaluating the submissions using the MBSTOI metric. We will be contacting teams on the 22nd with details of how to prepare signals for the listening panel evaluation.</p>
 <p><strong>If you have been working on the challenge but missed the submission deadline</strong> then <a href="mailto:claritychallengecontact@gmail.com" target="_blank" rel="noopener noreferrer">please do get in contact</a>. We will still be happy to receive your signals and system descriptions. Although late entries will not be eligible for the official challenge ranking, we will be happy to compute the eval set MBSTOI score for you and may even be able to arrange listening test evaluation through our panel.</p>
-<p>For any questions please contact us at <a href="mailto:claritychallengecontact@gmail.com" target="_blank" rel="noopener noreferrer">claritychallengecontact@gmail.com </a> or by posting to the <a href="https://groups.google.com/g/clarity-challenge?pli=1" target="_blank" rel="noopener noreferrer">Clarity challenge google group</a>.</p>]]></content>
+<p>For any questions please contact us at <a href="mailto:claritychallengecontact@gmail.com" target="_blank" rel="noopener noreferrer">claritychallengecontact@gmail.com</a> or by posting to the <a href="https://groups.google.com/g/clarity-challenge?pli=1" target="_blank" rel="noopener noreferrer">Clarity challenge google group</a>.</p>
+]]></content>
         <author>
             <name>Jon Barker</name>
+            <email>clarity-group@sheffield.ac.uk</email>
             <uri>http://staffwww.dcs.shef.ac.uk/people/J.Barker/</uri>
         </author>
         <category label="clarity" term="clarity"/>
@@ -429,9 +459,11 @@
 <p>i) a technical document of up to 2 pages describing the system/model and any external data and pre-existing tools, software and models used. This should be prepared as a Clarity-2021 workshop abstract and <a href="https://claritychallenge.github.io/clarity2021-workshop/" target="_blank" rel="noopener noreferrer">submitted to the workshop</a>.</p>
 <p>ii) the set of processed signals that we will evaluate using the MBSTOI metric. Details of how to name and package your signals for upload can be found on the <a href="https://claritychallenge.github.io/docs/cec1/taking_part/cec1_submission">How To Submit</a> page.</p>
 <p><strong>Listening Tests:</strong> Teams that do well in the MBSTOI evaluation will be notified on <strong>22nd June</strong> and invited to submit further signals for the second stage Listening Test evaluation.</p>
-<p>For any questions please contact us at <a href="mailto:claritychallengecontact@gmail.com" target="_blank" rel="noopener noreferrer">claritychallengecontact@gmail.com</a> or by posting to the <a href="https://groups.google.com/g/clarity-challenge?pli=1" target="_blank" rel="noopener noreferrer">Clarity challenge google group</a>.</p>]]></content>
+<p>For any questions please contact us at <a href="mailto:claritychallengecontact@gmail.com" target="_blank" rel="noopener noreferrer">claritychallengecontact@gmail.com</a> or by posting to the <a href="https://groups.google.com/g/clarity-challenge?pli=1" target="_blank" rel="noopener noreferrer">Clarity challenge google group</a>.</p>
+]]></content>
         <author>
             <name>Jon Barker</name>
+            <email>clarity-group@sheffield.ac.uk</email>
             <uri>http://staffwww.dcs.shef.ac.uk/people/J.Barker/</uri>
         </author>
         <category label="clarity" term="clarity"/>
@@ -444,23 +476,23 @@
         <link href="https://claritychallenge.github.io/blog/baseline"/>
         <updated>2021-04-22T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Some comments on signal alignment and level-insensitivity]]></summary>
-        <content type="html"><![CDATA[<h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="some-comments-on-signal-alignment-and-level-insensitivity">Some comments on signal alignment and level-insensitivity<a class="hash-link" aria-label="Direct link to Some comments on signal alignment and level-insensitivity" title="Direct link to Some comments on signal alignment and level-insensitivity" href="https://claritychallenge.github.io/blog/baseline#some-comments-on-signal-alignment-and-level-insensitivity">​</a></h3>
+        <content type="html"><![CDATA[<h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="some-comments-on-signal-alignment-and-level-insensitivity">Some comments on signal alignment and level-insensitivity<a href="https://claritychallenge.github.io/blog/baseline#some-comments-on-signal-alignment-and-level-insensitivity" class="hash-link" aria-label="Direct link to Some comments on signal alignment and level-insensitivity" title="Direct link to Some comments on signal alignment and level-insensitivity">​</a></h3>
 <p>Our baseline binaural speech intelligibility measure in round one is the Modified Binaural Short-Time Objective Intelligibility measure, or MBSTOI. This short post outlines the importance of correcting for delays that your hearing aid processing algorithm introduces into the audio signals to allow MBSTOI to estimate the speech intelligibility accurately. It also discusses the importance of considering the audibility of signals before evaluation with MBSTOI.</p>
-<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="evaluation">Evaluation<a class="hash-link" aria-label="Direct link to Evaluation" title="Direct link to Evaluation" href="https://claritychallenge.github.io/blog/baseline#evaluation">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="evaluation">Evaluation<a href="https://claritychallenge.github.io/blog/baseline#evaluation" class="hash-link" aria-label="Direct link to Evaluation" title="Direct link to Evaluation">​</a></h2>
 <p>In stage one, entries will be ranked according to the average MBSTOI score across all samples in the evaluation test set. In the second stage, entries will be evaluated by the listening panel. There will be prizes for both stages. See this <a href="https://claritychallenge.github.io/clarity_CEC1_doc/docs/cec1_rules" target="_blank" rel="noopener noreferrer">page</a> for more information.</p>
 <!-- -->
-<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="signal-alignment-in-time-and-frequency">Signal alignment in time and frequency<a class="hash-link" aria-label="Direct link to Signal alignment in time and frequency" title="Direct link to Signal alignment in time and frequency" href="https://claritychallenge.github.io/blog/baseline#signal-alignment-in-time-and-frequency">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="signal-alignment-in-time-and-frequency">Signal alignment in time and frequency<a href="https://claritychallenge.github.io/blog/baseline#signal-alignment-in-time-and-frequency" class="hash-link" aria-label="Direct link to Signal alignment in time and frequency" title="Direct link to Signal alignment in time and frequency">​</a></h2>
 <p>If the signal processed by the hearing aid introduces a significant delay, you should correct for this delay before submitting your entry. This is necessary because MBSTOI requires alignment of the clean speech “reference” with the processed signal in time and frequency. This needs to be done for both ear signals.</p>
 <p>MBSTOI downsamples signals to 10 kHz, uses a Discrete Fourier Transform to decompose the signal into one-third octave bands, and performs envelope extraction and short-time segmentation into 386 ms regions. Each region consists of 30 frames. These approaches are motivated by what is know about which frequencies and modulation frequencies are most important for intelligibility. For each frequency band and frame (over the region of which it is the last frame), an intermediate correlation coefficient is calculated between the clean reference and processed power envelopes for each ear. These are averaged to obtain the MBSTOI index. Thus is usually between 0 and 1, and rises monotonically with measured intelligibility scores, such that higher values indicate greater speech intelligibility. Alignment is therefore required at the level of the one-third octave bands and short-time regions.</p>
 <p>Our baseline corrects for broadband delay per ear due to the hearing loss model. (The delay is measured by running a kronnecker delta function through the model for each ear.) However, the baseline software will not correct for delays created by your hearing aid processing.</p>
 <p>Consequently, when submitting your hearing aid output signals, you are responsible for correcting for any delays introduced by your hearing aid. Note that this must be done blindly; the clean reference signals will not be supplied for the test/evaluation set.</p>
-<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="level-insensitivity">Level insensitivity<a class="hash-link" aria-label="Direct link to Level insensitivity" title="Direct link to Level insensitivity" href="https://claritychallenge.github.io/blog/baseline#level-insensitivity">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="level-insensitivity">Level insensitivity<a href="https://claritychallenge.github.io/blog/baseline#level-insensitivity" class="hash-link" aria-label="Direct link to Level insensitivity" title="Direct link to Level insensitivity">​</a></h2>
 <p>MBSTOI is level-independent, i.e., MBSTOI is broadly insensitive to the level of the processed signal because it is calculated using a cross-correlation method. This could be a problem because sounds that are below the auditory thresholds of the hearing impaired listener may appear to MBSTOI to be highly intelligible.</p>
 <p>To overcome this, the baseline experimental code mbstoi_beta, in conjunction with the baseline hearing loss model, can be used to approximate hearing-impaired auditory thresholds. Specifically, mbstoi_beta adds internal noise that can be used to approximate normal hearing auditory thresholds. This noise, in combination with the attenuation of signals by the hearing loss model to simulate raised auditory thresholds, makes MBSTOI level-sensitive.</p>
 <p>The noise is created by filtering white noise using pure tone threshold filter coefficients with one-third octave weighting, approximating the shape of a typical auditory filter (from Moore 2012, based on Patterson’s method, 1976). This noise is added to the processed signal. Note, the standard MBSTOI in the equalisation-cancellation stage adds internal noise to parameters, but this is an independent process.</p>
-<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="mbstoi">MBSTOI<a class="hash-link" aria-label="Direct link to MBSTOI" title="Direct link to MBSTOI" href="https://claritychallenge.github.io/blog/baseline#mbstoi">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="mbstoi">MBSTOI<a href="https://claritychallenge.github.io/blog/baseline#mbstoi" class="hash-link" aria-label="Direct link to MBSTOI" title="Direct link to MBSTOI">​</a></h2>
 <p>The method was developed by Asger Heidemann Andersen, Jan Mark de Haan, Zheng-Hua Tan and Jesper Jensen (Andersen et al., 2018). It builds on the Short-Time Objective Intelligibility (STOI) metric created by Cees H. Taal, Richard C. Hendriks, Richard Heusdens, and Jesper Jensen (Taal et al., 2011). MBSTOI includes a better ear stage and an equalisation-cancellation stage. For simplicity, the latter stage is not discussed here; see Andersen et al. (2018) for details.</p>
-<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="references">References<a class="hash-link" aria-label="Direct link to References" title="Direct link to References" href="https://claritychallenge.github.io/blog/baseline#references">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="references">References<a href="https://claritychallenge.github.io/blog/baseline#references" class="hash-link" aria-label="Direct link to References" title="Direct link to References">​</a></h2>
 <ul>
 <li>Andersen, A. H., de Haan, J. M., Tan, Z. H., &amp; Jensen, J. (2018). Refinement and validation of the binaural short time objective intelligibility measure for spatially diverse conditions. <em>Speech Communication</em>, 102, 1-13.</li>
 <li>Moore, B. C. (2012). <em>An introduction to the psychology of hearing</em>. Brill.</li>
@@ -469,6 +501,7 @@
 </ul>]]></content>
         <author>
             <name>Simone Graetzer</name>
+            <email>clarity-group@sheffield.ac.uk</email>
             <uri>https://www.salford.ac.uk/our-staff/simone-graetzer</uri>
         </author>
         <category label="audibility" term="audibility"/>
@@ -484,7 +517,7 @@
         <updated>2021-03-05T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[An explanation of the time and computational limits for the first round of the enhancement challenge.]]></summary>
         <content type="html"><![CDATA[<p>An explanation of the time and computational limits for the first round of the enhancement challenge.</p>
-<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="the-1st-clarity-enhancement-challenge">The 1st Clarity Enhancement Challenge<a class="hash-link" aria-label="Direct link to The 1st Clarity Enhancement Challenge" title="Direct link to The 1st Clarity Enhancement Challenge" href="https://claritychallenge.github.io/blog/Latency,%20computation%20time%20and%20real-time%20operation#the-1st-clarity-enhancement-challenge">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="the-1st-clarity-enhancement-challenge">The 1st Clarity Enhancement Challenge<a href="https://claritychallenge.github.io/blog/Latency,%20computation%20time%20and%20real-time%20operation#the-1st-clarity-enhancement-challenge" class="hash-link" aria-label="Direct link to The 1st Clarity Enhancement Challenge" title="Direct link to The 1st Clarity Enhancement Challenge">​</a></h2>
 <p>For a hearing aid to work well for users, the processing needs to be quick. The output of the hearing aid should be produced with a delay of less than about 10 ms. Many audio processing techniques are non-causal, i.e., the output of the system depends on samples from the future. Such processing is useless for hearing aids and therefore our rules include a restriction on the use of future samples.</p>
 <p>The rules state the following:</p>
 <ul>
@@ -507,14 +540,15 @@
 <p><img decoding="async" loading="lazy" alt="latency diagram" src="https://claritychallenge.github.io/assets/images/latency_diagram-1-528b50363f33be2b84c6ffd17de1df2f.png" width="573" height="296" class="img_ev3q"></p>
 <p>Figure. Example of how the limit of 5 ms is applied to a hearing aid input and output signal.
 We have a chosen a limit of 5 ms because in a real hearing aid there will be other sources of delay (e.g., analogue-to-digital, digital-to-analogue conversion).</p>
-<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="why-is-there-no-limitation-of-how-long-f-takes-to-compute">Why is there no limitation of how long f() takes to compute?<a class="hash-link" aria-label="Direct link to Why is there no limitation of how long f() takes to compute?" title="Direct link to Why is there no limitation of how long f() takes to compute?" href="https://claritychallenge.github.io/blog/Latency,%20computation%20time%20and%20real-time%20operation#why-is-there-no-limitation-of-how-long-f-takes-to-compute">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="why-is-there-no-limitation-of-how-long-f-takes-to-compute">Why is there no limitation of how long f() takes to compute?<a href="https://claritychallenge.github.io/blog/Latency,%20computation%20time%20and%20real-time%20operation#why-is-there-no-limitation-of-how-long-f-takes-to-compute" class="hash-link" aria-label="Direct link to Why is there no limitation of how long f() takes to compute?" title="Direct link to Why is there no limitation of how long f() takes to compute?">​</a></h2>
 <p>We’re trying to foster new approaches to hearing aid processing and decided that at this stage we will drive more innovation if we don’t restrict computation time for round one. Such restrictions will be considered in future rounds.</p>
-<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="why-havent-you-talked-about-latency">Why haven’t you talked about latency?<a class="hash-link" aria-label="Direct link to Why haven’t you talked about latency?" title="Direct link to Why haven’t you talked about latency?" href="https://claritychallenge.github.io/blog/Latency,%20computation%20time%20and%20real-time%20operation#why-havent-you-talked-about-latency">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="why-havent-you-talked-about-latency">Why haven’t you talked about latency?<a href="https://claritychallenge.github.io/blog/Latency,%20computation%20time%20and%20real-time%20operation#why-havent-you-talked-about-latency" class="hash-link" aria-label="Direct link to Why haven’t you talked about latency?" title="Direct link to Why haven’t you talked about latency?">​</a></h2>
 <p>In discussions, it is apparent that this term is used in different ways by different people, so to avoid confusion we’re not using it!</p>
-<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="do-algorithms-have-to-be-real-time">Do algorithms have to be real-time?<a class="hash-link" aria-label="Direct link to Do algorithms have to be real-time?" title="Direct link to Do algorithms have to be real-time?" href="https://claritychallenge.github.io/blog/Latency,%20computation%20time%20and%20real-time%20operation#do-algorithms-have-to-be-real-time">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="do-algorithms-have-to-be-real-time">Do algorithms have to be real-time?<a href="https://claritychallenge.github.io/blog/Latency,%20computation%20time%20and%20real-time%20operation#do-algorithms-have-to-be-real-time" class="hash-link" aria-label="Direct link to Do algorithms have to be real-time?" title="Direct link to Do algorithms have to be real-time?">​</a></h2>
 <p>The above limitations mean that the algorithms could in theory be made real-time if a powerful enough computer was available, but your entry can take as long as it needs to process the signals.</p>]]></content>
         <author>
             <name>Trevor Cox</name>
+            <email>clarity-group@sheffield.ac.uk</email>
             <uri>http://trevorcox.me/trevor-cox</uri>
         </author>
         <category label="challenge" term="challenge"/>
@@ -534,11 +568,11 @@ We have a chosen a limit of 5 ms because in a real hearing aid there will be oth
 <p>The series of challenges will consider increasingly complex listening scenarios. The first round, launching in January 2021, will focus on speech in indoor environments in the presence of a single interferer. It will begin with a challenge involving improving hearing aid processing. Future challenges on how to model speech-in-noise perception will be launched at a later date.</p>
 <p><img decoding="async" loading="lazy" alt="Person using tablet" src="https://claritychallenge.github.io/assets/images/UoN_HS-08207-1536x1024-6d25ed2333ce62f5847f0c031a89d19e.jpeg" width="1536" height="1024" class="img_ev3q"></p>
 <!-- -->
-<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="the-task">The Task<a class="hash-link" aria-label="Direct link to The Task" title="Direct link to The Task" href="https://claritychallenge.github.io/blog/Clarity%20Challenge%20pre-announcement#the-task">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="the-task">The Task<a href="https://claritychallenge.github.io/blog/Clarity%20Challenge%20pre-announcement#the-task" class="hash-link" aria-label="Direct link to The Task" title="Direct link to The Task">​</a></h2>
 <p>You will be provided with simulated scenes, each including a target speaker and interfering noise. For each scene, there will be signals that simulate those captured by a behind-the-ear hearing aid with three channels at each ear and those captured at the eardrum without a hearing aid present.  The target speech will be a short sentence and the interfering noise will be either speech or domestic appliance noise.</p>
 <p>The task will be to deliver a hearing aid signal processing algorithm that can improve the intelligibility of the target speaker for a specified hearing-impaired listener. Initially, entries will be evaluated using an objective speech intelligibility measure we will provide. Subsequently, up to twenty of the most promising systems will be evaluated by a panel of listeners.</p>
 <p>We will provide a baseline system so that teams can choose to focus on individual components or to develop their own complete pipelines.</p>
-<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="what-will-be-provided">What will be provided<a class="hash-link" aria-label="Direct link to What will be provided" title="Direct link to What will be provided" href="https://claritychallenge.github.io/blog/Clarity%20Challenge%20pre-announcement#what-will-be-provided">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="what-will-be-provided">What will be provided<a href="https://claritychallenge.github.io/blog/Clarity%20Challenge%20pre-announcement#what-will-be-provided" class="hash-link" aria-label="Direct link to What will be provided" title="Direct link to What will be provided">​</a></h2>
 <ul>
 <li>Evaluation of the best entries by a panel of hearing-impaired listeners.</li>
 <li>Speech + interferer scenes for training and evaluation.</li>
@@ -546,7 +580,7 @@ We have a chosen a limit of 5 ms because in a real hearing aid there will be oth
 <li>Listener characterisations including audiograms and speech-in-noise testing.</li>
 <li>Software including tools for generating training data, a baseline hearing aid algorithm, a baseline model of hearing impairment, and a binaural objective intelligibility measure.</li>
 </ul>
-<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="important-dates">Important Dates<a class="hash-link" aria-label="Direct link to Important Dates" title="Direct link to Important Dates" href="https://claritychallenge.github.io/blog/Clarity%20Challenge%20pre-announcement#important-dates">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="important-dates">Important Dates<a href="https://claritychallenge.github.io/blog/Clarity%20Challenge%20pre-announcement#important-dates" class="hash-link" aria-label="Direct link to Important Dates" title="Direct link to Important Dates">​</a></h2>
 <ul>
 <li>January 2021 – Challenge launch and release of software and data</li>
 <li>April 2021 –  Evaluation data released</li>
@@ -555,10 +589,10 @@ We have a chosen a limit of 5 ms because in a real hearing aid there will be oth
 <li>September 2021 – Results announced at a Clarity Challenge Workshop in conjunction with Interspeech 2021</li>
 </ul>
 <p>Challenge and workshop participants will be invited to contribute to a journal Special Issue on the topic of Machine Learning for Hearing Aid Processing that will be announced next year.</p>
-<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="further-information">Further information<a class="hash-link" aria-label="Direct link to Further information" title="Direct link to Further information" href="https://claritychallenge.github.io/blog/Clarity%20Challenge%20pre-announcement#further-information">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="further-information">Further information<a href="https://claritychallenge.github.io/blog/Clarity%20Challenge%20pre-announcement#further-information" class="hash-link" aria-label="Direct link to Further information" title="Direct link to Further information">​</a></h2>
 <p>If you are interested in participating and wish to receive further information, please sign up.</p>
 <p>If you have questions, contact us directly at <a href="mailto:contact@claritychallenge.org" target="_blank" rel="noopener noreferrer">contact@claritychallenge.org</a></p>
-<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="organisers">Organisers<a class="hash-link" aria-label="Direct link to Organisers" title="Direct link to Organisers" href="https://claritychallenge.github.io/blog/Clarity%20Challenge%20pre-announcement#organisers">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="organisers">Organisers<a href="https://claritychallenge.github.io/blog/Clarity%20Challenge%20pre-announcement#organisers" class="hash-link" aria-label="Direct link to Organisers" title="Direct link to Organisers">​</a></h2>
 <ul>
 <li>Prof. Jon P. Barker, Department of Computer Science, University of Sheffield</li>
 <li>Prof. Michael A. Akeroyd, Hearing Sciences, School of Medicine, University of Nottingham</li>
@@ -571,10 +605,11 @@ We have a chosen a limit of 5 ms because in a real hearing aid there will be oth
 </ul>
 <p>Funded by the Engineering and Physical Sciences Research Council (EPSRC), UK.</p>
 <p>Supported by RNID (formerly Action on Hearing Loss), Hearing Industry Research Consortium, Amazon TTS Research, Honda Research Institute Europe.</p>
-<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="acknowledgement">Acknowledgement<a class="hash-link" aria-label="Direct link to Acknowledgement" title="Direct link to Acknowledgement" href="https://claritychallenge.github.io/blog/Clarity%20Challenge%20pre-announcement#acknowledgement">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="acknowledgement">Acknowledgement<a href="https://claritychallenge.github.io/blog/Clarity%20Challenge%20pre-announcement#acknowledgement" class="hash-link" aria-label="Direct link to Acknowledgement" title="Direct link to Acknowledgement">​</a></h2>
 <p>The image copyright is owned by the University of Nottingham.</p>]]></content>
         <author>
             <name>Trevor Cox</name>
+            <email>clarity-group@sheffield.ac.uk</email>
             <uri>http://trevorcox.me/trevor-cox</uri>
         </author>
         <category label="CEC1" term="CEC1"/>
@@ -598,7 +633,7 @@ We have a chosen a limit of 5 ms because in a real hearing aid there will be oth
 <p>This DNN prediction model could be trained first using knowledge distillation (<a href="http://usir.salford.ac.uk/id/eprint/56234/" target="_blank" rel="noopener noreferrer">this is something I’ve previous done for a speech intelligibility model</a>), and then the weights frozen while the Enhancement Model is trained. But there is a ‘chicken and egg’ problem here. The difficulty is generating all the training data for the prediction model. Until you train the enhancement model, you won’t have a representative examples of “improved SPIN” to train the prediction model. But without the prediction model, you can’t train the enhancement model.</p>
 <p>One solution is to train the two DNNs in tandem, with an approach analogous to how pairs of networks are trained in a <a href="https://en.wikipedia.org/wiki/Generative_adversarial_network" target="_blank" rel="noopener noreferrer">Generative Adversarial Network</a> (GAN). iMetricGan developed by Li et al. [2] is an example of this being done for speech enhancement, although the authors weren’t trying to include hearing loss simulation. They aren’t the only ones looking at trying to solve problems where a non-differentiable or black-box evaluation function is in the way of DNN training [3][4].</p>
 <p>We hope our entrants will come up with lots of other ways of overcoming this problem. How would you tackle it?</p>
-<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="references">References<a class="hash-link" aria-label="Direct link to References" title="Direct link to References" href="https://claritychallenge.github.io/blog/One%20approach%20to%20our%20enhancement%20challenge#references">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="references">References<a href="https://claritychallenge.github.io/blog/One%20approach%20to%20our%20enhancement%20challenge#references" class="hash-link" aria-label="Direct link to References" title="Direct link to References">​</a></h2>
 <ul>
 <li>[1] Andersen, A.H., Haan, J.M.D., Tan, Z.H. and Jensen, J., 2015. A binaural short time objective intelligibility measure for noisy and enhanced speech. In the <em>Sixteenth Annual Conference of the International Speech Communication Association</em>.</li>
 <li>[2] Li, H., Fu, S.W., Tsao, Y. and Yamagishi, J., 2020. iMetricGAN: Intelligibility Enhancement for Speech-in-Noise using Generative Adversarial Network-based Metric Learning. <em>arXiv preprint arXiv:2004.00932</em>.</li>
@@ -607,6 +642,7 @@ We have a chosen a limit of 5 ms because in a real hearing aid there will be oth
 </ul>]]></content>
         <author>
             <name>Trevor Cox</name>
+            <email>clarity-group@sheffield.ac.uk</email>
             <uri>http://trevorcox.me/trevor-cox</uri>
         </author>
         <category label="DNN" term="DNN"/>
@@ -635,7 +671,7 @@ We have a chosen a limit of 5 ms because in a real hearing aid there will be oth
 </ul>
 <p>Binaural hearing aids communicate wirelessly and use noise reduction strategies that preserve these interaural time and level difference cues (e.g., Van den Bogaert et al., 2009). This allows the listener’s brain to better locate the speech and boost this compared to the noise.</p>
 <!-- -->
-<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="machine-learning">Machine learning<a class="hash-link" aria-label="Direct link to Machine learning" title="Direct link to Machine learning" href="https://claritychallenge.github.io/blog/The%20speech-in-noise%20problem%20part%20two#machine-learning">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="machine-learning">Machine learning<a href="https://claritychallenge.github.io/blog/The%20speech-in-noise%20problem%20part%20two#machine-learning" class="hash-link" aria-label="Direct link to Machine learning" title="Direct link to Machine learning">​</a></h2>
 <p>In recent years, there has been increasing interest in what <a href="https://en.wikipedia.org/wiki/Machine_learning" target="_blank" rel="noopener noreferrer">machine learning</a> methods can do for hearing aids. Machine learning is a branch of artificial intelligence where computers learn directly from example data. One machine learning method is the neural network. This is an algorithm formed from layers of simple computational units connected to each other in a way that is inspired by connections between neurons in the brain. Deep (3+ layer) neural networks are able to learn complex, non-linear mapping functions, which makes them ideal candidates for noise reduction tasks.</p>
 <p>We anticipate that machine learning can help tackle the challenge of speech in noise for hearing aids, providing a tailored solution for each individual and listening situation. For example, one thing machine learning could do is to sense the acoustic environment the listener is in, and choose the most suitable processing settings.</p>
 <p><img decoding="async" loading="lazy" alt="Electronic brain" src="https://claritychallenge.github.io/assets/images/neural_brain-3ca5f7dc07936baef02ded512c775008.jpeg" width="400" height="320" class="img_ev3q"></p>
@@ -644,21 +680,23 @@ We have a chosen a limit of 5 ms because in a real hearing aid there will be oth
 <p>Machine learning systems for noise reduction are trained on artificially mixed speech and noise. Some operate on a single channel, i.e., using spectral cues, and some work with multiple channels using spatial cues. We expect that future hearing aids built on machine learning will perform best if they combine the left and right microphones to work binaurally.</p>
 <p>Most of these noise reduction systems have been designed and evaluated in an off-line mode where they process pre-recorded signals. This isn’t much use for hearing aids that need to work in real-time with low latency (i.e., short delays). One challenge for hearing aids is to redesign off-line approaches to work quickly enough without too much loss of performance.</p>
 <p>The potential for machine learning to produce better approaches to hearing aid processing is what motivated the Clarity Project. If you’re interested in hearing more as the challenges develop, please sign up.</p>
-<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="references">References<a class="hash-link" aria-label="Direct link to References" title="Direct link to References" href="https://claritychallenge.github.io/blog/The%20speech-in-noise%20problem%20part%20two#references">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="references">References<a href="https://claritychallenge.github.io/blog/The%20speech-in-noise%20problem%20part%20two#references" class="hash-link" aria-label="Direct link to References" title="Direct link to References">​</a></h2>
 <ul>
 <li>Brons, I., Houben, R., and Dreschler, W. A. (2014). Effects of noise reduction on speech intelligibility, perceived listening effort, and personal preference in hearing-impaired listeners. <em>Trends in hearing</em>, 18, 1-10.</li>
 <li>Van den Bogaert, T., Doclo, S., Wouters, J., and Moonen, M. (2009). Speech enhancement with multichannel Wiener filter techniques in multimicrophone binaural hearing aids. <em>The Journal of the Acoustical Society of America</em>, 125(1), 360-371.</li>
 <li>Zhao, Y., Wang, D., Johnson, E. M., and Healy, E. W. (2018). A deep learning based segregation algorithm to increase speech intelligibility for hearing-impaired listeners in reverberant-noisy conditions. <em>The Journal of the Acoustical Society of America</em>, 144(3), 1627-1637.</li>
 </ul>
-<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="credits">Credits<a class="hash-link" aria-label="Direct link to Credits" title="Direct link to Credits" href="https://claritychallenge.github.io/blog/The%20speech-in-noise%20problem%20part%20two#credits">​</a></h2>
+<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="credits">Credits<a href="https://claritychallenge.github.io/blog/The%20speech-in-noise%20problem%20part%20two#credits" class="hash-link" aria-label="Direct link to Credits" title="Direct link to Credits">​</a></h2>
 <p>Photograph of hearing aid wearer, copyright University of Nottingham.</p>
 <p>Image of brain with overlaid circuity made available by <a href="https://www.vpnsrus.com/" target="_blank" rel="noopener noreferrer">www.vpnsrus.com</a>.</p>]]></content>
         <author>
             <name>Simone Graetzer</name>
+            <email>clarity-group@sheffield.ac.uk</email>
             <uri>https://www.salford.ac.uk/our-staff/simone-graetzer</uri>
         </author>
         <author>
             <name>Trevor Cox</name>
+            <email>clarity-group@sheffield.ac.uk</email>
             <uri>http://trevorcox.me/trevor-cox</uri>
         </author>
         <category label="machine learning" term="machine learning"/>
