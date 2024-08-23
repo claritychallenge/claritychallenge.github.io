@@ -67,7 +67,19 @@ export default function Home() {
                  <Box sx={{ p: 0, marginRight: 10, marginTop: 8, marginLeft: 10, marginBottom: -4 }}>
 
  <Admonition type="info">
-     <center>   <h1>🔥🔥 <a href="/docs/cec3/cec3_intro"> The 3rd Clarity Enhancement Challenge is now Live</a> 🔥🔥 </h1> </center>
+                        <center>   <h1>🔥🔥  The 3rd Clarity Enhancement Challenge is now Live 🔥🔥 </h1> <h2>New submission deadline 9th September.</h2>
+                        <div className={styles.buttons}>
+
+                        <Link
+            className="button button--primary button--lg styles.buttons"
+                                to="./docs/cec3/taking_part/cec3_registration"
+            style={{ margin: "10px", textDecoration: "none"  }}
+          >
+            Register now!
+                                </Link>
+                                </div>
+
+                        </center>
                     </Admonition>
                 </Box>
                 
