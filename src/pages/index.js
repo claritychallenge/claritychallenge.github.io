@@ -65,8 +65,8 @@ export default function Home() {
                 </div>
                 
                  <Box sx={{ p: 0, marginRight: 10, marginTop: 8, marginLeft: 10, marginBottom: -4 }}>
-
- <Admonition type="info">
+                    {/*
+   <Admonition type="info">
                         <center>   <h1>🔥🔥  The 3rd Clarity Enhancement Challenge is now Live 🔥🔥 </h1> <h2>New submission deadline 9th September.</h2>
                         <div className={styles.buttons}>
 
@@ -80,7 +80,8 @@ export default function Home() {
                                 </div>
 
                         </center>
-                    </Admonition>
+                    </Admonition> 
+*/}
                 </Box>
                 
           <Box sx={{ p: 10}}>
