@@ -66,6 +66,14 @@ module.exports = {
         require.resolve('docusaurus-plugin-image-zoom')
     ],
     themeConfig: {
+        announcementBar: {
+            id: 'current_workshop',
+            content:
+                '<b>Clarity 2024 online workshop, 5th December.</b> <a href="https://claritychallenge.github.io/clarity2024-workshop/">Details are now available</a>',
+            backgroundColor: '#6ce56c',
+            textColor: '#070707',
+            isCloseable: true,
+        },
         prism: {
             additionalLanguages: ['json']
         },
