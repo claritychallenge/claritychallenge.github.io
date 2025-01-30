@@ -15,10 +15,10 @@
         "write-heading-ids": "docusaurus write-heading-ids"
     },
     "dependencies": {
-        "@docusaurus/core": "^3.5.2",
-        "@docusaurus/plugin-client-redirects": "^3.6",
-        "@docusaurus/preset-classic": "^3.6",
-        "@docusaurus/theme-mermaid": "^3.6",
+        "@docusaurus/core": "^3.7.0",
+        "@docusaurus/plugin-client-redirects": "^3.7.0",
+        "@docusaurus/preset-classic": "^3.7",
+        "@docusaurus/theme-mermaid": "^3.7",
         "@emotion/react": "^11.11.1",
         "@emotion/styled": "^11.11.0",
         "@mui/icons-material": "^5.14.15",
@@ -27,7 +27,7 @@
         "bibtex-parse-js": "^0.0.24",
         "chart.js": "^4.4.0",
         "citation-js": "^0.7.5",
-        "docusaurus-lunr-search": "^3.5.0",
+        "docusaurus-lunr-search": "^3.7.0",
         "docusaurus-plugin-image-zoom": "^2.0.0",
         "mdx-mermaid": "^2.0.0",
         "prism-react-renderer": "^2.1.0",
