@@ -67,9 +67,9 @@ module.exports = {
     ],
     themeConfig: {
         announcementBar: {
-            id: 'current_workshop',
+            id: 'pre-anouncement-cpc3',
             content:
-                '<b>Clarity 2024 online workshop, 5th December.</b> <a href="https://claritychallenge.github.io/clarity2024-workshop/">Details are now available</a>',
+                '🔥🔥  The 3rd Clarity Prediction Challenge is launching March 17th 🔥🔥 <a href="/docs/cpc3/cpc3_intro">Pre-launch announcement here</a>',
             backgroundColor: '#6ce56c',
             textColor: '#070707',
             isCloseable: true,
@@ -91,8 +91,8 @@ module.exports = {
                     position: 'left',
                     items: [{
                             type: 'doc',
-                            docId: 'cec3/cec3_intro',
-                            label: 'I want to learn more about the CEC3 challenge...',
+                            docId: 'cpc3/cpc3_intro',
+                            label: 'I want to learn more about the CPC3 challenge...',
                         },
                         {
                             type: 'doc',
@@ -101,7 +101,7 @@ module.exports = {
                         },
                         {
                             type: 'doc',
-                            docId: 'cec2/cec2_download',
+                            docId: 'cec2/cec2_results',
                             label: 'I want to see the results of CEC2 ...',
                         },
                        {
@@ -121,6 +121,10 @@ module.exports = {
                     label: 'Challenges',
                     position: 'right',
                     items: [{
+                        type: 'doc',
+                        docId: 'cpc3/cpc3_intro',
+                        label: 'CPC3',
+                        }, {
                             type: 'doc',
                             docId: 'cec3/cec3_intro',
                             label: 'CEC3',
@@ -225,6 +229,9 @@ module.exports = {
             links: [{
                     title: 'Docs',
                     items: [{
+                        label: 'CPC3 Documentation',
+                        to: '/docs/cpc3/cpc3_intro/',
+                    }, {
                         label: 'CEC3 Documentation',
                         to: '/docs/cec3/cec3_intro/',
                     }, {

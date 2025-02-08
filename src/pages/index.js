@@ -26,7 +26,7 @@ function HomepageHeader() {
           </Link>{" "}
           <Link
             className="button button--secondary button--lg"
-            to="./docs/cec3/cec3_intro"
+            to="./docs/cpc3/cpc3_intro"
             style={{ margin: "10px" }}
           >
             The Current Challenge{" "}

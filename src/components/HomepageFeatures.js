@@ -9,11 +9,11 @@ const FeatureList = [
     description: (
       <>
         This site provides{" "}
-        <a href="docs/icassp2023/icassp2023_intro"> full documentation </a> for all our
+        <a href="docs/cpc3/cpc3_intro"> full documentation </a> for all our
         challenges.{" "}
       </>
     ),
-    link: "docs/icassp2023/icassp2023_intro",
+    link: "docs/cpc3/cpc3_intro",
   },
   {
     title: "Code on Github",
