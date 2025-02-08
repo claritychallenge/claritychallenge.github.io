@@ -67,7 +67,7 @@ module.exports = {
     ],
     themeConfig: {
         announcementBar: {
-            id: 'pre-anouncement-cpc3',
+            id: 'pre-announcement-cpc3',
             content:
                 '🔥🔥  The 3rd Clarity Prediction Challenge is launching March 17th 🔥🔥 <a href="/docs/cpc3/cpc3_intro">Pre-launch announcement here</a>',
             backgroundColor: '#6ce56c',
@@ -160,6 +160,9 @@ module.exports = {
                     label: 'Workshops',
                     position: 'right',
                     items: [{
+                        href: 'https://claritychallenge.github.io/clarity2025-workshop/',
+                        label: 'Clarity 2025',
+                },{
                             href: 'https://claritychallenge.github.io/clarity2024-workshop/',
                             label: 'Clarity 2024',
                     },
