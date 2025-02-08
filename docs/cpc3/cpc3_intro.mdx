@@ -1,0 +1,126 @@
+---
+id: cpc3_intro
+title: The 3rd Clarity Prediction Challenge
+sidebar_label: CPC3 Introduction
+sidebar_position: 1
+---
+
+import Admonition from '@theme/Admonition';
+
+<Admonition type="info" title="Pre-announcement">
+  🔥🔥🔥 The 3rd Clarity Prediction Challenge is coming soon! Stay tuned for more details. 🔥🔥🔥
+</Admonition>
+
+To develop better hearing enhancement technologies, including hearing aids and hearable devices, we need reliable methods to automatically evaluate the speech intelligibility of audio signals. This requires a predictive model that takes as input both the audio produced by a hearing aid and listener characteristics (e.g., their [audiogram](https://www.hear-it.org/Audiogram-)) and estimates the speech intelligibility score that the listener would achieve in a listening test.
+
+In recent years, we have run the [CPC1 Challenge](../cpc1/cpc1_intro) and [CPC2 Challenge](../cpc2/cpc2_intro) to advance such models.. These challenges were presented at a special session of Interspeech 2022 and a satellite workshop at Interspeech 2023, respectively. We are now launching the third round of this challenge, which builds on previous efforts by incorporating a larger and more diverse set of listener data for training and evaluation.
+
+The results of the new challenge will be showcased at an  [ISCA workshop](https://claritychallenge.org/clarity2025-workshop/), a satellite event to Interspeech 2025 in Rotterdam on 22nd August 2025 (TBC).
+
+The challenge is set to launch on March 17th, and this site will provide participants with all the necessary resources to take part.
+
+### Short Description
+
+The task involves estimating the intelligibility of speech-in-noise signals that have been processed by hearing aid algorithms and presented to listeners with hearing loss. Each signal contains a short sentence that listeners were asked to repeat. Your system will need to predict how many words were correctly recognized by the listeners.
+
+Systems will be ranked based on their overall performance across a large evaluation set. Specifically, we will compute the RMSE between the predictions and the true values of the listener's percentage words correctness scores per sentence.
+
+The hearing aid signals being assessed vary widely in quality. Below, we provide examples of good, fair, and poor signals. Your prediction algorithm must be robust enough to handle this variation.
+
+<table>
+<tr>
+<th>Good</th>
+<th>Fair</th>
+<th>Poor</th>
+</tr>
+<tr>
+<td>
+<audio controls  style={{width: "250px"}} >
+<source src="/audio/CEC2_samples/CEC2_E009/S08501_L0104_HA-output.wav" type="audio/wav"/>
+Your browser does not support the audio element.
+</audio>
+</td>
+<td>
+<audio controls style={{width: "250px"}}>
+<source src="/audio/CEC2_samples/CEC2_E022/S08501_L0104_HA-output.wav" type="audio/wav" />
+Your browser does not support the audio element.
+</audio>
+</td>
+<td>
+<audio controls style={{width: "250px"}}>
+<source src="/audio/CEC2_samples/CEC2_E032/S08501_L0104_HA-output.wav" type="audio/wav" />
+Your browser does not support the audio element.
+</audio>
+</td>
+</tr>
+<tr>
+<td>
+<audio controls style={{width: "250px"}}>
+<source src="/audio/CEC2_samples/CEC2_E009/S08502_L0106_HA-output.wav" type="audio/wav" />
+Your browser does not support the audio element.
+</audio>
+</td>
+<td>
+<audio controls style={{width: "250px"}}>
+<source src="/audio/CEC2_samples/CEC2_E022/S08502_L0106_HA-output.wav" type="audio/wav" />
+Your browser does not support the audio element.
+</audio>
+</td>
+<td>
+<audio controls style={{width: "250px"}}>
+<source src="/audio/CEC2_samples/CEC2_E032/S08502_L0106_HA-output.wav" type="audio/wav" />
+Your browser does not support the audio element.
+</audio>
+</td>
+</tr></table>
+
+### The data
+
+You will be provided with a training dataset to develop your systems. This dataset includes:
+
+- Audio signals processed by a variety of (simulated) hearing aids for speech-in-noise;
+- The corresponding clean reference signals (the original speech);
+- A characterisation of each listener's hearing impairment, i.e., pure-tone audiograms;
+- Measured speech intelligibility scores from listening tests, where listeners repeated what they heard after hearing aid processing.
+
+Full details on the dataset and download instructions will be provided when the challenge is launched.
+
+### The task
+
+You will be provided with an evaluation set containing
+
+- Audio produced by a variety of (simulated) hearing aids for speech-in-noise;
+- The audiogram of a listener;
+- The clean reference signal (the original speech).
+
+Your task is to generate a score between 0.0 and 1.0, predicting the proportion of words in the reference signal that the listener would correctly repeat after hearing the processed signal.
+
+We will evaluate two types of systems: intrusive and non-intrusive.
+
+- Intrusive systems (also known as double-ended) require a clean speech reference.
+- Non-intrusive systems (also known as single-ended) rely solely on the hearing aid output.
+
+Each category will be ranked separately based on the Root Mean Squared Error (RMSE) between predicted and actual intelligibility scores.
+
+To help you get started, we provide a baseline system that uses the HASPI metric to predict speech intelligibility.
+
+The challenge will follow a similar format to our previous CPC1 and CPC2 challenges. Full details of the task will be available upon launch.
+
+### Registering and submitting
+
+Following the launch on March 17th, we will open registration for prospective entrants. Participants will have until 31st July to submit their entries, which will be evaluated remotely by the organizers. Full submission instructions will be provided at launch.
+
+### Prospective Schedule
+
+All dates are to be intended anywhere on earth time (AoE).
+
+- **17th March 2025**: Launch of challenge, release of data.
+- **1st July 2025**: Release of evaluation data and opening of submission window.
+- **31st July 2025**: Submission deadline. All entrants must have submitted their predictions plus a draft of their technical report.
+  - Scores will be returned to entrants within 24 hours of submission.
+- **22nd August 2025**: Clarity 2025 workshop, @Interspeech, Rotterdam (TBC)
+- **22nd September 2025**: Deadline for submission of finalised Workshop papers
+
+### Stay informed
+
+To stay informed please sign up to the [Clarity Challenge Google group](https://groups.google.com/g/clarity-challenge)
