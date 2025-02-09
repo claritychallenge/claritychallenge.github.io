@@ -11,6 +11,9 @@ module.exports = {
     tagline: 'Organising machine learning challenges for hearing aid processing',
     url: 'https://claritychallenge.github.io/',
     baseUrl: '/',
+    customFields: {
+        showTodo: process.env.SHOW_TODO === "true", // Use a persistent flag
+      },
     onBrokenLinks: 'warn',
     onBrokenMarkdownLinks: 'throw',
     favicon: 'img/favicon.ico',

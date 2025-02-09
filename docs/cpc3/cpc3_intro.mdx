@@ -1,15 +1,9 @@
 ---
 id: cpc3_intro
-title: The 3rd Clarity Prediction Challenge
-sidebar_label: CPC3 Introduction
+title: The 2nd Clarity Prediction Challenge
+sidebar_label: CPC2 Introduction
 sidebar_position: 1
 ---
-
-import Admonition from '@theme/Admonition';
-
-<Admonition type="info" title="Pre-announcement">
-  🔥🔥🔥 The 3rd Clarity Prediction Challenge is coming soon! Stay tuned for more details. 🔥🔥🔥
-</Admonition>
 
 To develop better hearing enhancement technologies, including hearing aids and hearable devices, we need reliable methods to automatically evaluate the speech intelligibility of audio signals. This requires a predictive model that takes as input both the audio produced by a hearing aid and listener characteristics (e.g., their [audiogram](https://www.hear-it.org/Audiogram-)) and estimates the speech intelligibility score that the listener would achieve in a listening test.
 
@@ -82,8 +76,7 @@ You will be provided with a training dataset to develop your systems. This datas
 - The corresponding clean reference signals (the original speech);
 - A characterisation of each listener's hearing impairment, i.e., pure-tone audiograms;
 - Measured speech intelligibility scores from listening tests, where listeners repeated what they heard after hearing aid processing.
-
-Full details on the dataset and download instructions will be provided when the challenge is launched.
+For full details of the data see the [Data](./cpc3_data) page.
 
 ### The task
 
@@ -93,34 +86,17 @@ You will be provided with an evaluation set containing
 - The audiogram of a listener;
 - The clean reference signal (the original speech).
 
-Your task is to generate a score between 0.0 and 1.0, predicting the proportion of words in the reference signal that the listener would correctly repeat after hearing the processed signal.
-
-We will evaluate two types of systems: intrusive and non-intrusive.
+YWe will evaluate two types of systems: intrusive and non-intrusive.
 
 - Intrusive systems (also known as double-ended) require a clean speech reference.
 - Non-intrusive systems (also known as single-ended) rely solely on the hearing aid output.
 
 Each category will be ranked separately based on the Root Mean Squared Error (RMSE) between predicted and actual intelligibility scores.
 
-To help you get started, we provide a baseline system that uses the HASPI metric to predict speech intelligibility.
+To help you get started, we provide a baseline system that uses the HASPI metric to predict speech intelligibility. Details of this system are available on the [Baseline](./cpc3_baseline) page.
 
-The challenge will follow a similar format to our previous CPC1 and CPC2 challenges. Full details of the task will be available upon launch.
+For full details of the task see the [rules](./taking_part/cpc3_rules) page.
 
 ### Registering and submitting
 
-Following the launch on March 17th, we will open registration for prospective entrants. Participants will have until 31st July to submit their entries, which will be evaluated remotely by the organizers. Full submission instructions will be provided at launch.
-
-### Prospective Schedule
-
-All dates are to be intended anywhere on earth time (AoE).
-
-- **17th March 2025**: Launch of challenge, release of data.
-- **1st July 2025**: Release of evaluation data and opening of submission window.
-- **31st July 2025**: Submission deadline. All entrants must have submitted their predictions plus a draft of their technical report.
-  - Scores will be returned to entrants within 24 hours of submission.
-- **22nd August 2025**: Clarity 2025 workshop, @Interspeech, Rotterdam (TBC)
-- **22nd September 2025**: Deadline for submission of finalised Workshop papers
-
-### Stay informed
-
-To stay informed please sign up to the [Clarity Challenge Google group](https://groups.google.com/g/clarity-challenge)
+To take part in the challenge you will need to [register your team](./taking_part/cpc3_registration) and [download the data](./cpc3_download). Entrants will have until 31st July to complete their submissions. Full instructions for submission are available on the [Submission](./taking_part/cpc3_submission) page.
