@@ -1,169 +1,108 @@
 ---
-id: cpc3_data
-title: Data Specification
-sidebar_label: Data Specification
-sidebar_position: 3
+id: cpc3_data  
+title: Data Specification  
+sidebar_label: Data Specification  
+sidebar_position: 3  
 ---
 
-import TodoBanner from '@site/src/components/TodoBanner';
+The CPC3 data is derived from the first three Clarity Enhancement Challenges (CEC1, CEC2, and CEC3). The processed signals represent the outputs of the systems submitted by participants, and listener responses were collected during the evaluation of these systems.
 
-<TodoBanner>
-- Update the data directory structure
-</TodoBanner>
-
-The data for CPC3 is derived from 1st, 2nd and 3rd Clarity Enhancement challenges (CEC1, CEC2 and CEC3), i.e. the processed signals are the outputs of systems submitted by participants, and the listener responses were collected when evaluating these systems.
-
-:::info
-To obtain the data, please visit the [download page](./cpc3_download).
+:::info  
+To obtain the data, please visit the [download page](./cpc3_download).  
 :::
 
-The data is distributed as a single gzipped tarball, `clarity_CPC3_data.v1_0.tgz` which will unpack into the following directory structure:
+The data is distributed as a single gzipped tarball, `clarity_CPC3_data.v1_0.tar.gz`, which unpacks into the following directory structure:
 
 ```bash
 clarity_CPC3_data
 ├── clarity_data
-│   ├── HA_outputs   
-│   │   ├── signals
-│   │   │   ├── CEC1
-│   │   │   └── CEC2
-│   │   ├── train.1
-│   │   │   ├── CEC1   # Hearing aid signals for training partition 1
-│   │   │   └── CEC2   # Hearing aid signals for training partition 1
-│   │   ├── train.2
-│   │   │   ├── CEC1   # Hearing aid signals for training partition 2
-│   │   │   └── CEC2   # Hearing aid signals for training partition 2
-│   │   └── train.3 
-│   │       ├── CEC1   # Hearing aid signals for training partition 3
-│   │       └── CEC2   # Hearing aid signals for training partition 3
-│   ├── metadata    # Metadata for the signals and listener responses
-│   └── scenes
-│       ├── CEC1    # Contains target reference signals 
-│       └── CEC2    # Contains target reference signals
-└── manifest   
+│   ├── metadata  # Metadata including listener responses and listener characteristics
+│   └── train
+│       ├── references  # References for intrusive intelligibility prediction
+│       └── signals     # Hearing aid output signals
+└── manifest
 ```
 
-### Overview
+## Overview
 
-<TodoBanner>
-- ALL THE BELOW NEEDS UPDATING ONCE THE DESIGN IS FINALISED
-</TodoBanner>
+The training data comprises signals and their corresponding listener responses, which can be utilized to train a prediction model.
 
-The training data essentially consists of signals and corresponding listener responses that you can use to train a prediction model.
+It is important to note that some signals and responses originate from CEC1, while others come from CEC2. CEC1 focused on simple scenes with a single interferer, whereas CEC2 involved multiple interferers. The development and evaluation data will use systems and scenes from CEC3.
 
-To maximise the value of the data we have imposed a cross-validation evaluation design: The training data has been split into three partitions, `train.1`, `train.2` and `train.3` which are paired with three disjoint evaluation partitions `eval.1`, `eval.2` and `eval.3` which will be released. You are asked to train three versions of your final system, i.e., one for each training data subset. This will ensure that we can evaluate your system on unseen listeners and hearing aid systems.
+## Hearing Aid Output Signals
 
-Note, some signals and responses come from CEC1 and some from CEC2. CEC1 used simple scenes with a single interferer; CEC2 had multiple interferers. The evaluation data will only use CEC2 scenes.
+The output signals from the hearing aid are located in the `clarity_data/HA_output` directory. These signals are characterized by the input signal presented to the hearing aid (referred to as the 'scene'), the algorithm utilized by the hearing aid (known as the 'system'), and the listener for whom the algorithm has been tailored (called the 'listener').
 
-## The hearing aid output signals
-
-The hearing aid output signals are stored under `clarity_data/HA_output` and separated into three separate directories, `train.1`, `train.2` and `train.3`. Each of these directories contains two subdirectories, `CEC1` and `CEC2`, which contain the hearing aid output signals from the CEC1 and CEC2 datasets respectively.
-
-The signals are stored in 16-bit stereo WAV format, with a sampling rate of 32 kHz. The signals are named according to the following convention:
+The signals are stored in 16-bit stereo WAV format with a sampling rate of 32 kHz. They are named according to the following convention:
 
 ```bash
-<SCENE_ID>_<LISTENER_ID>_<SYSTEM_ID>.wav  # e.g.,  S09463_L0242_E009.wav
+<CEC>_<SYSTEM_ID>_<SCENE_ID>_<LISTENER_ID>.wav  # Example: CEC1_E010_S09673_L0217.wav
 ```
 
-Where `<SCENE_ID>` is the scene identifier, `<LISTENER_ID>` is the listener identifier and `<SYSTEM_ID>` is the hearing aid system identifier.
+Where `<CEC>` is the Clarity Enhancement Challenge identifier (either CEC1 or CEC2), `<SYSTEM_ID>` is the hearing aid system identifier, `<SCENE_ID>` is the scene identifier, and `<LISTENER_ID>` is the listener identifier.
 
-## The scene reference signals
+## Reference Signals
 
-The target reference signals and hearing aid **input** signals are stored under `clarity_data/scenes` and separated into two separate directories, `CEC1` and `CEC2`, which contain the target reference signals from the CEC1 and CEC2 datasets respectively. (Note, data for the three training set partitions is stored in the same directory.)
+Reference signals are provided for use in intrusive intelligibility prediction tasks. They represent the non-reverberant version of the target speech signals. These signals have been aligned and energy-scaled to match the target component of the signal received by the hearing aid. Note that they may be slightly misaligned with the hearing aid output signals due to the processing performed by the hearing aid, and intrusive models should be robust to this.
 
-There are a set of stereo audio files for each scene, as follows:
+The reference signals are stored in the `clarity_data/references` directory and are named as follows:
 
 ```bash
-<SCENE_ID>_target_ref.wav  # The target reference signal for the intrusiveness intelligibility prediction task
-
-<SCENE_ID>_target_anechoic.wav  # The anechoic speech target signal
-<SCENE_ID>_target_<CHANNEL>.wav   # The target speech signal for the scene
-<SCENE_ID>_interferer_<CHANNEL>.wav  # The interfering noise for the scene
-<SCENE_ID>_mixed_<CHANNEL>.wav  # The mixed target and interfering noise.
+<CEC_ID>_<SCENE_ID>_ref.wav  
 ```
 
-where `<SCENE_ID>` is the scene identifier and `<CHANNEL>` can be either `CH0`, `CH1`, `CH2` or `CH3`. The channels `CH1`, `CH2` and `CH3` are the front, middle and rear hearing aid microphones respectively (each is stereo pair). `CH0` is the `eardrum signal`, i.e., as would be received by the listener's ear canal.
+Where `<CEC_ID>` is the Clarity Enhancement Challenge identifier (either CEC1 or CEC2), and `<SCENE_ID>` is the scene identifier.
 
-Of these signals, the following is the most important:
+It is important to note that there is a many-to-one mapping of hearing aid outputs to reference signals. The reference signal `<CEC_ID>_<SCENE_ID>_ref.wav` serves as the correct reference for all hearing aid outputs generated from the scene `<SCENE_ID>` in the Clarity Enhancement Challenge `<CEC_ID>`.
 
-- `<SCENE_ID>_target_ref.wav`
-    This is the signal that should be used as **the reference for your intrusive intelligibility prediction model**. Note, this is the only signal that will be available in the evaluation data. It is a non-reverberant version of the target signal aligned with the target component of the mixed signal received by the hearing aid. It has been scaled to have the same energy as the target component of the mixed signal received by the hearing aid.
+## Metadata
 
-The remaining hearing aid input signals are provided for completeness
+The metadata directory (`clarity_data/metadata`) contains the listener responses to the signals as well as listener characteristics.
 
-- `<SCENE_ID>_mixed_<CHANNEL>.wav` The noisy speech signals that were received by the hearing aid, i.e. the signals that were processed to produce the HA output signals.
-- `<SCENE_ID>_target_<CHANNEL>.wav` The target speech component of the mixed signals that were received by the hearing aid.
-- `<SCENE_ID>_interferer_<CHANNEL>.wav` The interfering noise component of the mixed signals that were received by the hearing aid.
-- `<SCENE_ID>_target_anechoic.wav` The anechoic target speech signal (i.e., same as the target reference signal but without the correct scaling).
+You will find the following files:
 
-It is not anticipated that you will necessarily need these signals for training prediction models but they have been included to help participants gain a better understanding of the data.
-
-## The metadata
-
-The metadata directory (`clarity_data/metadata`) stores the listener responses to the signals, the listener characteristics and metadata related to each of the scenes (e.g., interferer types, input SNR, etc.).
-
-You will find the following `JSON` format files,
-
-```text
-CEC1.train.1.json, CEC2.train.1.json
-CEC1.train.2.json, CEC2.train.2.json
-CEC1.train.3.json, CEC2.train.3.json
-listeners.json
-scenes.CEC1.json, scenes.CEC2.json
+```bash
+CPC3.train.json,  # The listener responses
+listeners.csv     # The listener characteristics
 ```
 
-The contents of these files are as follows.
+### Listening Test Responses
 
-### The listener responses (`CECx.train.x.json`)
+The `CPC3.train.json` file contains a list of dictionaries, where each entry describes a listener's response to a signal. The fields are as follows:
 
-The `CEC1.train.x.json` and `CEC2.train.x.json` files contains a list of dictionaries, each describing a listener response to a signal. The fields are as follows:
-
-```json title="CEC<x>.train.<y>.json"
+```json title="CPC3.train.json"
  [
-   {
-      "prompt": "i don't want us to apportion blame she said",
-      "scene": "S08547",
-      "n_words": 9,
-      "hits": 4,
-      "listener": "L0239",
-      "system": "E001",
-      "correctness": 44.4444444444,
-      "response": "i don't want to have to report he said",
-      "volume": 56,
-      "signal": "S08547_L0239_E001"
-  },
+    // ... etc
+ {
+        "signal": "CEC1_E001_S08594_L0231",
+        "prompt": "I can't keep my cool and he does rattle me",
+        "response": "I can't keep my ",
+        "n_words": 10,
+        "words_correct": 4,
+        "correctness": 40.0
+ },
   // ... etc
  ]
 ```
 
-In the above,
+In this structure:
 
-- `signal` identifies the hearing aid output signal that you will find in the the `HA_outputs\train.1\CEC1` or `HA_outputs\train.1\CEC2 directories`
-- `listener` is the ID of the listener who provided the response. Using this you can look up the listener's audiogram in the `listeners.json` file.
-- `correctness` is the percentage of words that the listener correctly identified. **This is the number that you are being asked to predict.**
-- `volume` is the value of the volume control on the hearing aid that the listener used to listen to the signal. This is on a scale of 0 to 100 and was set by default to 50 but listeners were free to adjust it at the start of each session to achieve a comfortable listening level.
+- `signal` identifies the hearing aid output signal presented to the listener. You can use the signal name to determine the scene, system, and listener.
+- `prompt` is the transcription of the target sentence.
+- `response` is the transcription of the listener's response ("#" indicates that the listener did not respond or indicated they did not understand any words).
+- `n_words` indicates the total number of words in the target sentence.
+- `words_correct` reflects the number of words that the listener correctly identified.
+- `correctness` represents the percentage of words the listener correctly identified. **This is the number that you are asked to predict.**
 
-### The listener characteristics (`listeners.json`)
+### Listener Characteristics
 
-The `listeners.json` provides the pure tone audiogram of the left and right ear of each listener. This is stored as a dictionary with the listener ID as the key to facilitate easy look-up.
+The `listeners.csv` file provides information about the listener's hearing impairment severity (as per the 2021 WHO standard).
 
-For each listener the audiogram is stored as a list of frequencies and the corresponding list of levels for the left and right ear. The frequencies are in Hz and the levels are in dB HL.
-
-```json title="listeners.json"
-{
-    "L0200": {
-        "name": "L0200",
-        "audiogram_cfs": [250, 500, 1000, 2000, 3000, 4000, 6000, 8000],
-        "audiogram_levels_l": [35, 30, 25, 50, 55, 65, 70, 65],
-        "audiogram_levels_r": [45, 40, 35, 60, 65, 75, 80, 75],
-    },
-    // ... etc
-}
+```csv title="listeners.csv"
+listener_id,severity
+L0200,Moderate
+L0201,Mild
+L0202,Moderate
+L0207,Moderate
+etc
 ```
-
-Note, listener audiograms will also be provided in the evaluation data, however, the listeners in the evaluation sets will not overlap with listeners in the corresponding training sets, i.e., your predictions systems are expected to be able generalise to new listeners.
-
-### The scene metadata (`scenes.CECx.json`)
-
-The scene metadata contains information about the scene, the target and interfering noise signals, and the SNR of the mixed signal, etc. The data will not be available for the evaluation signals and is being provided here for context and to help participants gain an understanding of the signals.
-
-For a complete description of the scene metadata please see the documentation for the CEC1 and CEC2 challenges. The `scenes.CEC1.json` has the format described [here](../cec1/data/cec1_data#d8-scene-metadata), and the `scenes.CEC2.json` has the format described [here](../cec1/data/cec1_data#d8-scene-metadata).

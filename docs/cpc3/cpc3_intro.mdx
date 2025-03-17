@@ -5,21 +5,15 @@ sidebar_label: CPC3 Introduction
 sidebar_position: 1
 ---
 
-To develop better hearing enhancement technologies, including hearing aids and hearable devices, we need reliable methods to automatically evaluate the speech intelligibility of audio signals. This requires a predictive model that takes as input both the audio produced by a hearing aid and listener characteristics (e.g., their [audiogram](https://www.hear-it.org/Audiogram-)) and estimates the speech intelligibility score that the listener would achieve in a listening test.
-
-In recent years, we have run the [CPC1 Challenge](../cpc1/cpc1_intro) and [CPC2 Challenge](../cpc2/cpc2_intro) to advance such models.. These challenges were presented at a special session of Interspeech 2022 and a satellite workshop at Interspeech 2023, respectively. We are now launching the third round of this challenge, which builds on previous efforts by incorporating a larger and more diverse set of listener data for training and evaluation.
-
-The results of the new challenge will be showcased at an  [ISCA workshop](https://claritychallenge.org/clarity2025-workshop/), a satellite event to Interspeech 2025 in Rotterdam on 22nd August 2025 (TBC).
-
-The challenge is set to launch on March 17th, and this site will provide participants with all the necessary resources to take part.
+To advance hearing enhancement technologies, such as hearing aids and hearable devices, it is essential to establish reliable methods for automatically evaluating the speech intelligibility of audio signals. This involves creating a predictive model that takes both the audio produced by a hearing aid and listener characteristics (e.g., their [audiogram](https://www.hear-it.org/Audiogram)) to estimate the speech intelligibility score that listeners would achieve in a listening test. In recent years, we have conducted the [CPC1 Challenge](../cpc1/cpc1_intro) and [CPC2 Challenge](../cpc2/cpc2_intro) to improve these models. These challenges were featured at a special session of Interspeech 2022 and at a satellite workshop during Interspeech 2023, respectively. We are now excited to announce the launch of the third round of this challenge, which builds on previous efforts by incorporating a larger and more diverse set of listener data for training and evaluation. The results of this new challenge will be showcased at an [ISCA workshop](URL_2), which will be a satellite event at Interspeech 2025 in Rotterdam on August 22, 2025. The challenge will officially launch on March 17, and this site will provide all necessary resources for participants.
 
 ### Short Description
 
-The task involves estimating the intelligibility of speech-in-noise signals that have been processed by hearing aid algorithms and presented to listeners with hearing loss. Each signal contains a short sentence that listeners were asked to repeat. Your system will need to predict how many words were correctly recognized by the listeners.
+The task involves estimating the intelligibility of speech-in-noise signals processed by hearing aid algorithms and presented to listeners with hearing loss. Each signal contains a short sentence that listeners were asked to repeat. Your system will need to predict how many words were correctly recognised by the listeners.
 
-Systems will be ranked based on their overall performance across a large evaluation set. Specifically, we will compute the RMSE between the predictions and the true values of the listener's percentage words correctness scores per sentence.
+Systems will be ranked based on overall performance across a large evaluation set. Specifically, we will compute the RMSE between the predictions and the true values of the listener's percentage word correctness scores per sentence.
 
-The hearing aid signals being assessed vary widely in quality. Below, we provide examples of good, fair, and poor signals. Your prediction algorithm must be robust enough to handle this variation.
+The quality of the hearing aid signals being evaluated varies widely. Below are examples of good, fair, and poor signals. Your prediction algorithm must be robust enough to handle this variation.
 
 <table>
 <tr>
@@ -68,35 +62,36 @@ Your browser does not support the audio element.
 </td>
 </tr></table>
 
-### The data
+### The Data
 
-You will be provided with a training dataset to develop your systems. This dataset includes:
+Participants will receive a training dataset to develop their systems. This dataset includes:
 
 - Audio signals processed by a variety of (simulated) hearing aids for speech-in-noise;
 - The corresponding clean reference signals (the original speech);
-- A characterisation of each listener's hearing impairment, i.e., pure-tone audiograms;
-- Measured speech intelligibility scores from listening tests, where listeners repeated what they heard after hearing aid processing.
-For full details of the data see the [Data](./cpc3_data) page.
+- A measurement of the severity of each listener's hearing impairment;
+- Measured speech intelligibility scores from listening tests, in which listeners repeated what they heard after hearing aid processing.
 
-### The task
+See the [Data](./cpc3_data) page for full data details.
 
-You will be provided with an evaluation set containing
+### The Task
+
+Participants will be provided with an evaluation set containing:
 
 - Audio produced by a variety of (simulated) hearing aids for speech-in-noise;
-- The audiogram of a listener;
+- The hearing impairment severity of the listeners;
 - The clean reference signal (the original speech).
 
-YWe will evaluate two types of systems: intrusive and non-intrusive.
+We will evaluate two types of systems: intrusive and non-intrusive.
 
-- Intrusive systems (also known as double-ended) require a clean speech reference.
-- Non-intrusive systems (also known as single-ended) rely solely on the hearing aid output.
+- Intrusive systems (double-ended) require a clean speech reference.
+- Non-intrusive systems (single-ended) rely solely on the hearing aid output.
 
-Each category will be ranked separately based on the Root Mean Squared Error (RMSE) between predicted and actual intelligibility scores.
+Systems will be ranked based on the Root Mean Squared Error (RMSE) between predicted and actual intelligibility scores.
 
-To help you get started, we provide a baseline system that uses the HASPI metric to predict speech intelligibility. Details of this system are available on the [Baseline](./cpc3_baseline) page.
+To help participants get started, we provide a baseline system that uses the HASPI metric to predict speech intelligibility. Details of this system are available on the [Baseline](./cpc3_baseline) page.
 
-For full details of the task see the [rules](./taking_part/cpc3_rules) page.
+Refer to the [rules](./taking_part/cpc3_rules) page for complete task details.
 
-### Registering and submitting
+### Registering and Submitting
 
-To take part in the challenge you will need to [register your team](./taking_part/cpc3_registration) and [download the data](./cpc3_download). Entrants will have until 31st July to complete their submissions. Full instructions for submission are available on the [Submission](./taking_part/cpc3_submission) page.
+To participate in the challenge, you will need to [register your team](./taking_part/cpc3_registration) and [download the data](./cpc3_download). Entrants will have until July 31st to complete their submissions. Full instructions for submission are available on the [Submission](./taking_part/cpc3_submission) page.
