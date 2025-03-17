@@ -11,6 +11,9 @@ module.exports = {
     tagline: 'Organising machine learning challenges for hearing aid processing',
     url: 'https://claritychallenge.github.io/',
     baseUrl: '/',
+    customFields: {
+        showTodo: process.env.SHOW_TODO === "true", // Use a persistent flag
+      },
     onBrokenLinks: 'warn',
     onBrokenMarkdownLinks: 'throw',
     favicon: 'img/favicon.ico',
@@ -69,7 +72,7 @@ module.exports = {
         announcementBar: {
             id: 'pre-announcement-cpc3',
             content:
-                '🔥🔥  The 3rd Clarity Prediction Challenge is launching March 17th 🔥🔥 <a href="/docs/cpc3/cpc3_intro">Pre-launch announcement here</a>',
+                '🔥🔥  The 3rd Clarity Prediction Challenge has started 🔥🔥 <a href="/docs/cpc3/cpc3_intro">Full details here</a>',
             backgroundColor: '#6ce56c',
             textColor: '#070707',
             isCloseable: true,
