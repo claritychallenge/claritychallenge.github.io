@@ -4,10 +4,157 @@
         <title>The Clarity Project Blog</title>
         <link>https://claritychallenge.github.io/blog</link>
         <description>The Clarity Project Blog</description>
-        <lastBuildDate>Mon, 08 Apr 2024 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 17 Mar 2025 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[Launching CPC3]]></title>
+            <link>https://claritychallenge.github.io/blog/Launching CPC3</link>
+            <guid>https://claritychallenge.github.io/blog/Launching CPC3</guid>
+            <pubDate>Mon, 17 Mar 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[----------------------------------------------]]></description>
+            <content:encoded><![CDATA[<hr>
+<ul>
+<li>3rd Clarity Prediction Challenge (CPC-3)</li>
+<li>Launch: March 17th; Submission: July 31st, 2025</li>
+<li>Workshop: 22nd August 2025, an INTERSPEECH satellite workshop</li>
+<li><a href="https://claritychallenge.org/" target="_blank" rel="noopener noreferrer">https://claritychallenge.org/</a></li>
+</ul>
+<hr>
+<p>Dear colleague,</p>
+<p>It gives us great pleasure to announce the launch of the 3rd Clarity Speech Separation and Recognition Challenge (CPC3).</p>
+<p><strong>The Challenge</strong></p>
+<p>To improve hearing enhancement technologies, such as hearing aids and hearable devices, we need reliable methods for automatically assessing the speech intelligibility of audio signals.</p>
+<p>In recent years, we have organised the CPC1 and CPC2 Challenges to promote the development of such prediction systems.  We are now launching the third round of this challenge, building on previous efforts by incorporating a more extensive and diverse set of listener data for training and evaluation.</p>
+<p><strong>What will be provided</strong></p>
+<ul>
+<li><strong>Hearing aid outputs</strong>: Audio produced by various simulated hearing aids while processing speech in noisy environments.</li>
+<li><strong>Clean speech reference signals</strong></li>
+<li><strong>Listening Test Results</strong>: This includes transcripts and intelligibility scores from tests in which hearing-impaired listeners were asked to repeat what they heard.</li>
+<li><strong>Listener Characteristics</strong>: Information regarding the severity of hearing impairment for each listener.</li>
+<li><strong>Software Tools</strong>: Tools include a baseline system based on HASPI scores.</li>
+</ul>
+<!-- -->
+<p>Your system will need to predict intelligibility scores based on the hearing aid outputs. We will explore two types of systems: intrusive metrics, which also use clean speech reference signals, and non-intrusive systems that make predictions based solely on the hearing aid outputs.</p>
+<p>There will be <strong>cash prizes</strong> for the top three systems courtesy of our sponsors, the Hearing Industry Research Consortium (<a href="https://hearingirc.com/" target="_blank" rel="noopener noreferrer">https://hearingirc.com/</a>)</p>
+<p>For further details, including how to obtain the data and how to register to enter, please  see <a href="https://claritychallenge.org/docs/cpc3/cpc3_intro" target="_blank" rel="noopener noreferrer">https://claritychallenge.org/docs/cpc3/cpc3_intro</a>.</p>
+<p><strong>The Workshop</strong></p>
+<p>The results of the new challenge will be showcased at an ISCA workshop satellite event of Interspeech 2025 in Rotterdam on 22nd August 2025.</p>
+<p>For further details, see <a href="https://claritychallenge.org/clarity2025-workshop/" target="_blank" rel="noopener noreferrer">https://claritychallenge.org/clarity2025-workshop/</a>.</p>
+<p><strong>Important Dates</strong></p>
+<ul>
+<li>17th March 2025: Launch of challenge, the <strong>release of the training data set</strong> (i.e. signals and paired intelligibility scores).</li>
+<li>24th March 2025: <strong>Release of the development data.</strong></li>
+<li>14th April 2025: Opening of the <strong>development data leaderboard.</strong></li>
+<li>1st July 2025: <strong>Release of evaluation data.</strong></li>
+<li>31st July 2025: <strong>Submission deadline</strong>. All entrants must have submitted their predictions plus a draft of their technical report.<!-- -->
+<ul>
+<li>Scores will be returned to entrants within 24 hours of submission.</li>
+</ul>
+</li>
+<li>22nd August 2025: Clarity 2025 <strong>workshop</strong>, @Interspeech, Rotterdam</li>
+<li>22nd September 2025: Deadline for submission of <strong>finalised Workshop papers</strong>.</li>
+</ul>
+<p><strong>For further information</strong></p>
+<p>To keep up to date, please join our <a href="https://groups.google.com/g/clarity-challenge" target="_blank" rel="noopener noreferrer">Clarity Challenge Google group</a>. If you have questions, please contact us directly using the contact details found <a href="https://claritychallenge.org/contact" target="_blank" rel="noopener noreferrer">here</a>.</p>
+<p><strong>Organisers</strong></p>
+<ul>
+<li>Michael A. Akeroyd, University of Nottingham</li>
+<li>Jon Barker, University of Sheffield</li>
+<li>Trevor J. Cox, University of Salford</li>
+<li>John F. Culling, Cardiff University</li>
+<li>Jennifer Firth,  University of Nottingham</li>
+<li>Simone Graetzer, University of Salford</li>
+<li>Graham Naylor, University of Nottingham</li>
+</ul>
+<p><strong>Funded by</strong> the Engineering and Physical Sciences Research Council (EPSRC), UK</p>
+<p><strong>Supported by</strong> RNID (formerly Action on Hearing Loss), Hearing Industry Research Consortium, Amazon TTS Research</p>]]></content:encoded>
+            <author>clarity-group@sheffield.ac.uk (Jon Barker)</author>
+            <category>clarity</category>
+            <category>launch</category>
+            <category>CPC3</category>
+        </item>
+        <item>
+            <title><![CDATA[Preannoucing CPC3]]></title>
+            <link>https://claritychallenge.github.io/blog/Preannouncing CPC3</link>
+            <guid>https://claritychallenge.github.io/blog/Preannouncing CPC3</guid>
+            <pubDate>Mon, 10 Feb 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[It gives us great pleasure to pre-announce the 3rd Clarity Speech Separation and Recognition Challenge (CPC-3) that will launch in March 2025.]]></description>
+            <content:encoded><![CDATA[<p>It gives us great pleasure to pre-announce the 3rd Clarity Speech Separation and Recognition Challenge (CPC-3) that will launch in March 2025.</p>
+<p><strong>The Challenge</strong></p>
+<p>To develop better hearing enhancement technologies, including hearing aids and hearable devices, <strong>we need reliable methods to automatically evaluate the speech intelligibility of audio signals</strong>. This requires a predictive model that takes as input both the audio produced by a hearing aid and listener characteristics (e.g., their audiogram) and estimates the speech intelligibility score that the listener would achieve in a listening test.</p>
+<p>In recent years, we have run the CPC1 Challenge and CPC2 Challenge to advance such models.  We are now launching the third round of this challenge, which builds on previous efforts by incorporating a larger and more diverse set of listener data for training and evaluation.</p>
+<p><strong>What will be provided</strong></p>
+<ul>
+<li>Audio produced by a variety of (simulated) hearing aids for speech-in-noise;</li>
+<li>The corresponding clean reference signals (the original speech);</li>
+<li>Characteristics of the listeners (pure tone audiograms, etc);</li>
+<li>The measured speech intelligibility scores from listening tests, where hearing-impaired listeners were asked to say what they heard after listening to the hearing aid processed signals.</li>
+<li>Software tools including a baseline system based on HASPI scores.</li>
+</ul>
+<p>For further details see <a href="https://claritychallenge.org/docs/cpc3/cpc3_intro" target="_blank" rel="noopener noreferrer">https://claritychallenge.org/docs/cpc3/cpc3_intro</a></p>
+<p><strong>The Workshop</strong></p>
+<p>The results of the new challenge will be showcased at an ISCA workshop, a satellite event to Interspeech 2025 in Rotterdam on 22nd August 2025 (TBC).</p>
+<p>For further details see <a href="https://claritychallenge.org/clarity2025-workshop/" target="_blank" rel="noopener noreferrer">https://claritychallenge.org/clarity2025-workshop/</a></p>
+<p><strong>Registering and submitting​</strong></p>
+<p>Following the launch on March 17th, we will open registration for prospective entrants. Participants will have until 31st July to submit their entries, which will be evaluated remotely by the organizers. Full submission instructions will be provided at launch.</p>
+<p><strong>Important Dates</strong></p>
+<p>All dates are to be intended anywhere on earth time (AoE).</p>
+<ul>
+<li>17th March 2025: Launch of challenge, release of data.</li>
+<li>1st July 2025: Release of evaluation data and opening of submission window.</li>
+<li>31st July 2025: Submission deadline. All entrants must have submitted their predictions plus a draft of their technical report.<!-- -->
+<ul>
+<li>Scores will be returned to entrants within 24 hours of submission.</li>
+</ul>
+</li>
+<li>22nd August 2025: Clarity 2025 workshop, @Interspeech, Rotterdam (TBC)</li>
+<li>22nd September 2025: Deadline for submission of finalised Workshop papers</li>
+</ul>
+<p><strong>Stay informed​</strong></p>
+<p>To stay informed please sign up to the Clarity Challenge Google group</p>
+<p><strong>Organisers</strong></p>
+<ul>
+<li>Michael A. Akeroyd, University of Nottingham</li>
+<li>Jon Barker, University of Sheffield</li>
+<li>Trevor J. Cox, University of Salford</li>
+<li>John F. Culling, Cardiff University</li>
+<li>Jennifer Firth,  University of Nottingham</li>
+<li>Simone Graetzer, University of Salford</li>
+<li>Graham Naylor, University of Nottingham</li>
+</ul>
+<p><strong>Funded by</strong> the Engineering and Physical Sciences Research Council (EPSRC), UK</p>
+<p><strong>Supported by</strong> RNID (formerly Action on Hearing Loss), Hearing Industry Research Consortium, Amazon TTS Research</p>]]></content:encoded>
+            <author>clarity-group@sheffield.ac.uk (Jon Barker)</author>
+            <category>clarity</category>
+            <category>launch</category>
+            <category>CPC3</category>
+        </item>
+        <item>
+            <title><![CDATA[Clarity-2024 Workshop @ Interspeech, Online]]></title>
+            <link>https://claritychallenge.github.io/blog/Clarity-2024 Workshop @ Interspeech, Online</link>
+            <guid>https://claritychallenge.github.io/blog/Clarity-2024 Workshop @ Interspeech, Online</guid>
+            <pubDate>Thu, 07 Nov 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[We are delighted to announce that registration for the 5th Clarity Workshop on Machine Learning Challenges for Hearing Aids (Clarity-2024) is now open. The workshop will take place on-line on 5th December 2024 and will be focused on 3rd Clarity Enhancement Challenge (CEC3) and its outcomes.]]></description>
+            <content:encoded><![CDATA[<p>We are delighted to announce that registration for the 5th Clarity Workshop on Machine Learning Challenges for Hearing Aids (Clarity-2024) is now open. The workshop will take place on-line on 5th December 2024 and will be focused on 3rd Clarity Enhancement Challenge (CEC3) and its outcomes.</p>
+<p>Preliminary details for the event can be found on the workshop website.</p>
+<p>The workshop will feature,</p>
+<ul>
+<li>an overview of the CEC3 challenge</li>
+<li>announcement of the challenge results</li>
+<li>presentations from all participating teams</li>
+<li>an invited talk: Stefan Raufer and Peter Derleth, Sonova, "Development and testing of Sonova’s hearing aid with DNN-based speech enhancement: meeting the constraints of a wearable solution”</li>
+<li>a discussion of future directions for hearing aid machine learning challenges.</li>
+</ul>
+<p>Programme details can be found on the website.</p>
+<p>The event is free to attend but prior registration is required.</p>
+<p>We look forward to seeing you there,</p>]]></content:encoded>
+            <author>clarity-group@sheffield.ac.uk (Jon Barker)</author>
+            <category>clarity</category>
+            <category>launch</category>
+            <category>CEC3</category>
+        </item>
         <item>
             <title><![CDATA[Launch of CEC3]]></title>
             <link>https://claritychallenge.github.io/blog/launch of CEC3</link>
@@ -481,135 +628,6 @@ We have a chosen a limit of 5 ms because in a real hearing aid there will be oth
             <category>enhancement</category>
             <category>latency</category>
             <category>real-time</category>
-        </item>
-        <item>
-            <title><![CDATA[Clarity Challenge pre-announcement]]></title>
-            <link>https://claritychallenge.github.io/blog/Clarity Challenge pre-announcement</link>
-            <guid>https://claritychallenge.github.io/blog/Clarity Challenge pre-announcement</guid>
-            <pubDate>Tue, 24 Nov 2020 00:00:00 GMT</pubDate>
-            <description><![CDATA[Although age-related hearing loss affects 40% of 55 to 74 year-olds, the majority of adults who would benefit from hearing aids don’t use them. A key reason is simply that hearing aids don’t provide enough benefit.]]></description>
-            <content:encoded><![CDATA[<p>Although age-related hearing loss affects 40% of 55 to 74 year-olds, the majority of adults who would benefit from hearing aids don’t use them. A key reason is simply that hearing aids don’t provide enough benefit.</p>
-<p>Picking out speech from background noise is a critical problem even for the most sophisticated devices. The purpose of the Clarity Challenges is to catalyse new work to radically improve the speech intelligibility provided by hearing aids.</p>
-<p>The series of challenges will consider increasingly complex listening scenarios. The first round, launching in January 2021, will focus on speech in indoor environments in the presence of a single interferer. It will begin with a challenge involving improving hearing aid processing. Future challenges on how to model speech-in-noise perception will be launched at a later date.</p>
-<p><img decoding="async" loading="lazy" alt="Person using tablet" src="https://claritychallenge.github.io/assets/images/UoN_HS-08207-1536x1024-6d25ed2333ce62f5847f0c031a89d19e.jpeg" width="1536" height="1024" class="img_ev3q"></p>
-<!-- -->
-<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="the-task">The Task<a href="https://claritychallenge.github.io/blog/Clarity%20Challenge%20pre-announcement#the-task" class="hash-link" aria-label="Direct link to The Task" title="Direct link to The Task">​</a></h2>
-<p>You will be provided with simulated scenes, each including a target speaker and interfering noise. For each scene, there will be signals that simulate those captured by a behind-the-ear hearing aid with three channels at each ear and those captured at the eardrum without a hearing aid present.  The target speech will be a short sentence and the interfering noise will be either speech or domestic appliance noise.</p>
-<p>The task will be to deliver a hearing aid signal processing algorithm that can improve the intelligibility of the target speaker for a specified hearing-impaired listener. Initially, entries will be evaluated using an objective speech intelligibility measure we will provide. Subsequently, up to twenty of the most promising systems will be evaluated by a panel of listeners.</p>
-<p>We will provide a baseline system so that teams can choose to focus on individual components or to develop their own complete pipelines.</p>
-<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="what-will-be-provided">What will be provided<a href="https://claritychallenge.github.io/blog/Clarity%20Challenge%20pre-announcement#what-will-be-provided" class="hash-link" aria-label="Direct link to What will be provided" title="Direct link to What will be provided">​</a></h2>
-<ul>
-<li>Evaluation of the best entries by a panel of hearing-impaired listeners.</li>
-<li>Speech + interferer scenes for training and evaluation.</li>
-<li>An entirely new database of 10,000 spoken sentences</li>
-<li>Listener characterisations including audiograms and speech-in-noise testing.</li>
-<li>Software including tools for generating training data, a baseline hearing aid algorithm, a baseline model of hearing impairment, and a binaural objective intelligibility measure.</li>
-</ul>
-<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="important-dates">Important Dates<a href="https://claritychallenge.github.io/blog/Clarity%20Challenge%20pre-announcement#important-dates" class="hash-link" aria-label="Direct link to Important Dates" title="Direct link to Important Dates">​</a></h2>
-<ul>
-<li>January 2021 – Challenge launch and release of software and data</li>
-<li>April 2021 –  Evaluation data released</li>
-<li>May 2021 – Submission deadline</li>
-<li>June-August 2021  – Listening test evaluation period</li>
-<li>September 2021 – Results announced at a Clarity Challenge Workshop in conjunction with Interspeech 2021</li>
-</ul>
-<p>Challenge and workshop participants will be invited to contribute to a journal Special Issue on the topic of Machine Learning for Hearing Aid Processing that will be announced next year.</p>
-<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="further-information">Further information<a href="https://claritychallenge.github.io/blog/Clarity%20Challenge%20pre-announcement#further-information" class="hash-link" aria-label="Direct link to Further information" title="Direct link to Further information">​</a></h2>
-<p>If you are interested in participating and wish to receive further information, please sign up.</p>
-<p>If you have questions, contact us directly at <a href="mailto:contact@claritychallenge.org" target="_blank" rel="noopener noreferrer">contact@claritychallenge.org</a></p>
-<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="organisers">Organisers<a href="https://claritychallenge.github.io/blog/Clarity%20Challenge%20pre-announcement#organisers" class="hash-link" aria-label="Direct link to Organisers" title="Direct link to Organisers">​</a></h2>
-<ul>
-<li>Prof. Jon P. Barker, Department of Computer Science, University of Sheffield</li>
-<li>Prof. Michael A. Akeroyd, Hearing Sciences, School of Medicine, University of Nottingham</li>
-<li>Prof. Trevor J. Cox, Acoustics Research Centre, University of Salford</li>
-<li>Prof. John F. Culling, School of Psychology, Cardiff University</li>
-<li>Prof. Graham Naylor, Hearing Sciences, School of Medicine, University of Nottingham</li>
-<li>Dr Simone Graetzer, Acoustics Research Centre, University of Salford</li>
-<li>Dr Rhoddy Viveros Muñoz, School of Psychology, Cardiff University</li>
-<li>Eszter Porter, Hearing Sciences, School of Medicine, University of Nottingham</li>
-</ul>
-<p>Funded by the Engineering and Physical Sciences Research Council (EPSRC), UK.</p>
-<p>Supported by RNID (formerly Action on Hearing Loss), Hearing Industry Research Consortium, Amazon TTS Research, Honda Research Institute Europe.</p>
-<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="acknowledgement">Acknowledgement<a href="https://claritychallenge.github.io/blog/Clarity%20Challenge%20pre-announcement#acknowledgement" class="hash-link" aria-label="Direct link to Acknowledgement" title="Direct link to Acknowledgement">​</a></h2>
-<p>The image copyright is owned by the University of Nottingham.</p>]]></content:encoded>
-            <author>clarity-group@sheffield.ac.uk (Trevor Cox)</author>
-            <category>CEC1</category>
-        </item>
-        <item>
-            <title><![CDATA[One approach to our enhancement challenge]]></title>
-            <link>https://claritychallenge.github.io/blog/One approach to our enhancement challenge</link>
-            <guid>https://claritychallenge.github.io/blog/One approach to our enhancement challenge</guid>
-            <pubDate>Wed, 29 Jul 2020 00:00:00 GMT</pubDate>
-            <description><![CDATA[Improving hearing aid processing using DNNs blog. A suggested approach to overcome the non-differentiable loss function.]]></description>
-            <content:encoded><![CDATA[<p>Improving hearing aid processing using DNNs blog. A suggested approach to overcome the non-differentiable loss function.</p>
-<p>The aim of our Enhancement Challenge is to get people producing new algorithms for processing speech signals through hearing aids. We expect most entries to replace the classic hearing aid processing of Dynamic Range Compressors (DRCs) with <a href="https://en.wikipedia.org/wiki/Deep_learning" target="_blank" rel="noopener noreferrer">deep neural networks (DNN)</a> (although all approaches are welcome!). The first round of the challenge is going to be all about improving speech intelligibility.</p>
-<p>Setting up a DNN structure and training regime for the task is not as straightforward as it might first appear. Figure 1 shows an example of a naive training regime. An audio example of Speech in Noise (SPIN) is randomly created (<em>audio sample generation</em>, bottom left), and a listener is randomly selected with particular hearing loss characteristics (<em>random artificial listener generation</em>, top left). The DNN Enhancement model (represented by the bright yellow box) then produces improved speech in noise. (Audio signals in pink are two-channel, left and right because this is for binaural hearing aids.)</p>
-<p><img decoding="async" loading="lazy" alt="schematic" src="https://claritychallenge.github.io/assets/images/clarity_schematic_for_blog-09-602e0853d7a6c77eacab682e49402529.png" width="1149" height="446" class="img_ev3q"></p>
-<p>Figure 1</p>
-<p>Next the improved speech in noise is passed to the Prediction Model in the lime green box, and this gives an estimation of the Speech Intelligibility (SI). Our baseline system will include algorithms for this. We’ve already blogged about the Hearing Loss Simulation. Our current thinking is that the intelligibility model will be using a binaural form of the Short-Time Objective Intelligibility Index (STOI) [1]. The dashed line going back to the enhancement model shows that the DNN will be updated based on the reciprocal of the Speech Intelligibility (SI) score. By minimising (1/SI), the enhancement model will be maximising intelligibility.</p>
-<!-- -->
-<p>The difficulty here is that updating the Enhancement Model DNN during training requires the error to be known at the DNN’s output (the point labelled “improved SPIN”). But we don’t know this, we only know the error on the output of the prediction model at the far right of the diagram. This wouldn’t be a problem if the prediction model could be inverted, because we could then run the 1/SI error backwards through the inverse model.</p>
-<p>As the inverse of the prediction model isn’t available, one solution is to train another DNN to mimic its behaviour (Figure 2). As this new Prediction Model is a DNN, the 1/SI error can be passed backwards through it using standard neural network training formulations.</p>
-<p><img decoding="async" loading="lazy" alt="schematic" src="https://claritychallenge.github.io/assets/images/clarity_schematic_for_blog-10-9842f1551e82cd2aca1ab814230df345.png" width="873" height="432" class="img_ev3q"></p>
-<p>This DNN prediction model could be trained first using knowledge distillation (<a href="http://usir.salford.ac.uk/id/eprint/56234/" target="_blank" rel="noopener noreferrer">this is something I’ve previous done for a speech intelligibility model</a>), and then the weights frozen while the Enhancement Model is trained. But there is a ‘chicken and egg’ problem here. The difficulty is generating all the training data for the prediction model. Until you train the enhancement model, you won’t have a representative examples of “improved SPIN” to train the prediction model. But without the prediction model, you can’t train the enhancement model.</p>
-<p>One solution is to train the two DNNs in tandem, with an approach analogous to how pairs of networks are trained in a <a href="https://en.wikipedia.org/wiki/Generative_adversarial_network" target="_blank" rel="noopener noreferrer">Generative Adversarial Network</a> (GAN). iMetricGan developed by Li et al. [2] is an example of this being done for speech enhancement, although the authors weren’t trying to include hearing loss simulation. They aren’t the only ones looking at trying to solve problems where a non-differentiable or black-box evaluation function is in the way of DNN training [3][4].</p>
-<p>We hope our entrants will come up with lots of other ways of overcoming this problem. How would you tackle it?</p>
-<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="references">References<a href="https://claritychallenge.github.io/blog/One%20approach%20to%20our%20enhancement%20challenge#references" class="hash-link" aria-label="Direct link to References" title="Direct link to References">​</a></h2>
-<ul>
-<li>[1] Andersen, A.H., Haan, J.M.D., Tan, Z.H. and Jensen, J., 2015. A binaural short time objective intelligibility measure for noisy and enhanced speech. In the <em>Sixteenth Annual Conference of the International Speech Communication Association</em>.</li>
-<li>[2] Li, H., Fu, S.W., Tsao, Y. and Yamagishi, J., 2020. iMetricGAN: Intelligibility Enhancement for Speech-in-Noise using Generative Adversarial Network-based Metric Learning. <em>arXiv preprint arXiv:2004.00932</em>.</li>
-<li>[3] Gillhofer, M., Ramsauer, H., Brandstetter, J., Schäfl, B. and Hochreiter, S., 2019. A GAN based solver of black-box inverse problems. Proceedings of the <em>NeurIPS 2019 Workshop</em>.</li>
-<li>[4] Kawanaka, M., Koizumi, Y., Miyazaki, R. and Yatabe, K., 2020, May. Stable training of DNN for speech enhancement based on perceptually-motivated black-box cost function. In ICASSP 2020-2020 <em>IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)</em> (pp. 7524-7528). IEEE.</li>
-</ul>]]></content:encoded>
-            <author>clarity-group@sheffield.ac.uk (Trevor Cox)</author>
-            <category>DNN</category>
-            <category>enhancement</category>
-            <category>evaluation</category>
-            <category>GAN</category>
-            <category>hearing aid</category>
-            <category>knowledge distillation</category>
-        </item>
-        <item>
-            <title><![CDATA[The speech-in-noise problem part two]]></title>
-            <link>https://claritychallenge.github.io/blog/The speech-in-noise problem part two</link>
-            <guid>https://claritychallenge.github.io/blog/The speech-in-noise problem part two</guid>
-            <pubDate>Mon, 06 Jul 2020 00:00:00 GMT</pubDate>
-            <description><![CDATA[How hearing aids address the problem of speech-in-noise in noisy and quieter places. We’ll also discuss what machine learning techniques are often used for noise reduction, and some promising strategies for hearing aids.]]></description>
-            <content:encoded><![CDATA[<p>How hearing aids address the problem of speech-in-noise in noisy and quieter places. We’ll also discuss what machine learning techniques are often used for noise reduction, and some promising strategies for hearing aids.</p>
-<p><img decoding="async" loading="lazy" alt="Tablet user" src="https://claritychallenge.github.io/assets/images/UoN_HS-08207-1536x1024-6d25ed2333ce62f5847f0c031a89d19e.jpeg" width="1536" height="1024" class="img_ev3q"></p>
-<p>In a previous blog, we set out the problem of using hearing aids to pick out speech in noisy places. When the <a href="https://en.wikipedia.org/wiki/Signal-to-noise_ratio" target="_blank" rel="noopener noreferrer">signal-to-noise ratio (SNR)</a> is low, hearing aids can only do so much to improve the intelligibility of the speech.</p>
-<p>A solitary hearing aid has various ways of addressing everyday constant noises such as cars, vacuum cleaners and fans. The aids work best when the noise is not too intrusive and SNR is relatively high. Problems arise when the noise is high (low SNRs), because then the hearing aid processing can distort the sound too much. While the hearing aid might have limited success in improving intelligibility in certain cases, they can still make the noise less annoying (e.g., Brons et al., 2014).</p>
-<p>Using multiple microphones on each hearing aid can help in noisy conditions. The sound from the microphones is combined in a way that boosts the speech relative to the noise. This technology can be put into larger hearing aids, when there is enough spacing between the front and rear microphones.</p>
-<p>One of the reasons why our brains are really good at picking out speech from the hubbub of a restaurant, is that it compares and contrasts the sounds from both ears. Our hearing is <a href="https://en.wikipedia.org/wiki/Binaural" target="_blank" rel="noopener noreferrer">binaural</a>. Similarly, if you have a hearing aids in both ears, they work better if they collaborate on reducing the noise.</p>
-<p>Crucial to how our brains locate sound and pick out speech in noise are timing and level cues that come from comparing the sound at both ears. When sound comes from the side:</p>
-<ul>
-<li>interaural time differences occur because the sound arrives at one ear earlier than the other.</li>
-<li>interaural level differences occur because the sound has to bend around the head to reach the furthest ear.</li>
-</ul>
-<p>Binaural hearing aids communicate wirelessly and use noise reduction strategies that preserve these interaural time and level difference cues (e.g., Van den Bogaert et al., 2009). This allows the listener’s brain to better locate the speech and boost this compared to the noise.</p>
-<!-- -->
-<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="machine-learning">Machine learning<a href="https://claritychallenge.github.io/blog/The%20speech-in-noise%20problem%20part%20two#machine-learning" class="hash-link" aria-label="Direct link to Machine learning" title="Direct link to Machine learning">​</a></h2>
-<p>In recent years, there has been increasing interest in what <a href="https://en.wikipedia.org/wiki/Machine_learning" target="_blank" rel="noopener noreferrer">machine learning</a> methods can do for hearing aids. Machine learning is a branch of artificial intelligence where computers learn directly from example data. One machine learning method is the neural network. This is an algorithm formed from layers of simple computational units connected to each other in a way that is inspired by connections between neurons in the brain. Deep (3+ layer) neural networks are able to learn complex, non-linear mapping functions, which makes them ideal candidates for noise reduction tasks.</p>
-<p>We anticipate that machine learning can help tackle the challenge of speech in noise for hearing aids, providing a tailored solution for each individual and listening situation. For example, one thing machine learning could do is to sense the acoustic environment the listener is in, and choose the most suitable processing settings.</p>
-<p><img decoding="async" loading="lazy" alt="Electronic brain" src="https://claritychallenge.github.io/assets/images/neural_brain-3ca5f7dc07936baef02ded512c775008.jpeg" width="400" height="320" class="img_ev3q"></p>
-<p>Image via <a href="https://www.vpnsrus.com/" target="_blank" rel="noopener noreferrer">www.vpnsrus.com</a></p>
-<p>In recent years, a machine learning approach for noise reduction has become popular. Neural networks are used to estimate time-frequency masks (a set of gains for each time-frequency unit that, when multiplied by the signal, produce less noisy speech; see, e.g., Zhao et al., 2018).</p>
-<p>Machine learning systems for noise reduction are trained on artificially mixed speech and noise. Some operate on a single channel, i.e., using spectral cues, and some work with multiple channels using spatial cues. We expect that future hearing aids built on machine learning will perform best if they combine the left and right microphones to work binaurally.</p>
-<p>Most of these noise reduction systems have been designed and evaluated in an off-line mode where they process pre-recorded signals. This isn’t much use for hearing aids that need to work in real-time with low latency (i.e., short delays). One challenge for hearing aids is to redesign off-line approaches to work quickly enough without too much loss of performance.</p>
-<p>The potential for machine learning to produce better approaches to hearing aid processing is what motivated the Clarity Project. If you’re interested in hearing more as the challenges develop, please sign up.</p>
-<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="references">References<a href="https://claritychallenge.github.io/blog/The%20speech-in-noise%20problem%20part%20two#references" class="hash-link" aria-label="Direct link to References" title="Direct link to References">​</a></h2>
-<ul>
-<li>Brons, I., Houben, R., and Dreschler, W. A. (2014). Effects of noise reduction on speech intelligibility, perceived listening effort, and personal preference in hearing-impaired listeners. <em>Trends in hearing</em>, 18, 1-10.</li>
-<li>Van den Bogaert, T., Doclo, S., Wouters, J., and Moonen, M. (2009). Speech enhancement with multichannel Wiener filter techniques in multimicrophone binaural hearing aids. <em>The Journal of the Acoustical Society of America</em>, 125(1), 360-371.</li>
-<li>Zhao, Y., Wang, D., Johnson, E. M., and Healy, E. W. (2018). A deep learning based segregation algorithm to increase speech intelligibility for hearing-impaired listeners in reverberant-noisy conditions. <em>The Journal of the Acoustical Society of America</em>, 144(3), 1627-1637.</li>
-</ul>
-<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="credits">Credits<a href="https://claritychallenge.github.io/blog/The%20speech-in-noise%20problem%20part%20two#credits" class="hash-link" aria-label="Direct link to Credits" title="Direct link to Credits">​</a></h2>
-<p>Photograph of hearing aid wearer, copyright University of Nottingham.</p>
-<p>Image of brain with overlaid circuity made available by <a href="https://www.vpnsrus.com/" target="_blank" rel="noopener noreferrer">www.vpnsrus.com</a>.</p>]]></content:encoded>
-            <author>clarity-group@sheffield.ac.uk (Simone Graetzer)</author>
-            <author>clarity-group@sheffield.ac.uk (Trevor Cox)</author>
-            <category>machine learning</category>
-            <category>speech-in-noise</category>
         </item>
     </channel>
 </rss>
