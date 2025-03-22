@@ -29,7 +29,7 @@ function HomepageHeader() {
             to="./docs/cpc3/cpc3_intro"
             style={{ margin: "10px" }}
           >
-            The Current Challenge{" "}
+            The 3rd Clarity Prediction Challenge{" "}
           </Link>{" "}
           <Link
             className="button button--secondary button--lg"
