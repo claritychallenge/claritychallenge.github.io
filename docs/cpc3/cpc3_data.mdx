@@ -5,121 +5,170 @@ sidebar_label: Data Specification
 sidebar_position: 3  
 ---
 
-The CPC3 data is derived from the first three Clarity Enhancement Challenges (CEC1, CEC2, and CEC3). The processed signals represent the outputs of the systems submitted by participants, and listener responses were collected during the evaluation of these systems.
+The CPC3 dataset is derived from the first three Clarity Enhancement Challenges (CEC1, CEC2, and CEC3). It includes processed signals representing the outputs of participant-submitted systems, along with listener responses collected during system evaluations.
 
 :::info  
-To obtain the data, please visit the [download page](./cpc3_download).  
+To download the data, please visit the [download page](./cpc3_download).  
 :::
 
-## Installation
+## Data Distribution and Installation
 
-The data is distributed as a single gzipped tarball, `clarity_CPC3_data.v1_0.tar.gz`.
+The data is distributed as two gzipped tar archives:
 
-To unpack the data, use the following commands:
+- `clarity_CPC3_data.v1_0.tar.gz` (labelled training data, 7GB)
+- `clarity_CPC3_data.dev.v1_0.tar.gz` (unlabelled development set, 765MB)
 
-```bash
-gunzip clarity_CPC3_data.v1_0.tar.gz
-tar -xvf clarity_CPC3_data.v1_0.tar
-```
+**Installation Instructions:**
 
-Or in a single command:
+1. Download both `.tar.gz` files.
+2. Unpack each archive using the following commands:
 
-```bash
-tar -xvzf clarity_CPC3_data.v1_0.tar.gz
-```
+    ```bash
+    tar -xvzf clarity_CPC3_data.v1_0.tar.gz  # For training data
+    tar -xvzf clarity_CPC3_data.dev.v1_0.tar.gz # For development data
+    ```
 
-The data will unpack into the following directory structure:
+    Alternatively, you can unpack them in two steps:
 
-```bash
-clarity_CPC3_data
-├── clarity_data
-│   ├── metadata  # Metadata including listener responses and listener characteristics
-│   └── train
-│       ├── references  # References for intrusive intelligibility prediction
-│       └── signals     # Hearing aid output signals
-└── manifest
-```
+    ```bash
+    gunzip clarity_CPC3_data.v1_0.tar.gz
+    tar -xvf clarity_CPC3_data.v1_0.tar
+    ```
 
-## Overview
+    **Note:** You might encounter warnings about file name conflicts during unpacking. These can be safely ignored.
 
-The training data comprises signals and their corresponding listener responses, which can be utilized to train a prediction model.
-
-It is important to note that some signals and responses originate from CEC1, while others come from CEC2. CEC1 focused on simple scenes with a single interferer, whereas CEC2 involved multiple interferers. The development and evaluation data will use systems and scenes from CEC3.
-
-## Hearing Aid Output Signals
-
-The output signals from the hearing aid are located in the `clarity_data/HA_output` directory. These signals are characterized by the input signal presented to the hearing aid (referred to as the 'scene'), the algorithm utilized by the hearing aid (known as the 'system'), and the listener for whom the algorithm has been tailored (called the 'listener').
-
-The signals are stored in 16-bit stereo WAV format with a sampling rate of 32 kHz. They are named according to the following convention:
+**Directory Structure After Unpacking:**
 
 ```bash
-<CEC>_<SYSTEM_ID>_<SCENE_ID>_<LISTENER_ID>.wav  # Example: CEC1_E010_S09673_L0217.wav
+clarity_CPC3_data/
+├── clarity_data/
+│   ├── metadata/  # Listener responses and characteristics
+│   ├── train/
+│   │   ├── references/  # Reference signals for intelligibility prediction
+│   │   └── signals/     # Hearing aid output signals
+│   └── dev/
+│       ├── references/
+│       └── signals/
+└── manifest/
 ```
 
-Where `<CEC>` is the Clarity Enhancement Challenge identifier (either CEC1 or CEC2), `<SYSTEM_ID>` is the hearing aid system identifier, `<SCENE_ID>` is the scene identifier, and `<LISTENER_ID>` is the listener identifier.
+## Dataset Overview
 
-## Reference Signals
+The dataset is divided into two parts:
 
-Reference signals are provided for use in intrusive intelligibility prediction tasks. They represent the non-reverberant version of the target speech signals. These signals have been aligned and energy-scaled to match the target component of the signal received by the hearing aid. Note that they may be slightly misaligned with the hearing aid output signals due to the processing performed by the hearing aid, and intrusive models should be robust to this.
+- **Training Data:** Contains audio signals and corresponding listener responses, enabling model training.
+- **Development Data:** Provides audio signals without listener responses. This set can be used for system development and evaluation - we will be opening a leaderboard to which you can submit development set predictions.
 
-The reference signals are stored in the `clarity_data/references` directory and are named as follows:
+**Key Differences Between CECs:**
 
-```bash
-<CEC_ID>_<SCENE_ID>_ref.wav  
+The training data is derived from the 1st and 2nd Clarity Enhancement Challenges (CEC1, CEC2). Development and final evaluation will be on data from the 3rd Clarity Enhancement Challenge (CEC3). The CECs differ in the following ways:
+
+- CEC1: Focused on simple scenes with a single interferer.
+- CEC2: Involved more complex scenes with multiple interferers.
+- CEC3: Based on CEC2 but a mix of simulated scenes and real-world recordings (see the CEC3 [website](https://claritychallenge.org/docs/cec3/cec3_intro) for more details).
+
+## Training Data Details
+
+### Hearing Aid Output Signals (`clarity_data/train/signals/`)
+
+- Stored as 16-bit stereo WAV files at 32 kHz.
+- Filenames follow the format: `<CEC_ID>_<SYSTEM_ID>_<SCENE_ID>_<LISTENER_ID>.wav`
+  - `<CEC_ID>`: CEC1 or CEC2.
+  - `<SYSTEM_ID>`: Hearing aid system identifier.
+  - `<SCENE_ID>`: Scene identifier.
+  - `<LISTENER_ID>`: Listener identifier.
+  - Example: `CEC1_E010_S09673_L0217.wav`
+
+### Reference Signals (`clarity_data/train/references/`)
+
+- Represent non-reverberant target speech, aligned to match the hearing aid input.
+- Filenames: `<CEC_ID>_<SCENE_ID>_ref.wav`
+  - `<CEC_ID>`: CEC1 or CEC2.
+  - `<SCENE_ID>`: Scene identifier.
+- One reference signal corresponds to multiple hearing aid outputs from the same scene.
+- Note: Slight misalignment can occur due to hearing aid processing.
+- Note: When using the reference signals do not rely on them being scaled to the same level as the target signal at the hearing aid input. This won't be the case for the development and final evaluation sets.
+
+### Metadata (`clarity_data/metadata/`)
+
+- Contains listener responses (`CPC3.train.json`) and listener characteristics (`listeners.csv`).
+
+#### Listener Responses (`CPC3.train.json`)
+
+- JSON file with a list of dictionaries, each representing a listener's response.
+- Fields:
+
+  - `signal`: Hearing aid output filename.
+  - `prompt`: Original target sentence.
+  - `response`: Listener's transcribed response ("#" indicates no response/understanding).
+  - `n_words`: Number of words in `prompt`.
+  - `words_correct`: Number of correctly identified words
+  - `correctness`: Percentage of correctly identified words (the target variable).
+
+    ```json title="CPC3.train.json"
+    [
+        // ...
+        {
+            "signal": "CEC1_E001_S08594_L0231",
+            "prompt": "I can't keep my cool and he does rattle me",
+            "response": "I can't keep my ",
+            "n_words": 10,
+            "words_correct": 4,
+            "correctness": 40.0
+        },
+        // ...
+    ]
+    ```
+
+#### Listener Characteristics (`listeners.csv`)
+
+- CSV file with listener IDs and hearing impairment severity (WHO 2021 standard).
+
+    ```csv title="listeners.csv"
+    listener_id,severity
+    L0200,Moderate
+    L0201,Mild
+    L0202,Moderate
+    L0207,Moderate
+    // ...
+    ```
+
+## Development Data Details
+
+- Derived from CEC3, containing 926 audio signals for system development.
+- Smaller preview of the final evaluation set (approximately 7,000 signals).
+
+**Metadata (`CPC3.dev.json`)**
+
+```json title="CPC3.dev.json"
+[
+    {
+        "signal": "fb65e85e504ae136db0184d4",
+        "prompt": "you don't like coming to the refuge do you",
+        "n_words": 9,
+        "hearing_loss": "Mild"
+    },
+    // ...
+]
 ```
 
-Where `<CEC_ID>` is the Clarity Enhancement Challenge identifier (either CEC1 or CEC2), and `<SCENE_ID>` is the scene identifier.
+- `signal`: Encoded identifier for hearing aid output and reference.
+- `prompt`: Original target sentence.
+- `n_words`: Number of words in `prompt`.
+- `hearing_loss`: Listener's hearing impairment severity.
 
-It is important to note that there is a many-to-one mapping of hearing aid outputs to reference signals. The reference signal `<CEC_ID>_<SCENE_ID>_ref.wav` serves as the correct reference for all hearing aid outputs generated from the scene `<SCENE_ID>` in the Clarity Enhancement Challenge `<CEC_ID>`.
+**Audio Signals (`clarity_data/dev/signals/` and `clarity_data/dev/references/`)**
 
-## Metadata
+- 16-bit stereo WAV files at 32 kHz.
 
-The metadata directory (`clarity_data/metadata`) contains the listener responses to the signals as well as listener characteristics.
+**Leaderboard and Submission**
 
-You will find the following files:
+- A leaderboard will open in mid-April.
+- Submission instructions will be provided then.
+- The final evaluation set will be used for final ranking.
 
-```bash
-CPC3.train.json,  # The listener responses
-listeners.csv     # The listener characteristics
-```
+**Important Notes:**
 
-### Listening Test Responses
-
-The `CPC3.train.json` file contains a list of dictionaries, where each entry describes a listener's response to a signal. The fields are as follows:
-
-```json title="CPC3.train.json"
- [
-    // ... etc
- {
-        "signal": "CEC1_E001_S08594_L0231",
-        "prompt": "I can't keep my cool and he does rattle me",
-        "response": "I can't keep my ",
-        "n_words": 10,
-        "words_correct": 4,
-        "correctness": 40.0
- },
-  // ... etc
- ]
-```
-
-In this structure:
-
-- `signal` identifies the hearing aid output signal presented to the listener. You can use the signal name to determine the scene, system, and listener.
-- `prompt` is the transcription of the target sentence.
-- `response` is the transcription of the listener's response ("#" indicates that the listener did not respond or indicated they did not understand any words).
-- `n_words` indicates the total number of words in the target sentence.
-- `words_correct` reflects the number of words that the listener correctly identified.
-- `correctness` represents the percentage of words the listener correctly identified. **This is the number that you are asked to predict.**
-
-### Listener Characteristics
-
-The `listeners.csv` file provides information about the listener's hearing impairment severity (as per the 2021 WHO standard).
-
-```csv title="listeners.csv"
-listener_id,severity
-L0200,Moderate
-L0201,Mild
-L0202,Moderate
-L0207,Moderate
-etc
-```
+- `signal` identifiers are encoded to prevent data leakage.
+- `hearing_loss` is provided directly in `CPC3.dev.json`.
+- The development set is significantly smaller than the final evaluation set.
