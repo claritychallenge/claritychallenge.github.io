@@ -1,0 +1,31 @@
+---
+id: cpc3_devset_leaderboard
+title: CPC3 Development Set Leaderboard
+sidebar_label: Dev Set Leaderboard
+sidebar_position: 3.5
+---
+
+The official development set has been published without listener responses. To evaluate your predictions, you must submit them to the EvalAI leaderboard. Upon submission, you will have the option to make your results public or private. We encourage teams to make their results public to help others in the challenge. A maximum of 50 submissions can be made during the development cycle.
+
+## How to submit
+
+To submit your predictions, follow these steps:
+
+1. **Prepare a CSV file**: Create a CSV file with the following format:
+
+   ```csv
+   <signal_ID>,<intelligibility_score>
+   ...
+   ```
+
+   - `signal_ID`: The unique identifier for the signal, matching the WAV file name (e.g., `fb65e85e504ae136db0184d4`).
+   - `intelligibility_score`: The predicted intelligibility score as a percentage of words recognized correctly for the signal (a value between 0 and 100).
+
+   **Important**:
+   - Do not include a header row. The first row should contain the first `signal_ID` and its corresponding score.
+   - Ensure there are no extra spaces around the commas.
+
+2. **Submit to EvalAI**:
+   - Create a free account on [EvalAI](https://eval.ai) if you do not already have one.
+   - Log in and navigate to the [CPC3 challenge page](https://eval.ai/web/challenges/challenge-page/2506/leaderboard/6259).
+   - Locate the submission section, upload your CSV file, and select whether to make your results public or private.
