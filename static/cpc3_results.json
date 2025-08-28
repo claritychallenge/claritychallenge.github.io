@@ -1,0 +1,259 @@
+{
+    "defaultSort": {
+        "field": "eRMSE",
+        "direction": "asc"
+    },
+    "format":
+    [
+        {
+            "dataField": "rank",
+            "text": "Rank",
+            "sort": false
+        },   
+        {
+            "dataField": "id",
+            "text": "System",
+            "sort": false
+        }, 
+        {  
+            "dataField": "paper",
+            "text": "Paper",
+            "type": "Link",
+            "linkText": "Paper"
+        },
+        {
+            "dataField": "intrusive",
+            "text": "Intrusive",
+            "sort": false
+        },
+        {
+            "dataField": "dRMSE",
+            "text": "Dev RMSE",
+            "sort": true,
+            "min": 20
+        }, 
+ 
+        {
+            "dataField": "eRMSE",
+            "text": "Eval RMSE",
+            "sort": true,
+            "min": 24
+        }, 
+        {
+            "dataField": "ecorr",
+            "text": "Eval Corr",
+            "sort": true,
+            "min": 0.5
+        }
+    ],
+    "data":
+    [
+        {
+            "rank": 1,
+            "id": "E025",
+            "intrusive": "Yes",
+            "dRMSE": 22.36,
+            "eRMSE": 24.98,
+            "ecorr": 0.80,
+            "paper": "https://claritychallenge.org/clarity2025-workshop/papers/CPC3_E025_report.pdf"
+        },
+        {
+            "rank": 2,
+            "id": "E019",
+            "intrusive": "No",
+            "dRMSE": 21.87,
+            "eRMSE": 25.31,
+            "ecorr": 0.79,
+            "paper": "https://claritychallenge.org/clarity2025-workshop/papers/CPC3_E019_report.pdf"
+        },
+        {
+            "rank": 3,
+            "id": "E011a",
+            "intrusive": "No",
+            "dRMSE": 22.80,
+            "eRMSE": 25.54,
+            "ecorr": 0.79,
+            "paper": "https://claritychallenge.org/clarity2025-workshop/papers/CPC3_E011_report.pdf"
+        },
+        {
+            "rank": 4,
+            "id": "E020a",
+            "intrusive": "Yes",
+            "dRMSE": 23.15,
+            "eRMSE": 25.60,
+            "ecorr": 0.78,
+            "paper": "https://claritychallenge.org/clarity2025-workshop/papers/CPC3_E020a_report.pdf"
+        },
+        {
+            "rank": 5,
+            "id": "E014",
+            "intrusive": "No",
+            "dRMSE": 22.95,
+            "eRMSE": 25.82,
+            "ecorr": 0.78,
+            "paper": "https://claritychallenge.org/clarity2025-workshop/papers/CPC3_E014_report.pdf"
+        },
+        {
+            "rank": 6,
+            "id": "E011c",
+            "intrusive": "No",
+            "dRMSE": 22.89,
+            "eRMSE": 25.83,
+            "ecorr": 0.79,
+            "paper": "https://claritychallenge.org/clarity2025-workshop/papers/CPC3_E011_report.pdf"
+        },
+        {
+            "rank": 7,
+            "id": "E032",
+            "intrusive": "Yes (Text)",
+            "dRMSE": 23.60,
+            "eRMSE": 25.99,
+            "ecorr": 0.78,
+            "paper": "https://claritychallenge.org/clarity2025-workshop/papers/CPC3_E032_report.pdf"
+        },
+        {
+            "rank": 8,
+            "id": "E020b",
+            "intrusive": "Yes",
+            "dRMSE": 23.47,
+            "eRMSE": 26.02,
+            "ecorr": 0.78,
+            "paper": "https://claritychallenge.org/clarity2025-workshop/papers/CPC3_E020a_report.pdf"
+        },
+        {
+            "rank": 9,
+            "id": "E011b",
+            "intrusive": "No",
+            "dRMSE": 22.89,
+            "eRMSE": 26.12,
+            "ecorr": 0.78,
+            "paper": "https://claritychallenge.org/clarity2025-workshop/papers/CPC3_E011_report.pdf"
+        },
+        {
+            "rank": 10,
+            "id": "E020c",
+            "intrusive": "Yes",
+            "dRMSE": 24.81,
+            "eRMSE": 26.14,
+            "ecorr": 0.77,
+            "paper": "https://claritychallenge.org/clarity2025-workshop/papers/CPC3_E020c_report.pdf"
+        },
+        {
+            "rank": 11,
+            "id": "E017",
+            "intrusive": "Yes",
+            "dRMSE": 24.05,
+            "eRMSE": 26.30,
+            "ecorr": 0.77,
+            "paper": "https://claritychallenge.org/clarity2025-workshop/papers/CPC3_E017_report.pdf"
+        },
+        {
+            "rank": 12,
+            "id": "E024b",
+            "intrusive": "No",
+            "dRMSE": 24.74,
+            "eRMSE": 26.58,
+            "ecorr": 0.77,
+            "paper": "https://claritychallenge.org/clarity2025-workshop/papers/CPC3_E024_report.pdf"
+        },
+        {
+            "rank": 13,
+            "id": "E026",
+            "intrusive": "Yes",
+            "dRMSE": 24.64,
+            "eRMSE": 26.90,
+            "ecorr": 0.76,
+            "paper": "https://claritychallenge.org/clarity2025-workshop/papers/CPC3_E026_report.pdf"
+        },
+        {
+            "rank": 14,
+            "id": "E039",
+            "intrusive": "Yes",
+            "dRMSE": 25.61,
+            "eRMSE": 27.00,
+            "ecorr": 0.76,
+            "paper": "https://claritychallenge.org/clarity2025-workshop/papers/CPC3_E039_report.pdf"
+        },
+        {
+            "rank": 15,
+            "id": "E024a",
+            "intrusive": "No",
+            "dRMSE": 24.18,
+            "eRMSE": 27.11,
+            "ecorr": 0.76,
+            "paper": "https://claritychallenge.org/clarity2025-workshop/papers/CPC3_E024_report.pdf"
+        },
+        {
+            "rank": 16,
+            "id": "E038",
+            "intrusive": "Yes",
+            "dRMSE": 24.88,
+            "eRMSE": 27.82,
+            "ecorr": 0.74,
+            "paper": "https://claritychallenge.org/clarity2025-workshop/papers/CPC3_E038_report.pdf"
+        },
+        {
+            "rank": 17,
+            "id": "E035",
+            "intrusive": "Yes",
+            "dRMSE": null,
+            "eRMSE": 27.87,
+            "ecorr": 0.75,
+            "paper": "https://claritychallenge.org/clarity2025-workshop/papers/CPC3_E035_report.pdf"
+        },
+        {
+            "rank": 18,
+            "id": "E012",
+            "intrusive": "No",
+            "dRMSE": 26.28,
+            "eRMSE": 29.07,
+            "ecorr": 0.75,
+            "paper": "https://claritychallenge.org/clarity2025-workshop/papers/CPC3_E012_report.pdf"
+        },
+        {
+            "rank": 19,
+            "id": "beHASPI",
+            "intrusive": "Yes",
+            "dRMSE": 28.00,
+            "eRMSE": 29.47,
+            "ecorr": 0.70,
+            "paper": null
+        },
+        {
+            "rank": 20,
+            "id": "E020c-ni",
+            "intrusive": "No",
+            "dRMSE": 30.16,
+            "eRMSE": 32.74,
+            "ecorr": 0.65,
+            "paper": "https://claritychallenge.org/clarity2025-workshop/papers/CPC3_E020c_report.pdf"
+        },
+        {
+            "rank": 21,
+            "id": "E022a",
+            "intrusive": "No",
+            "dRMSE": 31.11,
+            "eRMSE": 33.97,
+            "ecorr": 0.57,
+            "paper": "https://claritychallenge.org/clarity2025-workshop/papers/CPC3_E022_report.pdf"
+        },
+        {
+            "rank": 22,
+            "id": "E022b",
+            "intrusive": "No",
+            "dRMSE": 33.10,
+            "eRMSE": 35.48,
+            "ecorr": 0.56,
+            "paper": "https://claritychallenge.org/clarity2025-workshop/papers/CPC3_E022_report.pdf"
+        },
+        {
+            "rank": 23,
+            "id": "Prior",
+            "intrusive": "No",
+            "dRMSE": 40.20,
+            "eRMSE": 41.33,
+            "ecorr": null,
+            "paper": null
+        }  
+    ]
+}

@@ -1,0 +1,72 @@
+---
+id: cpc3_results
+title: Results
+sidebar_label: Results
+sidebar_position: 11
+---
+import { EmojiEvents } from "@mui/icons-material";
+
+import ResultsDisplay from "/src/components/ResultsDisplay";
+
+The 3rd Clarity Prediction Challenge is now complete. Results are shown below along with links to the system description papers. Further information can be found on the Clarity-2025 workshop website [here](https://claritychallenge.org/clarity2025-workshop/results).
+
+import all_data from "/cpc3_results.json";
+
+The table below reports both the RMSE and the correlation coefficient (CC) between the predicted and actual intelligibility scores. The column 'intrusive' indicates whether the system is intrusive (i.e., requires access to the clean speech signal) or not.  Links to the technical reports are also provided.
+
+<ResultsDisplay all_data={ all_data } />
+
+## Prizes
+
+    <br />
+
+<p>The Hearing Industry Research Consortium best system prizes were awarded to the following teams.</p>
+
+<div class="card  m-3">
+<div class="card-body">
+
+First place prize,  1000 GPB
+<table>
+<tbody>
+
+<tr>
+<td> <span class="author">Hanlin Yu<sup>1</sup>, Haoshuai Zhou<sup>2</sup>, Linkai Li<sup>2,3</sup>, Boxuan Cao<sup>2</sup>, Changgeng Mo<sup>2</sup>, Shan Xiang Wang<sup>3</sup></span> <i>( <sup>1</sup>University of British Columbia,Canada; <sup>2</sup>Orka Labs Inc., China; <sup>3</sup>Stanford University, US)</i>, for their work: <br/> <b> Intrusive Intelligibility Prediction with ASR Encoders
+  </b><a href="https://claritychallenge.org/clarity2025-workshop/papers/CPC3_E025_report.pdf">[Report]</a> </td>
+</tr>
+
+</tbody>
+</table>
+
+Second place prize,  500 GPB
+<table>
+<tbody>
+
+<tr>
+<td>
+ <span class="author">Rantu Buragohain<sup>1</sup>, Jejariya Ajaybhai<sup>1</sup>, Aashish Kumar Singh<sup>1</sup>, Karan Nathwani<sup>1</sup>, Sunil Kumar
+Kopparapu<sup>2</sup></span> <i>( <sup>1</sup>Indian Institute of Technology Jammu, India; <sup>2</sup>Tata Consultancy Services Limited Mumbai, India)</i>, for their work: <br/> <b> Non-Intrusive Speech Intelligibility Prediction Using Whisper ASR and Wavelet Scattering Embeddings for Hearing-Impaired Individuals  </b><a href="https://claritychallenge.org/clarity2025-workshop/papers/CPC3_E019_report.pdf">[Report]</a>
+</td>
+</tr>
+
+</tbody>
+</table>
+
+Third place prize,  250 GPB
+
+<table>
+<tbody>
+
+<tr>
+<td>
+<span class="author"> Ryandhimas E. Zezario<sup>1</sup>, Szu-Wei Fu<sup>2</sup>, Dyah A.M.G. Wisnu<sup>1,3</sup>, Hsin-Min Wang<sup>1</sup>, Yu Tsao<sup>1</sup></span> <i>( <sup>1</sup>Academia Sinica; <sup>2</sup>NVIDIA; <sup>3</sup>National Chengchi University)</i>, for their work: <br /> <b> Non-Intrusive Multi-Branch Speech Intelligibility Prediction using Multi-Stage Training  </b> <a href="https://claritychallenge.org/clarity2025-workshop/papers/CPC3_E011_report.pdf">[Report]</a>
+</td>
+</tr>
+
+</tbody>
+</table>
+
+</div> </div>
+
+<p/>
+
+<p>Congratulations to all our winners!</p>

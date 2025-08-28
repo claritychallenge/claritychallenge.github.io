@@ -72,7 +72,7 @@ module.exports = {
         announcementBar: {
             id: 'pre-announcement-cpc3',
             content:
-                '🔥🔥  The 3rd Clarity Prediction Challenge evaluation data is now available 🔥🔥 <a href="/docs/cpc3/cpc3_intro">Challenge details here</a>',
+                '🔥🔥  The results of the 3rd Clarity Prediction Challenge are now available 🔥🔥 <a href="/docs/cpc3/cpc3_results">Full results table here</a>',
             backgroundColor: '#6ce56c',
             textColor: '#070707',
             isCloseable: true,
