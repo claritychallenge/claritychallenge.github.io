@@ -5,9 +5,17 @@ sidebar_label: Download Data
 sidebar_position: 2
 ---
 
-The following challenge data are available for download:
 
-- The challenge data is available for download as a single 11 GB file, [clarity_CPC2_data.v1_1.tgz](https://mab.to/138typ3cpVBmK).
-- The evaluation data is now available for download as a single 478 MB file, [clarity_CPC2_data.test.v1_0.tgz](https://mab.to/138typ3cpVBmK). The evaluation data should be untarred into the same root as the training data.
+The challenge data is now published and [available for download on Zenodo](https://zenodo.org/records/17045970). On the Zenodo site you will find the following.
 
-The Github repository containing the baseline code is [here](https://github.com/claritychallenge/clarity). The repository contains code for CPC2 and also for the earlier enhancement and prediction challenges, i.e., CEC1, CEC2 and CPC1.  You will find all the necessary instructions for installing the data and running the baseline system.
+- The challenge training set data packaged as a single 12 GB file, **clarity_CPC2_data.v1_1.tgz**
+- The evaluation set data packaged as a single 500 MB file, **clarity_CPC2_data.test.v1_0.tgz**. The evaluation data should be untarred into the same root as the training data.
+- Evaluation set labels packaged as a small 46 KB file, **clarity_CPC2_data.labels.v1_0.tar.gz**. These were not made available to entrants during the challenge but have been released subsequently to allow self-evaluation.
+
+The Github repository containing the baseline code is [here](https://github.com/claritychallenge/clarity/tree/main/recipes/cpc2). The repository contains code for all the Clarity enhancement and prediction challenges.  You will find all the necessary instructions for installing the data and setting up the baseline system: i.e. producing the better-ear HASPI predictions.
+
+:::info
+The Challenge is now closed but the data is still available for anyone to use. If using the data please cite the following [paper](https://drive.google.com/drive/folders/1pfGTqYAivACAgtliLwM58opCNfHcMwBG?usp=sharing)
+
+Jon Barker, Michael A Akeroyd, Will Bailey, Trevor J. Cox, John F. Culling, Jennifer Firth, Simone Graetzer and Graham Naylor, "The 2nd Clarity Prediction Challenge: A Machine Learning Challenge for Hearing Aid Intelligibility Prediction," ICASSP 2024 - 2024 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), Seoul, Korea, Republic of, 2024, pp. 11551-11555, doi: 10.1109/ICASSP48485.2024.10446441.
+:::

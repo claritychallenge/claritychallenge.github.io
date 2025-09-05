@@ -99,13 +99,12 @@ module.exports = {
                         },
                         {
                             type: 'doc',
-                            docId: 'cpc2/cpc2_results',
-                            label: 'I want to see the results of CPC2 ...',
+                            docId: 'cpc3/cpc3_results',
+                            label: 'I want to see the results of CPC3 ...',
                         },
                         {
-                            type: 'doc',
-                            docId: 'cec2/cec2_results',
-                            label: 'I want to see the results of CEC2 ...',
+                            href: 'https://claritychallenge.github.io/clarity2025-workshop/',
+                            label: 'I want to see the latest workshop ...',
                         },
                        {
                             href: 'https://github.com/claritychallenge/clarity',
@@ -152,11 +151,56 @@ module.exports = {
                             type: 'doc',
                             docId: 'cec1/cec1_intro',
                             label: 'CEC1',
-                        }, {
-                            to: '/timeline',
-                            label: 'Future Challenges',
-                        },
+                        }
                     ]
+                },
+                 {
+                    type: 'dropdown',
+                    label: 'Datasets',
+                    position: 'right',
+                    items: [{
+                        type: 'doc',
+                        docId: 'cpc3/cpc3_download',
+                        label: 'CPC3',
+                        }, {
+                            type: 'doc',
+                            docId: 'cec3/cec3_download',
+                            label: 'CEC3',
+                        }, {
+                            type: 'doc',
+                            docId: 'cpc2/cpc2_download',
+                            label: 'CPC2',
+                        }, {
+                            type: 'doc',
+                            docId: 'icassp2023/icassp2023_download',
+                            label: 'ICASSP 2023 Grand Challenge',
+                        },
+                        {
+                            type: 'doc',
+                            docId: 'cec2/cec2_download',
+                            label: 'CEC2',
+                        }, {
+                            type: 'doc',
+                            docId: 'cpc1/cpc1_download',
+                            label: 'CPC1',
+                        }, {
+                            type: 'doc',
+                            docId: 'cec1/cec1_download',
+                            label: 'CEC1',
+                        }
+                    ]
+                },
+                    {
+                    type: 'dropdown',
+                    label: 'Software',
+                    position: 'right',
+                    items: [{
+                        href: 'https://github.com/claritychallenge/clarity',
+                        label: 'PyClarity',
+                    }, {
+                        to: 'tutorials',
+                        label: 'Tutorials',
+                    } ]
                 },
                 {
                     type: 'dropdown',
@@ -186,18 +230,7 @@ module.exports = {
 
                     ]
                 },
-                {
-                    type: 'dropdown',
-                    label: 'Software',
-                    position: 'right',
-                    items: [{
-                        to: 'tutorials',
-                        label: 'Tutorials',
-                    }, {
-                        href: 'https://github.com/claritychallenge/clarity',
-                        label: 'GitHub',
-                    }, ]
-                },{
+            {
                     to: 'publications',
                     label: 'Publications',
                     position: 'right',

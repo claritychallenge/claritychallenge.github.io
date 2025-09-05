@@ -1,13 +1,34 @@
 ---
 id: cpc3_download
-title: Obtaining the data
+title: Obtaining the CPC3 dataset
 sidebar_label: Download Data
 sidebar_position: 2
 ---
 
+import Ignore from '@site/src/components/Ignore';
 
-The challenge data is available for download as a single 7 GB file. To obtain the download link, please fill in the form below and click 'submit'.
+The challenge data is now published and [available for download on Zenodo](https://zenodo.org/records/17039000). On the Zenodo site you will find the following.
 
+- The challenge training set data packaged as a single 7.5 GB file, **clarity_CPC3_data.v1_1.tar.gz**
+- The development set data packaged as a single 752 MB file, **clarity_CPC3_data.dev.v1_0.tar.gz**.
+- The evaluation set data packaged as a single 6.1 GB file, **clarity_CPC3_data.eval.v1_0.tar.gz**.
+- Development and Evaluation set labels packaged as a small 515 KB file, **clarity_CPC3_data.labels.tar.gz**. The evaluation set labels were not made available to entrants during the challenge but have been released subsequently to allow self-evaluation.
+- A small 20 MB demo dataset for preview purposes, **clarity_CPC3_demo_data.v1_0.tar.gz**.
+
+All packages should be unpacked under the same root.
+
+The Github repository containing the baseline code is [here](https://github.com/claritychallenge/clarity/tree/main/recipes/cpc3). The repository contains code for all the Clarity enhancement and prediction challenges.  You will find all the necessary instructions for installing the data and setting up the baseline system: i.e. producing the better-ear HASPI predictions.
+
+:::info
+The Challenge is now closed but the data is still available for anyone to use. If using the data please cite the Zenodo dataset:
+
+Barker, J. (2025). 3rd Clarity Prediction Challenge (CPC3) dataset for hearing aid speech intelligibility prediction [Data set]. Zenodo. `<https://doi.org/10.5281/zenodo.17039000>`;
+
+We are preparing a paper describing the dataset and summarising the challenge outcomes which will provide a more suitable reference. When this paper is available we will update the citation details.
+
+:::
+
+<Ignore>
 After submission, the download link will appear in the form, <b>directly on this page</b>. You should also receive an email titled "CPC3 Data Download Link" with the link. If you do not receive this email, please check your spam folder.
 
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeTgQnsX-suCUi66QOiv3vOkPJs2E1q65j4kJj62mya9j_x3w/viewform?embedded=true" width="640" height="860" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
@@ -15,3 +36,4 @@ After submission, the download link will appear in the form, <b>directly on this
 :::tip
 If you have submitted the form, the link will have appeared in the form text above. You may need to scroll up in order to see it. We recommend that you keep a copy of the link for your records. If you have any issues with the download, please contact us at [claritychallengecontact@gmail.com](mailto:claritychallengecontact@gmail.com)
 :::
+</Ignore>
