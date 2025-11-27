@@ -15,33 +15,32 @@
         "write-heading-ids": "docusaurus write-heading-ids"
     },
     "dependencies": {
-        "@docusaurus/core": "^3.8.1",
-        "@docusaurus/plugin-client-redirects": "^3.8.1",
-        "@docusaurus/preset-classic": "^3.8.1",
-        "@docusaurus/theme-mermaid": "^3.8.1",
+        "@docusaurus/core": "^3.9.2",
+        "@docusaurus/plugin-client-redirects": "^3.9.2",
+        "@docusaurus/preset-classic": "^3.9.2",
+        "@docusaurus/theme-mermaid": "^3.9.2",
         "@emotion/react": "^11.11.1",
-        "@emotion/styled": "^11.11.0",
-        "@mui/icons-material": "^5.14.15",
-        "@mui/material": "^5.14.15",
-        "@openspacelabs/react-native-zoomable-view": "^2.1.5",
+        "@emotion/styled": "^11.14.0",
+        "@mui/icons-material": "7.3.0",
+        "@mui/material": "^7.3.0",
         "bibtex-parse-js": "^0.0.24",
-        "chart.js": "^4.4.0",
+        "chart.js": "^4.5.0",
         "citation-js": "^0.7.20",
         "docusaurus-lunr-search": "^3.6.1",
-        "docusaurus-plugin-image-zoom": "^2.0.0",
+        "docusaurus-plugin-image-zoom": "^3.0.0",
         "mdx-mermaid": "^2.0.0",
-        "prism-react-renderer": "^2.1.0",
-        "react": "^18.2.0",
+        "prism-react-renderer": "^2.4.0",
+        "react": "^18.3.0",
         "react-bootstrap-table-next": "^4.0.3",
-        "react-chartjs-2": "^5.2.0",
+        "react-chartjs-2": "^5.3.0",
         "react-dom": "^18.2.0",
-        "react-medium-image-zoom": "^5.1.8",
+        "react-medium-image-zoom": "^5.4.0",
         "react-twitter-embed": "^4.0.4",
         "rehype-katex": "^7.0.0",
         "remark-math": "^6.0.0"
     },
     "engines": {
-        "node": ">=18.0"
+        "node": ">=20.0"
     },
     "browserslist": {
         "production": [
