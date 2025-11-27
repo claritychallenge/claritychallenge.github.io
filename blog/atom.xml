@@ -15,10 +15,10 @@
         <summary type="html"><![CDATA[----------------------------------------------]]></summary>
         <content type="html"><![CDATA[<hr>
 <ul>
-<li>3rd Clarity Prediction Challenge (CPC-3)</li>
-<li>Launch: March 17th; Submission: July 31st, 2025</li>
-<li>Workshop: 22nd August 2025, an INTERSPEECH satellite workshop</li>
-<li><a href="https://claritychallenge.org/" target="_blank" rel="noopener noreferrer">https://claritychallenge.org/</a></li>
+<li class="">3rd Clarity Prediction Challenge (CPC-3)</li>
+<li class="">Launch: March 17th; Submission: July 31st, 2025</li>
+<li class="">Workshop: 22nd August 2025, an INTERSPEECH satellite workshop</li>
+<li class=""><a href="https://claritychallenge.org/" target="_blank" rel="noopener noreferrer" class="">https://claritychallenge.org/</a></li>
 </ul>
 <hr>
 <p>Dear colleague,</p>
@@ -28,44 +28,44 @@
 <p>In recent years, we have organised the CPC1 and CPC2 Challenges to promote the development of such prediction systems.  We are now launching the third round of this challenge, building on previous efforts by incorporating a more extensive and diverse set of listener data for training and evaluation.</p>
 <p><strong>What will be provided</strong></p>
 <ul>
-<li><strong>Hearing aid outputs</strong>: Audio produced by various simulated hearing aids while processing speech in noisy environments.</li>
-<li><strong>Clean speech reference signals</strong></li>
-<li><strong>Listening Test Results</strong>: This includes transcripts and intelligibility scores from tests in which hearing-impaired listeners were asked to repeat what they heard.</li>
-<li><strong>Listener Characteristics</strong>: Information regarding the severity of hearing impairment for each listener.</li>
-<li><strong>Software Tools</strong>: Tools include a baseline system based on HASPI scores.</li>
+<li class=""><strong>Hearing aid outputs</strong>: Audio produced by various simulated hearing aids while processing speech in noisy environments.</li>
+<li class=""><strong>Clean speech reference signals</strong></li>
+<li class=""><strong>Listening Test Results</strong>: This includes transcripts and intelligibility scores from tests in which hearing-impaired listeners were asked to repeat what they heard.</li>
+<li class=""><strong>Listener Characteristics</strong>: Information regarding the severity of hearing impairment for each listener.</li>
+<li class=""><strong>Software Tools</strong>: Tools include a baseline system based on HASPI scores.</li>
 </ul>
 <!-- -->
 <p>Your system will need to predict intelligibility scores based on the hearing aid outputs. We will explore two types of systems: intrusive metrics, which also use clean speech reference signals, and non-intrusive systems that make predictions based solely on the hearing aid outputs.</p>
-<p>There will be <strong>cash prizes</strong> for the top three systems courtesy of our sponsors, the Hearing Industry Research Consortium (<a href="https://hearingirc.com/" target="_blank" rel="noopener noreferrer">https://hearingirc.com/</a>)</p>
-<p>For further details, including how to obtain the data and how to register to enter, please  see <a href="https://claritychallenge.org/docs/cpc3/cpc3_intro" target="_blank" rel="noopener noreferrer">https://claritychallenge.org/docs/cpc3/cpc3_intro</a>.</p>
+<p>There will be <strong>cash prizes</strong> for the top three systems courtesy of our sponsors, the Hearing Industry Research Consortium (<a href="https://hearingirc.com/" target="_blank" rel="noopener noreferrer" class="">https://hearingirc.com/</a>)</p>
+<p>For further details, including how to obtain the data and how to register to enter, please  see <a href="https://claritychallenge.org/docs/cpc3/cpc3_intro" target="_blank" rel="noopener noreferrer" class="">https://claritychallenge.org/docs/cpc3/cpc3_intro</a>.</p>
 <p><strong>The Workshop</strong></p>
 <p>The results of the new challenge will be showcased at an ISCA workshop satellite event of Interspeech 2025 in Rotterdam on 22nd August 2025.</p>
-<p>For further details, see <a href="https://claritychallenge.org/clarity2025-workshop/" target="_blank" rel="noopener noreferrer">https://claritychallenge.org/clarity2025-workshop/</a>.</p>
+<p>For further details, see <a href="https://claritychallenge.org/clarity2025-workshop/" target="_blank" rel="noopener noreferrer" class="">https://claritychallenge.org/clarity2025-workshop/</a>.</p>
 <p><strong>Important Dates</strong></p>
 <ul>
-<li>17th March 2025: Launch of challenge, the <strong>release of the training data set</strong> (i.e. signals and paired intelligibility scores).</li>
-<li>24th March 2025: <strong>Release of the development data.</strong></li>
-<li>14th April 2025: Opening of the <strong>development data leaderboard.</strong></li>
-<li>1st July 2025: <strong>Release of evaluation data.</strong></li>
-<li>31st July 2025: <strong>Submission deadline</strong>. All entrants must have submitted their predictions plus a draft of their technical report.<!-- -->
+<li class="">17th March 2025: Launch of challenge, the <strong>release of the training data set</strong> (i.e. signals and paired intelligibility scores).</li>
+<li class="">24th March 2025: <strong>Release of the development data.</strong></li>
+<li class="">14th April 2025: Opening of the <strong>development data leaderboard.</strong></li>
+<li class="">1st July 2025: <strong>Release of evaluation data.</strong></li>
+<li class="">31st July 2025: <strong>Submission deadline</strong>. All entrants must have submitted their predictions plus a draft of their technical report.<!-- -->
 <ul>
-<li>Scores will be returned to entrants within 24 hours of submission.</li>
+<li class="">Scores will be returned to entrants within 24 hours of submission.</li>
 </ul>
 </li>
-<li>22nd August 2025: Clarity 2025 <strong>workshop</strong>, @Interspeech, Rotterdam</li>
-<li>22nd September 2025: Deadline for submission of <strong>finalised Workshop papers</strong>.</li>
+<li class="">22nd August 2025: Clarity 2025 <strong>workshop</strong>, @Interspeech, Rotterdam</li>
+<li class="">22nd September 2025: Deadline for submission of <strong>finalised Workshop papers</strong>.</li>
 </ul>
 <p><strong>For further information</strong></p>
-<p>To keep up to date, please join our <a href="https://groups.google.com/g/clarity-challenge" target="_blank" rel="noopener noreferrer">Clarity Challenge Google group</a>. If you have questions, please contact us directly using the contact details found <a href="https://claritychallenge.org/contact" target="_blank" rel="noopener noreferrer">here</a>.</p>
+<p>To keep up to date, please join our <a href="https://groups.google.com/g/clarity-challenge" target="_blank" rel="noopener noreferrer" class="">Clarity Challenge Google group</a>. If you have questions, please contact us directly using the contact details found <a href="https://claritychallenge.org/contact" target="_blank" rel="noopener noreferrer" class="">here</a>.</p>
 <p><strong>Organisers</strong></p>
 <ul>
-<li>Michael A. Akeroyd, University of Nottingham</li>
-<li>Jon Barker, University of Sheffield</li>
-<li>Trevor J. Cox, University of Salford</li>
-<li>John F. Culling, Cardiff University</li>
-<li>Jennifer Firth,  University of Nottingham</li>
-<li>Simone Graetzer, University of Salford</li>
-<li>Graham Naylor, University of Nottingham</li>
+<li class="">Michael A. Akeroyd, University of Nottingham</li>
+<li class="">Jon Barker, University of Sheffield</li>
+<li class="">Trevor J. Cox, University of Salford</li>
+<li class="">John F. Culling, Cardiff University</li>
+<li class="">Jennifer Firth,  University of Nottingham</li>
+<li class="">Simone Graetzer, University of Salford</li>
+<li class="">Graham Naylor, University of Nottingham</li>
 </ul>
 <p><strong>Funded by</strong> the Engineering and Physical Sciences Research Council (EPSRC), UK</p>
 <p><strong>Supported by</strong> RNID (formerly Action on Hearing Loss), Hearing Industry Research Consortium, Amazon TTS Research</p>]]></content>
@@ -90,43 +90,43 @@
 <p>In recent years, we have run the CPC1 Challenge and CPC2 Challenge to advance such models.  We are now launching the third round of this challenge, which builds on previous efforts by incorporating a larger and more diverse set of listener data for training and evaluation.</p>
 <p><strong>What will be provided</strong></p>
 <ul>
-<li>Audio produced by a variety of (simulated) hearing aids for speech-in-noise;</li>
-<li>The corresponding clean reference signals (the original speech);</li>
-<li>Characteristics of the listeners (pure tone audiograms, etc);</li>
-<li>The measured speech intelligibility scores from listening tests, where hearing-impaired listeners were asked to say what they heard after listening to the hearing aid processed signals.</li>
-<li>Software tools including a baseline system based on HASPI scores.</li>
+<li class="">Audio produced by a variety of (simulated) hearing aids for speech-in-noise;</li>
+<li class="">The corresponding clean reference signals (the original speech);</li>
+<li class="">Characteristics of the listeners (pure tone audiograms, etc);</li>
+<li class="">The measured speech intelligibility scores from listening tests, where hearing-impaired listeners were asked to say what they heard after listening to the hearing aid processed signals.</li>
+<li class="">Software tools including a baseline system based on HASPI scores.</li>
 </ul>
-<p>For further details see <a href="https://claritychallenge.org/docs/cpc3/cpc3_intro" target="_blank" rel="noopener noreferrer">https://claritychallenge.org/docs/cpc3/cpc3_intro</a></p>
+<p>For further details see <a href="https://claritychallenge.org/docs/cpc3/cpc3_intro" target="_blank" rel="noopener noreferrer" class="">https://claritychallenge.org/docs/cpc3/cpc3_intro</a></p>
 <!-- -->
 <p><strong>The Workshop</strong></p>
 <p>The results of the new challenge will be showcased at an ISCA workshop, a satellite event to Interspeech 2025 in Rotterdam on 22nd August 2025 (TBC).</p>
-<p>For further details see <a href="https://claritychallenge.org/clarity2025-workshop/" target="_blank" rel="noopener noreferrer">https://claritychallenge.org/clarity2025-workshop/</a></p>
+<p>For further details see <a href="https://claritychallenge.org/clarity2025-workshop/" target="_blank" rel="noopener noreferrer" class="">https://claritychallenge.org/clarity2025-workshop/</a></p>
 <p><strong>Registering and submitting​</strong></p>
 <p>Following the launch on March 17th, we will open registration for prospective entrants. Participants will have until 31st July to submit their entries, which will be evaluated remotely by the organizers. Full submission instructions will be provided at launch.</p>
 <p><strong>Important Dates</strong></p>
 <p>All dates are to be intended anywhere on earth time (AoE).</p>
 <ul>
-<li>17th March 2025: Launch of challenge, release of data.</li>
-<li>1st July 2025: Release of evaluation data and opening of submission window.</li>
-<li>31st July 2025: Submission deadline. All entrants must have submitted their predictions plus a draft of their technical report.<!-- -->
+<li class="">17th March 2025: Launch of challenge, release of data.</li>
+<li class="">1st July 2025: Release of evaluation data and opening of submission window.</li>
+<li class="">31st July 2025: Submission deadline. All entrants must have submitted their predictions plus a draft of their technical report.<!-- -->
 <ul>
-<li>Scores will be returned to entrants within 24 hours of submission.</li>
+<li class="">Scores will be returned to entrants within 24 hours of submission.</li>
 </ul>
 </li>
-<li>22nd August 2025: Clarity 2025 workshop, @Interspeech, Rotterdam (TBC)</li>
-<li>22nd September 2025: Deadline for submission of finalised Workshop papers</li>
+<li class="">22nd August 2025: Clarity 2025 workshop, @Interspeech, Rotterdam (TBC)</li>
+<li class="">22nd September 2025: Deadline for submission of finalised Workshop papers</li>
 </ul>
 <p><strong>Stay informed​</strong></p>
 <p>To stay informed please sign up to the Clarity Challenge Google group</p>
 <p><strong>Organisers</strong></p>
 <ul>
-<li>Michael A. Akeroyd, University of Nottingham</li>
-<li>Jon Barker, University of Sheffield</li>
-<li>Trevor J. Cox, University of Salford</li>
-<li>John F. Culling, Cardiff University</li>
-<li>Jennifer Firth,  University of Nottingham</li>
-<li>Simone Graetzer, University of Salford</li>
-<li>Graham Naylor, University of Nottingham</li>
+<li class="">Michael A. Akeroyd, University of Nottingham</li>
+<li class="">Jon Barker, University of Sheffield</li>
+<li class="">Trevor J. Cox, University of Salford</li>
+<li class="">John F. Culling, Cardiff University</li>
+<li class="">Jennifer Firth,  University of Nottingham</li>
+<li class="">Simone Graetzer, University of Salford</li>
+<li class="">Graham Naylor, University of Nottingham</li>
 </ul>
 <p><strong>Funded by</strong> the Engineering and Physical Sciences Research Council (EPSRC), UK</p>
 <p><strong>Supported by</strong> RNID (formerly Action on Hearing Loss), Hearing Industry Research Consortium, Amazon TTS Research</p>]]></content>
@@ -150,11 +150,11 @@
 <p>Preliminary details for the event can be found on the workshop website.</p>
 <p>The workshop will feature,</p>
 <ul>
-<li>an overview of the CEC3 challenge</li>
-<li>announcement of the challenge results</li>
-<li>presentations from all participating teams</li>
-<li>an invited talk: Stefan Raufer and Peter Derleth, Sonova, "Development and testing of Sonova’s hearing aid with DNN-based speech enhancement: meeting the constraints of a wearable solution”</li>
-<li>a discussion of future directions for hearing aid machine learning challenges.</li>
+<li class="">an overview of the CEC3 challenge</li>
+<li class="">announcement of the challenge results</li>
+<li class="">presentations from all participating teams</li>
+<li class="">an invited talk: Stefan Raufer and Peter Derleth, Sonova, "Development and testing of Sonova’s hearing aid with DNN-based speech enhancement: meeting the constraints of a wearable solution”</li>
+<li class="">a discussion of future directions for hearing aid machine learning challenges.</li>
 </ul>
 <p>Programme details can be found on the website.</p>
 <p>The event is free to attend but prior registration is required.</p>
@@ -174,27 +174,27 @@
         <link href="https://claritychallenge.github.io/blog/launch of CEC3"/>
         <updated>2024-04-08T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[We are pleased to announce the launch of the 3rd Clarity Enhancement Challenge (CEC3).]]></summary>
-        <content type="html"><![CDATA[<p>We are pleased to announce the launch of the <strong><a href="https://claritychallenge.github.io/docs/cec3/cec3_intro">3rd Clarity Enhancement Challenge (CEC3)</a></strong>.</p>
-<p>The challenge follows on from the success of the <a href="https://claritychallenge.github.io/docs/cec2/cec2_intro">2nd Clarity Enhancement Challenge (CEC2)</a> and is about improving the performance of hearing aids for speech-in-noise. The challenge extends CEC2 is three separate directions which have been presented as three different tasks.</p>
+        <content type="html"><![CDATA[<p>We are pleased to announce the launch of the <strong><a class="" href="https://claritychallenge.github.io/docs/cec3/cec3_intro">3rd Clarity Enhancement Challenge (CEC3)</a></strong>.</p>
+<p>The challenge follows on from the success of the <a class="" href="https://claritychallenge.github.io/docs/cec2/cec2_intro">2nd Clarity Enhancement Challenge (CEC2)</a> and is about improving the performance of hearing aids for speech-in-noise. The challenge extends CEC2 is three separate directions which have been presented as three different tasks.</p>
 <ul>
-<li>Task 1: Real ambisonic room impulse responses (<!-- -->🔥<!-- --> LIVE <!-- -->🔥<!-- -->)</li>
-<li>Task 2: Real hearing aid signals (<!-- -->🔥<!-- --> LIVE <!-- -->🔥<!-- -->)</li>
-<li>Task 3: Real dynamic backgrounds (launching 1st May)</li>
+<li class="">Task 1: Real ambisonic room impulse responses (<!-- -->🔥<!-- --> LIVE <!-- -->🔥<!-- -->)</li>
+<li class="">Task 2: Real hearing aid signals (<!-- -->🔥<!-- --> LIVE <!-- -->🔥<!-- -->)</li>
+<li class="">Task 3: Real dynamic backgrounds (launching 1st May)</li>
 </ul>
 <p>Participants are welcome to submit to one or more tasks. We are particularly interested in systems that handle all three cases with little or no redesign/retraining.</p>
 <p>The website has been fully updated to provide you with all the information you will need to participate. The necessary data and software are available for download.</p>
 <!-- -->
 <p>The schedule for the challenge is as follows:</p>
 <ul>
-<li><strong>2nd April 2024</strong>: Launch of <a href="https://claritychallenge.github.io/docs/cec3/task_1/cec3_task1_overview">Task 1</a> and <a href="https://claritychallenge.github.io/docs/cec3/task_2/cec3_task2_overview">Task 2</a> with training and development data; initial tools.</li>
-<li><strong>1st May 2024</strong>: Launch of <a href="https://claritychallenge.github.io/docs/cec3/task_3/cec3_task3_overview">Task 3</a>.</li>
-<li><strong>25th July 2024</strong>: Evaluation data released</li>
-<li><strong>2nd Sept 2024</strong>: 1st round submission for evaluation by objective measure</li>
-<li><strong>15th Sept 2024</strong>: 2nd round submission deadline for listening tests (Task 2 and 3)</li>
-<li><strong>Sept-Nov 2024</strong>: Listening test evaluation period.</li>
-<li><strong>Dec 2024</strong>:  Results announced at a Clarity Challenge Workshop (Details TBD); prizes awarded.</li>
+<li class=""><strong>2nd April 2024</strong>: Launch of <a class="" href="https://claritychallenge.github.io/docs/cec3/task_1/cec3_task1_overview">Task 1</a> and <a class="" href="https://claritychallenge.github.io/docs/cec3/task_2/cec3_task2_overview">Task 2</a> with training and development data; initial tools.</li>
+<li class=""><strong>1st May 2024</strong>: Launch of <a class="" href="https://claritychallenge.github.io/docs/cec3/task_3/cec3_task3_overview">Task 3</a>.</li>
+<li class=""><strong>25th July 2024</strong>: Evaluation data released</li>
+<li class=""><strong>2nd Sept 2024</strong>: 1st round submission for evaluation by objective measure</li>
+<li class=""><strong>15th Sept 2024</strong>: 2nd round submission deadline for listening tests (Task 2 and 3)</li>
+<li class=""><strong>Sept-Nov 2024</strong>: Listening test evaluation period.</li>
+<li class=""><strong>Dec 2024</strong>:  Results announced at a Clarity Challenge Workshop (Details TBD); prizes awarded.</li>
 </ul>
-<p>If you have any questions please do not hesitate to contact us at <a href="mailto:claritychallengecontact@gmail.com" target="_blank" rel="noopener noreferrer">claritychallengecontact@gmail.com</a>. If you wish to be kept informed, please sign up to our <a href="https://groups.google.com/g/clarity-challenge" target="_blank" rel="noopener noreferrer">Google group</a>. If you are considering participating, please complete the registration form on the <a href="https://claritychallenge.github.io/docs/cec3/taking_part/cec3_registration">registration page</a>. Registration is free and carries no obligation to participate, but will help us to keep you informed of any changes to the challenge.</p>]]></content>
+<p>If you have any questions please do not hesitate to contact us at <a href="mailto:claritychallengecontact@gmail.com" target="_blank" rel="noopener noreferrer" class="">claritychallengecontact@gmail.com</a>. If you wish to be kept informed, please sign up to our <a href="https://groups.google.com/g/clarity-challenge" target="_blank" rel="noopener noreferrer" class="">Google group</a>. If you are considering participating, please complete the registration form on the <a class="" href="https://claritychallenge.github.io/docs/cec3/taking_part/cec3_registration">registration page</a>. Registration is free and carries no obligation to participate, but will help us to keep you informed of any changes to the challenge.</p>]]></content>
         <author>
             <name>Jon Barker</name>
             <email>clarity-group@sheffield.ac.uk</email>
@@ -211,9 +211,9 @@
         <updated>2023-07-03T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[The CPC2 evaluation data has now been released.]]></summary>
         <content type="html"><![CDATA[<p>The CPC2 evaluation data has now been released.</p>
-<p>The data is available for download as a single 478 MB file, <a href="https://mab.to/138typ3cpVBmK" target="_blank" rel="noopener noreferrer">clarity_CPC2_data.test.v1_0.tgz</a>. The evaluation data should be untarred into the same root as the training data. Further details can be found on the <a href="https://claritychallenge.org/docs/cpc2/cpc2_intro" target="_blank" rel="noopener noreferrer">challenge website</a>.</p>
+<p>The data is available for download as a single 478 MB file, <a href="https://mab.to/138typ3cpVBmK" target="_blank" rel="noopener noreferrer" class="">clarity_CPC2_data.test.v1_0.tgz</a>. The evaluation data should be untarred into the same root as the training data. Further details can be found on the <a href="https://claritychallenge.org/docs/cpc2/cpc2_intro" target="_blank" rel="noopener noreferrer" class="">challenge website</a>.</p>
 <p>The data consists of the hearing aid algorithm output signals, clean reference signals, listener audiograms, and head rotation information. Listener responses are not provided for the evaluation data but will be made available after the submission window has closed.</p>
-<p>For details on how to prepare your submission <a href="https://claritychallenge.org/docs/cpc2/taking_part/cpc2_submission" target="_blank" rel="noopener noreferrer">please see the instructions on the website</a>.</p>
+<p>For details on how to prepare your submission <a href="https://claritychallenge.org/docs/cpc2/taking_part/cpc2_submission" target="_blank" rel="noopener noreferrer" class="">please see the instructions on the website</a>.</p>
 <p>If you have any questions please feel free to post them on this forum.</p>
 <p>The submission window will close on the 31st of July.</p>
 <p>Good luck!</p>
@@ -236,13 +236,13 @@
         <content type="html"><![CDATA[<p>We are pleased to announce the <strong>4th ISCA Clarity Workshop on Machine Learning Challenges for Hearing Aids (Clarity-2023)</strong>.</p>
 <p>The event will be a one-day workshop held as an ISCA satellite event to Interspeech 2023 in Dublin, Ireland.</p>
 <p>For registration and programme details please visit the workshop website</p>
-<p><a href="https://claritychallenge.github.io/clarity2023-workshop/" target="_blank" rel="noopener noreferrer">https://claritychallenge.github.io/clarity2023-workshop/</a></p>
+<p><a href="https://claritychallenge.github.io/clarity2023-workshop/" target="_blank" rel="noopener noreferrer" class="">https://claritychallenge.github.io/clarity2023-workshop/</a></p>
 <p><strong>IMPORTANT DATES</strong></p>
 <ul>
-<li>2nd June 2023 - Workshop Submission Deadline (Regular Papers)</li>
-<li>31st July 2023 - Workshop Submission Deadline (Clarity Challenge Papers)</li>
-<li>5th August 2023 - Registration closes</li>
-<li>19th August - Workshop / Clarity Challenge results announced</li>
+<li class="">2nd June 2023 - Workshop Submission Deadline (Regular Papers)</li>
+<li class="">31st July 2023 - Workshop Submission Deadline (Clarity Challenge Papers)</li>
+<li class="">5th August 2023 - Registration closes</li>
+<li class="">19th August - Workshop / Clarity Challenge results announced</li>
 </ul>
 <!-- -->
 <p><strong>About</strong></p>
@@ -251,34 +251,34 @@
 <p><strong>Topics</strong></p>
 <p>Any work related to the challenges of hearing aid signal processing will be considered relevant topics include,</p>
 <ul>
-<li>Binaural technology for speech enhancement and source separation</li>
-<li>Multi-microphone processing technology</li>
-<li>Real-time approaches to speech enhancement</li>
-<li>Statistical model-driven approaches to hearing aid processing</li>
-<li>Audio quality &amp; intelligibility assessment hearing aid and cochlear implant users</li>
-<li>Efficient and effective integration of psychoacoustic testing in machine learning</li>
-<li>Machine learning for diverse target listeners</li>
-<li>Machine learning models of hearing impairment</li>
+<li class="">Binaural technology for speech enhancement and source separation</li>
+<li class="">Multi-microphone processing technology</li>
+<li class="">Real-time approaches to speech enhancement</li>
+<li class="">Statistical model-driven approaches to hearing aid processing</li>
+<li class="">Audio quality &amp; intelligibility assessment hearing aid and cochlear implant users</li>
+<li class="">Efficient and effective integration of psychoacoustic testing in machine learning</li>
+<li class="">Machine learning for diverse target listeners</li>
+<li class="">Machine learning models of hearing impairment</li>
 </ul>
 <p><strong>The 2nd Clarity Prediction Challenge</strong></p>
 <p>The Clarity-2023 will also host the 2nd Clarity Prediction Challenge, that is addressing the problem of developing new intrusive and non-intrusive approaches to hearing-aid speech intelligibility prediction. The Challenge will be launching on 1st March, is you may be interested in participating please sign up to our Google group for further announcements.</p>
 <p><strong>Keynote Talks</strong></p>
 <ul>
-<li>Prof Fei Chen, SUSTech, China,</li>
-<li>Prof DeLiang Wang, Ohio State University, US</li>
+<li class="">Prof Fei Chen, SUSTech, China,</li>
+<li class="">Prof DeLiang Wang, Ohio State University, US</li>
 </ul>
 <p><strong>Organisers</strong></p>
 <ul>
-<li>Michael Akeroyd, University of Nottingham</li>
-<li>Jon Barker,  University of Sheffield</li>
-<li>Trevor Cox, University of Salford</li>
-<li>Fei Chen, Southern University of Science and Technology, China</li>
-<li>John Culling,  University of Cardiff</li>
-<li>Simone Graetzer, University of Salford</li>
-<li>Andrew Hines, University College Dublin</li>
+<li class="">Michael Akeroyd, University of Nottingham</li>
+<li class="">Jon Barker,  University of Sheffield</li>
+<li class="">Trevor Cox, University of Salford</li>
+<li class="">Fei Chen, Southern University of Science and Technology, China</li>
+<li class="">John Culling,  University of Cardiff</li>
+<li class="">Simone Graetzer, University of Salford</li>
+<li class="">Andrew Hines, University College Dublin</li>
 </ul>
 <p><strong>For further information</strong></p>
-<p>To be kept up to date please join our <a href="https://groups.google.com/g/clarity-challenge" target="_blank" rel="noopener noreferrer">Clarity Challenge Google group</a>. If you have questions, please contact us directly using the <a href="https://claritychallenge.org/contact" target="_blank" rel="noopener noreferrer">contact details found here</a>.</p>
+<p>To be kept up to date please join our <a href="https://groups.google.com/g/clarity-challenge" target="_blank" rel="noopener noreferrer" class="">Clarity Challenge Google group</a>. If you have questions, please contact us directly using the <a href="https://claritychallenge.org/contact" target="_blank" rel="noopener noreferrer" class="">contact details found here</a>.</p>
 <p><strong>Funded by</strong> the Engineering and Physical Sciences Research Council (EPSRC), UK</p>
 <p><strong>Supported by</strong> RNID (formerly Action on Hearing Loss), Hearing Industry Research Consortium, Amazon TTS Research</p>]]></content>
         <author>
@@ -296,32 +296,32 @@
         <link href="https://claritychallenge.github.io/blog/Announcing CPC2"/>
         <updated>2023-03-17T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[The 2nd Clarity Prediction Challenge - Register Now]]></summary>
-        <content type="html"><![CDATA[<p>The 2nd Clarity Prediction Challenge - <a href="https://claritychallenge.org/docs/cpc2/taking_part/cpc2_registration" target="_blank" rel="noopener noreferrer">Register Now</a></p>
+        <content type="html"><![CDATA[<p>The 2nd Clarity Prediction Challenge - <a href="https://claritychallenge.org/docs/cpc2/taking_part/cpc2_registration" target="_blank" rel="noopener noreferrer" class="">Register Now</a></p>
 <p>To allow the development of better hearing aids, we need ways to evaluate the speech intelligibility of audio signals automatically. We need a prediction model that takes the audio produced by a hearing aid and the listener's characteristics (e.g. audiogram) and estimates the speech intelligibility score that the listener would achieve in a listening test.</p>
-<p>Last year we ran the <a href="https://claritychallenge.org/docs/cpc1/cpc1_intro" target="_blank" rel="noopener noreferrer">CPC1 Challenge</a> to develop such models. The challenge was presented at an online workshop and a special session of Interspeech 2022. We are now running the 2nd round of this challenge (CPC2), which builds on the first by using more complex signals and a larger set of listening test data for training and evaluating the prediction systems.</p>
-<p>The outputs of the new challenge will be presented at an <a href="https://claritychallenge.org/clarity2023-workshop/" target="_blank" rel="noopener noreferrer">ISCA workshop</a> that is being run as a satellite event to Interspeech 2023 in Dublin on 19th August 2023.</p>
+<p>Last year we ran the <a href="https://claritychallenge.org/docs/cpc1/cpc1_intro" target="_blank" rel="noopener noreferrer" class="">CPC1 Challenge</a> to develop such models. The challenge was presented at an online workshop and a special session of Interspeech 2022. We are now running the 2nd round of this challenge (CPC2), which builds on the first by using more complex signals and a larger set of listening test data for training and evaluating the prediction systems.</p>
+<p>The outputs of the new challenge will be presented at an <a href="https://claritychallenge.org/clarity2023-workshop/" target="_blank" rel="noopener noreferrer" class="">ISCA workshop</a> that is being run as a satellite event to Interspeech 2023 in Dublin on 19th August 2023.</p>
 <p>Full details can be found on the Challenge Website.</p>
 <!-- -->
-<h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="register-now-to-take-part">Register now to take part<a href="https://claritychallenge.github.io/blog/Announcing%20CPC2#register-now-to-take-part" class="hash-link" aria-label="Direct link to Register now to take part" title="Direct link to Register now to take part">​</a></h3>
-<p>If you are interested in participating please register now via the <a href="https://claritychallenge.org/docs/cpc2/taking_part/cpc2_registration" target="_blank" rel="noopener noreferrer">online registration form</a>.</p>
-<h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="important-dates">Important Dates<a href="https://claritychallenge.github.io/blog/Announcing%20CPC2#important-dates" class="hash-link" aria-label="Direct link to Important Dates" title="Direct link to Important Dates">​</a></h3>
+<h3 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="register-now-to-take-part">Register now to take part<a href="https://claritychallenge.github.io/blog/Announcing%20CPC2#register-now-to-take-part" class="hash-link" aria-label="Direct link to Register now to take part" title="Direct link to Register now to take part" translate="no">​</a></h3>
+<p>If you are interested in participating please register now via the <a href="https://claritychallenge.org/docs/cpc2/taking_part/cpc2_registration" target="_blank" rel="noopener noreferrer" class="">online registration form</a>.</p>
+<h3 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="important-dates">Important Dates<a href="https://claritychallenge.github.io/blog/Announcing%20CPC2#important-dates" class="hash-link" aria-label="Direct link to Important Dates" title="Direct link to Important Dates" translate="no">​</a></h3>
 <ul>
-<li>March - Launch of challenge, release of training data + baseline system.</li>
-<li>1st July - Release of evaluation data and opening of submission window.</li>
-<li>31st July - Submission deadline.</li>
-<li>19th August - ISCA Clarity 2023 workshop @ Interspeech</li>
-<li>19th September - Deadline for submission of finalised Workshop papers</li>
+<li class="">March - Launch of challenge, release of training data + baseline system.</li>
+<li class="">1st July - Release of evaluation data and opening of submission window.</li>
+<li class="">31st July - Submission deadline.</li>
+<li class="">19th August - ISCA Clarity 2023 workshop @ Interspeech</li>
+<li class="">19th September - Deadline for submission of finalised Workshop papers</li>
 </ul>
-<h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="what-will-be-provided">What will be provided<a href="https://claritychallenge.github.io/blog/Announcing%20CPC2#what-will-be-provided" class="hash-link" aria-label="Direct link to What will be provided" title="Direct link to What will be provided">​</a></h3>
+<h3 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="what-will-be-provided">What will be provided<a href="https://claritychallenge.github.io/blog/Announcing%20CPC2#what-will-be-provided" class="hash-link" aria-label="Direct link to What will be provided" title="Direct link to What will be provided" translate="no">​</a></h3>
 <ul>
-<li>Audio produced by a variety of (simulated) hearing aids for speech-in-noise;</li>
-<li>The corresponding clean reference signals (the original speech);</li>
-<li>Characteristics of the listeners (pure tone audiograms, etc);</li>
-<li>The measured speech intelligibility scores from listening tests, where hearing-impaired listeners were asked to say what they heard after listening to the hearing aid processed signals.</li>
-<li>Software tools including a baseline system based on HASPI scores.</li>
+<li class="">Audio produced by a variety of (simulated) hearing aids for speech-in-noise;</li>
+<li class="">The corresponding clean reference signals (the original speech);</li>
+<li class="">Characteristics of the listeners (pure tone audiograms, etc);</li>
+<li class="">The measured speech intelligibility scores from listening tests, where hearing-impaired listeners were asked to say what they heard after listening to the hearing aid processed signals.</li>
+<li class="">Software tools including a baseline system based on HASPI scores.</li>
 </ul>
-<h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="for-further-information">For further information<a href="https://claritychallenge.github.io/blog/Announcing%20CPC2#for-further-information" class="hash-link" aria-label="Direct link to For further information" title="Direct link to For further information">​</a></h3>
-<p>To be kept up to date please join our <a href="https://groups.google.com/g/clarity-challenge" target="_blank" rel="noopener noreferrer">Clarity Challenge Google group</a>. If you have questions, please contact us directly using the contact details found <a href="https://claritychallenge.org/contact" target="_blank" rel="noopener noreferrer">here</a>.</p>]]></content>
+<h3 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="for-further-information">For further information<a href="https://claritychallenge.github.io/blog/Announcing%20CPC2#for-further-information" class="hash-link" aria-label="Direct link to For further information" title="Direct link to For further information" translate="no">​</a></h3>
+<p>To be kept up to date please join our <a href="https://groups.google.com/g/clarity-challenge" target="_blank" rel="noopener noreferrer" class="">Clarity Challenge Google group</a>. If you have questions, please contact us directly using the contact details found <a href="https://claritychallenge.org/contact" target="_blank" rel="noopener noreferrer" class="">here</a>.</p>]]></content>
         <author>
             <name>Jon Barker</name>
             <email>clarity-group@sheffield.ac.uk</email>
@@ -343,19 +343,19 @@
         <updated>2023-02-02T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[We are pleased to announce that the evaluation dataset for the ICASSP Clarity Challenge is now available for download.]]></summary>
         <content type="html"><![CDATA[<p>We are pleased to announce that the evaluation dataset for the ICASSP Clarity Challenge is now available for download.</p>
-<p><a href="https://www.myairbridge.com/en/#!/folder/EkthOZZeBW33aaDBWSDadTgpOkbgaFxO" target="_blank" rel="noopener noreferrer">https://www.myairbridge.com/en/#!/folder/EkthOZZeBW33aaDBWSDadTgpOkbgaFxO</a></p>
+<p><a href="https://www.myairbridge.com/en/#!/folder/EkthOZZeBW33aaDBWSDadTgpOkbgaFxO" target="_blank" rel="noopener noreferrer" class="">https://www.myairbridge.com/en/#!/folder/EkthOZZeBW33aaDBWSDadTgpOkbgaFxO</a></p>
 <p>For instructions on preparing your submission please visit:</p>
-<p><a href="https://claritychallenge.org/docs/icassp2023/taking_part/icassp2023_submission" target="_blank" rel="noopener noreferrer">https://claritychallenge.org/docs/icassp2023/taking_part/icassp2023_submission</a></p>
+<p><a href="https://claritychallenge.org/docs/icassp2023/taking_part/icassp2023_submission" target="_blank" rel="noopener noreferrer" class="">https://claritychallenge.org/docs/icassp2023/taking_part/icassp2023_submission</a></p>
 <p><strong>If you have not yet registered</strong> it is not too late to do so. Please use the form at the link below and we will then send you a Team ID and a personalised upload link for your submission.</p>
-<p><a href="https://claritychallenge.org/docs/icassp2023/taking_part/icassp2023_registration" target="_blank" rel="noopener noreferrer">https://claritychallenge.org/docs/icassp2023/taking_part/icassp2023_registration</a></p>
+<p><a href="https://claritychallenge.org/docs/icassp2023/taking_part/icassp2023_registration" target="_blank" rel="noopener noreferrer" class="">https://claritychallenge.org/docs/icassp2023/taking_part/icassp2023_registration</a></p>
 <p>Note, we have extended the deadline for submission until Friday 10th February so that teams have a full week to process the signals.</p>
 <p>The remaining schedule is as follows,</p>
 <ul>
-<li><strong>2nd Feb 2023</strong>: Release of evaluation data.</li>
-<li><strong>10th Feb 2023</strong>: Teams submit processed signals and technical reports.</li>
-<li><strong>14th Feb 2023</strong>: Results released. Top 5 ranked teams invited to submit papers to ICASSP-2023</li>
-<li><strong>20th Feb 2023</strong>: Invited papers submitted to ICASSP-2023</li>
-<li><strong>4-9th June 2023</strong>: Overview paper and invited papers presented at dedicated ICASSP session</li>
+<li class=""><strong>2nd Feb 2023</strong>: Release of evaluation data.</li>
+<li class=""><strong>10th Feb 2023</strong>: Teams submit processed signals and technical reports.</li>
+<li class=""><strong>14th Feb 2023</strong>: Results released. Top 5 ranked teams invited to submit papers to ICASSP-2023</li>
+<li class=""><strong>20th Feb 2023</strong>: Invited papers submitted to ICASSP-2023</li>
+<li class=""><strong>4-9th June 2023</strong>: Overview paper and invited papers presented at dedicated ICASSP session</li>
 </ul>
 ]]></content>
         <author>
@@ -380,18 +380,18 @@
         <updated>2022-11-15T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[We are pleased to announce that registration for the ICASSP 2023 Clarity Grand Challenge is now open.]]></summary>
         <content type="html"><![CDATA[<p>We are pleased to announce that registration for the <strong>ICASSP 2023 Clarity Grand Challenge</strong> is now open.</p>
-<p>To register please complete the simple Google form found on the <a href="https://claritychallenge.github.io/docs/icassp2023/taking_part/icassp2023_registration">registration page</a>.</p>
+<p>To register please complete the simple Google form found on the <a class="" href="https://claritychallenge.github.io/docs/icassp2023/taking_part/icassp2023_registration">registration page</a>.</p>
 <p>The remaining important dates for the challenge are as follows:</p>
 <ul>
-<li><strong>28th Nov 2022</strong>: Challenge launch: Release training/dev data; tools; baseline; rules &amp; documentation.</li>
-<li><strong>2nd Feb 2023</strong>: Release of evaluation data.</li>
-<li><strong>10th Feb 2023</strong>: Teams submit processed signals and technical reports.</li>
-<li><strong>14th Feb 2023</strong>: Results released. Top 5 ranked teams invited to submit papers to ICASSP-2023</li>
-<li><strong>20th Feb 2023</strong>: Invited papers submitted to ICASSP-2023</li>
-<li><strong>4-9th</strong> June 2023: Overview paper and invited papers presented at dedicated ICASSP session</li>
+<li class=""><strong>28th Nov 2022</strong>: Challenge launch: Release training/dev data; tools; baseline; rules &amp; documentation.</li>
+<li class=""><strong>2nd Feb 2023</strong>: Release of evaluation data.</li>
+<li class=""><strong>10th Feb 2023</strong>: Teams submit processed signals and technical reports.</li>
+<li class=""><strong>14th Feb 2023</strong>: Results released. Top 5 ranked teams invited to submit papers to ICASSP-2023</li>
+<li class=""><strong>20th Feb 2023</strong>: Invited papers submitted to ICASSP-2023</li>
+<li class=""><strong>4-9th</strong> June 2023: Overview paper and invited papers presented at dedicated ICASSP session</li>
 </ul>
-<p>The challenge training, dev data and initial tools are now fully from the <a href="https://github.com/claritychallenge/clarity" target="_blank" rel="noopener noreferrer">Github repository</a>.</p>
-<p>If you have any questions please do not hesitate to contact us at <a href="mailto:claritychallengecontact@gmail.com" target="_blank" rel="noopener noreferrer">claritychallengecontact@gmail.com</a>.</p>
+<p>The challenge training, dev data and initial tools are now fully from the <a href="https://github.com/claritychallenge/clarity" target="_blank" rel="noopener noreferrer" class="">Github repository</a>.</p>
+<p>If you have any questions please do not hesitate to contact us at <a href="mailto:claritychallengecontact@gmail.com" target="_blank" rel="noopener noreferrer" class="">claritychallengecontact@gmail.com</a>.</p>
 ]]></content>
         <author>
             <name>Will Bailey</name>
@@ -429,17 +429,17 @@
         <updated>2022-05-03T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[We are pleased to announce that registration for the 2nd Clarity Enhancement Challenge (CEC2) is now open.]]></summary>
         <content type="html"><![CDATA[<p>We are pleased to announce that registration for the <strong>2nd Clarity Enhancement Challenge (CEC2)</strong> is now open.</p>
-<p>To register please complete the simple Google form found on the <a href="https://claritychallenge.github.io/docs/cec2/taking_part/cec2_registration">registration page</a>.</p>
+<p>To register please complete the simple Google form found on the <a class="" href="https://claritychallenge.github.io/docs/cec2/taking_part/cec2_registration">registration page</a>.</p>
 <p>The remaining important dates for the challenge are as follows:</p>
 <ul>
-<li><strong>25th July 2022</strong>: Evaluation data released</li>
-<li><strong>1st Sept 2022</strong>: 1st round <a href="https://claritychallenge.github.io/docs/cec2/taking_part/cec2_submission">submission</a> deadline for evaluation by objective measure</li>
-<li><strong>15th Sept 2022</strong>: 2nd round <a href="https://claritychallenge.github.io/docs/cec2/taking_part/cec2_submission">submission</a> deadline for listening tests</li>
-<li><strong>Sept-Nov 2022</strong>: Listening test evaluation period.</li>
-<li><strong>2nd Dec 2022</strong>:  Results announced at a Clarity Challenge Workshop; prizes awarded.</li>
+<li class=""><strong>25th July 2022</strong>: Evaluation data released</li>
+<li class=""><strong>1st Sept 2022</strong>: 1st round <a class="" href="https://claritychallenge.github.io/docs/cec2/taking_part/cec2_submission">submission</a> deadline for evaluation by objective measure</li>
+<li class=""><strong>15th Sept 2022</strong>: 2nd round <a class="" href="https://claritychallenge.github.io/docs/cec2/taking_part/cec2_submission">submission</a> deadline for listening tests</li>
+<li class=""><strong>Sept-Nov 2022</strong>: Listening test evaluation period.</li>
+<li class=""><strong>2nd Dec 2022</strong>:  Results announced at a Clarity Challenge Workshop; prizes awarded.</li>
 </ul>
-<p>The challenge training, dev data and initial tools are now fully from the <a href="https://github.com/claritychallenge/clarity" target="_blank" rel="noopener noreferrer">Github repository</a>.</p>
-<p>If you have any questions please do not hesitate to contact us at <a href="mailto:claritychallengecontact@gmail.com" target="_blank" rel="noopener noreferrer">claritychallengecontact@gmail.com</a>.</p>
+<p>The challenge training, dev data and initial tools are now fully from the <a href="https://github.com/claritychallenge/clarity" target="_blank" rel="noopener noreferrer" class="">Github repository</a>.</p>
+<p>If you have any questions please do not hesitate to contact us at <a href="mailto:claritychallengecontact@gmail.com" target="_blank" rel="noopener noreferrer" class="">claritychallengecontact@gmail.com</a>.</p>
 ]]></content>
         <author>
             <name>Jon Barker</name>
@@ -457,12 +457,12 @@
         <updated>2022-05-02T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[We are pleased to announce the release of the 2nd Clarity Enhancement Challenge (CEC2) baseline system code.]]></summary>
         <content type="html"><![CDATA[<p>We are pleased to announce the release of the <strong>2nd Clarity Enhancement Challenge (CEC2)</strong> baseline system code.</p>
-<p>The baseline code has been released in the latest commit to the <a href="https://github.com/claritychallenge/clarity" target="_blank" rel="noopener noreferrer">Clarity GitHub repository</a>.</p>
+<p>The baseline code has been released in the latest commit to the <a href="https://github.com/claritychallenge/clarity" target="_blank" rel="noopener noreferrer" class="">Clarity GitHub repository</a>.</p>
 <p>The baseline system perform NAL-R amplification according to the audiogram of the target listener, followed by a simple gain control and output of the signals to 16-bit stereo wav format. The system has been kept deliberately simple with no microphone array processing or attempt at noise cancellation.</p>
 <p>HASPI scores for the dev set have been measured. The scores are as follows.</p>
 <table><thead><tr><th>System</th><th>HASPI</th></tr></thead><tbody><tr><td>Unprocessed</td><td>0.1615</td></tr><tr><td>NAL-R baseline</td><td>0.2493</td></tr></tbody></table>
-<p>See <a href="https://claritychallenge.github.io/docs/cec2/software/cec2_baseline">here</a> for further details.</p>
-<p>If you have any problems using the baseline code please do not hesitate to contact us at <a href="mailto:claritychallengecontact@gmail.com" target="_blank" rel="noopener noreferrer">claritychallengecontact@gmail.com</a>, or post questions on the <a href="https://groups.google.com/g/clarity-challenge" target="_blank" rel="noopener noreferrer">Google group</a>.</p>
+<p>See <a class="" href="https://claritychallenge.github.io/docs/cec2/software/cec2_baseline">here</a> for further details.</p>
+<p>If you have any problems using the baseline code please do not hesitate to contact us at <a href="mailto:claritychallengecontact@gmail.com" target="_blank" rel="noopener noreferrer" class="">claritychallengecontact@gmail.com</a>, or post questions on the <a href="https://groups.google.com/g/clarity-challenge" target="_blank" rel="noopener noreferrer" class="">Google group</a>.</p>
 ]]></content>
         <author>
             <name>Jon Barker</name>
@@ -484,17 +484,17 @@
 <p>The website has been fully updated to provide you with all the information you will need to participate in the challenge.</p>
 <p>The schedule for the challenge is as follows:</p>
 <ul>
-<li><strong>13th April 2022</strong>: <a href="https://claritychallenge.github.io/docs/cec2/cec2_download">Release</a> of training and development data; initial tools.</li>
-<li><strong>30th April 2022</strong>: <a href="https://claritychallenge.github.io/docs/cec2/cec2_download">Release</a> of full toolset and baseline system.</li>
-<li><strong>1st May 2022</strong>: <a href="https://claritychallenge.github.io/docs/cec2/taking_part/cec2_registration">Registration</a> for challenge entrants opens.</li>
-<li><strong>25th July 2022</strong>: Evaluation data released</li>
-<li><strong>1st Sept 2022</strong>: 1st round <a href="https://claritychallenge.github.io/docs/cec2/taking_part/cec2_submission">submission</a> deadline for evaluation by objective measure</li>
-<li><strong>15th Sept 2022</strong>: 2nd round <a href="https://claritychallenge.github.io/docs/cec2/taking_part/cec2_submission">submission</a> deadline for listening tests</li>
-<li><strong>Sept-Nov 2022</strong>: Listening test evaluation period.</li>
-<li><strong>2nd Dec 2022</strong>:  Results announced at a Clarity Challenge Workshop; prizes awarded.</li>
+<li class=""><strong>13th April 2022</strong>: <a class="" href="https://claritychallenge.github.io/docs/cec2/cec2_download">Release</a> of training and development data; initial tools.</li>
+<li class=""><strong>30th April 2022</strong>: <a class="" href="https://claritychallenge.github.io/docs/cec2/cec2_download">Release</a> of full toolset and baseline system.</li>
+<li class=""><strong>1st May 2022</strong>: <a class="" href="https://claritychallenge.github.io/docs/cec2/taking_part/cec2_registration">Registration</a> for challenge entrants opens.</li>
+<li class=""><strong>25th July 2022</strong>: Evaluation data released</li>
+<li class=""><strong>1st Sept 2022</strong>: 1st round <a class="" href="https://claritychallenge.github.io/docs/cec2/taking_part/cec2_submission">submission</a> deadline for evaluation by objective measure</li>
+<li class=""><strong>15th Sept 2022</strong>: 2nd round <a class="" href="https://claritychallenge.github.io/docs/cec2/taking_part/cec2_submission">submission</a> deadline for listening tests</li>
+<li class=""><strong>Sept-Nov 2022</strong>: Listening test evaluation period.</li>
+<li class=""><strong>2nd Dec 2022</strong>:  Results announced at a Clarity Challenge Workshop; prizes awarded.</li>
 </ul>
-<p>The challenge training, dev data and initial tools will be available from 13th April. In the meantime, please visit the <a href="https://claritychallenge.github.io/docs/cec2/cec2_intro">CEC2 Intro page</a> to learn more about the task.</p>
-<p>If you have any questions please do not hesitate to contact us at <a href="mailto:claritychallengecontact@gmail.com" target="_blank" rel="noopener noreferrer">claritychallengecontact@gmail.com</a>.</p>
+<p>The challenge training, dev data and initial tools will be available from 13th April. In the meantime, please visit the <a class="" href="https://claritychallenge.github.io/docs/cec2/cec2_intro">CEC2 Intro page</a> to learn more about the task.</p>
+<p>If you have any questions please do not hesitate to contact us at <a href="mailto:claritychallengecontact@gmail.com" target="_blank" rel="noopener noreferrer" class="">claritychallengecontact@gmail.com</a>.</p>
 ]]></content>
         <author>
             <name>Jon Barker</name>
@@ -515,26 +515,26 @@
 <p><strong>The presentations will be very similar to the webinar in November.</strong> These events are intended as a chance for people in different time zones to attend live and ask the team questions.</p>
 <p>Hosting is via Microsoft Teams. You can join from your browser without needing to install Teams, but if you join from a mobile device you may need to install the Teams app.</p>
 <!-- -->
-<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="webinar---challenge-overview">Webinar - Challenge Overview<a href="https://claritychallenge.github.io/blog/Jan-2-live-events#webinar---challenge-overview" class="hash-link" aria-label="Direct link to Webinar - Challenge Overview" title="Direct link to Webinar - Challenge Overview">​</a></h2>
-<h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="friday-14th-january">Friday 14th January<a href="https://claritychallenge.github.io/blog/Jan-2-live-events#friday-14th-january" class="hash-link" aria-label="Direct link to Friday 14th January" title="Direct link to Friday 14th January">​</a></h3>
+<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="webinar---challenge-overview">Webinar - Challenge Overview<a href="https://claritychallenge.github.io/blog/Jan-2-live-events#webinar---challenge-overview" class="hash-link" aria-label="Direct link to Webinar - Challenge Overview" title="Direct link to Webinar - Challenge Overview" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="friday-14th-january">Friday 14th January<a href="https://claritychallenge.github.io/blog/Jan-2-live-events#friday-14th-january" class="hash-link" aria-label="Direct link to Friday 14th January" title="Direct link to Friday 14th January" translate="no">​</a></h3>
 <p><strong>9:00 GMT | 17:00 CST (GMT+8)</strong></p>
-<h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="click-here-to-join-the-webinar"><a href="https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZjFhNjJhMzYtOWEyMC00NjNiLThjOTEtYTIwMTk2YTczZGRh%40thread.v2/0?context=%7b%22Tid%22%3a%2265b52940-f4b6-41bd-833d-3033ecbcf6e1%22%2c%22Oid%22%3a%223f282402-9a2d-4e68-b2d4-3c1f86585a45%22%7d" target="_blank" rel="noopener noreferrer">Click here to join the webinar</a><a href="https://claritychallenge.github.io/blog/Jan-2-live-events#click-here-to-join-the-webinar" class="hash-link" aria-label="Direct link to click-here-to-join-the-webinar" title="Direct link to click-here-to-join-the-webinar">​</a></h3>
+<h3 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="click-here-to-join-the-webinar"><a href="https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZjFhNjJhMzYtOWEyMC00NjNiLThjOTEtYTIwMTk2YTczZGRh%40thread.v2/0?context=%7b%22Tid%22%3a%2265b52940-f4b6-41bd-833d-3033ecbcf6e1%22%2c%22Oid%22%3a%223f282402-9a2d-4e68-b2d4-3c1f86585a45%22%7d" target="_blank" rel="noopener noreferrer" class="">Click here to join the webinar</a><a href="https://claritychallenge.github.io/blog/Jan-2-live-events#click-here-to-join-the-webinar" class="hash-link" aria-label="Direct link to click-here-to-join-the-webinar" title="Direct link to click-here-to-join-the-webinar" translate="no">​</a></h3>
 <p>An introduction to the aims of the challenge and some background to the problem of speech intelligibility prediction for hearing aids:</p>
 <ul>
-<li>Welcome, introduction to Clarity.</li>
-<li>Speech intelligibility models: Overview and why are they needed.</li>
-<li>Hearing impairment speech intelligibility prediction.</li>
-<li>The prediction challenge - details and how you can sign up to participate.</li>
-<li>Audience questions / discussion.</li>
+<li class="">Welcome, introduction to Clarity.</li>
+<li class="">Speech intelligibility models: Overview and why are they needed.</li>
+<li class="">Hearing impairment speech intelligibility prediction.</li>
+<li class="">The prediction challenge - details and how you can sign up to participate.</li>
+<li class="">Audience questions / discussion.</li>
 </ul>
 <p>The presentations will be recorded and made available online shortly after the event. The Q&amp;A discussion will not be recorded.</p>
 <p>You are welcome to join slightly later if you are only interested in joining for the Q&amp;A section (presentations should finish around 9:40 GMT).</p>
-<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="live-qa-session">Live Q&amp;A session<a href="https://claritychallenge.github.io/blog/Jan-2-live-events#live-qa-session" class="hash-link" aria-label="Direct link to Live Q&amp;A session" title="Direct link to Live Q&amp;A session">​</a></h2>
-<h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="monday-17th-january">Monday 17th January<a href="https://claritychallenge.github.io/blog/Jan-2-live-events#monday-17th-january" class="hash-link" aria-label="Direct link to Monday 17th January" title="Direct link to Monday 17th January">​</a></h3>
+<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="live-qa-session">Live Q&amp;A session<a href="https://claritychallenge.github.io/blog/Jan-2-live-events#live-qa-session" class="hash-link" aria-label="Direct link to Live Q&amp;A session" title="Direct link to Live Q&amp;A session" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="monday-17th-january">Monday 17th January<a href="https://claritychallenge.github.io/blog/Jan-2-live-events#monday-17th-january" class="hash-link" aria-label="Direct link to Monday 17th January" title="Direct link to Monday 17th January" translate="no">​</a></h3>
 <p><strong>17:00 GMT | 12:00 EST (GMT-5) | 9:00 PST (GMT-8)</strong></p>
-<h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="click-here-to-join-the-qa"><a href="https://teams.microsoft.com/l/meetup-join/19%3ameeting_YTJhOGRmZGMtMjRiZS00MGY0LTliNjctZmZhMzhmNDI5M2I0%40thread.v2/0?context=%7b%22Tid%22%3a%2265b52940-f4b6-41bd-833d-3033ecbcf6e1%22%2c%22Oid%22%3a%223f282402-9a2d-4e68-b2d4-3c1f86585a45%22%7d" target="_blank" rel="noopener noreferrer">Click here to join the Q&amp;A</a><a href="https://claritychallenge.github.io/blog/Jan-2-live-events#click-here-to-join-the-qa" class="hash-link" aria-label="Direct link to click-here-to-join-the-qa" title="Direct link to click-here-to-join-the-qa">​</a></h3>
+<h3 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="click-here-to-join-the-qa"><a href="https://teams.microsoft.com/l/meetup-join/19%3ameeting_YTJhOGRmZGMtMjRiZS00MGY0LTliNjctZmZhMzhmNDI5M2I0%40thread.v2/0?context=%7b%22Tid%22%3a%2265b52940-f4b6-41bd-833d-3033ecbcf6e1%22%2c%22Oid%22%3a%223f282402-9a2d-4e68-b2d4-3c1f86585a45%22%7d" target="_blank" rel="noopener noreferrer" class="">Click here to join the Q&amp;A</a><a href="https://claritychallenge.github.io/blog/Jan-2-live-events#click-here-to-join-the-qa" class="hash-link" aria-label="Direct link to click-here-to-join-the-qa" title="Direct link to click-here-to-join-the-qa" translate="no">​</a></h3>
 <p>A chance to ask the team questions about the Clarity Prediction Challenge - for anyone that could not attend the webinar on Friday 14th due to time zone differences.</p>
-<p><strong>Please note there will be no presentations in this session.</strong> The talks from Friday’s webinar will be uploaded to the <a href="https://www.youtube.com/channel/UCIc8FCHUA3Il9PUPt-sW1qw/videos" target="_blank" rel="noopener noreferrer">Clarity project YouTube channel</a> later in the day so you are invited to watch those before joining this live Q&amp;A.</p>]]></content>
+<p><strong>Please note there will be no presentations in this session.</strong> The talks from Friday’s webinar will be uploaded to the <a href="https://www.youtube.com/channel/UCIc8FCHUA3Il9PUPt-sW1qw/videos" target="_blank" rel="noopener noreferrer" class="">Clarity project YouTube channel</a> later in the day so you are invited to watch those before joining this live Q&amp;A.</p>]]></content>
         <author>
             <name>Lara Harris</name>
             <email>clarity-group@sheffield.ac.uk</email>
@@ -553,11 +553,11 @@
         <content type="html"><![CDATA[<p>The Clarity team recently hosted a webinar to introduce the Prediction Challenge. The recording is now available to view online:</p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/G_9KczaoZY4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
 <p>The slides are available to download:</p>
-<p><a href="https://drive.google.com/file/d/1pycRrMv5OF9R6948Cda0QsJ4jh_Bek22/view?usp=sharing" target="_blank" rel="noopener noreferrer">1 Welcome and Overview</a></p>
-<p><a href="https://drive.google.com/file/d/1rScmDEUrtjBHG14VhWrKQu66-PiesU85/view?usp=sharing" target="_blank" rel="noopener noreferrer">2 Speech Intelligibility Models</a></p>
-<p><a href="https://drive.google.com/file/d/1CQptm9sSIC8o2qHf_mtzQstLVhBnBzM_/view?usp=sharing" target="_blank" rel="noopener noreferrer">3 Hearing Impariment and SI Prediction</a></p>
-<p><a href="https://drive.google.com/file/d/1BVeqMbygIWyiIo61HEMjwjyEALxHipzP/view?usp=sharing" target="_blank" rel="noopener noreferrer">4 Clarity Prediction Challenge Details</a></p>
-<p>Note that we did not record the Q&amp;A session at the end, but if you have questions about taking part in the challenge you can contact us at <a href="mailto:claritychallengecontact@gmail.com" target="_blank" rel="noopener noreferrer">claritychallengecontact@gmail.com</a></p>
+<p><a href="https://drive.google.com/file/d/1pycRrMv5OF9R6948Cda0QsJ4jh_Bek22/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="">1 Welcome and Overview</a></p>
+<p><a href="https://drive.google.com/file/d/1rScmDEUrtjBHG14VhWrKQu66-PiesU85/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="">2 Speech Intelligibility Models</a></p>
+<p><a href="https://drive.google.com/file/d/1CQptm9sSIC8o2qHf_mtzQstLVhBnBzM_/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="">3 Hearing Impariment and SI Prediction</a></p>
+<p><a href="https://drive.google.com/file/d/1BVeqMbygIWyiIo61HEMjwjyEALxHipzP/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="">4 Clarity Prediction Challenge Details</a></p>
+<p>Note that we did not record the Q&amp;A session at the end, but if you have questions about taking part in the challenge you can contact us at <a href="mailto:claritychallengecontact@gmail.com" target="_blank" rel="noopener noreferrer" class="">claritychallengecontact@gmail.com</a></p>
 ]]></content>
         <author>
             <name>Lara Harris</name>
@@ -592,10 +592,10 @@
         <updated>2021-06-16T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[The CEC1 submission deadline has now passed. Thank you to all the teams who sent us signals.]]></summary>
         <content type="html"><![CDATA[<p>The CEC1 submission deadline has now passed. Thank you to all the teams who sent us signals.</p>
-<p>Please remember to submit your finalised system descriptions by June 22nd to the Clarity workshop following the <a href="https://claritychallenge.github.io/clarity2021-workshop/submissions.html" target="_blank" rel="noopener noreferrer">instructions provided on the workshop website</a>.</p>
+<p>Please remember to submit your finalised system descriptions by June 22nd to the Clarity workshop following the <a href="https://claritychallenge.github.io/clarity2021-workshop/submissions.html" target="_blank" rel="noopener noreferrer" class="">instructions provided on the workshop website</a>.</p>
 <p>We are currently busy evaluating the submissions using the MBSTOI metric. We will be contacting teams on the 22nd with details of how to prepare signals for the listening panel evaluation.</p>
-<p><strong>If you have been working on the challenge but missed the submission deadline</strong> then <a href="mailto:claritychallengecontact@gmail.com" target="_blank" rel="noopener noreferrer">please do get in contact</a>. We will still be happy to receive your signals and system descriptions. Although late entries will not be eligible for the official challenge ranking, we will be happy to compute the eval set MBSTOI score for you and may even be able to arrange listening test evaluation through our panel.</p>
-<p>For any questions please contact us at <a href="mailto:claritychallengecontact@gmail.com" target="_blank" rel="noopener noreferrer">claritychallengecontact@gmail.com</a> or by posting to the <a href="https://groups.google.com/g/clarity-challenge?pli=1" target="_blank" rel="noopener noreferrer">Clarity challenge google group</a>.</p>
+<p><strong>If you have been working on the challenge but missed the submission deadline</strong> then <a href="mailto:claritychallengecontact@gmail.com" target="_blank" rel="noopener noreferrer" class="">please do get in contact</a>. We will still be happy to receive your signals and system descriptions. Although late entries will not be eligible for the official challenge ranking, we will be happy to compute the eval set MBSTOI score for you and may even be able to arrange listening test evaluation through our panel.</p>
+<p>For any questions please contact us at <a href="mailto:claritychallengecontact@gmail.com" target="_blank" rel="noopener noreferrer" class="">claritychallengecontact@gmail.com</a> or by posting to the <a href="https://groups.google.com/g/clarity-challenge?pli=1" target="_blank" rel="noopener noreferrer" class="">Clarity challenge google group</a>.</p>
 ]]></content>
         <author>
             <name>Jon Barker</name>
@@ -612,15 +612,15 @@
         <link href="https://claritychallenge.github.io/blog/CEC1 eval data released"/>
         <updated>2021-06-02T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[The evaluation dataset is now available to download from the myairbridge download site. The evaluation data filename is clarityCEC1data.sceneseval.v11.tgz.]]></summary>
-        <content type="html"><![CDATA[<p>The evaluation dataset is now available to download from the myairbridge <a href="https://mab.to/I9mkGx4wsiiaX" target="_blank" rel="noopener noreferrer">download site</a>. The evaluation data filename is <code>clarity_CEC1_data.scenes_eval.v1_1.tgz</code>.</p>
+        <content type="html"><![CDATA[<p>The evaluation dataset is now available to download from the myairbridge <a href="https://mab.to/I9mkGx4wsiiaX" target="_blank" rel="noopener noreferrer" class="">download site</a>. The evaluation data filename is <code>clarity_CEC1_data.scenes_eval.v1_1.tgz</code>.</p>
 <p>Full details of how to prepare your submission are now available on this site. Please read them carefully.</p>
-<p><strong>Registration</strong>: Teams must register via the Google form on the <a href="https://claritychallenge.github.io/docs/cec1/taking_part/cec1_submission">How To Submit</a> page of this site. (Please complete this even if you have already completed a pre-registration form). Only one person from each team should register. Only those who have registered will be eligible to proceed to the evaluation. Once you have registered you will receive a confirmation email, a team ID and a link to a Google Drive to which you can upload your signals.</p>
+<p><strong>Registration</strong>: Teams must register via the Google form on the <a class="" href="https://claritychallenge.github.io/docs/cec1/taking_part/cec1_submission">How To Submit</a> page of this site. (Please complete this even if you have already completed a pre-registration form). Only one person from each team should register. Only those who have registered will be eligible to proceed to the evaluation. Once you have registered you will receive a confirmation email, a team ID and a link to a Google Drive to which you can upload your signals.</p>
 <p><strong>Submission deadline</strong>: The deadline for submission is the <strong>15th June</strong>.</p>
 <p>The submission consists of two components:</p>
-<p>i) a technical document of up to 2 pages describing the system/model and any external data and pre-existing tools, software and models used. This should be prepared as a Clarity-2021 workshop abstract and <a href="https://claritychallenge.github.io/clarity2021-workshop/" target="_blank" rel="noopener noreferrer">submitted to the workshop</a>.</p>
-<p>ii) the set of processed signals that we will evaluate using the MBSTOI metric. Details of how to name and package your signals for upload can be found on the <a href="https://claritychallenge.github.io/docs/cec1/taking_part/cec1_submission">How To Submit</a> page.</p>
+<p>i) a technical document of up to 2 pages describing the system/model and any external data and pre-existing tools, software and models used. This should be prepared as a Clarity-2021 workshop abstract and <a href="https://claritychallenge.github.io/clarity2021-workshop/" target="_blank" rel="noopener noreferrer" class="">submitted to the workshop</a>.</p>
+<p>ii) the set of processed signals that we will evaluate using the MBSTOI metric. Details of how to name and package your signals for upload can be found on the <a class="" href="https://claritychallenge.github.io/docs/cec1/taking_part/cec1_submission">How To Submit</a> page.</p>
 <p><strong>Listening Tests:</strong> Teams that do well in the MBSTOI evaluation will be notified on <strong>22nd June</strong> and invited to submit further signals for the second stage Listening Test evaluation.</p>
-<p>For any questions please contact us at <a href="mailto:claritychallengecontact@gmail.com" target="_blank" rel="noopener noreferrer">claritychallengecontact@gmail.com</a> or by posting to the <a href="https://groups.google.com/g/clarity-challenge?pli=1" target="_blank" rel="noopener noreferrer">Clarity challenge google group</a>.</p>
+<p>For any questions please contact us at <a href="mailto:claritychallengecontact@gmail.com" target="_blank" rel="noopener noreferrer" class="">claritychallengecontact@gmail.com</a> or by posting to the <a href="https://groups.google.com/g/clarity-challenge?pli=1" target="_blank" rel="noopener noreferrer" class="">Clarity challenge google group</a>.</p>
 ]]></content>
         <author>
             <name>Jon Barker</name>
@@ -637,28 +637,28 @@
         <link href="https://claritychallenge.github.io/blog/baseline"/>
         <updated>2021-04-22T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Some comments on signal alignment and level-insensitivity]]></summary>
-        <content type="html"><![CDATA[<h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="some-comments-on-signal-alignment-and-level-insensitivity">Some comments on signal alignment and level-insensitivity<a href="https://claritychallenge.github.io/blog/baseline#some-comments-on-signal-alignment-and-level-insensitivity" class="hash-link" aria-label="Direct link to Some comments on signal alignment and level-insensitivity" title="Direct link to Some comments on signal alignment and level-insensitivity">​</a></h3>
+        <content type="html"><![CDATA[<h3 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="some-comments-on-signal-alignment-and-level-insensitivity">Some comments on signal alignment and level-insensitivity<a href="https://claritychallenge.github.io/blog/baseline#some-comments-on-signal-alignment-and-level-insensitivity" class="hash-link" aria-label="Direct link to Some comments on signal alignment and level-insensitivity" title="Direct link to Some comments on signal alignment and level-insensitivity" translate="no">​</a></h3>
 <p>Our baseline binaural speech intelligibility measure in round one is the Modified Binaural Short-Time Objective Intelligibility measure, or MBSTOI. This short post outlines the importance of correcting for delays that your hearing aid processing algorithm introduces into the audio signals to allow MBSTOI to estimate the speech intelligibility accurately. It also discusses the importance of considering the audibility of signals before evaluation with MBSTOI.</p>
-<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="evaluation">Evaluation<a href="https://claritychallenge.github.io/blog/baseline#evaluation" class="hash-link" aria-label="Direct link to Evaluation" title="Direct link to Evaluation">​</a></h2>
-<p>In stage one, entries will be ranked according to the average MBSTOI score across all samples in the evaluation test set. In the second stage, entries will be evaluated by the listening panel. There will be prizes for both stages. See this <a href="https://claritychallenge.github.io/clarity_CEC1_doc/docs/cec1_rules" target="_blank" rel="noopener noreferrer">page</a> for more information.</p>
+<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="evaluation">Evaluation<a href="https://claritychallenge.github.io/blog/baseline#evaluation" class="hash-link" aria-label="Direct link to Evaluation" title="Direct link to Evaluation" translate="no">​</a></h2>
+<p>In stage one, entries will be ranked according to the average MBSTOI score across all samples in the evaluation test set. In the second stage, entries will be evaluated by the listening panel. There will be prizes for both stages. See this <a href="https://claritychallenge.github.io/clarity_CEC1_doc/docs/cec1_rules" target="_blank" rel="noopener noreferrer" class="">page</a> for more information.</p>
 <!-- -->
-<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="signal-alignment-in-time-and-frequency">Signal alignment in time and frequency<a href="https://claritychallenge.github.io/blog/baseline#signal-alignment-in-time-and-frequency" class="hash-link" aria-label="Direct link to Signal alignment in time and frequency" title="Direct link to Signal alignment in time and frequency">​</a></h2>
+<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="signal-alignment-in-time-and-frequency">Signal alignment in time and frequency<a href="https://claritychallenge.github.io/blog/baseline#signal-alignment-in-time-and-frequency" class="hash-link" aria-label="Direct link to Signal alignment in time and frequency" title="Direct link to Signal alignment in time and frequency" translate="no">​</a></h2>
 <p>If the signal processed by the hearing aid introduces a significant delay, you should correct for this delay before submitting your entry. This is necessary because MBSTOI requires alignment of the clean speech “reference” with the processed signal in time and frequency. This needs to be done for both ear signals.</p>
 <p>MBSTOI downsamples signals to 10 kHz, uses a Discrete Fourier Transform to decompose the signal into one-third octave bands, and performs envelope extraction and short-time segmentation into 386 ms regions. Each region consists of 30 frames. These approaches are motivated by what is know about which frequencies and modulation frequencies are most important for intelligibility. For each frequency band and frame (over the region of which it is the last frame), an intermediate correlation coefficient is calculated between the clean reference and processed power envelopes for each ear. These are averaged to obtain the MBSTOI index. Thus is usually between 0 and 1, and rises monotonically with measured intelligibility scores, such that higher values indicate greater speech intelligibility. Alignment is therefore required at the level of the one-third octave bands and short-time regions.</p>
 <p>Our baseline corrects for broadband delay per ear due to the hearing loss model. (The delay is measured by running a kronnecker delta function through the model for each ear.) However, the baseline software will not correct for delays created by your hearing aid processing.</p>
 <p>Consequently, when submitting your hearing aid output signals, you are responsible for correcting for any delays introduced by your hearing aid. Note that this must be done blindly; the clean reference signals will not be supplied for the test/evaluation set.</p>
-<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="level-insensitivity">Level insensitivity<a href="https://claritychallenge.github.io/blog/baseline#level-insensitivity" class="hash-link" aria-label="Direct link to Level insensitivity" title="Direct link to Level insensitivity">​</a></h2>
+<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="level-insensitivity">Level insensitivity<a href="https://claritychallenge.github.io/blog/baseline#level-insensitivity" class="hash-link" aria-label="Direct link to Level insensitivity" title="Direct link to Level insensitivity" translate="no">​</a></h2>
 <p>MBSTOI is level-independent, i.e., MBSTOI is broadly insensitive to the level of the processed signal because it is calculated using a cross-correlation method. This could be a problem because sounds that are below the auditory thresholds of the hearing impaired listener may appear to MBSTOI to be highly intelligible.</p>
 <p>To overcome this, the baseline experimental code mbstoi_beta, in conjunction with the baseline hearing loss model, can be used to approximate hearing-impaired auditory thresholds. Specifically, mbstoi_beta adds internal noise that can be used to approximate normal hearing auditory thresholds. This noise, in combination with the attenuation of signals by the hearing loss model to simulate raised auditory thresholds, makes MBSTOI level-sensitive.</p>
 <p>The noise is created by filtering white noise using pure tone threshold filter coefficients with one-third octave weighting, approximating the shape of a typical auditory filter (from Moore 2012, based on Patterson’s method, 1976). This noise is added to the processed signal. Note, the standard MBSTOI in the equalisation-cancellation stage adds internal noise to parameters, but this is an independent process.</p>
-<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="mbstoi">MBSTOI<a href="https://claritychallenge.github.io/blog/baseline#mbstoi" class="hash-link" aria-label="Direct link to MBSTOI" title="Direct link to MBSTOI">​</a></h2>
+<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="mbstoi">MBSTOI<a href="https://claritychallenge.github.io/blog/baseline#mbstoi" class="hash-link" aria-label="Direct link to MBSTOI" title="Direct link to MBSTOI" translate="no">​</a></h2>
 <p>The method was developed by Asger Heidemann Andersen, Jan Mark de Haan, Zheng-Hua Tan and Jesper Jensen (Andersen et al., 2018). It builds on the Short-Time Objective Intelligibility (STOI) metric created by Cees H. Taal, Richard C. Hendriks, Richard Heusdens, and Jesper Jensen (Taal et al., 2011). MBSTOI includes a better ear stage and an equalisation-cancellation stage. For simplicity, the latter stage is not discussed here; see Andersen et al. (2018) for details.</p>
-<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="references">References<a href="https://claritychallenge.github.io/blog/baseline#references" class="hash-link" aria-label="Direct link to References" title="Direct link to References">​</a></h2>
+<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="references">References<a href="https://claritychallenge.github.io/blog/baseline#references" class="hash-link" aria-label="Direct link to References" title="Direct link to References" translate="no">​</a></h2>
 <ul>
-<li>Andersen, A. H., de Haan, J. M., Tan, Z. H., &amp; Jensen, J. (2018). Refinement and validation of the binaural short time objective intelligibility measure for spatially diverse conditions. <em>Speech Communication</em>, 102, 1-13.</li>
-<li>Moore, B. C. (2012). <em>An introduction to the psychology of hearing</em>. Brill.</li>
-<li>Patterson, R. D. (1976). Auditory filter shapes derived with noise stimuli. <em>The Journal of the Acoustical Society of America</em>, 59(3), 640-654.</li>
-<li>Taal, C. H., Hendriks, R. C., Heusdens, R., &amp; Jensen, J. (2011). An algorithm for intelligibility prediction of time–frequency weighted noisy speech. <em>IEEE Transactions on Audio, Speech, and Language Processing</em>, 19(7), 2125-2136.</li>
+<li class="">Andersen, A. H., de Haan, J. M., Tan, Z. H., &amp; Jensen, J. (2018). Refinement and validation of the binaural short time objective intelligibility measure for spatially diverse conditions. <em>Speech Communication</em>, 102, 1-13.</li>
+<li class="">Moore, B. C. (2012). <em>An introduction to the psychology of hearing</em>. Brill.</li>
+<li class="">Patterson, R. D. (1976). Auditory filter shapes derived with noise stimuli. <em>The Journal of the Acoustical Society of America</em>, 59(3), 640-654.</li>
+<li class="">Taal, C. H., Hendriks, R. C., Heusdens, R., &amp; Jensen, J. (2011). An algorithm for intelligibility prediction of time–frequency weighted noisy speech. <em>IEEE Transactions on Audio, Speech, and Language Processing</em>, 19(7), 2125-2136.</li>
 </ul>]]></content>
         <author>
             <name>Simone Graetzer</name>
@@ -678,34 +678,34 @@
         <updated>2021-03-05T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[An explanation of the time and computational limits for the first round of the enhancement challenge.]]></summary>
         <content type="html"><![CDATA[<p>An explanation of the time and computational limits for the first round of the enhancement challenge.</p>
-<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="the-1st-clarity-enhancement-challenge">The 1st Clarity Enhancement Challenge<a href="https://claritychallenge.github.io/blog/Latency,%20computation%20time%20and%20real-time%20operation#the-1st-clarity-enhancement-challenge" class="hash-link" aria-label="Direct link to The 1st Clarity Enhancement Challenge" title="Direct link to The 1st Clarity Enhancement Challenge">​</a></h2>
+<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="the-1st-clarity-enhancement-challenge">The 1st Clarity Enhancement Challenge<a href="https://claritychallenge.github.io/blog/Latency,%20computation%20time%20and%20real-time%20operation#the-1st-clarity-enhancement-challenge" class="hash-link" aria-label="Direct link to The 1st Clarity Enhancement Challenge" title="Direct link to The 1st Clarity Enhancement Challenge" translate="no">​</a></h2>
 <p>For a hearing aid to work well for users, the processing needs to be quick. The output of the hearing aid should be produced with a delay of less than about 10 ms. Many audio processing techniques are non-causal, i.e., the output of the system depends on samples from the future. Such processing is useless for hearing aids and therefore our rules include a restriction on the use of future samples.</p>
 <p>The rules state the following:</p>
 <ul>
-<li>Systems must be causal; the output at time t must not use any information from input samples more than 5 ms into the future (i.e., no information from input samples &gt;t+5ms).</li>
-<li>There is no limit on computational cost.</li>
+<li class="">Systems must be causal; the output at time t must not use any information from input samples more than 5 ms into the future (i.e., no information from input samples &gt;t+5ms).</li>
+<li class="">There is no limit on computational cost.</li>
 </ul>
 <!-- -->
 <p>Mathematically this is:</p>
 <p>y<sub>n</sub>=f(x<sub>m</sub> , x<sub>m+1</sub> ... x<sub>n+N-1</sub> , x<sub>n+N</sub> , L )</p>
 <ul>
-<li>where y<sub>n</sub> is the output from your hearing aid for sample <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em"></span><span class="mord mathnormal">n</span></span></span></span>.</li>
-<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">x</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em"></span><span class="mord mathnormal">x</span></span></span></span> is the audio input signal from a hearing aid microphone.</li>
-<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mo>=</mo><mn>0.005</mn><mi>f</mi><mi>s</mi></mrow><annotation encoding="application/x-tex">N = 0.005 fs</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em"></span><span class="mord mathnormal" style="margin-right:0.10903em">N</span><span class="mspace" style="margin-right:0.2778em"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em"></span></span><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em"></span><span class="mord">0.005</span><span class="mord mathnormal" style="margin-right:0.10764em">f</span><span class="mord mathnormal">s</span></span></span></span> where <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mi>s</mi></mrow><annotation encoding="application/x-tex">fs</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em"></span><span class="mord mathnormal" style="margin-right:0.10764em">f</span><span class="mord mathnormal">s</span></span></span></span> is the sampling frequency.</li>
-<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi></mrow><annotation encoding="application/x-tex">m</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em"></span><span class="mord mathnormal">m</span></span></span></span> is a sample number where <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>≤</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">m \le n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7719em;vertical-align:-0.136em"></span><span class="mord mathnormal">m</span><span class="mspace" style="margin-right:0.2778em"></span><span class="mrel">≤</span><span class="mspace" style="margin-right:0.2778em"></span></span><span class="base"><span class="strut" style="height:0.4306em"></span><span class="mord mathnormal">n</span></span></span></span>.</li>
-<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi></mrow><annotation encoding="application/x-tex">L</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em"></span><span class="mord mathnormal">L</span></span></span></span> is the listener characteristics.</li>
-<li><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false">(</mo><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">f()</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em"></span><span class="mord mathnormal" style="margin-right:0.10764em">f</span><span class="mopen">(</span><span class="mclose">)</span></span></span></span> is the hearing aid function. There is no limitation on how long this takes to compute.</li>
-<li>You can use multiple microphones; only a single input signal <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">x</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em"></span><span class="mord mathnormal">x</span></span></span></span> is shown here just for simplicity.</li>
+<li class="">where y<sub>n</sub> is the output from your hearing aid for sample <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em"></span><span class="mord mathnormal">n</span></span></span></span>.</li>
+<li class=""><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">x</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em"></span><span class="mord mathnormal">x</span></span></span></span> is the audio input signal from a hearing aid microphone.</li>
+<li class=""><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mo>=</mo><mn>0.005</mn><mi>f</mi><mi>s</mi></mrow><annotation encoding="application/x-tex">N = 0.005 fs</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em"></span><span class="mord mathnormal" style="margin-right:0.10903em">N</span><span class="mspace" style="margin-right:0.2778em"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em"></span></span><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em"></span><span class="mord">0.005</span><span class="mord mathnormal" style="margin-right:0.10764em">f</span><span class="mord mathnormal">s</span></span></span></span> where <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mi>s</mi></mrow><annotation encoding="application/x-tex">fs</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em"></span><span class="mord mathnormal" style="margin-right:0.10764em">f</span><span class="mord mathnormal">s</span></span></span></span> is the sampling frequency.</li>
+<li class=""><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi></mrow><annotation encoding="application/x-tex">m</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em"></span><span class="mord mathnormal">m</span></span></span></span> is a sample number where <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>≤</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">m \le n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7719em;vertical-align:-0.136em"></span><span class="mord mathnormal">m</span><span class="mspace" style="margin-right:0.2778em"></span><span class="mrel">≤</span><span class="mspace" style="margin-right:0.2778em"></span></span><span class="base"><span class="strut" style="height:0.4306em"></span><span class="mord mathnormal">n</span></span></span></span>.</li>
+<li class=""><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi></mrow><annotation encoding="application/x-tex">L</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em"></span><span class="mord mathnormal">L</span></span></span></span> is the listener characteristics.</li>
+<li class=""><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false">(</mo><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">f()</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em"></span><span class="mord mathnormal" style="margin-right:0.10764em">f</span><span class="mopen">(</span><span class="mclose">)</span></span></span></span> is the hearing aid function. There is no limitation on how long this takes to compute.</li>
+<li class="">You can use multiple microphones; only a single input signal <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">x</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em"></span><span class="mord mathnormal">x</span></span></span></span> is shown here just for simplicity.</li>
 </ul>
 <p>Here it is illustrated as a diagram.</p>
 <p><img decoding="async" loading="lazy" alt="latency diagram" src="https://claritychallenge.github.io/assets/images/latency_diagram-1-528b50363f33be2b84c6ffd17de1df2f.png" width="573" height="296" class="img_ev3q"></p>
 <p>Figure. Example of how the limit of 5 ms is applied to a hearing aid input and output signal.
 We have a chosen a limit of 5 ms because in a real hearing aid there will be other sources of delay (e.g., analogue-to-digital, digital-to-analogue conversion).</p>
-<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="why-is-there-no-limitation-of-how-long-f-takes-to-compute">Why is there no limitation of how long f() takes to compute?<a href="https://claritychallenge.github.io/blog/Latency,%20computation%20time%20and%20real-time%20operation#why-is-there-no-limitation-of-how-long-f-takes-to-compute" class="hash-link" aria-label="Direct link to Why is there no limitation of how long f() takes to compute?" title="Direct link to Why is there no limitation of how long f() takes to compute?">​</a></h2>
+<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="why-is-there-no-limitation-of-how-long-f-takes-to-compute">Why is there no limitation of how long f() takes to compute?<a href="https://claritychallenge.github.io/blog/Latency,%20computation%20time%20and%20real-time%20operation#why-is-there-no-limitation-of-how-long-f-takes-to-compute" class="hash-link" aria-label="Direct link to Why is there no limitation of how long f() takes to compute?" title="Direct link to Why is there no limitation of how long f() takes to compute?" translate="no">​</a></h2>
 <p>We’re trying to foster new approaches to hearing aid processing and decided that at this stage we will drive more innovation if we don’t restrict computation time for round one. Such restrictions will be considered in future rounds.</p>
-<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="why-havent-you-talked-about-latency">Why haven’t you talked about latency?<a href="https://claritychallenge.github.io/blog/Latency,%20computation%20time%20and%20real-time%20operation#why-havent-you-talked-about-latency" class="hash-link" aria-label="Direct link to Why haven’t you talked about latency?" title="Direct link to Why haven’t you talked about latency?">​</a></h2>
+<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="why-havent-you-talked-about-latency">Why haven’t you talked about latency?<a href="https://claritychallenge.github.io/blog/Latency,%20computation%20time%20and%20real-time%20operation#why-havent-you-talked-about-latency" class="hash-link" aria-label="Direct link to Why haven’t you talked about latency?" title="Direct link to Why haven’t you talked about latency?" translate="no">​</a></h2>
 <p>In discussions, it is apparent that this term is used in different ways by different people, so to avoid confusion we’re not using it!</p>
-<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="do-algorithms-have-to-be-real-time">Do algorithms have to be real-time?<a href="https://claritychallenge.github.io/blog/Latency,%20computation%20time%20and%20real-time%20operation#do-algorithms-have-to-be-real-time" class="hash-link" aria-label="Direct link to Do algorithms have to be real-time?" title="Direct link to Do algorithms have to be real-time?">​</a></h2>
+<h2 class="anchor anchorTargetHideOnScrollNavbar_vjPI" id="do-algorithms-have-to-be-real-time">Do algorithms have to be real-time?<a href="https://claritychallenge.github.io/blog/Latency,%20computation%20time%20and%20real-time%20operation#do-algorithms-have-to-be-real-time" class="hash-link" aria-label="Direct link to Do algorithms have to be real-time?" title="Direct link to Do algorithms have to be real-time?" translate="no">​</a></h2>
 <p>The above limitations mean that the algorithms could in theory be made real-time if a powerful enough computer was available, but your entry can take as long as it needs to process the signals.</p>]]></content>
         <author>
             <name>Trevor Cox</name>
