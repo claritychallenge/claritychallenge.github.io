@@ -1,10 +1,25 @@
 # Website
 
-This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+This website is built using [Docusaurus 3](https://docusaurus.io/), a modern static website generator.
 
 ## Installation
 
+Set the Node.js version to use for this project, from the `.nvmrc` file:
+
 ```console
+nvm use
+```
+
+Install the dependencies:
+
+```console
+yarn install
+```
+
+If fails then clear current node modules and try again:
+
+```console
+rm -rf node_modules
 yarn install
 ```
 
