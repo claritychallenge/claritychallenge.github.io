@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkclarity=globalThis.webpackChunkclarity||[]).push([[9067],{19187(a){a.exports=JSON.parse('{"tags":[{"label":"cec1","permalink":"/docs/tags/cec-1","count":1},{"label":"baseline","permalink":"/docs/tags/baseline","count":1}]}')}}]);
